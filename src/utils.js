@@ -28,7 +28,7 @@ function extractParameters( contents ) {
     if ( args.trim() !== '' && args.trim() !== 'void' ) {
 
         // extract type, pointer asterisk, arg name, and array length
-        const argTypeRegex = /([a-zA-Z0-9_]+\s*\*?)\s*([a-zA-Z0-9_]+)(\[\d+]){0,1}/;
+        const argTypeRegex = /(const\s+)?([a-zA-Z0-9_]+\s*\*?)\s*([a-zA-Z0-9_]+)(\[\d+]){0,1}/;
         args
             .split( ',' )
             .forEach( ( arg, index ) => {
@@ -39,7 +39,7 @@ function extractParameters( contents ) {
 
                 }
 
-                const [, type, name, arrayLen ] = arg.trim().match( argTypeRegex );
+                const [,, type, name, arrayLen ] = arg.trim().match( argTypeRegex );
                 const info = {
                     isPointer: !!arrayLen || /\*$/.test( type ),
                     isFixedArray: !!arrayLen,
@@ -82,7 +82,6 @@ function extractParameters( contents ) {
         }
 
     }
-
 
     return {
         signature: fullProcedure.trim(),
