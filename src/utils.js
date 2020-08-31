@@ -66,6 +66,24 @@ function extractParameters( contents ) {
 
     }
 
+    const argIndexIsInput = Object.values( argsMap )
+        .sort( ( a, b ) => a.index - b.index )
+        .map( arg => arg.isInput );
+
+    for ( let i = 1; i < argIndexIsInput.length; i ++ ) {
+
+        const lastEl = argIndexIsInput[ i - 1 ];
+        const thisEl = argIndexIsInput[ i ];
+
+        if ( thisEl && ! lastEl ) {
+
+            throw new Error( 'Output comes before input in function signature.' );
+
+        }
+
+    }
+
+
     return {
         signature: fullProcedure.trim(),
         name,
