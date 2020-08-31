@@ -15,7 +15,7 @@ function extractParameters( contents ) {
 
     // get arguments
     const signatureRegex = new RegExp(
-        `\\s*([a-zA-A0-9_]+\\s*\\*?)\\s+${ name }\\s*\\(([^)]*)\\)`, 'g'
+        `\\s*([a-zA-Z0-9_]+\\s*\\*?)\\s+${ name }\\s*\\(([^)]*)\\)`, 'g'
     );
     signatureRegex.lastIndex = procedureRegex.lastIndex;    
     const [ fullProcedure, returnType, args ] = signatureRegex.exec( contents );
