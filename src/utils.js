@@ -1,3 +1,5 @@
+const { type } = require("os");
+
 function extractParameters( contents ) {
 
     contents = contents.replace( /\r/g, '' );
@@ -17,6 +19,10 @@ function extractParameters( contents ) {
     );
     signatureRegex.lastIndex = procedureRegex.lastIndex;    
     const [ fullProcedure, returnType, args ] = signatureRegex.exec( contents );
+    const returnInfo = {
+        isPointer: /\*$/.test( type ),
+        type: returnType.replace( /\*$/, '' ),
+    };
 
     const argsMap = {};
     if ( args.trim() !== '' && args.trim() !== 'void' ) {
@@ -25,21 +31,22 @@ function extractParameters( contents ) {
         const argTypeRegex = /([a-zA-Z0-9_]+\s*\*?)\s*([a-zA-Z0-9_]+)(\[\d+]){0,1}/;
         args
             .split( ',' )
-            .forEach( a => {
+            .forEach( ( arg, index ) => {
      
-                if ( a.trim() === '...' ) {
+                if ( arg.trim() === '...' ) {
 
                     throw new Error( 'Unhandled ellipses arguments.' );
 
                 }
 
-                const [, type, name, arrayLen ] = a.trim().match( argTypeRegex );
+                const [, type, name, arrayLen ] = arg.trim().match( argTypeRegex );
                 const info = {
                     isPointer: !!arrayLen || /\*$/.test( type ),
                     isFixedArray: !!arrayLen,
                     name: name.trim(),
                     type: type.replace( /\*$/, '' ).trim(),
                     arrayLength: arrayLen ? parseInt( arrayLen.replace( /\D/g, '' ) ) : 0,
+                    index,
                 };                
 
                 argsMap[ name ] = info;
@@ -63,8 +70,8 @@ function extractParameters( contents ) {
         signature: fullProcedure.trim(),
         name,
         args: argsMap,
-        returnType,
-    }
+        returnInfo,
+    };
 
 }
 
