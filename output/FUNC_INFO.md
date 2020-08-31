@@ -74,8 +74,7 @@ ouble b1900_c ( void )
 ouble
 ```
 #### Inputs
-```
-```
+_no inputs arguments._
 #### Outputs
 _no output arguments._
 ## badkpv_c
@@ -660,8 +659,7 @@ void clpool_c ( void )
 void
 ```
 #### Inputs
-```
-```
+_no inputs arguments._
 #### Outputs
 _no output arguments._
 ## cmprss_c
@@ -1016,8 +1014,7 @@ void daffna_c ( SpiceBoolean  * found )
 void
 ```
 #### Inputs
-```
-```
+_no inputs arguments._
 #### Outputs
 ```
 SpiceBoolean* found
@@ -1031,8 +1028,7 @@ void daffpa_c ( SpiceBoolean  * found )
 void
 ```
 #### Inputs
-```
-```
+_no inputs arguments._
 #### Outputs
 ```
 SpiceBoolean* found
@@ -1109,8 +1105,7 @@ void dafgs_c ( SpiceDouble sum[] )
 void
 ```
 #### Inputs
-```
-```
+_no inputs arguments._
 #### Outputs
 ```
 SpiceDouble sum
@@ -1532,8 +1527,7 @@ ouble dpmax_ ()
 ouble
 ```
 #### Inputs
-```
-```
+_no inputs arguments._
 #### Outputs
 _no output arguments._
 ## dpmax_c
@@ -1545,8 +1539,7 @@ ouble dpmax_c ()
 ouble
 ```
 #### Inputs
-```
-```
+_no inputs arguments._
 #### Outputs
 _no output arguments._
 ## dpmin_
@@ -1558,8 +1551,7 @@ ouble dpmin_ ()
 ouble
 ```
 #### Inputs
-```
-```
+_no inputs arguments._
 #### Outputs
 _no output arguments._
 ## dpmin_c
@@ -1571,8 +1563,7 @@ ouble dpmin_c ()
 ouble
 ```
 #### Inputs
-```
-```
+_no inputs arguments._
 #### Outputs
 _no output arguments._
 ## drdcyl_c
@@ -2382,8 +2373,7 @@ void ekntab_c ( SpiceInt   * n )
 void
 ```
 #### Inputs
-```
-```
+_no inputs arguments._
 #### Outputs
 ```
 SpiceInt* n
@@ -2435,8 +2425,7 @@ void ekops_c ( SpiceInt   * handle )
 void
 ```
 #### Inputs
-```
-```
+_no inputs arguments._
 #### Outputs
 ```
 SpiceInt* handle
@@ -3091,8 +3080,7 @@ oolean failed_c ()
 oolean
 ```
 #### Inputs
-```
-```
+_no inputs arguments._
 #### Outputs
 _no output arguments._
 ## frame_c
@@ -3257,8 +3245,7 @@ void getcml_c ( SpiceInt     * argc,
 void
 ```
 #### Inputs
-```
-```
+_no inputs arguments._
 #### Outputs
 ```
 SpiceInt* argc
@@ -3296,8 +3283,7 @@ void getenv_(fname, value, flen, vlen)
 void
 ```
 #### Inputs
-```
-```
+_no inputs arguments._
 #### Outputs
 ```
 valu e
@@ -3368,8 +3354,7 @@ void getmsg_c ( ConstSpiceChar  * option,
 void
 ```
 #### Inputs
-```
-```
+_no inputs arguments._
 #### Outputs
 ```
 ConstSpiceChar* option
@@ -3385,8 +3370,7 @@ oolean gfbail_c ()
 oolean
 ```
 #### Inputs
-```
-```
+_no inputs arguments._
 #### Outputs
 _no output arguments._
 ## gfclrh_c
@@ -3398,8 +3382,7 @@ void gfclrh_c ( void )
 void
 ```
 #### Inputs
-```
-```
+_no inputs arguments._
 #### Outputs
 _no output arguments._
 ## gfdist_c
@@ -3624,8 +3607,7 @@ void gfrepf_c ( void )
 void
 ```
 #### Inputs
-```
-```
+_no inputs arguments._
 #### Outputs
 _no output arguments._
 ## gfrepi_c
@@ -3927,8 +3909,7 @@ void gfuds_c (  void             ( * udfunc )
 void
 ```
 #### Inputs
-```
-```
+_no inputs arguments._
 #### Outputs
 ```
 voi d
@@ -3994,8 +3975,7 @@ ouble halfpi_c ( void )
 ouble
 ```
 #### Inputs
-```
-```
+_no inputs arguments._
 #### Outputs
 _no output arguments._
 ## hx2dp_c
@@ -4030,8 +4010,7 @@ void ident_c ( SpiceDouble    matrix[3][3] )
 void
 ```
 #### Inputs
-```
-```
+_no inputs arguments._
 #### Outputs
 ```
 SpiceDouble* matrix[3]
@@ -4249,8 +4228,7 @@ nt intmax_ ()
 nt
 ```
 #### Inputs
-```
-```
+_no inputs arguments._
 #### Outputs
 _no output arguments._
 ## intmax_c
@@ -4262,8 +4240,7 @@ nt intmax_c ()
 nt
 ```
 #### Inputs
-```
-```
+_no inputs arguments._
 #### Outputs
 _no output arguments._
 ## intmin_
@@ -4275,8 +4252,7 @@ nt intmin_ ()
 nt
 ```
 #### Inputs
-```
-```
+_no inputs arguments._
 #### Outputs
 _no output arguments._
 ## intmin_c
@@ -4288,8 +4264,7 @@ nt intmin_c ()
 nt
 ```
 #### Inputs
-```
-```
+_no inputs arguments._
 #### Outputs
 _no output arguments._
 ## invert_c
@@ -4440,8 +4415,7 @@ ouble j1900_c ( void )
 ouble
 ```
 #### Inputs
-```
-```
+_no inputs arguments._
 #### Outputs
 _no output arguments._
 ## j1950_c
@@ -4453,8 +4427,7 @@ ouble j1950_c ( void )
 ouble
 ```
 #### Inputs
-```
-```
+_no inputs arguments._
 #### Outputs
 _no output arguments._
 ## jyear_c
@@ -4466,8 +4439,7 @@ ouble jyear_c ( void )
 ouble
 ```
 #### Inputs
-```
-```
+_no inputs arguments._
 #### Outputs
 _no output arguments._
 ## kclear_c
@@ -4479,8 +4451,7 @@ void kclear_c ( void )
 void
 ```
 #### Inputs
-```
-```
+_no inputs arguments._
 #### Outputs
 _no output arguments._
 ## kdata_c
@@ -5733,8 +5704,7 @@ ouble pi_c ( void )
 ouble
 ```
 #### Inputs
-```
-```
+_no inputs arguments._
 #### Outputs
 _no output arguments._
 ## pjelpl_c
@@ -6450,8 +6420,7 @@ void reset_c ( void )
 void
 ```
 #### Inputs
-```
-```
+_no inputs arguments._
 #### Outputs
 _no output arguments._
 ## return_c
@@ -6463,8 +6432,7 @@ oolean return_c ( void )
 oolean
 ```
 #### Inputs
-```
-```
+_no inputs arguments._
 #### Outputs
 _no output arguments._
 ## rquad_c
@@ -6678,8 +6646,7 @@ void sigerr_c ( ConstSpiceChar * message )
 void
 ```
 #### Inputs
-```
-```
+_no inputs arguments._
 #### Outputs
 ```
 ConstSpiceChar* message
@@ -8163,8 +8130,7 @@ integer s_rnge(char *varn, ftnint offset, char *procn, ftnint line)
 integer
 ```
 #### Inputs
-```
-```
+_no inputs arguments._
 #### Outputs
 ```
 char* varn
@@ -8303,8 +8269,7 @@ ouble trace_c ( ConstSpiceDouble  matrix[3][3] )
 ouble
 ```
 #### Inputs
-```
-```
+_no inputs arguments._
 #### Outputs
 ```
 ConstSpiceDouble* matrix[3]
@@ -8332,8 +8297,7 @@ ouble twopi_c ( void )
 ouble
 ```
 #### Inputs
-```
-```
+_no inputs arguments._
 #### Outputs
 _no output arguments._
 ## twovec_c
@@ -8368,8 +8332,7 @@ ouble tyear_c ( void )
 ouble
 ```
 #### Inputs
-```
-```
+_no inputs arguments._
 #### Outputs
 _no output arguments._
 ## ucrss_c
@@ -8400,8 +8363,7 @@ void uddc_c ( void            ( * udfunc )
 void
 ```
 #### Inputs
-```
-```
+_no inputs arguments._
 #### Outputs
 ```
 voi d
@@ -8415,8 +8377,7 @@ void uddf_c (  void             ( * udfunc )
 void
 ```
 #### Inputs
-```
-```
+_no inputs arguments._
 #### Outputs
 ```
 voi d
@@ -8948,8 +8909,7 @@ ouble vrel_c ( ConstSpiceDouble v1[3],
 ouble
 ```
 #### Inputs
-```
-```
+_no inputs arguments._
 #### Outputs
 ```
 ConstSpiceDouble* v1[3]
@@ -9525,8 +9485,7 @@ logical zzadbail_c ()
 logical
 ```
 #### Inputs
-```
-```
+_no inputs arguments._
 #### Outputs
 _no output arguments._
 ## zzadfunc_c
@@ -9597,8 +9556,7 @@ int zzadrepf_c ()
 int
 ```
 #### Inputs
-```
-```
+_no inputs arguments._
 #### Outputs
 _no output arguments._
 ## zzadrepu_c
@@ -9633,8 +9591,7 @@ functions
      
 ```
 #### Inputs
-```
-```
+_no inputs arguments._
 #### Outputs
 ```
 Save a

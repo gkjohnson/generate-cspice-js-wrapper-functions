@@ -46,17 +46,26 @@ fs.readdir( rootDir, ( err, files ) => {
                 mdContents += result.returnInfo.type + ( result.returnInfo.isPointer ? '*' : '' );
                 mdContents += '\n```\n';
 
-                mdContents += '#### Inputs\n```\n';
-                inputs.forEach( arg => {
+                mdContents += '#### Inputs\n';
+                if ( inputs.length === 0 ) {
 
-                    mdContents += arg.type
-                        + ( arg.isPointer ? '* ' : ' ' )
-                        + arg.name
-                        + ( arg.isFixedArray ? `[${arg.arrayLength}]` : '' )
-                        + '\n';
+                    mdContents += '_no inputs arguments._\n';
+                
+                } else {
 
-                } );
-                mdContents += '```\n';
+                    mdContents += '```\n';
+                    inputs.forEach( arg => {
+
+                        mdContents += arg.type
+                            + ( arg.isPointer ? '* ' : ' ' )
+                            + arg.name
+                            + ( arg.isFixedArray ? `[${arg.arrayLength}]` : '' )
+                            + '\n';
+
+                    } );
+                    mdContents += '```\n';
+
+                }
 
                 mdContents += '#### Outputs\n';
                 if ( outputs.length === 0 ) {
