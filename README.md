@@ -25,3 +25,4 @@ node src/index.js ../cspice/src/cspice ./output/
 - [ ] Add tests, validate signatures.
 - [ ] Docs and comment code.
 - [ ] Make code for determining input / output arguments from comments more robust.
+- [ ] Remove the `_c` suffix on the functions.
