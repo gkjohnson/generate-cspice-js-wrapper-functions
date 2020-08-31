@@ -5,7 +5,7 @@ function extractParameters( contents ) {
     contents = contents.replace( /\r/g, '' );
     
     // get function name
-    const procedureRegex = /\s+-Procedure ([a-zA-Z0-9_]+)/g;
+    const procedureRegex = /\s+-Procedure\s+([a-zA-Z0-9_]+)/g;
     if ( ! contents.match( procedureRegex ) ) {
         
         return null;
