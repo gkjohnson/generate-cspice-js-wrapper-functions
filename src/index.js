@@ -49,7 +49,7 @@ fs.readdir( rootDir, ( err, files ) => {
                 mdContents += '#### Inputs\n';
                 if ( inputs.length === 0 ) {
 
-                    mdContents += '_no inputs arguments._\n';
+                    mdContents += '_no input arguments._\n';
                 
                 } else {
 
