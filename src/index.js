@@ -4,7 +4,9 @@ const { extractParameters } = require('./utils');
 const inputPath = process.argv[ 2 ];
 const outputPath = process.argv[ 3 ];
 
+let mdContents = '';
 const rootDir = path.resolve( process.cwd(), inputPath );
+const outputDir = path.resolve( process.cwd(), outputPath );
 fs.readdir( rootDir, ( err, files ) => {
 
     if ( err ) {
@@ -28,6 +30,44 @@ fs.readdir( rootDir, ( err, files ) => {
 
                 console.log( 'Processed ', result.name );
 
+                const args = Object
+                    .values( result.args )
+                    .sort( ( a, b ) => a.index - b.index );
+
+                const inputs = args.filter( arg => arg.isInput );
+                const outputs = args.filter( arg => ! arg.isInput );
+
+                mdContents +=
+                    `## ${ result.name }\n` +
+                    
+                    '```c\n' + result.signature + '\n```\n';
+
+                mdContents += '#### Return\n```\n';
+                mdContents += result.returnInfo.type + ( result.returnInfo.isPointer ? '*' : '' );
+                mdContents += '\n```\n';
+
+                mdContents += '#### Inputs\n```\n';
+                inputs.forEach( arg => {
+
+                    mdContents += arg.type
+                        + ( arg.isPointer ? '* ' : ' ' )
+                        + arg.name
+                        + ( arg.isFixedArray ? `[${arg.arrayLength}]` : '' );
+
+                } );
+                mdContents += '\n```\n';
+
+                mdContents += '#### Outputs\n```\n';
+                outputs.forEach( arg => {
+
+                    mdContents += arg.type
+                        + ( arg.isPointer ? '* ' : ' ' )
+                        + arg.name
+                        + ( arg.isFixedArray ? `[${arg.arrayLength}]` : '' );
+
+                } );
+                mdContents += '\n```\n';
+
             } else {
 
                 console.log( 'Skipping ', file );
@@ -42,5 +82,7 @@ fs.readdir( rootDir, ( err, files ) => {
         }
 
     } );
+    
+    fs.writeFileSync( path.resolve( outputDir, 'FUNC_INFO.md' ), mdContents, { encoding: 'utf8' } );
 
 } );

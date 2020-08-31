@@ -3,7 +3,7 @@
   "description": "Script for generating CSpice wrapper functions based on CSpice source comments.",
   "main": "index.js",
   "scripts": {
-    "generate": "node src/index.js ../cspice/src/cspice/",
+    "generate": "node src/index.js ../cspice/src/cspice/ ./output/",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
