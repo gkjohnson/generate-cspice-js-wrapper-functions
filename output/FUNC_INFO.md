@@ -9,10 +9,13 @@ void
 ```
 #### Inputs
 ```
-ConstSpiceChar* itemSpiceCell* cell
+ConstSpiceChar* item
+SpiceCell* cell
+
 ```
 #### Outputs
 ```
+_no output arguments._
 
 ```
 ## appndd_c
@@ -26,10 +29,13 @@ void
 ```
 #### Inputs
 ```
-SpiceDouble itemSpiceCell* cell
+SpiceDouble item
+SpiceCell* cell
+
 ```
 #### Outputs
 ```
+_no output arguments._
 
 ```
 ## appndi_c
@@ -43,10 +49,13 @@ void
 ```
 #### Inputs
 ```
-SpiceInt itemSpiceCell* cell
+SpiceInt item
+SpiceCell* cell
+
 ```
 #### Outputs
 ```
+_no output arguments._
 
 ```
 ## axisar_c
@@ -62,10 +71,13 @@ void
 #### Inputs
 ```
 SpiceDouble angle
+
 ```
 #### Outputs
 ```
-ConstSpiceDouble axisSpiceDouble r
+ConstSpiceDouble axis
+SpiceDouble r
+
 ```
 ## b1900_c
 ```c
@@ -81,6 +93,7 @@ ouble
 ```
 #### Outputs
 ```
+_no output arguments._
 
 ```
 ## badkpv_c
@@ -98,10 +111,17 @@ oolean
 ```
 #### Inputs
 ```
-ConstSpiceChar* callerConstSpiceChar* nameConstSpiceChar* compSpiceInt sizeSpiceInt divbySpiceChar type
+ConstSpiceChar* caller
+ConstSpiceChar* name
+ConstSpiceChar* comp
+SpiceInt size
+SpiceInt divby
+SpiceChar type
+
 ```
 #### Outputs
 ```
+_no output arguments._
 
 ```
 ## bodc2n_c
@@ -117,11 +137,15 @@ void
 ```
 #### Inputs
 ```
-SpiceInt codeSpiceInt lenout
+SpiceInt code
+SpiceInt lenout
+
 ```
 #### Outputs
 ```
-SpiceChar* nameSpiceBoolean* found
+SpiceChar* name
+SpiceBoolean* found
+
 ```
 ## bodc2s_c
 ```c
@@ -135,11 +159,14 @@ void
 ```
 #### Inputs
 ```
-SpiceInt codeSpiceInt lenout
+SpiceInt code
+SpiceInt lenout
+
 ```
 #### Outputs
 ```
 SpiceChar* name
+
 ```
 ## boddef_c
 ```c
@@ -152,10 +179,13 @@ void
 ```
 #### Inputs
 ```
-ConstSpiceChar* nameSpiceInt code
+ConstSpiceChar* name
+SpiceInt code
+
 ```
 #### Outputs
 ```
+_no output arguments._
 
 ```
 ## bodfnd_c
@@ -169,10 +199,13 @@ oolean
 ```
 #### Inputs
 ```
-SpiceInt bodyConstSpiceChar* item
+SpiceInt body
+ConstSpiceChar* item
+
 ```
 #### Outputs
 ```
+_no output arguments._
 
 ```
 ## bodn2c_c
@@ -188,10 +221,13 @@ void
 #### Inputs
 ```
 ConstSpiceChar* name
+
 ```
 #### Outputs
 ```
-SpiceInt* codeSpiceBoolean* found
+SpiceInt* code
+SpiceBoolean* found
+
 ```
 ## bods2c_c
 ```c
@@ -206,10 +242,13 @@ void
 #### Inputs
 ```
 ConstSpiceChar* name
+
 ```
 #### Outputs
 ```
-SpiceInt* codeSpiceBoolean* found
+SpiceInt* code
+SpiceBoolean* found
+
 ```
 ## bodvcd_c
 ```c
@@ -225,11 +264,16 @@ void
 ```
 #### Inputs
 ```
-SpiceInt bodyidConstSpiceChar* itemSpiceInt maxn
+SpiceInt bodyid
+ConstSpiceChar* item
+SpiceInt maxn
+
 ```
 #### Outputs
 ```
-SpiceInt* dimSpiceDouble* values
+SpiceInt* dim
+SpiceDouble* values
+
 ```
 ## bodvrd_c
 ```c
@@ -245,11 +289,16 @@ void
 ```
 #### Inputs
 ```
-ConstSpiceChar* bodynmConstSpiceChar* itemSpiceInt maxn
+ConstSpiceChar* bodynm
+ConstSpiceChar* item
+SpiceInt maxn
+
 ```
 #### Outputs
 ```
-SpiceInt* dimSpiceDouble* values
+SpiceInt* dim
+SpiceDouble* values
+
 ```
 ## brcktd_c
 ```c
@@ -263,11 +312,14 @@ ouble
 ```
 #### Inputs
 ```
-SpiceDouble numberSpiceDouble end2
+SpiceDouble number
+SpiceDouble end2
+
 ```
 #### Outputs
 ```
 SpiceDouble end1
+
 ```
 ## brckti_c
 ```c
@@ -281,11 +333,14 @@ nt
 ```
 #### Inputs
 ```
-SpiceInt numberSpiceInt end2
+SpiceInt number
+SpiceInt end2
+
 ```
 #### Outputs
 ```
 SpiceInt end1
+
 ```
 ## bschoc_c
 ```c
@@ -301,11 +356,16 @@ nt
 ```
 #### Inputs
 ```
-ConstSpiceChar* valueSpiceInt ndimSpiceInt lenvalsConstSpiceInt* order
+ConstSpiceChar* value
+SpiceInt ndim
+SpiceInt lenvals
+ConstSpiceInt* order
+
 ```
 #### Outputs
 ```
 const void
+
 ```
 ## bschoi_c
 ```c
@@ -320,10 +380,15 @@ nt
 ```
 #### Inputs
 ```
-SpiceInt valueSpiceInt ndimConstSpiceInt* arrayConstSpiceInt* order
+SpiceInt value
+SpiceInt ndim
+ConstSpiceInt* array
+ConstSpiceInt* order
+
 ```
 #### Outputs
 ```
+_no output arguments._
 
 ```
 ## bsrchc_c
@@ -339,11 +404,15 @@ nt
 ```
 #### Inputs
 ```
-ConstSpiceChar* valueSpiceInt ndimSpiceInt lenvals
+ConstSpiceChar* value
+SpiceInt ndim
+SpiceInt lenvals
+
 ```
 #### Outputs
 ```
 const void
+
 ```
 ## bsrchd_c
 ```c
@@ -357,10 +426,14 @@ nt
 ```
 #### Inputs
 ```
-SpiceDouble valueSpiceInt ndimConstSpiceDouble* array
+SpiceDouble value
+SpiceInt ndim
+ConstSpiceDouble* array
+
 ```
 #### Outputs
 ```
+_no output arguments._
 
 ```
 ## bsrchi_c
@@ -375,10 +448,14 @@ nt
 ```
 #### Inputs
 ```
-SpiceInt valueSpiceInt ndimConstSpiceInt* array
+SpiceInt value
+SpiceInt ndim
+ConstSpiceInt* array
+
 ```
 #### Outputs
 ```
+_no output arguments._
 
 ```
 ## byebye_
@@ -392,10 +469,12 @@ int
 #### Inputs
 ```
 char* status
+
 ```
 #### Outputs
 ```
 ftnlen statusLen
+
 ```
 ## card_c
 ```c
@@ -408,9 +487,11 @@ nt
 #### Inputs
 ```
 SpiceCell* cell
+
 ```
 #### Outputs
 ```
+_no output arguments._
 
 ```
 ## cgv2el_c
@@ -427,10 +508,14 @@ void
 #### Inputs
 ```
 ConstSpiceDouble vec2
+
 ```
 #### Outputs
 ```
-ConstSpiceDouble* center[3]ConstSpiceDouble vec1SpiceEllipse* ellipse
+ConstSpiceDouble* center[3]
+ConstSpiceDouble vec1
+SpiceEllipse* ellipse
+
 ```
 ## chkin_c
 ```c
@@ -443,9 +528,11 @@ void
 #### Inputs
 ```
 ConstSpiceChar* module
+
 ```
 #### Outputs
 ```
+_no output arguments._
 
 ```
 ## chkout_c
@@ -459,9 +546,11 @@ void
 #### Inputs
 ```
 ConstSpiceChar* module
+
 ```
 #### Outputs
 ```
+_no output arguments._
 
 ```
 ## cidfrm_c
@@ -478,11 +567,16 @@ void
 ```
 #### Inputs
 ```
-SpiceInt centSpiceInt lenout
+SpiceInt cent
+SpiceInt lenout
+
 ```
 #### Outputs
 ```
-SpiceInt* frcodeSpiceChar* frnameSpiceBoolean* found
+SpiceInt* frcode
+SpiceChar* frname
+SpiceBoolean* found
+
 ```
 ## ckcov_c
 ```c
@@ -500,10 +594,18 @@ void
 ```
 #### Inputs
 ```
-ConstSpiceChar* ckSpiceInt idcodeSpiceBoolean needavConstSpiceChar* levelSpiceDouble tolConstSpiceChar* timsysSpiceCell* cover
+ConstSpiceChar* ck
+SpiceInt idcode
+SpiceBoolean needav
+ConstSpiceChar* level
+SpiceDouble tol
+ConstSpiceChar* timsys
+SpiceCell* cover
+
 ```
 #### Outputs
 ```
+_no output arguments._
 
 ```
 ## cklpf_c
@@ -518,10 +620,12 @@ void
 #### Inputs
 ```
 ConstSpiceChar* filename
+
 ```
 #### Outputs
 ```
 SpiceInt* handle
+
 ```
 ## ckobj_c
 ```c
@@ -534,10 +638,13 @@ void
 ```
 #### Inputs
 ```
-ConstSpiceChar* ckSpiceCell* ids
+ConstSpiceChar* ck
+SpiceCell* ids
+
 ```
 #### Outputs
 ```
+_no output arguments._
 
 ```
 ## ckupf_c
@@ -551,9 +658,11 @@ void
 #### Inputs
 ```
 SpiceInt handle
+
 ```
 #### Outputs
 ```
+_no output arguments._
 
 ```
 ## ckw02_c
@@ -577,11 +686,23 @@ void
 ```
 #### Inputs
 ```
-SpiceInt handleSpiceDouble begtimSpiceDouble endtimSpiceInt instConstSpiceChar* refConstSpiceChar* segidSpiceInt nrecConstSpiceDouble startConstSpiceDouble stopConstSpiceDouble quats
+SpiceInt handle
+SpiceDouble begtim
+SpiceDouble endtim
+SpiceInt inst
+ConstSpiceChar* ref
+ConstSpiceChar* segid
+SpiceInt nrec
+ConstSpiceDouble start
+ConstSpiceDouble stop
+ConstSpiceDouble quats
+
 ```
 #### Outputs
 ```
-ConstSpiceDouble avvsConstSpiceDouble rates
+ConstSpiceDouble avvs
+ConstSpiceDouble rates
+
 ```
 ## ckw05_c
 ```c
@@ -607,11 +728,26 @@ void
 ```
 #### Inputs
 ```
-SpiceInt handleSpiceCK05Subtype subtypSpiceInt degreeSpiceDouble begtimSpiceDouble endtimSpiceInt instConstSpiceChar* refSpiceBoolean avflagConstSpiceChar* segidSpiceDouble rateSpiceInt nintsConstSpiceDouble starts
+SpiceInt handle
+SpiceCK05Subtype subtyp
+SpiceInt degree
+SpiceDouble begtim
+SpiceDouble endtim
+SpiceInt inst
+ConstSpiceChar* ref
+SpiceBoolean avflag
+ConstSpiceChar* segid
+SpiceDouble rate
+SpiceInt nints
+ConstSpiceDouble starts
+
 ```
 #### Outputs
 ```
-SpiceInt nConstSpiceDouble sclkdpconst void
+SpiceInt n
+ConstSpiceDouble sclkdp
+const void
+
 ```
 ## clpool_c
 ```c
@@ -627,6 +763,7 @@ void
 ```
 #### Outputs
 ```
+_no output arguments._
 
 ```
 ## cmprss_c
@@ -643,11 +780,16 @@ void
 ```
 #### Inputs
 ```
-SpiceChar delimSpiceInt nConstSpiceChar* inputSpiceInt lenout
+SpiceChar delim
+SpiceInt n
+ConstSpiceChar* input
+SpiceInt lenout
+
 ```
 #### Outputs
 ```
 SpiceChar* output
+
 ```
 ## cnmfrm_c
 ```c
@@ -663,11 +805,16 @@ void
 ```
 #### Inputs
 ```
-ConstSpiceChar* cnameSpiceInt lenout
+ConstSpiceChar* cname
+SpiceInt lenout
+
 ```
 #### Outputs
 ```
-SpiceInt* frcodeSpiceChar* frnameSpiceBoolean* found
+SpiceInt* frcode
+SpiceChar* frname
+SpiceBoolean* found
+
 ```
 ## conics_c
 ```c
@@ -681,11 +828,14 @@ void
 ```
 #### Inputs
 ```
-ConstSpiceDouble* elts[8]SpiceDouble et
+ConstSpiceDouble* elts[8]
+SpiceDouble et
+
 ```
 #### Outputs
 ```
 SpiceDouble* state[6]
+
 ```
 ## convrt_c
 ```c
@@ -700,11 +850,15 @@ void
 ```
 #### Inputs
 ```
-SpiceDouble xConstSpiceChar* inConstSpiceChar* out
+SpiceDouble x
+ConstSpiceChar* in
+ConstSpiceChar* out
+
 ```
 #### Outputs
 ```
 SpiceDouble* y
+
 ```
 ## copy_c
 ```c
@@ -718,10 +872,12 @@ void
 #### Inputs
 ```
 SpiceCell* cell
+
 ```
 #### Outputs
 ```
 SpiceCell* copy
+
 ```
 ## cposr_c
 ```c
@@ -735,10 +891,14 @@ nt
 ```
 #### Inputs
 ```
-ConstSpiceChar* strConstSpiceChar* charsSpiceInt start
+ConstSpiceChar* str
+ConstSpiceChar* chars
+SpiceInt start
+
 ```
 #### Outputs
 ```
+_no output arguments._
 
 ```
 ## cpos_c
@@ -753,10 +913,14 @@ nt
 ```
 #### Inputs
 ```
-ConstSpiceChar* strConstSpiceChar* charsSpiceInt start
+ConstSpiceChar* str
+ConstSpiceChar* chars
+SpiceInt start
+
 ```
 #### Outputs
 ```
+_no output arguments._
 
 ```
 ## cvpool_c
@@ -771,10 +935,12 @@ void
 #### Inputs
 ```
 ConstSpiceChar* agent
+
 ```
 #### Outputs
 ```
 SpiceBoolean* update
+
 ```
 ## cyllat_c
 ```c
@@ -791,11 +957,17 @@ void
 ```
 #### Inputs
 ```
-SpiceDouble rSpiceDouble loncSpiceDouble z
+SpiceDouble r
+SpiceDouble lonc
+SpiceDouble z
+
 ```
 #### Outputs
 ```
-SpiceDouble* radiusSpiceDouble* lonSpiceDouble* lat
+SpiceDouble* radius
+SpiceDouble* lon
+SpiceDouble* lat
+
 ```
 ## cylrec_c
 ```c
@@ -810,11 +982,15 @@ void
 ```
 #### Inputs
 ```
-SpiceDouble rSpiceDouble lonSpiceDouble z
+SpiceDouble r
+SpiceDouble lon
+SpiceDouble z
+
 ```
 #### Outputs
 ```
 SpiceDouble* rectan[3]
+
 ```
 ## cylsph_c
 ```c
@@ -831,11 +1007,17 @@ void
 ```
 #### Inputs
 ```
-SpiceDouble rSpiceDouble loncSpiceDouble z
+SpiceDouble r
+SpiceDouble lonc
+SpiceDouble z
+
 ```
 #### Outputs
 ```
-SpiceDouble* radiusSpiceDouble* colatSpiceDouble* lon
+SpiceDouble* radius
+SpiceDouble* colat
+SpiceDouble* lon
+
 ```
 ## dafac_c
 ```c
@@ -850,11 +1032,15 @@ void
 ```
 #### Inputs
 ```
-SpiceInt handleSpiceInt n
+SpiceInt handle
+SpiceInt n
+
 ```
 #### Outputs
 ```
-SpiceInt lenvalsconst void
+SpiceInt lenvals
+const void
+
 ```
 ## dafbbs_c
 ```c
@@ -867,9 +1053,11 @@ void
 #### Inputs
 ```
 SpiceInt handle
+
 ```
 #### Outputs
 ```
+_no output arguments._
 
 ```
 ## dafbfs_c
@@ -883,9 +1071,11 @@ void
 #### Inputs
 ```
 SpiceInt handle
+
 ```
 #### Outputs
 ```
+_no output arguments._
 
 ```
 ## dafcls_c
@@ -899,9 +1089,11 @@ void
 #### Inputs
 ```
 SpiceInt handle
+
 ```
 #### Outputs
 ```
+_no output arguments._
 
 ```
 ## dafcs_c
@@ -915,9 +1107,11 @@ void
 #### Inputs
 ```
 SpiceInt handle
+
 ```
 #### Outputs
 ```
+_no output arguments._
 
 ```
 ## dafdc_c
@@ -931,9 +1125,11 @@ void
 #### Inputs
 ```
 SpiceInt handle
+
 ```
 #### Outputs
 ```
+_no output arguments._
 
 ```
 ## dafec_c
@@ -951,11 +1147,17 @@ void
 ```
 #### Inputs
 ```
-SpiceInt handleSpiceInt bufsizSpiceInt lenout
+SpiceInt handle
+SpiceInt bufsiz
+SpiceInt lenout
+
 ```
 #### Outputs
 ```
-SpiceInt* nvoid* bufferSpiceBoolean* done
+SpiceInt* n
+void* buffer
+SpiceBoolean* done
+
 ```
 ## daffna_c
 ```c
@@ -972,6 +1174,7 @@ void
 #### Outputs
 ```
 SpiceBoolean* found
+
 ```
 ## daffpa_c
 ```c
@@ -988,6 +1191,7 @@ void
 #### Outputs
 ```
 SpiceBoolean* found
+
 ```
 ## dafgda_c
 ```c
@@ -1002,11 +1206,15 @@ void
 ```
 #### Inputs
 ```
-SpiceInt handleSpiceInt beginSpiceInt end
+SpiceInt handle
+SpiceInt begin
+SpiceInt end
+
 ```
 #### Outputs
 ```
 SpiceDouble* data
+
 ```
 ## dafgn_c
 ```c
@@ -1020,10 +1228,12 @@ void
 #### Inputs
 ```
 SpiceInt lenout
+
 ```
 #### Outputs
 ```
 SpiceChar* name
+
 ```
 ## dafgsr_c
 ```c
@@ -1040,11 +1250,17 @@ void
 ```
 #### Inputs
 ```
-SpiceInt handleSpiceInt recnoSpiceInt beginSpiceInt end
+SpiceInt handle
+SpiceInt recno
+SpiceInt begin
+SpiceInt end
+
 ```
 #### Outputs
 ```
-SpiceDouble* dataSpiceBoolean* found
+SpiceDouble* data
+SpiceBoolean* found
+
 ```
 ## dafgs_c
 ```c
@@ -1061,6 +1277,7 @@ void
 #### Outputs
 ```
 SpiceDouble sum
+
 ```
 ## dafopr_c
 ```c
@@ -1074,10 +1291,12 @@ void
 #### Inputs
 ```
 ConstSpiceChar* fname
+
 ```
 #### Outputs
 ```
 SpiceInt* handle
+
 ```
 ## dafopw_c
 ```c
@@ -1091,10 +1310,12 @@ void
 #### Inputs
 ```
 ConstSpiceChar* fname
+
 ```
 #### Outputs
 ```
 SpiceInt* handle
+
 ```
 ## dafps_c
 ```c
@@ -1110,11 +1331,16 @@ void
 ```
 #### Inputs
 ```
-SpiceInt ndSpiceInt niConstSpiceDouble* dcConstSpiceInt* ic
+SpiceInt nd
+SpiceInt ni
+ConstSpiceDouble* dc
+ConstSpiceInt* ic
+
 ```
 #### Outputs
 ```
 SpiceDouble* sum
+
 ```
 ## dafrda_c
 ```c
@@ -1129,11 +1355,15 @@ void
 ```
 #### Inputs
 ```
-SpiceInt handleSpiceInt beginSpiceInt end
+SpiceInt handle
+SpiceInt begin
+SpiceInt end
+
 ```
 #### Outputs
 ```
 SpiceDouble* data
+
 ```
 ## dafrfr_c
 ```c
@@ -1152,11 +1382,19 @@ void
 ```
 #### Inputs
 ```
-SpiceInt handleSpiceInt lenout
+SpiceInt handle
+SpiceInt lenout
+
 ```
 #### Outputs
 ```
-SpiceInt* ndSpiceInt* niSpiceChar* ifnameSpiceInt* fwardSpiceInt* bwardSpiceInt* free
+SpiceInt* nd
+SpiceInt* ni
+SpiceChar* ifname
+SpiceInt* fward
+SpiceInt* bward
+SpiceInt* free
+
 ```
 ## dafrs_c
 ```c
@@ -1169,9 +1407,11 @@ void
 #### Inputs
 ```
 ConstSpiceDouble* sum
+
 ```
 #### Outputs
 ```
+_no output arguments._
 
 ```
 ## dafus_c
@@ -1188,11 +1428,16 @@ void
 ```
 #### Inputs
 ```
-ConstSpiceDouble sumSpiceInt ndSpiceInt ni
+ConstSpiceDouble sum
+SpiceInt nd
+SpiceInt ni
+
 ```
 #### Outputs
 ```
-SpiceDouble dcSpiceInt ic
+SpiceDouble dc
+SpiceInt ic
+
 ```
 ## dasac_c
 ```c
@@ -1207,11 +1452,15 @@ void
 ```
 #### Inputs
 ```
-SpiceInt handleSpiceInt nSpiceInt buflen
+SpiceInt handle
+SpiceInt n
+SpiceInt buflen
+
 ```
 #### Outputs
 ```
 const void
+
 ```
 ## dascls_c
 ```c
@@ -1224,9 +1473,11 @@ void
 #### Inputs
 ```
 SpiceInt handle
+
 ```
 #### Outputs
 ```
+_no output arguments._
 
 ```
 ## dasec_c
@@ -1244,11 +1495,17 @@ void
 ```
 #### Inputs
 ```
-SpiceInt handleSpiceInt bufsizSpiceInt buflen
+SpiceInt handle
+SpiceInt bufsiz
+SpiceInt buflen
+
 ```
 #### Outputs
 ```
-SpiceInt* nvoid* bufferSpiceBoolean* done
+SpiceInt* n
+void* buffer
+SpiceBoolean* done
+
 ```
 ## dasopr_c
 ```c
@@ -1262,10 +1519,12 @@ void
 #### Inputs
 ```
 ConstSpiceChar* fname
+
 ```
 #### Outputs
 ```
 SpiceInt* handle
+
 ```
 ## dcyldr_c
 ```c
@@ -1281,10 +1540,14 @@ void
 #### Inputs
 ```
 SpiceDouble z
+
 ```
 #### Outputs
 ```
-SpiceDouble xSpiceDouble ySpiceDouble* jacobi[3]
+SpiceDouble x
+SpiceDouble y
+SpiceDouble* jacobi[3]
+
 ```
 ## deltet_c
 ```c
@@ -1298,11 +1561,14 @@ void
 ```
 #### Inputs
 ```
-SpiceDouble epochConstSpiceChar* eptype
+SpiceDouble epoch
+ConstSpiceChar* eptype
+
 ```
 #### Outputs
 ```
 SpiceDouble* delta
+
 ```
 ## det_c
 ```c
@@ -1315,9 +1581,11 @@ ouble
 #### Inputs
 ```
 ConstSpiceDouble* m1[3]
+
 ```
 #### Outputs
 ```
+_no output arguments._
 
 ```
 ## dgeodr_c
@@ -1335,11 +1603,17 @@ void
 ```
 #### Inputs
 ```
-SpiceDouble zSpiceDouble reSpiceDouble f
+SpiceDouble z
+SpiceDouble re
+SpiceDouble f
+
 ```
 #### Outputs
 ```
-SpiceDouble xSpiceDouble ySpiceDouble* jacobi[3]
+SpiceDouble x
+SpiceDouble y
+SpiceDouble* jacobi[3]
+
 ```
 ## diags2_c
 ```c
@@ -1354,10 +1628,13 @@ void
 #### Inputs
 ```
 ConstSpiceDouble symmat
+
 ```
 #### Outputs
 ```
-SpiceDouble diagSpiceDouble rotate
+SpiceDouble diag
+SpiceDouble rotate
+
 ```
 ## diff_c
 ```c
@@ -1371,11 +1648,14 @@ void
 ```
 #### Inputs
 ```
-SpiceCell* aSpiceCell* b
+SpiceCell* a
+SpiceCell* b
+
 ```
 #### Outputs
 ```
 SpiceCell* c
+
 ```
 ## dlatdr_c
 ```c
@@ -1391,10 +1671,14 @@ void
 #### Inputs
 ```
 SpiceDouble z
+
 ```
 #### Outputs
 ```
-SpiceDouble xSpiceDouble ySpiceDouble* jacobi[3]
+SpiceDouble x
+SpiceDouble y
+SpiceDouble* jacobi[3]
+
 ```
 ## dp2hx_c
 ```c
@@ -1410,11 +1694,15 @@ void
 ```
 #### Inputs
 ```
-SpiceDouble numberSpiceInt lenout
+SpiceDouble number
+SpiceInt lenout
+
 ```
 #### Outputs
 ```
-SpiceChar* stringSpiceInt* length
+SpiceChar* string
+SpiceInt* length
+
 ```
 ## dpgrdr_c
 ```c
@@ -1432,11 +1720,18 @@ void
 ```
 #### Inputs
 ```
-ConstSpiceChar* bodySpiceDouble zSpiceDouble reSpiceDouble f
+ConstSpiceChar* body
+SpiceDouble z
+SpiceDouble re
+SpiceDouble f
+
 ```
 #### Outputs
 ```
-SpiceDouble xSpiceDouble ySpiceDouble* jacobi[3]
+SpiceDouble x
+SpiceDouble y
+SpiceDouble* jacobi[3]
+
 ```
 ## dpmax_
 ```c
@@ -1452,6 +1747,7 @@ ouble
 ```
 #### Outputs
 ```
+_no output arguments._
 
 ```
 ## dpmax_c
@@ -1468,6 +1764,7 @@ ouble
 ```
 #### Outputs
 ```
+_no output arguments._
 
 ```
 ## dpmin_
@@ -1484,6 +1781,7 @@ ouble
 ```
 #### Outputs
 ```
+_no output arguments._
 
 ```
 ## dpmin_c
@@ -1500,6 +1798,7 @@ ouble
 ```
 #### Outputs
 ```
+_no output arguments._
 
 ```
 ## drdcyl_c
@@ -1515,11 +1814,15 @@ void
 ```
 #### Inputs
 ```
-SpiceDouble rSpiceDouble lonSpiceDouble z
+SpiceDouble r
+SpiceDouble lon
+SpiceDouble z
+
 ```
 #### Outputs
 ```
 SpiceDouble* jacobi[3]
+
 ```
 ## drdgeo_c
 ```c
@@ -1536,11 +1839,17 @@ void
 ```
 #### Inputs
 ```
-SpiceDouble lonSpiceDouble latSpiceDouble altSpiceDouble reSpiceDouble f
+SpiceDouble lon
+SpiceDouble lat
+SpiceDouble alt
+SpiceDouble re
+SpiceDouble f
+
 ```
 #### Outputs
 ```
 SpiceDouble* jacobi[3]
+
 ```
 ## drdlat_c
 ```c
@@ -1555,11 +1864,15 @@ void
 ```
 #### Inputs
 ```
-SpiceDouble lonSpiceDouble lat
+SpiceDouble lon
+SpiceDouble lat
+
 ```
 #### Outputs
 ```
-SpiceDouble rSpiceDouble* jacobi[3]
+SpiceDouble r
+SpiceDouble* jacobi[3]
+
 ```
 ## drdpgr_c
 ```c
@@ -1577,11 +1890,18 @@ void
 ```
 #### Inputs
 ```
-ConstSpiceChar* bodySpiceDouble lonSpiceDouble latSpiceDouble altSpiceDouble reSpiceDouble f
+ConstSpiceChar* body
+SpiceDouble lon
+SpiceDouble lat
+SpiceDouble alt
+SpiceDouble re
+SpiceDouble f
+
 ```
 #### Outputs
 ```
 SpiceDouble* jacobi[3]
+
 ```
 ## drdsph_c
 ```c
@@ -1596,11 +1916,15 @@ void
 ```
 #### Inputs
 ```
-SpiceDouble rSpiceDouble colatSpiceDouble lon
+SpiceDouble r
+SpiceDouble colat
+SpiceDouble lon
+
 ```
 #### Outputs
 ```
 SpiceDouble* jacobi[3]
+
 ```
 ## dsphdr_c
 ```c
@@ -1616,10 +1940,14 @@ void
 #### Inputs
 ```
 SpiceDouble z
+
 ```
 #### Outputs
 ```
-SpiceDouble xSpiceDouble ySpiceDouble* jacobi[3]
+SpiceDouble x
+SpiceDouble y
+SpiceDouble* jacobi[3]
+
 ```
 ## dtpool_c
 ```c
@@ -1635,10 +1963,14 @@ void
 #### Inputs
 ```
 ConstSpiceChar* name
+
 ```
 #### Outputs
 ```
-SpiceBoolean* foundSpiceInt* nSpiceChar type
+SpiceBoolean* found
+SpiceInt* n
+SpiceChar type
+
 ```
 ## ducrss_c
 ```c
@@ -1652,11 +1984,14 @@ void
 ```
 #### Inputs
 ```
-ConstSpiceDouble s1ConstSpiceDouble s2
+ConstSpiceDouble s1
+ConstSpiceDouble s2
+
 ```
 #### Outputs
 ```
 SpiceDouble* sout[6]
+
 ```
 ## dvcrss_c
 ```c
@@ -1670,11 +2005,14 @@ void
 ```
 #### Inputs
 ```
-ConstSpiceDouble s1ConstSpiceDouble s2
+ConstSpiceDouble s1
+ConstSpiceDouble s2
+
 ```
 #### Outputs
 ```
 SpiceDouble* sout[6]
+
 ```
 ## dvdot_c
 ```c
@@ -1687,10 +2025,13 @@ ouble
 ```
 #### Inputs
 ```
-ConstSpiceDouble* s1[6]ConstSpiceDouble* s2[6]
+ConstSpiceDouble* s1[6]
+ConstSpiceDouble* s2[6]
+
 ```
 #### Outputs
 ```
+_no output arguments._
 
 ```
 ## dvhat_c
@@ -1705,10 +2046,12 @@ void
 #### Inputs
 ```
 ConstSpiceDouble s1
+
 ```
 #### Outputs
 ```
 SpiceDouble* sout[6]
+
 ```
 ## dvnorm_c
 ```c
@@ -1721,9 +2064,11 @@ ouble
 #### Inputs
 ```
 ConstSpiceDouble* state[6]
+
 ```
 #### Outputs
 ```
+_no output arguments._
 
 ```
 ## dvpool_c
@@ -1737,9 +2082,11 @@ void
 #### Inputs
 ```
 ConstSpiceChar* name
+
 ```
 #### Outputs
 ```
+_no output arguments._
 
 ```
 ## dvsep_c
@@ -1752,10 +2099,13 @@ ouble
 ```
 #### Inputs
 ```
-ConstSpiceDouble* s1[6]ConstSpiceDouble* s2[6]
+ConstSpiceDouble* s1[6]
+ConstSpiceDouble* s2[6]
+
 ```
 #### Outputs
 ```
+_no output arguments._
 
 ```
 ## edlimb_c
@@ -1772,11 +2122,16 @@ void
 ```
 #### Inputs
 ```
-SpiceDouble cConstSpiceDouble* viewpt[3]
+SpiceDouble c
+ConstSpiceDouble* viewpt[3]
+
 ```
 #### Outputs
 ```
-SpiceDouble aSpiceDouble bSpiceEllipse* limb
+SpiceDouble a
+SpiceDouble b
+SpiceEllipse* limb
+
 ```
 ## ekacec_c
 ```c
@@ -1795,11 +2150,19 @@ void
 ```
 #### Inputs
 ```
-SpiceInt handleSpiceInt segnoSpiceInt recnoConstSpiceChar* columnSpiceInt nvalsSpiceInt vallenSpiceBoolean isnull
+SpiceInt handle
+SpiceInt segno
+SpiceInt recno
+ConstSpiceChar* column
+SpiceInt nvals
+SpiceInt vallen
+SpiceBoolean isnull
+
 ```
 #### Outputs
 ```
 const void
+
 ```
 ## ekaced_c
 ```c
@@ -1817,11 +2180,18 @@ void
 ```
 #### Inputs
 ```
-SpiceInt handleSpiceInt segnoSpiceInt recnoConstSpiceChar* columnConstSpiceDouble* dvalsSpiceBoolean isnull
+SpiceInt handle
+SpiceInt segno
+SpiceInt recno
+ConstSpiceChar* column
+ConstSpiceDouble* dvals
+SpiceBoolean isnull
+
 ```
 #### Outputs
 ```
 SpiceInt nvals
+
 ```
 ## ekacei_c
 ```c
@@ -1839,11 +2209,18 @@ void
 ```
 #### Inputs
 ```
-SpiceInt handleSpiceInt segnoSpiceInt recnoConstSpiceChar* columnConstSpiceInt* ivalsSpiceBoolean isnull
+SpiceInt handle
+SpiceInt segno
+SpiceInt recno
+ConstSpiceChar* column
+ConstSpiceInt* ivals
+SpiceBoolean isnull
+
 ```
 #### Outputs
 ```
 SpiceInt nvals
+
 ```
 ## ekaclc_c
 ```c
@@ -1863,11 +2240,20 @@ void
 ```
 #### Inputs
 ```
-SpiceInt handleSpiceInt segnoConstSpiceChar* columnSpiceInt vallenConstSpiceInt* entszsConstSpiceBoolean* nlflgsConstSpiceInt* rcptrsSpiceInt* wkindx
+SpiceInt handle
+SpiceInt segno
+ConstSpiceChar* column
+SpiceInt vallen
+ConstSpiceInt* entszs
+ConstSpiceBoolean* nlflgs
+ConstSpiceInt* rcptrs
+SpiceInt* wkindx
+
 ```
 #### Outputs
 ```
 const void
+
 ```
 ## ekacld_c
 ```c
@@ -1886,10 +2272,19 @@ void
 ```
 #### Inputs
 ```
-SpiceInt handleSpiceInt segnoConstSpiceChar* columnConstSpiceDouble* dvalsConstSpiceInt* entszsConstSpiceBoolean* nlflgsConstSpiceInt* rcptrsSpiceInt* wkindx
+SpiceInt handle
+SpiceInt segno
+ConstSpiceChar* column
+ConstSpiceDouble* dvals
+ConstSpiceInt* entszs
+ConstSpiceBoolean* nlflgs
+ConstSpiceInt* rcptrs
+SpiceInt* wkindx
+
 ```
 #### Outputs
 ```
+_no output arguments._
 
 ```
 ## ekacli_c
@@ -1909,10 +2304,19 @@ void
 ```
 #### Inputs
 ```
-SpiceInt handleSpiceInt segnoConstSpiceChar* columnConstSpiceInt* ivalsConstSpiceInt* entszsConstSpiceBoolean* nlflgsConstSpiceInt* rcptrsSpiceInt* wkindx
+SpiceInt handle
+SpiceInt segno
+ConstSpiceChar* column
+ConstSpiceInt* ivals
+ConstSpiceInt* entszs
+ConstSpiceBoolean* nlflgs
+ConstSpiceInt* rcptrs
+SpiceInt* wkindx
+
 ```
 #### Outputs
 ```
+_no output arguments._
 
 ```
 ## ekappr_c
@@ -1927,11 +2331,14 @@ void
 ```
 #### Inputs
 ```
-SpiceInt handleSpiceInt segno
+SpiceInt handle
+SpiceInt segno
+
 ```
 #### Outputs
 ```
 SpiceInt* recno
+
 ```
 ## ekbseg_c
 ```c
@@ -1950,11 +2357,18 @@ void
 ```
 #### Inputs
 ```
-SpiceInt handleConstSpiceChar* tabnamSpiceInt ncolsSpiceInt cnmlenSpiceInt declen
+SpiceInt handle
+ConstSpiceChar* tabnam
+SpiceInt ncols
+SpiceInt cnmlen
+SpiceInt declen
+
 ```
 #### Outputs
 ```
-const voidSpiceInt* segno
+const void
+SpiceInt* segno
+
 ```
 ## ekccnt_c
 ```c
@@ -1968,10 +2382,12 @@ void
 #### Inputs
 ```
 ConstSpiceChar* table
+
 ```
 #### Outputs
 ```
 SpiceInt* ccount
+
 ```
 ## ekcii_c
 ```c
@@ -1987,11 +2403,16 @@ void
 ```
 #### Inputs
 ```
-ConstSpiceChar* tableSpiceInt cindexSpiceInt lenout
+ConstSpiceChar* table
+SpiceInt cindex
+SpiceInt lenout
+
 ```
 #### Outputs
 ```
-SpiceChar* columnSpiceEKAttDsc* attdsc
+SpiceChar* column
+SpiceEKAttDsc* attdsc
+
 ```
 ## ekcls_c
 ```c
@@ -2004,9 +2425,11 @@ void
 #### Inputs
 ```
 SpiceInt handle
+
 ```
 #### Outputs
 ```
+_no output arguments._
 
 ```
 ## ekdelr_c
@@ -2021,10 +2444,14 @@ void
 ```
 #### Inputs
 ```
-SpiceInt handleSpiceInt segnoSpiceInt recno
+SpiceInt handle
+SpiceInt segno
+SpiceInt recno
+
 ```
 #### Outputs
 ```
+_no output arguments._
 
 ```
 ## ekffld_c
@@ -2039,10 +2466,14 @@ void
 ```
 #### Inputs
 ```
-SpiceInt handleSpiceInt segnoSpiceInt* rcptrs
+SpiceInt handle
+SpiceInt segno
+SpiceInt* rcptrs
+
 ```
 #### Outputs
 ```
+_no output arguments._
 
 ```
 ## ekfind_c
@@ -2059,11 +2490,16 @@ void
 ```
 #### Inputs
 ```
-ConstSpiceChar* querySpiceInt lenout
+ConstSpiceChar* query
+SpiceInt lenout
+
 ```
 #### Outputs
 ```
-SpiceInt* nmrowsSpiceBoolean* errorSpiceChar* errmsg
+SpiceInt* nmrows
+SpiceBoolean* error
+SpiceChar* errmsg
+
 ```
 ## ekgc_c
 ```c
@@ -2081,11 +2517,18 @@ void
 ```
 #### Inputs
 ```
-SpiceInt selidxSpiceInt rowSpiceInt elmentSpiceInt lenout
+SpiceInt selidx
+SpiceInt row
+SpiceInt elment
+SpiceInt lenout
+
 ```
 #### Outputs
 ```
-SpiceChar* cdataSpiceBoolean* nullSpiceBoolean* found
+SpiceChar* cdata
+SpiceBoolean* null
+SpiceBoolean* found
+
 ```
 ## ekgd_c
 ```c
@@ -2102,11 +2545,17 @@ void
 ```
 #### Inputs
 ```
-SpiceInt selidxSpiceInt rowSpiceInt elment
+SpiceInt selidx
+SpiceInt row
+SpiceInt elment
+
 ```
 #### Outputs
 ```
-SpiceDouble* ddataSpiceBoolean* nullSpiceBoolean* found
+SpiceDouble* ddata
+SpiceBoolean* null
+SpiceBoolean* found
+
 ```
 ## ekgi_c
 ```c
@@ -2123,11 +2572,17 @@ void
 ```
 #### Inputs
 ```
-SpiceInt selidxSpiceInt rowSpiceInt elment
+SpiceInt selidx
+SpiceInt row
+SpiceInt elment
+
 ```
 #### Outputs
 ```
-SpiceInt* idataSpiceBoolean* nullSpiceBoolean* found
+SpiceInt* idata
+SpiceBoolean* null
+SpiceBoolean* found
+
 ```
 ## ekifld_c
 ```c
@@ -2148,11 +2603,20 @@ void
 ```
 #### Inputs
 ```
-SpiceInt handleConstSpiceChar* tabnamSpiceInt ncolsSpiceInt nrowsSpiceInt cnmlenSpiceInt declen
+SpiceInt handle
+ConstSpiceChar* tabnam
+SpiceInt ncols
+SpiceInt nrows
+SpiceInt cnmlen
+SpiceInt declen
+
 ```
 #### Outputs
 ```
-const voidSpiceInt* segnoSpiceInt* rcptrs
+const void
+SpiceInt* segno
+SpiceInt* rcptrs
+
 ```
 ## ekinsr_c
 ```c
@@ -2166,10 +2630,14 @@ void
 ```
 #### Inputs
 ```
-SpiceInt handleSpiceInt segnoSpiceInt recno
+SpiceInt handle
+SpiceInt segno
+SpiceInt recno
+
 ```
 #### Outputs
 ```
+_no output arguments._
 
 ```
 ## eklef_c
@@ -2184,10 +2652,12 @@ void
 #### Inputs
 ```
 ConstSpiceChar* fname
+
 ```
 #### Outputs
 ```
 SpiceInt* handle
+
 ```
 ## eknelt_c
 ```c
@@ -2200,10 +2670,13 @@ nt
 ```
 #### Inputs
 ```
-SpiceInt selidxSpiceInt row
+SpiceInt selidx
+SpiceInt row
+
 ```
 #### Outputs
 ```
+_no output arguments._
 
 ```
 ## eknseg_c
@@ -2217,9 +2690,11 @@ nt
 #### Inputs
 ```
 SpiceInt handle
+
 ```
 #### Outputs
 ```
+_no output arguments._
 
 ```
 ## ekntab_c
@@ -2237,6 +2712,7 @@ void
 #### Outputs
 ```
 SpiceInt* n
+
 ```
 ## ekopn_c
 ```c
@@ -2251,11 +2727,15 @@ void
 ```
 #### Inputs
 ```
-ConstSpiceChar* fnameConstSpiceChar* ifnameSpiceInt ncomch
+ConstSpiceChar* fname
+ConstSpiceChar* ifname
+SpiceInt ncomch
+
 ```
 #### Outputs
 ```
 SpiceInt* handle
+
 ```
 ## ekopr_c
 ```c
@@ -2269,10 +2749,12 @@ void
 #### Inputs
 ```
 ConstSpiceChar* fname
+
 ```
 #### Outputs
 ```
 SpiceInt* handle
+
 ```
 ## ekops_c
 ```c
@@ -2289,6 +2771,7 @@ void
 #### Outputs
 ```
 SpiceInt* handle
+
 ```
 ## ekopw_c
 ```c
@@ -2302,10 +2785,12 @@ void
 #### Inputs
 ```
 ConstSpiceChar* fname
+
 ```
 #### Outputs
 ```
 SpiceInt* handle
+
 ```
 ## ekpsel_c
 ```c
@@ -2329,11 +2814,24 @@ void
 ```
 #### Inputs
 ```
-ConstSpiceChar* querySpiceInt msglenSpiceInt tablenSpiceInt collen
+ConstSpiceChar* query
+SpiceInt msglen
+SpiceInt tablen
+SpiceInt collen
+
 ```
 #### Outputs
 ```
-SpiceInt* nSpiceInt* xbegsSpiceInt* xendsSpiceEKDataType* xtypesSpiceEKExprClass* xclassvoid* tabsvoid* colsSpiceBoolean* errorSpiceChar* errmsg
+SpiceInt* n
+SpiceInt* xbegs
+SpiceInt* xends
+SpiceEKDataType* xtypes
+SpiceEKExprClass* xclass
+void* tabs
+void* cols
+SpiceBoolean* error
+SpiceChar* errmsg
+
 ```
 ## ekrcec_c
 ```c
@@ -2352,11 +2850,19 @@ void
 ```
 #### Inputs
 ```
-SpiceInt handleSpiceInt segnoSpiceInt recnoConstSpiceChar* columnSpiceInt lenout
+SpiceInt handle
+SpiceInt segno
+SpiceInt recno
+ConstSpiceChar* column
+SpiceInt lenout
+
 ```
 #### Outputs
 ```
-SpiceInt* nvalsvoid* cvalsSpiceBoolean* isnull
+SpiceInt* nvals
+void* cvals
+SpiceBoolean* isnull
+
 ```
 ## ekrced_c
 ```c
@@ -2374,11 +2880,18 @@ void
 ```
 #### Inputs
 ```
-SpiceInt handleSpiceInt segnoSpiceInt recnoConstSpiceChar* column
+SpiceInt handle
+SpiceInt segno
+SpiceInt recno
+ConstSpiceChar* column
+
 ```
 #### Outputs
 ```
-SpiceInt* nvalsSpiceDouble* dvalsSpiceBoolean* isnull
+SpiceInt* nvals
+SpiceDouble* dvals
+SpiceBoolean* isnull
+
 ```
 ## ekrcei_c
 ```c
@@ -2396,11 +2909,18 @@ void
 ```
 #### Inputs
 ```
-SpiceInt handleSpiceInt segnoSpiceInt recnoConstSpiceChar* column
+SpiceInt handle
+SpiceInt segno
+SpiceInt recno
+ConstSpiceChar* column
+
 ```
 #### Outputs
 ```
-SpiceInt* nvalsSpiceInt* ivalsSpiceBoolean* isnull
+SpiceInt* nvals
+SpiceInt* ivals
+SpiceBoolean* isnull
+
 ```
 ## ekssum_c
 ```c
@@ -2414,11 +2934,14 @@ void
 ```
 #### Inputs
 ```
-SpiceInt handleSpiceInt segno
+SpiceInt handle
+SpiceInt segno
+
 ```
 #### Outputs
 ```
 SpiceEKSegSum* segsum
+
 ```
 ## ektnam_c
 ```c
@@ -2432,11 +2955,14 @@ void
 ```
 #### Inputs
 ```
-SpiceInt nSpiceInt lenout
+SpiceInt n
+SpiceInt lenout
+
 ```
 #### Outputs
 ```
 SpiceChar* table
+
 ```
 ## ekucec_c
 ```c
@@ -2455,11 +2981,19 @@ void
 ```
 #### Inputs
 ```
-SpiceInt handleSpiceInt segnoSpiceInt recnoConstSpiceChar* columnSpiceInt nvalsSpiceInt vallenSpiceBoolean isnull
+SpiceInt handle
+SpiceInt segno
+SpiceInt recno
+ConstSpiceChar* column
+SpiceInt nvals
+SpiceInt vallen
+SpiceBoolean isnull
+
 ```
 #### Outputs
 ```
 const void
+
 ```
 ## ekuced_c
 ```c
@@ -2477,11 +3011,18 @@ void
 ```
 #### Inputs
 ```
-SpiceInt handleSpiceInt segnoSpiceInt recnoConstSpiceChar* columnConstSpiceDouble* dvalsSpiceBoolean isnull
+SpiceInt handle
+SpiceInt segno
+SpiceInt recno
+ConstSpiceChar* column
+ConstSpiceDouble* dvals
+SpiceBoolean isnull
+
 ```
 #### Outputs
 ```
 SpiceInt nvals
+
 ```
 ## ekucei_c
 ```c
@@ -2499,11 +3040,18 @@ void
 ```
 #### Inputs
 ```
-SpiceInt handleSpiceInt segnoSpiceInt recnoConstSpiceChar* columnConstSpiceInt* ivalsSpiceBoolean isnull
+SpiceInt handle
+SpiceInt segno
+SpiceInt recno
+ConstSpiceChar* column
+ConstSpiceInt* ivals
+SpiceBoolean isnull
+
 ```
 #### Outputs
 ```
 SpiceInt nvals
+
 ```
 ## ekuef_c
 ```c
@@ -2516,9 +3064,11 @@ void
 #### Inputs
 ```
 SpiceInt handle
+
 ```
 #### Outputs
 ```
+_no output arguments._
 
 ```
 ## el2cgv_c
@@ -2535,10 +3085,14 @@ void
 #### Inputs
 ```
 ConstSpiceEllipse* ellipse
+
 ```
 #### Outputs
 ```
-SpiceDouble* center[3]SpiceDouble* smajor[3]SpiceDouble* sminor[3]
+SpiceDouble* center[3]
+SpiceDouble* smajor[3]
+SpiceDouble* sminor[3]
+
 ```
 ## elemc_c
 ```c
@@ -2551,10 +3105,13 @@ oolean
 ```
 #### Inputs
 ```
-ConstSpiceChar* itemSpiceCell* set
+ConstSpiceChar* item
+SpiceCell* set
+
 ```
 #### Outputs
 ```
+_no output arguments._
 
 ```
 ## elemd_c
@@ -2568,10 +3125,13 @@ oolean
 ```
 #### Inputs
 ```
-SpiceDouble itemSpiceCell* set
+SpiceDouble item
+SpiceCell* set
+
 ```
 #### Outputs
 ```
+_no output arguments._
 
 ```
 ## elemi_c
@@ -2585,10 +3145,13 @@ oolean
 ```
 #### Inputs
 ```
-SpiceInt itemSpiceCell* set
+SpiceInt item
+SpiceCell* set
+
 ```
 #### Outputs
 ```
+_no output arguments._
 
 ```
 ## eqstr_c
@@ -2601,10 +3164,13 @@ oolean
 ```
 #### Inputs
 ```
-ConstSpiceChar* aConstSpiceChar* b
+ConstSpiceChar* a
+ConstSpiceChar* b
+
 ```
 #### Outputs
 ```
+_no output arguments._
 
 ```
 ## erract_c
@@ -2619,10 +3185,14 @@ void
 ```
 #### Inputs
 ```
-ConstSpiceChar* opSpiceInt lenoutSpiceChar* action
+ConstSpiceChar* op
+SpiceInt lenout
+SpiceChar* action
+
 ```
 #### Outputs
 ```
+_no output arguments._
 
 ```
 ## errch_c
@@ -2636,10 +3206,13 @@ void
 ```
 #### Inputs
 ```
-ConstSpiceChar* markerConstSpiceChar* string
+ConstSpiceChar* marker
+ConstSpiceChar* string
+
 ```
 #### Outputs
 ```
+_no output arguments._
 
 ```
 ## errdev_c
@@ -2655,10 +3228,13 @@ void
 #### Inputs
 ```
 ConstSpiceChar* op
+
 ```
 #### Outputs
 ```
-SpiceInt lenoutSpiceChar* device
+SpiceInt lenout
+SpiceChar* device
+
 ```
 ## errdp_c
 ```c
@@ -2671,10 +3247,13 @@ void
 ```
 #### Inputs
 ```
-ConstSpiceChar* markerSpiceDouble number
+ConstSpiceChar* marker
+SpiceDouble number
+
 ```
 #### Outputs
 ```
+_no output arguments._
 
 ```
 ## errint_c
@@ -2688,10 +3267,13 @@ void
 ```
 #### Inputs
 ```
-ConstSpiceChar* markerSpiceInt number
+ConstSpiceChar* marker
+SpiceInt number
+
 ```
 #### Outputs
 ```
+_no output arguments._
 
 ```
 ## errprt_c
@@ -2706,11 +3288,14 @@ void
 ```
 #### Inputs
 ```
-ConstSpiceChar* opSpiceChar* list
+ConstSpiceChar* op
+SpiceChar* list
+
 ```
 #### Outputs
 ```
 SpiceInt lenout
+
 ```
 ## esrchc_c
 ```c
@@ -2725,11 +3310,15 @@ nt
 ```
 #### Inputs
 ```
-ConstSpiceChar* valueSpiceInt ndimSpiceInt lenvals
+ConstSpiceChar* value
+SpiceInt ndim
+SpiceInt lenvals
+
 ```
 #### Outputs
 ```
 const void
+
 ```
 ## et2lst_c
 ```c
@@ -2751,11 +3340,22 @@ void
 ```
 #### Inputs
 ```
-SpiceInt bodySpiceDouble lonConstSpiceChar* typeSpiceInt timlenSpiceInt ampmlen
+SpiceInt body
+SpiceDouble lon
+ConstSpiceChar* type
+SpiceInt timlen
+SpiceInt ampmlen
+
 ```
 #### Outputs
 ```
-SpiceDouble etSpiceInt* hrSpiceInt* mnSpiceInt* scSpiceChar* timeSpiceChar* ampm
+SpiceDouble et
+SpiceInt* hr
+SpiceInt* mn
+SpiceInt* sc
+SpiceChar* time
+SpiceChar* ampm
+
 ```
 ## et2utc_c
 ```c
@@ -2771,11 +3371,16 @@ void
 ```
 #### Inputs
 ```
-SpiceDouble etConstSpiceChar* formatSpiceInt precSpiceInt lenout
+SpiceDouble et
+ConstSpiceChar* format
+SpiceInt prec
+SpiceInt lenout
+
 ```
 #### Outputs
 ```
 SpiceChar* utcstr
+
 ```
 ## etcal_c
 ```c
@@ -2789,11 +3394,14 @@ void
 ```
 #### Inputs
 ```
-SpiceDouble etSpiceInt lenout
+SpiceDouble et
+SpiceInt lenout
+
 ```
 #### Outputs
 ```
 SpiceChar* string
+
 ```
 ## eul2m_c
 ```c
@@ -2811,11 +3419,18 @@ void
 ```
 #### Inputs
 ```
-SpiceDouble angle3SpiceDouble angle2SpiceDouble angle1SpiceInt axis3SpiceInt axis2SpiceInt axis1
+SpiceDouble angle3
+SpiceDouble angle2
+SpiceDouble angle1
+SpiceInt axis3
+SpiceInt axis2
+SpiceInt axis1
+
 ```
 #### Outputs
 ```
 SpiceDouble r
+
 ```
 ## eul2xf_c
 ```c
@@ -2831,11 +3446,16 @@ void
 ```
 #### Inputs
 ```
-ConstSpiceDouble* eulang[6]SpiceInt axisaSpiceInt axisbSpiceInt axisc
+ConstSpiceDouble* eulang[6]
+SpiceInt axisa
+SpiceInt axisb
+SpiceInt axisc
+
 ```
 #### Outputs
 ```
 SpiceDouble xform
+
 ```
 ## exists_c
 ```c
@@ -2848,9 +3468,11 @@ oolean
 #### Inputs
 ```
 ConstSpiceChar* fname
+
 ```
 #### Outputs
 ```
+_no output arguments._
 
 ```
 ## expool_c
@@ -2865,10 +3487,12 @@ void
 #### Inputs
 ```
 ConstSpiceChar* name
+
 ```
 #### Outputs
 ```
 SpiceBoolean* found
+
 ```
 ## failed_c
 ```c
@@ -2884,6 +3508,7 @@ oolean
 ```
 #### Outputs
 ```
+_no output arguments._
 
 ```
 ## frame_c
@@ -2899,10 +3524,13 @@ void
 #### Inputs
 ```
 SpiceDouble* x[3]
+
 ```
 #### Outputs
 ```
-SpiceDouble* y[3]SpiceDouble* z[3]
+SpiceDouble* y[3]
+SpiceDouble* z[3]
+
 ```
 ## frinfo_c
 ```c
@@ -2919,10 +3547,15 @@ void
 #### Inputs
 ```
 SpiceInt frcode
+
 ```
 #### Outputs
 ```
-SpiceInt* centSpiceInt* frclssSpiceInt* clssidSpiceBoolean* found
+SpiceInt* cent
+SpiceInt* frclss
+SpiceInt* clssid
+SpiceBoolean* found
+
 ```
 ## frmnam_c
 ```c
@@ -2936,11 +3569,14 @@ void
 ```
 #### Inputs
 ```
-SpiceInt frcodeSpiceInt lenout
+SpiceInt frcode
+SpiceInt lenout
+
 ```
 #### Outputs
 ```
 SpiceChar* frname
+
 ```
 ## furnsh_c
 ```c
@@ -2953,9 +3589,11 @@ void
 #### Inputs
 ```
 ConstSpiceChar* file
+
 ```
 #### Outputs
 ```
+_no output arguments._
 
 ```
 ## gcpool_c
@@ -2974,11 +3612,18 @@ void
 ```
 #### Inputs
 ```
-ConstSpiceChar* nameSpiceInt startSpiceInt roomSpiceInt lenout
+ConstSpiceChar* name
+SpiceInt start
+SpiceInt room
+SpiceInt lenout
+
 ```
 #### Outputs
 ```
-SpiceInt* nvoid* cvalsSpiceBoolean* found
+SpiceInt* n
+void* cvals
+SpiceBoolean* found
+
 ```
 ## gdpool_c
 ```c
@@ -2995,11 +3640,17 @@ void
 ```
 #### Inputs
 ```
-ConstSpiceChar* nameSpiceInt startSpiceInt room
+ConstSpiceChar* name
+SpiceInt start
+SpiceInt room
+
 ```
 #### Outputs
 ```
-SpiceInt* nSpiceDouble* valuesSpiceBoolean* found
+SpiceInt* n
+SpiceDouble* values
+SpiceBoolean* found
+
 ```
 ## georec_c
 ```c
@@ -3016,11 +3667,17 @@ void
 ```
 #### Inputs
 ```
-SpiceDouble lonSpiceDouble latSpiceDouble altSpiceDouble reSpiceDouble f
+SpiceDouble lon
+SpiceDouble lat
+SpiceDouble alt
+SpiceDouble re
+SpiceDouble f
+
 ```
 #### Outputs
 ```
 SpiceDouble* rectan[3]
+
 ```
 ## getcml_c
 ```c
@@ -3037,7 +3694,9 @@ void
 ```
 #### Outputs
 ```
-SpiceInt* argcSpiceCha r
+SpiceInt* argc
+SpiceCha r
+
 ```
 ## getelm_c
 ```c
@@ -3054,10 +3713,15 @@ void
 #### Inputs
 ```
 SpiceInt frstyr
+
 ```
 #### Outputs
 ```
-SpiceInt linelnconst voidSpiceDouble* epochSpiceDouble* elems
+SpiceInt lineln
+const void
+SpiceDouble* epoch
+SpiceDouble* elems
+
 ```
 ## getenv_
 ```c
@@ -3073,7 +3737,9 @@ void
 ```
 #### Outputs
 ```
-valu evle n
+valu e
+vle n
+
 ```
 ## getfat_c
 ```c
@@ -3089,11 +3755,16 @@ void
 ```
 #### Inputs
 ```
-ConstSpiceChar* fileSpiceInt arclenSpiceInt typlen
+ConstSpiceChar* file
+SpiceInt arclen
+SpiceInt typlen
+
 ```
 #### Outputs
 ```
-SpiceChar* archSpiceChar* type
+SpiceChar* arch
+SpiceChar* type
+
 ```
 ## getfov_c
 ```c
@@ -3113,11 +3784,20 @@ void
 ```
 #### Inputs
 ```
-SpiceInt instidSpiceInt roomSpiceInt shapelenSpiceInt framelen
+SpiceInt instid
+SpiceInt room
+SpiceInt shapelen
+SpiceInt framelen
+
 ```
 #### Outputs
 ```
-SpiceChar* shapeSpiceChar* frameSpiceDouble bsightSpiceInt* nSpiceDouble bounds
+SpiceChar* shape
+SpiceChar* frame
+SpiceDouble bsight
+SpiceInt* n
+SpiceDouble bounds
+
 ```
 ## getmsg_c
 ```c
@@ -3135,7 +3815,10 @@ void
 ```
 #### Outputs
 ```
-ConstSpiceChar* optionSpiceInt lenoutSpiceChar* msg
+ConstSpiceChar* option
+SpiceInt lenout
+SpiceChar* msg
+
 ```
 ## gfbail_c
 ```c
@@ -3151,6 +3834,7 @@ oolean
 ```
 #### Outputs
 ```
+_no output arguments._
 
 ```
 ## gfclrh_c
@@ -3167,6 +3851,7 @@ void
 ```
 #### Outputs
 ```
+_no output arguments._
 
 ```
 ## gfdist_c
@@ -3188,11 +3873,21 @@ void
 ```
 #### Inputs
 ```
-ConstSpiceChar* targetConstSpiceChar* abcorrConstSpiceChar* obsrvrConstSpiceChar* relateSpiceDouble adjustSpiceDouble stepSpiceInt nintvlsSpiceCell* cnfine
+ConstSpiceChar* target
+ConstSpiceChar* abcorr
+ConstSpiceChar* obsrvr
+ConstSpiceChar* relate
+SpiceDouble adjust
+SpiceDouble step
+SpiceInt nintvls
+SpiceCell* cnfine
+
 ```
 #### Outputs
 ```
-SpiceDouble refvalSpiceCell* result
+SpiceDouble refval
+SpiceCell* result
+
 ```
 ## gffove_c
 ```c
@@ -3212,11 +3907,20 @@ void
 ```
 #### Inputs
 ```
-ConstSpiceChar* instConstSpiceChar* tshapeConstSpiceDouble raydirConstSpiceChar* targetConstSpiceChar* tframeConstSpiceChar* abcorrConstSpiceChar* obsrvrSpiceDouble tol
+ConstSpiceChar* inst
+ConstSpiceChar* tshape
+ConstSpiceDouble raydir
+ConstSpiceChar* target
+ConstSpiceChar* tframe
+ConstSpiceChar* abcorr
+ConstSpiceChar* obsrvr
+SpiceDouble tol
+
 ```
 #### Outputs
 ```
 voi d
+
 ```
 ## gfinth_c
 ```c
@@ -3229,9 +3933,11 @@ void
 #### Inputs
 ```
 int sigcode
+
 ```
 #### Outputs
 ```
+_no output arguments._
 
 ```
 ## gfocce_c
@@ -3255,11 +3961,22 @@ void
 ```
 #### Inputs
 ```
-ConstSpiceChar* occtypConstSpiceChar* frontConstSpiceChar* fshapeConstSpiceChar* fframeConstSpiceChar* backConstSpiceChar* bshapeConstSpiceChar* bframeConstSpiceChar* abcorrConstSpiceChar* obsrvrSpiceDouble tol
+ConstSpiceChar* occtyp
+ConstSpiceChar* front
+ConstSpiceChar* fshape
+ConstSpiceChar* fframe
+ConstSpiceChar* back
+ConstSpiceChar* bshape
+ConstSpiceChar* bframe
+ConstSpiceChar* abcorr
+ConstSpiceChar* obsrvr
+SpiceDouble tol
+
 ```
 #### Outputs
 ```
 voi d
+
 ```
 ## gfoclt_c
 ```c
@@ -3282,11 +3999,23 @@ void
 ```
 #### Inputs
 ```
-ConstSpiceChar* occtypConstSpiceChar* frontConstSpiceChar* fshapeConstSpiceChar* fframeConstSpiceChar* backConstSpiceChar* bshapeConstSpiceChar* bframeConstSpiceChar* abcorrConstSpiceChar* obsrvrSpiceDouble stepSpiceCell* cnfine
+ConstSpiceChar* occtyp
+ConstSpiceChar* front
+ConstSpiceChar* fshape
+ConstSpiceChar* fframe
+ConstSpiceChar* back
+ConstSpiceChar* bshape
+ConstSpiceChar* bframe
+ConstSpiceChar* abcorr
+ConstSpiceChar* obsrvr
+SpiceDouble step
+SpiceCell* cnfine
+
 ```
 #### Outputs
 ```
 SpiceCell* result
+
 ```
 ## gfposc_c
 ```c
@@ -3310,11 +4039,24 @@ void
 ```
 #### Inputs
 ```
-ConstSpiceChar* targetConstSpiceChar* frameConstSpiceChar* abcorrConstSpiceChar* obsrvrConstSpiceChar* crdsysConstSpiceChar* coordConstSpiceChar* relateSpiceDouble refvalSpiceDouble adjustSpiceDouble stepSpiceInt nintvlsSpiceCell* cnfine
+ConstSpiceChar* target
+ConstSpiceChar* frame
+ConstSpiceChar* abcorr
+ConstSpiceChar* obsrvr
+ConstSpiceChar* crdsys
+ConstSpiceChar* coord
+ConstSpiceChar* relate
+SpiceDouble refval
+SpiceDouble adjust
+SpiceDouble step
+SpiceInt nintvls
+SpiceCell* cnfine
+
 ```
 #### Outputs
 ```
 SpiceCell* result
+
 ```
 ## gfrefn_c
 ```c
@@ -3330,11 +4072,16 @@ void
 ```
 #### Inputs
 ```
-SpiceDouble t1SpiceDouble t2SpiceBoolean s1SpiceBoolean s2
+SpiceDouble t1
+SpiceDouble t2
+SpiceBoolean s1
+SpiceBoolean s2
+
 ```
 #### Outputs
 ```
 SpiceDouble* t
+
 ```
 ## gfrepf_c
 ```c
@@ -3350,6 +4097,7 @@ void
 ```
 #### Outputs
 ```
+_no output arguments._
 
 ```
 ## gfrepi_c
@@ -3364,10 +4112,14 @@ void
 ```
 #### Inputs
 ```
-SpiceCell* windowConstSpiceChar* begmssConstSpiceChar* endmss
+SpiceCell* window
+ConstSpiceChar* begmss
+ConstSpiceChar* endmss
+
 ```
 #### Outputs
 ```
+_no output arguments._
 
 ```
 ## gfrepu_c
@@ -3382,11 +4134,14 @@ void
 ```
 #### Inputs
 ```
-SpiceDouble ivendSpiceDouble time
+SpiceDouble ivend
+SpiceDouble time
+
 ```
 #### Outputs
 ```
 SpiceDouble ivbeg
+
 ```
 ## gfrfov_c
 ```c
@@ -3405,11 +4160,19 @@ void
 ```
 #### Inputs
 ```
-ConstSpiceChar* instConstSpiceDouble raydirConstSpiceChar* rframeConstSpiceChar* abcorrConstSpiceChar* obsrvrSpiceDouble stepSpiceCell* cnfine
+ConstSpiceChar* inst
+ConstSpiceDouble raydir
+ConstSpiceChar* rframe
+ConstSpiceChar* abcorr
+ConstSpiceChar* obsrvr
+SpiceDouble step
+SpiceCell* cnfine
+
 ```
 #### Outputs
 ```
 SpiceCell* result
+
 ```
 ## gfrr_c
 ```c
@@ -3430,11 +4193,21 @@ void
 ```
 #### Inputs
 ```
-ConstSpiceChar* targetConstSpiceChar* abcorrConstSpiceChar* obsrvrConstSpiceChar* relateSpiceDouble refvalSpiceDouble adjustSpiceDouble stepSpiceInt nintvlsSpiceCell* cnfine
+ConstSpiceChar* target
+ConstSpiceChar* abcorr
+ConstSpiceChar* obsrvr
+ConstSpiceChar* relate
+SpiceDouble refval
+SpiceDouble adjust
+SpiceDouble step
+SpiceInt nintvls
+SpiceCell* cnfine
+
 ```
 #### Outputs
 ```
 SpiceCell* result
+
 ```
 ## gfsep_c
 ```c
@@ -3460,11 +4233,26 @@ void
 ```
 #### Inputs
 ```
-ConstSpiceChar* targ1ConstSpiceChar* shape1ConstSpiceChar* frame1ConstSpiceChar* targ2ConstSpiceChar* shape2ConstSpiceChar* frame2ConstSpiceChar* abcorrConstSpiceChar* obsrvrConstSpiceChar* relateSpiceDouble refvalSpiceDouble adjustSpiceDouble stepSpiceInt nintvlsSpiceCell* cnfine
+ConstSpiceChar* targ1
+ConstSpiceChar* shape1
+ConstSpiceChar* frame1
+ConstSpiceChar* targ2
+ConstSpiceChar* shape2
+ConstSpiceChar* frame2
+ConstSpiceChar* abcorr
+ConstSpiceChar* obsrvr
+ConstSpiceChar* relate
+SpiceDouble refval
+SpiceDouble adjust
+SpiceDouble step
+SpiceInt nintvls
+SpiceCell* cnfine
+
 ```
 #### Outputs
 ```
 SpiceCell* result
+
 ```
 ## gfsntc_c
 ```c
@@ -3491,11 +4279,27 @@ void
 ```
 #### Inputs
 ```
-ConstSpiceChar* targetConstSpiceChar* fixrefConstSpiceChar* methodConstSpiceChar* abcorrConstSpiceChar* obsrvrConstSpiceChar* drefConstSpiceDouble dvecConstSpiceChar* crdsysConstSpiceChar* coordConstSpiceChar* relateSpiceDouble refvalSpiceDouble adjustSpiceDouble stepSpiceInt nintvlsSpiceCell* cnfine
+ConstSpiceChar* target
+ConstSpiceChar* fixref
+ConstSpiceChar* method
+ConstSpiceChar* abcorr
+ConstSpiceChar* obsrvr
+ConstSpiceChar* dref
+ConstSpiceDouble dvec
+ConstSpiceChar* crdsys
+ConstSpiceChar* coord
+ConstSpiceChar* relate
+SpiceDouble refval
+SpiceDouble adjust
+SpiceDouble step
+SpiceInt nintvls
+SpiceCell* cnfine
+
 ```
 #### Outputs
 ```
 SpiceCell* result
+
 ```
 ## gfsstp_c
 ```c
@@ -3508,9 +4312,11 @@ void
 #### Inputs
 ```
 SpiceDouble step
+
 ```
 #### Outputs
 ```
+_no output arguments._
 
 ```
 ## gfstep_c
@@ -3525,10 +4331,12 @@ void
 #### Inputs
 ```
 SpiceDouble time
+
 ```
 #### Outputs
 ```
 SpiceDouble* step
+
 ```
 ## gfsubc_c
 ```c
@@ -3553,11 +4361,25 @@ void
 ```
 #### Inputs
 ```
-ConstSpiceChar* targetConstSpiceChar* fixrefConstSpiceChar* methodConstSpiceChar* abcorrConstSpiceChar* obsrvrConstSpiceChar* crdsysConstSpiceChar* coordConstSpiceChar* relateSpiceDouble refvalSpiceDouble adjustSpiceDouble stepSpiceInt nintvlsSpiceCell* cnfine
+ConstSpiceChar* target
+ConstSpiceChar* fixref
+ConstSpiceChar* method
+ConstSpiceChar* abcorr
+ConstSpiceChar* obsrvr
+ConstSpiceChar* crdsys
+ConstSpiceChar* coord
+ConstSpiceChar* relate
+SpiceDouble refval
+SpiceDouble adjust
+SpiceDouble step
+SpiceInt nintvls
+SpiceCell* cnfine
+
 ```
 #### Outputs
 ```
 SpiceCell* result
+
 ```
 ## gftfov_c
 ```c
@@ -3577,11 +4399,20 @@ void
 ```
 #### Inputs
 ```
-ConstSpiceChar* instConstSpiceChar* targetConstSpiceChar* tshapeConstSpiceChar* tframeConstSpiceChar* abcorrConstSpiceChar* obsrvrSpiceDouble stepSpiceCell* cnfine
+ConstSpiceChar* inst
+ConstSpiceChar* target
+ConstSpiceChar* tshape
+ConstSpiceChar* tframe
+ConstSpiceChar* abcorr
+ConstSpiceChar* obsrvr
+SpiceDouble step
+SpiceCell* cnfine
+
 ```
 #### Outputs
 ```
 SpiceCell* result
+
 ```
 ## gfuds_c
 ```c
@@ -3598,6 +4429,7 @@ void
 #### Outputs
 ```
 voi d
+
 ```
 ## gipool_c
 ```c
@@ -3614,11 +4446,17 @@ void
 ```
 #### Inputs
 ```
-ConstSpiceChar* nameSpiceInt startSpiceInt room
+ConstSpiceChar* name
+SpiceInt start
+SpiceInt room
+
 ```
 #### Outputs
 ```
-SpiceInt* nSpiceInt* ivalsSpiceBoolean* found
+SpiceInt* n
+SpiceInt* ivals
+SpiceBoolean* found
+
 ```
 ## gnpool_c
 ```c
@@ -3636,11 +4474,18 @@ void
 ```
 #### Inputs
 ```
-ConstSpiceChar* nameSpiceInt startSpiceInt roomSpiceInt lenout
+ConstSpiceChar* name
+SpiceInt start
+SpiceInt room
+SpiceInt lenout
+
 ```
 #### Outputs
 ```
-SpiceInt* nvoid* kvarsSpiceBoolean* found
+SpiceInt* n
+void* kvars
+SpiceBoolean* found
+
 ```
 ## halfpi_c
 ```c
@@ -3656,6 +4501,7 @@ ouble
 ```
 #### Outputs
 ```
+_no output arguments._
 
 ```
 ## hx2dp_c
@@ -3672,11 +4518,16 @@ void
 ```
 #### Inputs
 ```
-ConstSpiceChar* stringSpiceInt lenout
+ConstSpiceChar* string
+SpiceInt lenout
+
 ```
 #### Outputs
 ```
-SpiceDouble* numberSpiceBoolean* errorSpiceChar* errmsg
+SpiceDouble* number
+SpiceBoolean* error
+SpiceChar* errmsg
+
 ```
 ## ident_c
 ```c
@@ -3693,6 +4544,7 @@ void
 #### Outputs
 ```
 SpiceDouble* matrix[3]
+
 ```
 ## illum_c
 ```c
@@ -3711,11 +4563,19 @@ void
 ```
 #### Inputs
 ```
-ConstSpiceChar* targetSpiceDouble etConstSpiceChar* abcorrConstSpiceChar* obsrvrConstSpiceDouble spoint
+ConstSpiceChar* target
+SpiceDouble et
+ConstSpiceChar* abcorr
+ConstSpiceChar* obsrvr
+ConstSpiceDouble spoint
+
 ```
 #### Outputs
 ```
-SpiceDouble* phaseSpiceDouble* solarSpiceDouble* emissn
+SpiceDouble* phase
+SpiceDouble* solar
+SpiceDouble* emissn
+
 ```
 ## ilumin_c
 ```c
@@ -3738,11 +4598,23 @@ void
 ```
 #### Inputs
 ```
-ConstSpiceChar* methodConstSpiceChar* targetSpiceDouble etConstSpiceChar* fixrefConstSpiceChar* abcorrConstSpiceChar* obsrvrConstSpiceDouble spoint
+ConstSpiceChar* method
+ConstSpiceChar* target
+SpiceDouble et
+ConstSpiceChar* fixref
+ConstSpiceChar* abcorr
+ConstSpiceChar* obsrvr
+ConstSpiceDouble spoint
+
 ```
 #### Outputs
 ```
-SpiceDouble* trgepcSpiceDouble srfvecSpiceDouble* phaseSpiceDouble* solarSpiceDouble* emissn
+SpiceDouble* trgepc
+SpiceDouble srfvec
+SpiceDouble* phase
+SpiceDouble* solar
+SpiceDouble* emissn
+
 ```
 ## inedpl_c
 ```c
@@ -3759,11 +4631,17 @@ void
 ```
 #### Inputs
 ```
-SpiceDouble cConstSpicePlane* plane
+SpiceDouble c
+ConstSpicePlane* plane
+
 ```
 #### Outputs
 ```
-SpiceDouble aSpiceDouble bSpiceEllipse* ellipseSpiceBoolean* found
+SpiceDouble a
+SpiceDouble b
+SpiceEllipse* ellipse
+SpiceBoolean* found
+
 ```
 ## inelpl_c
 ```c
@@ -3779,11 +4657,16 @@ void
 ```
 #### Inputs
 ```
-ConstSpiceEllipse* ellipsConstSpicePlane* plane
+ConstSpiceEllipse* ellips
+ConstSpicePlane* plane
+
 ```
 #### Outputs
 ```
-SpiceInt* nxptsSpiceDouble* xpt1[3]SpiceDouble* xpt2[3]
+SpiceInt* nxpts
+SpiceDouble* xpt1[3]
+SpiceDouble* xpt2[3]
+
 ```
 ## inrypl_c
 ```c
@@ -3799,11 +4682,16 @@ void
 ```
 #### Inputs
 ```
-ConstSpiceDouble dirConstSpicePlane* plane
+ConstSpiceDouble dir
+ConstSpicePlane* plane
+
 ```
 #### Outputs
 ```
-ConstSpiceDouble vertexSpiceInt* nxptsSpiceDouble xpt
+ConstSpiceDouble vertex
+SpiceInt* nxpts
+SpiceDouble xpt
+
 ```
 ## insrtc_c
 ```c
@@ -3816,10 +4704,13 @@ void
 ```
 #### Inputs
 ```
-ConstSpiceChar* itemSpiceCell* set
+ConstSpiceChar* item
+SpiceCell* set
+
 ```
 #### Outputs
 ```
+_no output arguments._
 
 ```
 ## insrtd_c
@@ -3833,10 +4724,13 @@ void
 ```
 #### Inputs
 ```
-SpiceDouble itemSpiceCell* set
+SpiceDouble item
+SpiceCell* set
+
 ```
 #### Outputs
 ```
+_no output arguments._
 
 ```
 ## insrti_c
@@ -3850,10 +4744,13 @@ void
 ```
 #### Inputs
 ```
-SpiceInt itemSpiceCell* set
+SpiceInt item
+SpiceCell* set
+
 ```
 #### Outputs
 ```
+_no output arguments._
 
 ```
 ## inter_c
@@ -3868,11 +4765,14 @@ void
 ```
 #### Inputs
 ```
-SpiceCell* aSpiceCell* b
+SpiceCell* a
+SpiceCell* b
+
 ```
 #### Outputs
 ```
 SpiceCell* c
+
 ```
 ## intmax_
 ```c
@@ -3888,6 +4788,7 @@ nt
 ```
 #### Outputs
 ```
+_no output arguments._
 
 ```
 ## intmax_c
@@ -3904,6 +4805,7 @@ nt
 ```
 #### Outputs
 ```
+_no output arguments._
 
 ```
 ## intmin_
@@ -3920,6 +4822,7 @@ nt
 ```
 #### Outputs
 ```
+_no output arguments._
 
 ```
 ## intmin_c
@@ -3936,6 +4839,7 @@ nt
 ```
 #### Outputs
 ```
+_no output arguments._
 
 ```
 ## invert_c
@@ -3950,10 +4854,12 @@ void
 #### Inputs
 ```
 ConstSpiceDouble m1
+
 ```
 #### Outputs
 ```
 SpiceDouble* mout[3]
+
 ```
 ## invort_c
 ```c
@@ -3967,10 +4873,12 @@ void
 #### Inputs
 ```
 ConstSpiceDouble m
+
 ```
 #### Outputs
 ```
 SpiceDouble* mit[3]
+
 ```
 ## isordv_c
 ```c
@@ -3983,10 +4891,13 @@ oolean
 ```
 #### Inputs
 ```
-ConstSpiceInt* arraySpiceInt n
+ConstSpiceInt* array
+SpiceInt n
+
 ```
 #### Outputs
 ```
+_no output arguments._
 
 ```
 ## isrchc_c
@@ -4002,11 +4913,15 @@ nt
 ```
 #### Inputs
 ```
-ConstSpiceChar* valueSpiceInt ndimSpiceInt lenvals
+ConstSpiceChar* value
+SpiceInt ndim
+SpiceInt lenvals
+
 ```
 #### Outputs
 ```
 const void
+
 ```
 ## isrchd_c
 ```c
@@ -4020,10 +4935,14 @@ nt
 ```
 #### Inputs
 ```
-SpiceDouble valueSpiceInt ndimConstSpiceDouble* array
+SpiceDouble value
+SpiceInt ndim
+ConstSpiceDouble* array
+
 ```
 #### Outputs
 ```
+_no output arguments._
 
 ```
 ## isrchi_c
@@ -4038,10 +4957,14 @@ nt
 ```
 #### Inputs
 ```
-SpiceInt valueSpiceInt ndimConstSpiceInt* array
+SpiceInt value
+SpiceInt ndim
+ConstSpiceInt* array
+
 ```
 #### Outputs
 ```
+_no output arguments._
 
 ```
 ## isrot_c
@@ -4056,10 +4979,14 @@ oolean
 ```
 #### Inputs
 ```
-ConstSpiceDouble mSpiceDouble ntolSpiceDouble dtol
+ConstSpiceDouble m
+SpiceDouble ntol
+SpiceDouble dtol
+
 ```
 #### Outputs
 ```
+_no output arguments._
 
 ```
 ## iswhsp_c
@@ -4073,9 +5000,11 @@ oolean
 #### Inputs
 ```
 ConstSpiceChar* string
+
 ```
 #### Outputs
 ```
+_no output arguments._
 
 ```
 ## j1900_c
@@ -4092,6 +5021,7 @@ ouble
 ```
 #### Outputs
 ```
+_no output arguments._
 
 ```
 ## j1950_c
@@ -4108,6 +5038,7 @@ ouble
 ```
 #### Outputs
 ```
+_no output arguments._
 
 ```
 ## jyear_c
@@ -4124,6 +5055,7 @@ ouble
 ```
 #### Outputs
 ```
+_no output arguments._
 
 ```
 ## kclear_c
@@ -4140,6 +5072,7 @@ void
 ```
 #### Outputs
 ```
+_no output arguments._
 
 ```
 ## kdata_c
@@ -4161,11 +5094,21 @@ void
 ```
 #### Inputs
 ```
-SpiceInt whichConstSpiceChar* kindSpiceInt fillenSpiceInt typlenSpiceInt srclen
+SpiceInt which
+ConstSpiceChar* kind
+SpiceInt fillen
+SpiceInt typlen
+SpiceInt srclen
+
 ```
 #### Outputs
 ```
-SpiceChar* fileSpiceChar* filtypSpiceChar* sourceSpiceInt* handleSpiceBoolean* found
+SpiceChar* file
+SpiceChar* filtyp
+SpiceChar* source
+SpiceInt* handle
+SpiceBoolean* found
+
 ```
 ## kinfo_c
 ```c
@@ -4183,11 +5126,18 @@ void
 ```
 #### Inputs
 ```
-ConstSpiceChar* fileSpiceInt typlenSpiceInt srclen
+ConstSpiceChar* file
+SpiceInt typlen
+SpiceInt srclen
+
 ```
 #### Outputs
 ```
-SpiceChar* filtypSpiceChar* sourceSpiceInt* handleSpiceBoolean* found
+SpiceChar* filtyp
+SpiceChar* source
+SpiceInt* handle
+SpiceBoolean* found
+
 ```
 ## ktotal_c
 ```c
@@ -4201,10 +5151,12 @@ void
 #### Inputs
 ```
 ConstSpiceChar* kind
+
 ```
 #### Outputs
 ```
 SpiceInt* count
+
 ```
 ## kxtrct_c
 ```c
@@ -4224,11 +5176,20 @@ void
 ```
 #### Inputs
 ```
-ConstSpiceChar* keywdSpiceInt termlenSpiceInt ntermsSpiceInt stringlenSpiceInt substrlenSpiceChar* string
+ConstSpiceChar* keywd
+SpiceInt termlen
+SpiceInt nterms
+SpiceInt stringlen
+SpiceInt substrlen
+SpiceChar* string
+
 ```
 #### Outputs
 ```
-const voidSpiceBoolean* foundSpiceChar* substr
+const void
+SpiceBoolean* found
+SpiceChar* substr
+
 ```
 ## lastnb_c
 ```c
@@ -4241,9 +5202,11 @@ nt
 #### Inputs
 ```
 ConstSpiceChar* string
+
 ```
 #### Outputs
 ```
+_no output arguments._
 
 ```
 ## latcyl_c
@@ -4261,11 +5224,17 @@ void
 ```
 #### Inputs
 ```
-SpiceDouble radiusSpiceDouble lonSpiceDouble lat
+SpiceDouble radius
+SpiceDouble lon
+SpiceDouble lat
+
 ```
 #### Outputs
 ```
-SpiceDouble* rSpiceDouble* loncSpiceDouble* z
+SpiceDouble* r
+SpiceDouble* lonc
+SpiceDouble* z
+
 ```
 ## latsph_c
 ```c
@@ -4282,11 +5251,17 @@ void
 ```
 #### Inputs
 ```
-SpiceDouble radiusSpiceDouble lonSpiceDouble lat
+SpiceDouble radius
+SpiceDouble lon
+SpiceDouble lat
+
 ```
 #### Outputs
 ```
-SpiceDouble* rhoSpiceDouble* colatSpiceDouble* lons
+SpiceDouble* rho
+SpiceDouble* colat
+SpiceDouble* lons
+
 ```
 ## ldpool_c
 ```c
@@ -4299,9 +5274,11 @@ void
 #### Inputs
 ```
 ConstSpiceChar* filename
+
 ```
 #### Outputs
 ```
+_no output arguments._
 
 ```
 ## lmpool_c
@@ -4316,11 +5293,14 @@ void
 ```
 #### Inputs
 ```
-SpiceInt lenvalsSpiceInt n
+SpiceInt lenvals
+SpiceInt n
+
 ```
 #### Outputs
 ```
 const void
+
 ```
 ## lparse_c
 ```c
@@ -4337,11 +5317,17 @@ void
 ```
 #### Inputs
 ```
-ConstSpiceChar* listConstSpiceChar* delimSpiceInt nmaxSpiceInt lenout
+ConstSpiceChar* list
+ConstSpiceChar* delim
+SpiceInt nmax
+SpiceInt lenout
+
 ```
 #### Outputs
 ```
-SpiceInt* nvoid* items
+SpiceInt* n
+void* items
+
 ```
 ## lparsm_c
 ```c
@@ -4358,11 +5344,17 @@ void
 ```
 #### Inputs
 ```
-ConstSpiceChar* listConstSpiceChar* delimsSpiceInt nmaxSpiceInt lenout
+ConstSpiceChar* list
+ConstSpiceChar* delims
+SpiceInt nmax
+SpiceInt lenout
+
 ```
 #### Outputs
 ```
-SpiceInt* nvoid* items
+SpiceInt* n
+void* items
+
 ```
 ## lparss_c
 ```c
@@ -4376,11 +5368,14 @@ void
 ```
 #### Inputs
 ```
-ConstSpiceChar* listConstSpiceChar* delims
+ConstSpiceChar* list
+ConstSpiceChar* delims
+
 ```
 #### Outputs
 ```
 SpiceCell* set
+
 ```
 ## lspcn_c
 ```c
@@ -4394,10 +5389,14 @@ ouble
 ```
 #### Inputs
 ```
-ConstSpiceChar* bodySpiceDouble etConstSpiceChar* abcorr
+ConstSpiceChar* body
+SpiceDouble et
+ConstSpiceChar* abcorr
+
 ```
 #### Outputs
 ```
+_no output arguments._
 
 ```
 ## lstlec_c
@@ -4413,11 +5412,15 @@ nt
 ```
 #### Inputs
 ```
-ConstSpiceChar* stringSpiceInt nSpiceInt lenvals
+ConstSpiceChar* string
+SpiceInt n
+SpiceInt lenvals
+
 ```
 #### Outputs
 ```
 const void
+
 ```
 ## lstled_c
 ```c
@@ -4431,10 +5434,14 @@ nt
 ```
 #### Inputs
 ```
-SpiceDouble xSpiceInt nConstSpiceDouble* array
+SpiceDouble x
+SpiceInt n
+ConstSpiceDouble* array
+
 ```
 #### Outputs
 ```
+_no output arguments._
 
 ```
 ## lstlei_c
@@ -4449,10 +5456,14 @@ nt
 ```
 #### Inputs
 ```
-SpiceInt xSpiceInt nConstSpiceInt* array
+SpiceInt x
+SpiceInt n
+ConstSpiceInt* array
+
 ```
 #### Outputs
 ```
+_no output arguments._
 
 ```
 ## lstltc_c
@@ -4468,11 +5479,15 @@ nt
 ```
 #### Inputs
 ```
-ConstSpiceChar* stringSpiceInt nSpiceInt lenvals
+ConstSpiceChar* string
+SpiceInt n
+SpiceInt lenvals
+
 ```
 #### Outputs
 ```
 const void
+
 ```
 ## lstltd_c
 ```c
@@ -4486,10 +5501,14 @@ nt
 ```
 #### Inputs
 ```
-SpiceDouble xSpiceInt nConstSpiceDouble* array
+SpiceDouble x
+SpiceInt n
+ConstSpiceDouble* array
+
 ```
 #### Outputs
 ```
+_no output arguments._
 
 ```
 ## lstlti_c
@@ -4504,10 +5523,14 @@ nt
 ```
 #### Inputs
 ```
-SpiceInt xSpiceInt nConstSpiceInt* array
+SpiceInt x
+SpiceInt n
+ConstSpiceInt* array
+
 ```
 #### Outputs
 ```
+_no output arguments._
 
 ```
 ## ltime_c
@@ -4525,11 +5548,17 @@ void
 ```
 #### Inputs
 ```
-SpiceDouble etobsSpiceInt obsConstSpiceChar* dirSpiceInt targ
+SpiceDouble etobs
+SpiceInt obs
+ConstSpiceChar* dir
+SpiceInt targ
+
 ```
 #### Outputs
 ```
-SpiceDouble* ettargSpiceDouble* elapsd
+SpiceDouble* ettarg
+SpiceDouble* elapsd
+
 ```
 ## lx4dec_c
 ```c
@@ -4544,11 +5573,15 @@ void
 ```
 #### Inputs
 ```
-ConstSpiceChar* stringSpiceInt first
+ConstSpiceChar* string
+SpiceInt first
+
 ```
 #### Outputs
 ```
-SpiceInt* lastSpiceInt* nchar
+SpiceInt* last
+SpiceInt* nchar
+
 ```
 ## lx4num_c
 ```c
@@ -4563,11 +5596,15 @@ void
 ```
 #### Inputs
 ```
-ConstSpiceChar* stringSpiceInt first
+ConstSpiceChar* string
+SpiceInt first
+
 ```
 #### Outputs
 ```
-SpiceInt* lastSpiceInt* nchar
+SpiceInt* last
+SpiceInt* nchar
+
 ```
 ## lx4sgn_c
 ```c
@@ -4582,11 +5619,15 @@ void
 ```
 #### Inputs
 ```
-ConstSpiceChar* stringSpiceInt first
+ConstSpiceChar* string
+SpiceInt first
+
 ```
 #### Outputs
 ```
-SpiceInt* lastSpiceInt* nchar
+SpiceInt* last
+SpiceInt* nchar
+
 ```
 ## lx4uns_c
 ```c
@@ -4601,11 +5642,15 @@ void
 ```
 #### Inputs
 ```
-ConstSpiceChar* stringSpiceInt first
+ConstSpiceChar* string
+SpiceInt first
+
 ```
 #### Outputs
 ```
-SpiceInt* lastSpiceInt* nchar
+SpiceInt* last
+SpiceInt* nchar
+
 ```
 ## lxqstr_c
 ```c
@@ -4621,11 +5666,16 @@ void
 ```
 #### Inputs
 ```
-ConstSpiceChar* stringSpiceChar qcharSpiceInt first
+ConstSpiceChar* string
+SpiceChar qchar
+SpiceInt first
+
 ```
 #### Outputs
 ```
-SpiceInt* lastSpiceInt* nchar
+SpiceInt* last
+SpiceInt* nchar
+
 ```
 ## m2eul_c
 ```c
@@ -4643,11 +5693,18 @@ void
 ```
 #### Inputs
 ```
-ConstSpiceDouble* r[3]SpiceInt axis3SpiceInt axis2SpiceInt axis1
+ConstSpiceDouble* r[3]
+SpiceInt axis3
+SpiceInt axis2
+SpiceInt axis1
+
 ```
 #### Outputs
 ```
-SpiceDouble* angle3SpiceDouble* angle2SpiceDouble* angle1
+SpiceDouble* angle3
+SpiceDouble* angle2
+SpiceDouble* angle1
+
 ```
 ## m2q_c
 ```c
@@ -4661,10 +5718,12 @@ void
 #### Inputs
 ```
 ConstSpiceDouble* r[3]
+
 ```
 #### Outputs
 ```
 SpiceDouble* q[4]
+
 ```
 ## matchi_c
 ```c
@@ -4679,10 +5738,15 @@ oolean
 ```
 #### Inputs
 ```
-ConstSpiceChar* stringConstSpiceChar* templSpiceChar wstrSpiceChar wchr
+ConstSpiceChar* string
+ConstSpiceChar* templ
+SpiceChar wstr
+SpiceChar wchr
+
 ```
 #### Outputs
 ```
+_no output arguments._
 
 ```
 ## matchw_c
@@ -4698,10 +5762,15 @@ oolean
 ```
 #### Inputs
 ```
-ConstSpiceChar* stringConstSpiceChar* templSpiceChar wstrSpiceChar wchr
+ConstSpiceChar* string
+ConstSpiceChar* templ
+SpiceChar wstr
+SpiceChar wchr
+
 ```
 #### Outputs
 ```
+_no output arguments._
 
 ```
 ## mequg_c
@@ -4717,11 +5786,15 @@ void
 ```
 #### Inputs
 ```
-SpiceInt nrSpiceInt nc
+SpiceInt nr
+SpiceInt nc
+
 ```
 #### Outputs
 ```
-const voidvoid* mout
+const void
+void* mout
+
 ```
 ## mequ_c
 ```c
@@ -4735,10 +5808,12 @@ void
 #### Inputs
 ```
 ConstSpiceDouble m1
+
 ```
 #### Outputs
 ```
 SpiceDouble* mout[3]
+
 ```
 ## moved_
 ```c
@@ -4752,11 +5827,14 @@ int
 ```
 #### Inputs
 ```
-doublereal* arrfrminteger* ndim
+doublereal* arrfrm
+integer* ndim
+
 ```
 #### Outputs
 ```
 doublereal* arrto
+
 ```
 ## mtxm_c
 ```c
@@ -4770,11 +5848,14 @@ void
 ```
 #### Inputs
 ```
-ConstSpiceDouble m1ConstSpiceDouble m2
+ConstSpiceDouble m1
+ConstSpiceDouble m2
+
 ```
 #### Outputs
 ```
 SpiceDouble* mout[3]
+
 ```
 ## mxmt_c
 ```c
@@ -4788,11 +5869,14 @@ void
 ```
 #### Inputs
 ```
-ConstSpiceDouble m1ConstSpiceDouble m2
+ConstSpiceDouble m1
+ConstSpiceDouble m2
+
 ```
 #### Outputs
 ```
 SpiceDouble* mout[3]
+
 ```
 ## mxm_c
 ```c
@@ -4806,11 +5890,14 @@ void
 ```
 #### Inputs
 ```
-ConstSpiceDouble m1ConstSpiceDouble m2
+ConstSpiceDouble m1
+ConstSpiceDouble m2
+
 ```
 #### Outputs
 ```
 SpiceDouble* mout[3]
+
 ```
 ## mxvg_c
 ```c
@@ -4826,11 +5913,15 @@ void
 ```
 #### Inputs
 ```
-SpiceInt nrow1SpiceInt nc1r2
+SpiceInt nrow1
+SpiceInt nc1r2
+
 ```
 #### Outputs
 ```
-const voidvoid* vout
+const void
+void* vout
+
 ```
 ## mxv_c
 ```c
@@ -4844,11 +5935,14 @@ void
 ```
 #### Inputs
 ```
-ConstSpiceDouble m1ConstSpiceDouble vin
+ConstSpiceDouble m1
+ConstSpiceDouble vin
+
 ```
 #### Outputs
 ```
 SpiceDouble* vout[3]
+
 ```
 ## namfrm_c
 ```c
@@ -4862,10 +5956,12 @@ void
 #### Inputs
 ```
 ConstSpiceChar* frname
+
 ```
 #### Outputs
 ```
 SpiceInt* frcode
+
 ```
 ## ncposr_c
 ```c
@@ -4879,10 +5975,14 @@ nt
 ```
 #### Inputs
 ```
-ConstSpiceChar* strConstSpiceChar* charsSpiceInt start
+ConstSpiceChar* str
+ConstSpiceChar* chars
+SpiceInt start
+
 ```
 #### Outputs
 ```
+_no output arguments._
 
 ```
 ## ncpos_c
@@ -4897,10 +5997,14 @@ nt
 ```
 #### Inputs
 ```
-ConstSpiceChar* strConstSpiceChar* charsSpiceInt start
+ConstSpiceChar* str
+ConstSpiceChar* chars
+SpiceInt start
+
 ```
 #### Outputs
 ```
+_no output arguments._
 
 ```
 ## nearpt_c
@@ -4918,11 +6022,17 @@ void
 ```
 #### Inputs
 ```
-ConstSpiceDouble* positn[3]SpiceDouble aSpiceDouble bSpiceDouble c
+ConstSpiceDouble* positn[3]
+SpiceDouble a
+SpiceDouble b
+SpiceDouble c
+
 ```
 #### Outputs
 ```
-SpiceDouble* npoint[3]SpiceDouble* alt
+SpiceDouble* npoint[3]
+SpiceDouble* alt
+
 ```
 ## npedln_c
 ```c
@@ -4940,11 +6050,18 @@ void
 ```
 #### Inputs
 ```
-SpiceDouble cConstSpiceDouble* linept[3]ConstSpiceDouble* linedr[3]
+SpiceDouble c
+ConstSpiceDouble* linept[3]
+ConstSpiceDouble* linedr[3]
+
 ```
 #### Outputs
 ```
-SpiceDouble aSpiceDouble bSpiceDouble* pnear[3]SpiceDouble* dist
+SpiceDouble a
+SpiceDouble b
+SpiceDouble* pnear[3]
+SpiceDouble* dist
+
 ```
 ## npelpt_c
 ```c
@@ -4959,11 +6076,15 @@ void
 ```
 #### Inputs
 ```
-ConstSpiceDouble pointConstSpiceEllipse* ellips
+ConstSpiceDouble point
+ConstSpiceEllipse* ellips
+
 ```
 #### Outputs
 ```
-SpiceDouble pnearSpiceDouble* dist
+SpiceDouble pnear
+SpiceDouble* dist
+
 ```
 ## nplnpt_c
 ```c
@@ -4979,11 +6100,16 @@ void
 ```
 #### Inputs
 ```
-ConstSpiceDouble linptConstSpiceDouble lindirConstSpiceDouble point
+ConstSpiceDouble linpt
+ConstSpiceDouble lindir
+ConstSpiceDouble point
+
 ```
 #### Outputs
 ```
-SpiceDouble pnearSpiceDouble* dist
+SpiceDouble pnear
+SpiceDouble* dist
+
 ```
 ## nvc2pl_c
 ```c
@@ -4998,10 +6124,13 @@ void
 #### Inputs
 ```
 SpiceDouble constant
+
 ```
 #### Outputs
 ```
-ConstSpiceDouble* normal[3]SpicePlane* plane
+ConstSpiceDouble* normal[3]
+SpicePlane* plane
+
 ```
 ## nvp2pl_c
 ```c
@@ -5016,10 +6145,13 @@ void
 #### Inputs
 ```
 ConstSpiceDouble point
+
 ```
 #### Outputs
 ```
-ConstSpiceDouble* normal[3]SpicePlane* plane
+ConstSpiceDouble* normal[3]
+SpicePlane* plane
+
 ```
 ## ordc_c
 ```c
@@ -5032,10 +6164,13 @@ nt
 ```
 #### Inputs
 ```
-ConstSpiceChar* itemSpiceCell* set
+ConstSpiceChar* item
+SpiceCell* set
+
 ```
 #### Outputs
 ```
+_no output arguments._
 
 ```
 ## ordd_c
@@ -5049,10 +6184,13 @@ nt
 ```
 #### Inputs
 ```
-SpiceDouble itemSpiceCell* set
+SpiceDouble item
+SpiceCell* set
+
 ```
 #### Outputs
 ```
+_no output arguments._
 
 ```
 ## orderc_c
@@ -5068,11 +6206,15 @@ void
 ```
 #### Inputs
 ```
-SpiceInt lenvalsSpiceInt ndim
+SpiceInt lenvals
+SpiceInt ndim
+
 ```
 #### Outputs
 ```
-const voidSpiceInt* iorder
+const void
+SpiceInt* iorder
+
 ```
 ## orderd_c
 ```c
@@ -5086,11 +6228,14 @@ void
 ```
 #### Inputs
 ```
-ConstSpiceDouble* arraySpiceInt ndim
+ConstSpiceDouble* array
+SpiceInt ndim
+
 ```
 #### Outputs
 ```
 SpiceInt* iorder
+
 ```
 ## orderi_c
 ```c
@@ -5104,11 +6249,14 @@ void
 ```
 #### Inputs
 ```
-ConstSpiceInt* arraySpiceInt ndim
+ConstSpiceInt* array
+SpiceInt ndim
+
 ```
 #### Outputs
 ```
 SpiceInt* iorder
+
 ```
 ## ordi_c
 ```c
@@ -5121,10 +6269,13 @@ nt
 ```
 #### Inputs
 ```
-SpiceInt itemSpiceCell* set
+SpiceInt item
+SpiceCell* set
+
 ```
 #### Outputs
 ```
+_no output arguments._
 
 ```
 ## oscelt_c
@@ -5140,11 +6291,15 @@ void
 ```
 #### Inputs
 ```
-ConstSpiceDouble* state[6]SpiceDouble etSpiceDouble mu
+ConstSpiceDouble* state[6]
+SpiceDouble et
+SpiceDouble mu
+
 ```
 #### Outputs
 ```
 SpiceDouble* elts[8]
+
 ```
 ## pckcov_c
 ```c
@@ -5158,10 +6313,14 @@ void
 ```
 #### Inputs
 ```
-ConstSpiceChar* pckSpiceInt idcodeSpiceCell* cover
+ConstSpiceChar* pck
+SpiceInt idcode
+SpiceCell* cover
+
 ```
 #### Outputs
 ```
+_no output arguments._
 
 ```
 ## pckfrm_c
@@ -5175,10 +6334,13 @@ void
 ```
 #### Inputs
 ```
-ConstSpiceChar* pckSpiceCell* ids
+ConstSpiceChar* pck
+SpiceCell* ids
+
 ```
 #### Outputs
 ```
+_no output arguments._
 
 ```
 ## pcklof_c
@@ -5193,10 +6355,12 @@ void
 #### Inputs
 ```
 ConstSpiceChar* filename
+
 ```
 #### Outputs
 ```
 SpiceInt* handle
+
 ```
 ## pckuof_c
 ```c
@@ -5209,9 +6373,11 @@ void
 #### Inputs
 ```
 SpiceInt handle
+
 ```
 #### Outputs
 ```
+_no output arguments._
 
 ```
 ## pcpool_c
@@ -5227,11 +6393,15 @@ void
 ```
 #### Inputs
 ```
-ConstSpiceChar* nameSpiceInt nSpiceInt lenvals
+ConstSpiceChar* name
+SpiceInt n
+SpiceInt lenvals
+
 ```
 #### Outputs
 ```
 const void
+
 ```
 ## pdpool_c
 ```c
@@ -5245,10 +6415,14 @@ void
 ```
 #### Inputs
 ```
-ConstSpiceChar* nameSpiceInt nConstSpiceDouble* dvals
+ConstSpiceChar* name
+SpiceInt n
+ConstSpiceDouble* dvals
+
 ```
 #### Outputs
 ```
+_no output arguments._
 
 ```
 ## pgrrec_c
@@ -5267,11 +6441,18 @@ void
 ```
 #### Inputs
 ```
-ConstSpiceChar* bodySpiceDouble lonSpiceDouble latSpiceDouble altSpiceDouble reSpiceDouble f
+ConstSpiceChar* body
+SpiceDouble lon
+SpiceDouble lat
+SpiceDouble alt
+SpiceDouble re
+SpiceDouble f
+
 ```
 #### Outputs
 ```
 SpiceDouble* rectan[3]
+
 ```
 ## pipool_c
 ```c
@@ -5285,10 +6466,14 @@ void
 ```
 #### Inputs
 ```
-ConstSpiceChar* nameSpiceInt nConstSpiceInt* ivals
+ConstSpiceChar* name
+SpiceInt n
+ConstSpiceInt* ivals
+
 ```
 #### Outputs
 ```
+_no output arguments._
 
 ```
 ## pi_c
@@ -5305,6 +6490,7 @@ ouble
 ```
 #### Outputs
 ```
+_no output arguments._
 
 ```
 ## pjelpl_c
@@ -5320,10 +6506,13 @@ void
 #### Inputs
 ```
 ConstSpicePlane* plane
+
 ```
 #### Outputs
 ```
-ConstSpiceEllipse* elinSpiceEllipse* elout
+ConstSpiceEllipse* elin
+SpiceEllipse* elout
+
 ```
 ## pl2nvc_c
 ```c
@@ -5338,10 +6527,13 @@ void
 #### Inputs
 ```
 ConstSpicePlane* plane
+
 ```
 #### Outputs
 ```
-SpiceDouble* normal[3]SpiceDouble* constant
+SpiceDouble* normal[3]
+SpiceDouble* constant
+
 ```
 ## pl2nvp_c
 ```c
@@ -5356,10 +6548,13 @@ void
 #### Inputs
 ```
 ConstSpicePlane* plane
+
 ```
 #### Outputs
 ```
-SpiceDouble* normal[3]SpiceDouble point
+SpiceDouble* normal[3]
+SpiceDouble point
+
 ```
 ## pl2psv_c
 ```c
@@ -5375,10 +6570,14 @@ void
 #### Inputs
 ```
 ConstSpicePlane* plane
+
 ```
 #### Outputs
 ```
-SpiceDouble* point[3]SpiceDouble* span1[3]SpiceDouble* span2[3]
+SpiceDouble* point[3]
+SpiceDouble* span1[3]
+SpiceDouble* span2[3]
+
 ```
 ## posr_c
 ```c
@@ -5392,10 +6591,14 @@ nt
 ```
 #### Inputs
 ```
-ConstSpiceChar* strConstSpiceChar* substrSpiceInt start
+ConstSpiceChar* str
+ConstSpiceChar* substr
+SpiceInt start
+
 ```
 #### Outputs
 ```
+_no output arguments._
 
 ```
 ## pos_c
@@ -5410,10 +6613,14 @@ nt
 ```
 #### Inputs
 ```
-ConstSpiceChar* strConstSpiceChar* substrSpiceInt start
+ConstSpiceChar* str
+ConstSpiceChar* substr
+SpiceInt start
+
 ```
 #### Outputs
 ```
+_no output arguments._
 
 ```
 ## prompt_c
@@ -5428,11 +6635,14 @@ har
 ```
 #### Inputs
 ```
-ConstSpiceChar* prmptStrSpiceInt lenout
+ConstSpiceChar* prmptStr
+SpiceInt lenout
+
 ```
 #### Outputs
 ```
 SpiceChar* buffer
+
 ```
 ## prop2b_c
 ```c
@@ -5447,11 +6657,15 @@ void
 ```
 #### Inputs
 ```
-SpiceDouble gmConstSpiceDouble* pvinit[6]SpiceDouble dt
+SpiceDouble gm
+ConstSpiceDouble* pvinit[6]
+SpiceDouble dt
+
 ```
 #### Outputs
 ```
 SpiceDouble* pvprop[6]
+
 ```
 ## prsdp_c
 ```c
@@ -5465,10 +6679,12 @@ void
 #### Inputs
 ```
 ConstSpiceChar* string
+
 ```
 #### Outputs
 ```
 SpiceDouble* dpval
+
 ```
 ## prsint_c
 ```c
@@ -5482,10 +6698,12 @@ void
 #### Inputs
 ```
 ConstSpiceChar* string
+
 ```
 #### Outputs
 ```
 SpiceInt* intval
+
 ```
 ## psv2pl_c
 ```c
@@ -5500,11 +6718,15 @@ void
 ```
 #### Inputs
 ```
-ConstSpiceDouble* point[3]ConstSpiceDouble* span2[3]
+ConstSpiceDouble* point[3]
+ConstSpiceDouble* span2[3]
+
 ```
 #### Outputs
 ```
-ConstSpiceDouble* span1[3]SpicePlane* plane
+ConstSpiceDouble* span1[3]
+SpicePlane* plane
+
 ```
 ## putcml_c
 ```c
@@ -5518,10 +6740,12 @@ void
 #### Inputs
 ```
 SpiceInt argc
+
 ```
 #### Outputs
 ```
 SpiceCha r
+
 ```
 ## pxform_c
 ```c
@@ -5536,11 +6760,15 @@ void
 ```
 #### Inputs
 ```
-ConstSpiceChar* fromConstSpiceChar* toSpiceDouble et
+ConstSpiceChar* from
+ConstSpiceChar* to
+SpiceDouble et
+
 ```
 #### Outputs
 ```
 SpiceDouble* rotate[3]
+
 ```
 ## qdq2av_c
 ```c
@@ -5554,11 +6782,14 @@ void
 ```
 #### Inputs
 ```
-ConstSpiceDouble qConstSpiceDouble dq
+ConstSpiceDouble q
+ConstSpiceDouble dq
+
 ```
 #### Outputs
 ```
 SpiceDouble av
+
 ```
 ## qxq_c
 ```c
@@ -5572,11 +6803,14 @@ void
 ```
 #### Inputs
 ```
-ConstSpiceDouble q1ConstSpiceDouble q2
+ConstSpiceDouble q1
+ConstSpiceDouble q2
+
 ```
 #### Outputs
 ```
 SpiceDouble qout
+
 ```
 ## radrec_c
 ```c
@@ -5591,11 +6825,15 @@ void
 ```
 #### Inputs
 ```
-SpiceDouble rangeSpiceDouble raSpiceDouble dec
+SpiceDouble range
+SpiceDouble ra
+SpiceDouble dec
+
 ```
 #### Outputs
 ```
 SpiceDouble* rectan[3]
+
 ```
 ## rav2xf_c
 ```c
@@ -5609,11 +6847,14 @@ void
 ```
 #### Inputs
 ```
-ConstSpiceDouble rotConstSpiceDouble av
+ConstSpiceDouble rot
+ConstSpiceDouble av
+
 ```
 #### Outputs
 ```
 SpiceDouble xform
+
 ```
 ## raxisa_c
 ```c
@@ -5628,10 +6869,13 @@ void
 #### Inputs
 ```
 ConstSpiceDouble* matrix[3]
+
 ```
 #### Outputs
 ```
-SpiceDouble axisSpiceDouble* angle
+SpiceDouble axis
+SpiceDouble* angle
+
 ```
 ## rdtext_c
 ```c
@@ -5646,11 +6890,15 @@ void
 ```
 #### Inputs
 ```
-ConstSpiceChar* fileSpiceInt lenout
+ConstSpiceChar* file
+SpiceInt lenout
+
 ```
 #### Outputs
 ```
-SpiceChar* lineSpiceBoolean* eof
+SpiceChar* line
+SpiceBoolean* eof
+
 ```
 ## reccyl_c
 ```c
@@ -5666,10 +6914,14 @@ void
 #### Inputs
 ```
 ConstSpiceDouble* rectan[3]
+
 ```
 #### Outputs
 ```
-SpiceDouble* rSpiceDouble* lonSpiceDouble* z
+SpiceDouble* r
+SpiceDouble* lon
+SpiceDouble* z
+
 ```
 ## recpgr_c
 ```c
@@ -5687,11 +6939,18 @@ void
 ```
 #### Inputs
 ```
-ConstSpiceChar* bodySpiceDouble* rectan[3]SpiceDouble reSpiceDouble f
+ConstSpiceChar* body
+SpiceDouble* rectan[3]
+SpiceDouble re
+SpiceDouble f
+
 ```
 #### Outputs
 ```
-SpiceDouble* lonSpiceDouble* latSpiceDouble* alt
+SpiceDouble* lon
+SpiceDouble* lat
+SpiceDouble* alt
+
 ```
 ## recrad_c
 ```c
@@ -5707,10 +6966,14 @@ void
 #### Inputs
 ```
 ConstSpiceDouble* rectan[3]
+
 ```
 #### Outputs
 ```
-SpiceDouble* rangeSpiceDouble* raSpiceDouble* dec
+SpiceDouble* range
+SpiceDouble* ra
+SpiceDouble* dec
+
 ```
 ## removc_c
 ```c
@@ -5723,10 +6986,13 @@ void
 ```
 #### Inputs
 ```
-ConstSpiceChar* itemSpiceCell* set
+ConstSpiceChar* item
+SpiceCell* set
+
 ```
 #### Outputs
 ```
+_no output arguments._
 
 ```
 ## removd_c
@@ -5740,10 +7006,13 @@ void
 ```
 #### Inputs
 ```
-SpiceDouble itemSpiceCell* set
+SpiceDouble item
+SpiceCell* set
+
 ```
 #### Outputs
 ```
+_no output arguments._
 
 ```
 ## removi_c
@@ -5757,10 +7026,13 @@ void
 ```
 #### Inputs
 ```
-SpiceInt itemSpiceCell* set
+SpiceInt item
+SpiceCell* set
+
 ```
 #### Outputs
 ```
+_no output arguments._
 
 ```
 ## reordc_c
@@ -5776,10 +7048,15 @@ void
 ```
 #### Inputs
 ```
-ConstSpiceInt* iorderSpiceInt ndimSpiceInt lenvalsvoid* array
+ConstSpiceInt* iorder
+SpiceInt ndim
+SpiceInt lenvals
+void* array
+
 ```
 #### Outputs
 ```
+_no output arguments._
 
 ```
 ## reordd_c
@@ -5794,10 +7071,14 @@ void
 ```
 #### Inputs
 ```
-ConstSpiceInt* iorderSpiceInt ndimSpiceDouble* array
+ConstSpiceInt* iorder
+SpiceInt ndim
+SpiceDouble* array
+
 ```
 #### Outputs
 ```
+_no output arguments._
 
 ```
 ## reordi_c
@@ -5812,10 +7093,14 @@ void
 ```
 #### Inputs
 ```
-ConstSpiceInt* iorderSpiceInt ndimSpiceInt* array
+ConstSpiceInt* iorder
+SpiceInt ndim
+SpiceInt* array
+
 ```
 #### Outputs
 ```
+_no output arguments._
 
 ```
 ## reordl_c
@@ -5830,10 +7115,14 @@ void
 ```
 #### Inputs
 ```
-ConstSpiceInt* iorderSpiceInt ndimSpiceBoolean* array
+ConstSpiceInt* iorder
+SpiceInt ndim
+SpiceBoolean* array
+
 ```
 #### Outputs
 ```
+_no output arguments._
 
 ```
 ## repmct_c
@@ -5851,11 +7140,17 @@ void
 ```
 #### Inputs
 ```
-ConstSpiceChar* inConstSpiceChar* markerSpiceInt valueSpiceChar repcaseSpiceInt lenout
+ConstSpiceChar* in
+ConstSpiceChar* marker
+SpiceInt value
+SpiceChar repcase
+SpiceInt lenout
+
 ```
 #### Outputs
 ```
 SpiceChar* out
+
 ```
 ## repmc_c
 ```c
@@ -5871,11 +7166,16 @@ void
 ```
 #### Inputs
 ```
-ConstSpiceChar* inConstSpiceChar* markerConstSpiceChar* valueSpiceInt lenout
+ConstSpiceChar* in
+ConstSpiceChar* marker
+ConstSpiceChar* value
+SpiceInt lenout
+
 ```
 #### Outputs
 ```
 SpiceChar* out
+
 ```
 ## repmd_c
 ```c
@@ -5892,11 +7192,17 @@ void
 ```
 #### Inputs
 ```
-ConstSpiceChar* inConstSpiceChar* markerSpiceDouble valueSpiceInt sigdigSpiceInt lenout
+ConstSpiceChar* in
+ConstSpiceChar* marker
+SpiceDouble value
+SpiceInt sigdig
+SpiceInt lenout
+
 ```
 #### Outputs
 ```
 SpiceChar* out
+
 ```
 ## repmf_c
 ```c
@@ -5914,11 +7220,18 @@ void
 ```
 #### Inputs
 ```
-ConstSpiceChar* inConstSpiceChar* markerSpiceDouble valueSpiceInt sigdigSpiceChar formatSpiceInt lenout
+ConstSpiceChar* in
+ConstSpiceChar* marker
+SpiceDouble value
+SpiceInt sigdig
+SpiceChar format
+SpiceInt lenout
+
 ```
 #### Outputs
 ```
 SpiceChar* out
+
 ```
 ## repmi_c
 ```c
@@ -5934,11 +7247,16 @@ void
 ```
 #### Inputs
 ```
-ConstSpiceChar* inConstSpiceChar* markerSpiceInt valueSpiceInt lenout
+ConstSpiceChar* in
+ConstSpiceChar* marker
+SpiceInt value
+SpiceInt lenout
+
 ```
 #### Outputs
 ```
 SpiceChar* out
+
 ```
 ## repmot_c
 ```c
@@ -5955,11 +7273,17 @@ void
 ```
 #### Inputs
 ```
-ConstSpiceChar* inConstSpiceChar* markerSpiceInt valueSpiceChar repcaseSpiceInt lenout
+ConstSpiceChar* in
+ConstSpiceChar* marker
+SpiceInt value
+SpiceChar repcase
+SpiceInt lenout
+
 ```
 #### Outputs
 ```
 SpiceChar* out
+
 ```
 ## reset_c
 ```c
@@ -5975,6 +7299,7 @@ void
 ```
 #### Outputs
 ```
+_no output arguments._
 
 ```
 ## return_c
@@ -5991,6 +7316,7 @@ oolean
 ```
 #### Outputs
 ```
+_no output arguments._
 
 ```
 ## rquad_c
@@ -6008,10 +7334,15 @@ void
 #### Inputs
 ```
 SpiceDouble c
+
 ```
 #### Outputs
 ```
-SpiceDouble aSpiceDouble bSpiceDouble* root1[2]SpiceDouble* root2[2]
+SpiceDouble a
+SpiceDouble b
+SpiceDouble* root1[2]
+SpiceDouble* root2[2]
+
 ```
 ## saelgv_c
 ```c
@@ -6027,10 +7358,14 @@ void
 #### Inputs
 ```
 ConstSpiceDouble vec2
+
 ```
 #### Outputs
 ```
-ConstSpiceDouble vec1SpiceDouble* smajor[3]SpiceDouble* sminor[3]
+ConstSpiceDouble vec1
+SpiceDouble* smajor[3]
+SpiceDouble* sminor[3]
+
 ```
 ## scard_c
 ```c
@@ -6044,10 +7379,12 @@ void
 #### Inputs
 ```
 SpiceInt card
+
 ```
 #### Outputs
 ```
 SpiceCell* cell
+
 ```
 ## sce2c_c
 ```c
@@ -6061,11 +7398,14 @@ void
 ```
 #### Inputs
 ```
-SpiceInt scSpiceDouble et
+SpiceInt sc
+SpiceDouble et
+
 ```
 #### Outputs
 ```
 SpiceDouble* sclkdp
+
 ```
 ## scfmt_c
 ```c
@@ -6080,11 +7420,15 @@ void
 ```
 #### Inputs
 ```
-SpiceInt scSpiceDouble ticksSpiceInt lenout
+SpiceInt sc
+SpiceDouble ticks
+SpiceInt lenout
+
 ```
 #### Outputs
 ```
 SpiceChar* clkstr
+
 ```
 ## sdiff_c
 ```c
@@ -6098,11 +7442,14 @@ void
 ```
 #### Inputs
 ```
-SpiceCell* aSpiceCell* b
+SpiceCell* a
+SpiceCell* b
+
 ```
 #### Outputs
 ```
 SpiceCell* c
+
 ```
 ## setmsg_c
 ```c
@@ -6115,9 +7462,11 @@ void
 #### Inputs
 ```
 ConstSpiceChar* message
+
 ```
 #### Outputs
 ```
+_no output arguments._
 
 ```
 ## set_c
@@ -6132,10 +7481,14 @@ oolean
 ```
 #### Inputs
 ```
-SpiceCell* aConstSpiceChar* opSpiceCell* b
+SpiceCell* a
+ConstSpiceChar* op
+SpiceCell* b
+
 ```
 #### Outputs
 ```
+_no output arguments._
 
 ```
 ## shellc_c
@@ -6150,10 +7503,14 @@ void
 ```
 #### Inputs
 ```
-SpiceInt ndimSpiceInt lenvalsvoid* array
+SpiceInt ndim
+SpiceInt lenvals
+void* array
+
 ```
 #### Outputs
 ```
+_no output arguments._
 
 ```
 ## shelld_c
@@ -6167,10 +7524,13 @@ void
 ```
 #### Inputs
 ```
-SpiceInt ndimSpiceDouble* array
+SpiceInt ndim
+SpiceDouble* array
+
 ```
 #### Outputs
 ```
+_no output arguments._
 
 ```
 ## shelli_c
@@ -6184,10 +7544,13 @@ void
 ```
 #### Inputs
 ```
-SpiceInt ndimSpiceInt* array
+SpiceInt ndim
+SpiceInt* array
+
 ```
 #### Outputs
 ```
+_no output arguments._
 
 ```
 ## sigerr_c
@@ -6205,6 +7568,7 @@ void
 #### Outputs
 ```
 ConstSpiceChar* message
+
 ```
 ## sincpt_c
 ```c
@@ -6227,11 +7591,23 @@ void
 ```
 #### Inputs
 ```
-ConstSpiceChar* methodConstSpiceChar* targetSpiceDouble etConstSpiceChar* fixrefConstSpiceChar* abcorrConstSpiceChar* obsrvrConstSpiceChar* drefConstSpiceDouble dvec
+ConstSpiceChar* method
+ConstSpiceChar* target
+SpiceDouble et
+ConstSpiceChar* fixref
+ConstSpiceChar* abcorr
+ConstSpiceChar* obsrvr
+ConstSpiceChar* dref
+ConstSpiceDouble dvec
+
 ```
 #### Outputs
 ```
-SpiceDouble spointSpiceDouble* trgepcSpiceDouble srfvecSpiceBoolean* found
+SpiceDouble spoint
+SpiceDouble* trgepc
+SpiceDouble srfvec
+SpiceBoolean* found
+
 ```
 ## size_c
 ```c
@@ -6244,9 +7620,11 @@ nt
 #### Inputs
 ```
 SpiceCell* cell
+
 ```
 #### Outputs
 ```
+_no output arguments._
 
 ```
 ## sphcyl_c
@@ -6264,11 +7642,17 @@ void
 ```
 #### Inputs
 ```
-SpiceDouble radiusSpiceDouble colatSpiceDouble slon
+SpiceDouble radius
+SpiceDouble colat
+SpiceDouble slon
+
 ```
 #### Outputs
 ```
-SpiceDouble* rSpiceDouble* lonSpiceDouble* z
+SpiceDouble* r
+SpiceDouble* lon
+SpiceDouble* z
+
 ```
 ## sphlat_c
 ```c
@@ -6285,11 +7669,17 @@ void
 ```
 #### Inputs
 ```
-SpiceDouble rSpiceDouble colatSpiceDouble lons
+SpiceDouble r
+SpiceDouble colat
+SpiceDouble lons
+
 ```
 #### Outputs
 ```
-SpiceDouble* radiusSpiceDouble* lonSpiceDouble* lat
+SpiceDouble* radius
+SpiceDouble* lon
+SpiceDouble* lat
+
 ```
 ## sphrec_c
 ```c
@@ -6304,11 +7694,15 @@ void
 ```
 #### Inputs
 ```
-SpiceDouble rSpiceDouble colatSpiceDouble lon
+SpiceDouble r
+SpiceDouble colat
+SpiceDouble lon
+
 ```
 #### Outputs
 ```
 SpiceDouble* rectan[3]
+
 ```
 ## spk14a_c
 ```c
@@ -6323,10 +7717,15 @@ void
 ```
 #### Inputs
 ```
-SpiceInt handleSpiceInt ncsetsConstSpiceDouble coeffsConstSpiceDouble epochs
+SpiceInt handle
+SpiceInt ncsets
+ConstSpiceDouble coeffs
+ConstSpiceDouble epochs
+
 ```
 #### Outputs
 ```
+_no output arguments._
 
 ```
 ## spk14b_c
@@ -6346,10 +7745,19 @@ void
 ```
 #### Inputs
 ```
-SpiceInt handleConstSpiceChar* segidSpiceInt bodySpiceInt centerConstSpiceChar* frameSpiceDouble firstSpiceDouble lastSpiceInt chbdeg
+SpiceInt handle
+ConstSpiceChar* segid
+SpiceInt body
+SpiceInt center
+ConstSpiceChar* frame
+SpiceDouble first
+SpiceDouble last
+SpiceInt chbdeg
+
 ```
 #### Outputs
 ```
+_no output arguments._
 
 ```
 ## spk14e_c
@@ -6363,9 +7771,11 @@ void
 #### Inputs
 ```
 SpiceInt handle
+
 ```
 #### Outputs
 ```
+_no output arguments._
 
 ```
 ## spkacs_c
@@ -6385,11 +7795,19 @@ void
 ```
 #### Inputs
 ```
-SpiceInt targSpiceDouble etConstSpiceChar* refConstSpiceChar* abcorrSpiceInt obs
+SpiceInt targ
+SpiceDouble et
+ConstSpiceChar* ref
+ConstSpiceChar* abcorr
+SpiceInt obs
+
 ```
 #### Outputs
 ```
-SpiceDouble* starg[6]SpiceDouble* ltSpiceDouble* dlt
+SpiceDouble* starg[6]
+SpiceDouble* lt
+SpiceDouble* dlt
+
 ```
 ## spkapo_c
 ```c
@@ -6407,11 +7825,18 @@ void
 ```
 #### Inputs
 ```
-SpiceInt targSpiceDouble etConstSpiceChar* refConstSpiceDouble* sobs[6]ConstSpiceChar* abcorr
+SpiceInt targ
+SpiceDouble et
+ConstSpiceChar* ref
+ConstSpiceDouble* sobs[6]
+ConstSpiceChar* abcorr
+
 ```
 #### Outputs
 ```
-SpiceDouble* ptarg[3]SpiceDouble* lt
+SpiceDouble* ptarg[3]
+SpiceDouble* lt
+
 ```
 ## spkapp_c
 ```c
@@ -6429,11 +7854,18 @@ void
 ```
 #### Inputs
 ```
-SpiceInt targSpiceDouble etConstSpiceChar* refConstSpiceDouble sobsConstSpiceChar* abcorr
+SpiceInt targ
+SpiceDouble et
+ConstSpiceChar* ref
+ConstSpiceDouble sobs
+ConstSpiceChar* abcorr
+
 ```
 #### Outputs
 ```
-SpiceDouble stargSpiceDouble* lt
+SpiceDouble starg
+SpiceDouble* lt
+
 ```
 ## spkaps_c
 ```c
@@ -6453,11 +7885,20 @@ void
 ```
 #### Inputs
 ```
-SpiceInt targSpiceDouble etConstSpiceChar* refConstSpiceChar* abcorrConstSpiceDouble stobsConstSpiceDouble* accobs[6]
+SpiceInt targ
+SpiceDouble et
+ConstSpiceChar* ref
+ConstSpiceChar* abcorr
+ConstSpiceDouble stobs
+ConstSpiceDouble* accobs[6]
+
 ```
 #### Outputs
 ```
-SpiceDouble stargSpiceDouble* ltSpiceDouble* dlt
+SpiceDouble starg
+SpiceDouble* lt
+SpiceDouble* dlt
+
 ```
 ## spkcls_c
 ```c
@@ -6470,9 +7911,11 @@ void
 #### Inputs
 ```
 SpiceInt handle
+
 ```
 #### Outputs
 ```
+_no output arguments._
 
 ```
 ## spkcov_c
@@ -6487,10 +7930,14 @@ void
 ```
 #### Inputs
 ```
-ConstSpiceChar* spkSpiceInt idcodeSpiceCell* cover
+ConstSpiceChar* spk
+SpiceInt idcode
+SpiceCell* cover
+
 ```
 #### Outputs
 ```
+_no output arguments._
 
 ```
 ## spkezp_c
@@ -6509,11 +7956,18 @@ void
 ```
 #### Inputs
 ```
-SpiceInt targSpiceDouble etConstSpiceChar* refConstSpiceChar* abcorrSpiceInt obs
+SpiceInt targ
+SpiceDouble et
+ConstSpiceChar* ref
+ConstSpiceChar* abcorr
+SpiceInt obs
+
 ```
 #### Outputs
 ```
-SpiceDouble* ptarg[3]SpiceDouble* lt
+SpiceDouble* ptarg[3]
+SpiceDouble* lt
+
 ```
 ## spkezr_c
 ```c
@@ -6531,11 +7985,18 @@ void
 ```
 #### Inputs
 ```
-ConstSpiceChar* targSpiceDouble etConstSpiceChar* refConstSpiceChar* abcorrConstSpiceChar* obs
+ConstSpiceChar* targ
+SpiceDouble et
+ConstSpiceChar* ref
+ConstSpiceChar* abcorr
+ConstSpiceChar* obs
+
 ```
 #### Outputs
 ```
-SpiceDouble* starg[6]SpiceDouble* lt
+SpiceDouble* starg[6]
+SpiceDouble* lt
+
 ```
 ## spkez_c
 ```c
@@ -6553,11 +8014,18 @@ void
 ```
 #### Inputs
 ```
-SpiceInt targSpiceDouble etConstSpiceChar* refConstSpiceChar* abcorrSpiceInt obs
+SpiceInt targ
+SpiceDouble et
+ConstSpiceChar* ref
+ConstSpiceChar* abcorr
+SpiceInt obs
+
 ```
 #### Outputs
 ```
-SpiceDouble* starg[6]SpiceDouble* lt
+SpiceDouble* starg[6]
+SpiceDouble* lt
+
 ```
 ## spkgeo_c
 ```c
@@ -6574,11 +8042,17 @@ void
 ```
 #### Inputs
 ```
-SpiceInt targSpiceDouble etConstSpiceChar* refSpiceInt obs
+SpiceInt targ
+SpiceDouble et
+ConstSpiceChar* ref
+SpiceInt obs
+
 ```
 #### Outputs
 ```
-SpiceDouble* state[6]SpiceDouble* lt
+SpiceDouble* state[6]
+SpiceDouble* lt
+
 ```
 ## spkgps_c
 ```c
@@ -6595,11 +8069,17 @@ void
 ```
 #### Inputs
 ```
-SpiceInt targSpiceDouble etConstSpiceChar* refSpiceInt obs
+SpiceInt targ
+SpiceDouble et
+ConstSpiceChar* ref
+SpiceInt obs
+
 ```
 #### Outputs
 ```
-SpiceDouble* pos[3]SpiceDouble* lt
+SpiceDouble* pos[3]
+SpiceDouble* lt
+
 ```
 ## spkltc_c
 ```c
@@ -6618,11 +8098,19 @@ void
 ```
 #### Inputs
 ```
-SpiceInt targSpiceDouble etConstSpiceChar* refConstSpiceChar* abcorrConstSpiceDouble* stobs[6]
+SpiceInt targ
+SpiceDouble et
+ConstSpiceChar* ref
+ConstSpiceChar* abcorr
+ConstSpiceDouble* stobs[6]
+
 ```
 #### Outputs
 ```
-SpiceDouble* starg[6]SpiceDouble* ltSpiceDouble* dlt
+SpiceDouble* starg[6]
+SpiceDouble* lt
+SpiceDouble* dlt
+
 ```
 ## spkobj_c
 ```c
@@ -6635,10 +8123,13 @@ void
 ```
 #### Inputs
 ```
-ConstSpiceChar* spkSpiceCell* ids
+ConstSpiceChar* spk
+SpiceCell* ids
+
 ```
 #### Outputs
 ```
+_no output arguments._
 
 ```
 ## spkopa_c
@@ -6653,10 +8144,12 @@ void
 #### Inputs
 ```
 ConstSpiceChar* file
+
 ```
 #### Outputs
 ```
 SpiceInt* handle
+
 ```
 ## spkopn_c
 ```c
@@ -6671,11 +8164,15 @@ void
 ```
 #### Inputs
 ```
-ConstSpiceChar* nameConstSpiceChar* ifnameSpiceInt ncomch
+ConstSpiceChar* name
+ConstSpiceChar* ifname
+SpiceInt ncomch
+
 ```
 #### Outputs
 ```
 SpiceInt* handle
+
 ```
 ## spkpds_c
 ```c
@@ -6693,11 +8190,18 @@ void
 ```
 #### Inputs
 ```
-SpiceInt bodySpiceInt centerConstSpiceChar* frameSpiceInt typeSpiceDouble firstSpiceDouble last
+SpiceInt body
+SpiceInt center
+ConstSpiceChar* frame
+SpiceInt type
+SpiceDouble first
+SpiceDouble last
+
 ```
 #### Outputs
 ```
 SpiceDouble* descr[5]
+
 ```
 ## spkpos_c
 ```c
@@ -6715,11 +8219,18 @@ void
 ```
 #### Inputs
 ```
-ConstSpiceChar* targSpiceDouble etConstSpiceChar* refConstSpiceChar* abcorrConstSpiceChar* obs
+ConstSpiceChar* targ
+SpiceDouble et
+ConstSpiceChar* ref
+ConstSpiceChar* abcorr
+ConstSpiceChar* obs
+
 ```
 #### Outputs
 ```
-SpiceDouble* ptarg[3]SpiceDouble* lt
+SpiceDouble* ptarg[3]
+SpiceDouble* lt
+
 ```
 ## spkssb_c
 ```c
@@ -6734,11 +8245,15 @@ void
 ```
 #### Inputs
 ```
-SpiceInt targSpiceDouble etConstSpiceChar* ref
+SpiceInt targ
+SpiceDouble et
+ConstSpiceChar* ref
+
 ```
 #### Outputs
 ```
 SpiceDouble* starg[6]
+
 ```
 ## spksub_c
 ```c
@@ -6755,11 +8270,17 @@ void
 ```
 #### Inputs
 ```
-ConstSpiceChar* identSpiceDouble endSpiceInt newh
+ConstSpiceChar* ident
+SpiceDouble end
+SpiceInt newh
+
 ```
 #### Outputs
 ```
-SpiceInt handleSpiceDouble* descr[5]SpiceDouble begin
+SpiceInt handle
+SpiceDouble* descr[5]
+SpiceDouble begin
+
 ```
 ## spkuds_c
 ```c
@@ -6780,10 +8301,19 @@ void
 #### Inputs
 ```
 ConstSpiceDouble descr
+
 ```
 #### Outputs
 ```
-SpiceInt* bodySpiceInt* centerSpiceInt* frameSpiceInt* typeSpiceDouble* firstSpiceDouble* lastSpiceInt* beginSpiceInt* end
+SpiceInt* body
+SpiceInt* center
+SpiceInt* frame
+SpiceInt* type
+SpiceDouble* first
+SpiceDouble* last
+SpiceInt* begin
+SpiceInt* end
+
 ```
 ## spkuef_c
 ```c
@@ -6796,9 +8326,11 @@ void
 #### Inputs
 ```
 SpiceInt handle
+
 ```
 #### Outputs
 ```
+_no output arguments._
 
 ```
 ## spkw02_c
@@ -6822,11 +8354,23 @@ void
 ```
 #### Inputs
 ```
-SpiceInt handleSpiceInt bodySpiceInt centerConstSpiceChar* frameSpiceDouble lastConstSpiceChar* segidSpiceDouble intlenSpiceInt nSpiceInt polydgConstSpiceDouble cdataSpiceDouble btime
+SpiceInt handle
+SpiceInt body
+SpiceInt center
+ConstSpiceChar* frame
+SpiceDouble last
+ConstSpiceChar* segid
+SpiceDouble intlen
+SpiceInt n
+SpiceInt polydg
+ConstSpiceDouble cdata
+SpiceDouble btime
+
 ```
 #### Outputs
 ```
 SpiceDouble first
+
 ```
 ## spkw03_c
 ```c
@@ -6849,11 +8393,23 @@ void
 ```
 #### Inputs
 ```
-SpiceInt handleSpiceInt bodySpiceInt centerConstSpiceChar* frameSpiceDouble lastConstSpiceChar* segidSpiceDouble intlenSpiceInt nSpiceInt polydgConstSpiceDouble cdataSpiceDouble btime
+SpiceInt handle
+SpiceInt body
+SpiceInt center
+ConstSpiceChar* frame
+SpiceDouble last
+ConstSpiceChar* segid
+SpiceDouble intlen
+SpiceInt n
+SpiceInt polydg
+ConstSpiceDouble cdata
+SpiceDouble btime
+
 ```
 #### Outputs
 ```
 SpiceDouble first
+
 ```
 ## spkw05_c
 ```c
@@ -6875,10 +8431,22 @@ void
 ```
 #### Inputs
 ```
-SpiceInt handleSpiceInt bodySpiceInt centerConstSpiceChar* frameSpiceDouble firstSpiceDouble lastConstSpiceChar* segidSpiceDouble gmSpiceInt nConstSpiceDouble statesConstSpiceDouble epochs
+SpiceInt handle
+SpiceInt body
+SpiceInt center
+ConstSpiceChar* frame
+SpiceDouble first
+SpiceDouble last
+ConstSpiceChar* segid
+SpiceDouble gm
+SpiceInt n
+ConstSpiceDouble states
+ConstSpiceDouble epochs
+
 ```
 #### Outputs
 ```
+_no output arguments._
 
 ```
 ## spkw08_c
@@ -6902,11 +8470,23 @@ void
 ```
 #### Inputs
 ```
-SpiceInt handleSpiceInt bodySpiceInt centerConstSpiceChar* frameSpiceDouble lastConstSpiceChar* segidSpiceInt degreeSpiceInt nConstSpiceDouble statesSpiceDouble epoch1SpiceDouble step
+SpiceInt handle
+SpiceInt body
+SpiceInt center
+ConstSpiceChar* frame
+SpiceDouble last
+ConstSpiceChar* segid
+SpiceInt degree
+SpiceInt n
+ConstSpiceDouble states
+SpiceDouble epoch1
+SpiceDouble step
+
 ```
 #### Outputs
 ```
 SpiceDouble first
+
 ```
 ## spkw09_c
 ```c
@@ -6928,11 +8508,22 @@ void
 ```
 #### Inputs
 ```
-SpiceInt handleSpiceInt bodySpiceInt centerConstSpiceChar* frameSpiceDouble lastConstSpiceChar* segidSpiceInt degreeSpiceInt nConstSpiceDouble statesConstSpiceDouble epochs
+SpiceInt handle
+SpiceInt body
+SpiceInt center
+ConstSpiceChar* frame
+SpiceDouble last
+ConstSpiceChar* segid
+SpiceInt degree
+SpiceInt n
+ConstSpiceDouble states
+ConstSpiceDouble epochs
+
 ```
 #### Outputs
 ```
 SpiceDouble first
+
 ```
 ## spkw10_c
 ```c
@@ -6954,10 +8545,22 @@ void
 ```
 #### Inputs
 ```
-SpiceInt handleSpiceInt bodySpiceInt centerConstSpiceChar* frameSpiceDouble firstSpiceDouble lastConstSpiceChar* segidConstSpiceDouble constsSpiceInt nConstSpiceDouble elemsConstSpiceDouble epochs
+SpiceInt handle
+SpiceInt body
+SpiceInt center
+ConstSpiceChar* frame
+SpiceDouble first
+SpiceDouble last
+ConstSpiceChar* segid
+ConstSpiceDouble consts
+SpiceInt n
+ConstSpiceDouble elems
+ConstSpiceDouble epochs
+
 ```
 #### Outputs
 ```
+_no output arguments._
 
 ```
 ## spkw12_c
@@ -6981,11 +8584,23 @@ void
 ```
 #### Inputs
 ```
-SpiceInt handleSpiceInt bodySpiceInt centerConstSpiceChar* frameSpiceDouble lastConstSpiceChar* segidSpiceInt degreeSpiceInt nConstSpiceDouble statesSpiceDouble epoch0SpiceDouble step
+SpiceInt handle
+SpiceInt body
+SpiceInt center
+ConstSpiceChar* frame
+SpiceDouble last
+ConstSpiceChar* segid
+SpiceInt degree
+SpiceInt n
+ConstSpiceDouble states
+SpiceDouble epoch0
+SpiceDouble step
+
 ```
 #### Outputs
 ```
 SpiceDouble first
+
 ```
 ## spkw13_c
 ```c
@@ -7007,11 +8622,22 @@ void
 ```
 #### Inputs
 ```
-SpiceInt handleSpiceInt bodySpiceInt centerConstSpiceChar* frameSpiceDouble lastConstSpiceChar* segidSpiceInt degreeSpiceInt nConstSpiceDouble statesConstSpiceDouble epochs
+SpiceInt handle
+SpiceInt body
+SpiceInt center
+ConstSpiceChar* frame
+SpiceDouble last
+ConstSpiceChar* segid
+SpiceInt degree
+SpiceInt n
+ConstSpiceDouble states
+ConstSpiceDouble epochs
+
 ```
 #### Outputs
 ```
 SpiceDouble first
+
 ```
 ## spkw15_c
 ```c
@@ -7039,10 +8665,28 @@ void
 ```
 #### Inputs
 ```
-SpiceInt handleSpiceInt bodySpiceInt centerConstSpiceChar* frameSpiceDouble firstSpiceDouble lastConstSpiceChar* segidSpiceDouble epochConstSpiceDouble tpConstSpiceDouble paSpiceDouble pSpiceDouble eccSpiceDouble j2flgConstSpiceDouble pvSpiceDouble gmSpiceDouble j2SpiceDouble radius
+SpiceInt handle
+SpiceInt body
+SpiceInt center
+ConstSpiceChar* frame
+SpiceDouble first
+SpiceDouble last
+ConstSpiceChar* segid
+SpiceDouble epoch
+ConstSpiceDouble tp
+ConstSpiceDouble pa
+SpiceDouble p
+SpiceDouble ecc
+SpiceDouble j2flg
+ConstSpiceDouble pv
+SpiceDouble gm
+SpiceDouble j2
+SpiceDouble radius
+
 ```
 #### Outputs
 ```
+_no output arguments._
 
 ```
 ## spkw17_c
@@ -7065,11 +8709,22 @@ void
 ```
 #### Inputs
 ```
-SpiceInt handleSpiceInt bodySpiceInt centerConstSpiceChar* frameSpiceDouble firstSpiceDouble lastConstSpiceChar* segidSpiceDouble epochConstSpiceDouble eqelSpiceDouble rapol
+SpiceInt handle
+SpiceInt body
+SpiceInt center
+ConstSpiceChar* frame
+SpiceDouble first
+SpiceDouble last
+ConstSpiceChar* segid
+SpiceDouble epoch
+ConstSpiceDouble eqel
+SpiceDouble rapol
+
 ```
 #### Outputs
 ```
 SpiceDouble decpol
+
 ```
 ## spkw18_c
 ```c
@@ -7092,11 +8747,23 @@ void
 ```
 #### Inputs
 ```
-SpiceInt handleSpiceSPK18Subtype subtypSpiceInt bodySpiceInt centerConstSpiceChar* frameSpiceDouble lastConstSpiceChar* segidSpiceInt degreeSpiceInt nConstSpiceDouble epochs
+SpiceInt handle
+SpiceSPK18Subtype subtyp
+SpiceInt body
+SpiceInt center
+ConstSpiceChar* frame
+SpiceDouble last
+ConstSpiceChar* segid
+SpiceInt degree
+SpiceInt n
+ConstSpiceDouble epochs
+
 ```
 #### Outputs
 ```
-SpiceDouble firstconst void
+SpiceDouble first
+const void
+
 ```
 ## srfrec_c
 ```c
@@ -7111,11 +8778,15 @@ void
 ```
 #### Inputs
 ```
-SpiceInt bodySpiceDouble latitude
+SpiceInt body
+SpiceDouble latitude
+
 ```
 #### Outputs
 ```
-SpiceDouble longitudeSpiceDouble* rectan[3]
+SpiceDouble longitude
+SpiceDouble* rectan[3]
+
 ```
 ## srfxpt_c
 ```c
@@ -7138,11 +8809,23 @@ void
 ```
 #### Inputs
 ```
-ConstSpiceChar* methodConstSpiceChar* targetSpiceDouble etConstSpiceChar* abcorrConstSpiceChar* obsrvrConstSpiceChar* drefConstSpiceDouble dvec
+ConstSpiceChar* method
+ConstSpiceChar* target
+SpiceDouble et
+ConstSpiceChar* abcorr
+ConstSpiceChar* obsrvr
+ConstSpiceChar* dref
+ConstSpiceDouble dvec
+
 ```
 #### Outputs
 ```
-SpiceDouble spointSpiceDouble* distSpiceDouble* trgepcSpiceDouble obsposSpiceBoolean* found
+SpiceDouble spoint
+SpiceDouble* dist
+SpiceDouble* trgepc
+SpiceDouble obspos
+SpiceBoolean* found
+
 ```
 ## ssize_c
 ```c
@@ -7155,10 +8838,13 @@ void
 ```
 #### Inputs
 ```
-SpiceInt sizeSpiceCell* cell
+SpiceInt size
+SpiceCell* cell
+
 ```
 #### Outputs
 ```
+_no output arguments._
 
 ```
 ## stelab_c
@@ -7173,11 +8859,14 @@ void
 ```
 #### Inputs
 ```
-ConstSpiceDouble* pobj[3]ConstSpiceDouble* vobs[3]
+ConstSpiceDouble* pobj[3]
+ConstSpiceDouble* vobs[3]
+
 ```
 #### Outputs
 ```
 SpiceDouble* appobj[3]
+
 ```
 ## stpool_c
 ```c
@@ -7195,11 +8884,18 @@ void
 ```
 #### Inputs
 ```
-ConstSpiceChar* itemSpiceInt nthConstSpiceChar* continSpiceInt lenout
+ConstSpiceChar* item
+SpiceInt nth
+ConstSpiceChar* contin
+SpiceInt lenout
+
 ```
 #### Outputs
 ```
-SpiceChar* stringSpiceInt* sizeSpiceBoolean* found
+SpiceChar* string
+SpiceInt* size
+SpiceBoolean* found
+
 ```
 ## str2et_c
 ```c
@@ -7213,10 +8909,12 @@ void
 #### Inputs
 ```
 ConstSpiceChar* str
+
 ```
 #### Outputs
 ```
 SpiceDouble* et
+
 ```
 ## subpnt_c
 ```c
@@ -7236,11 +8934,20 @@ void
 ```
 #### Inputs
 ```
-ConstSpiceChar* methodConstSpiceChar* targetSpiceDouble etConstSpiceChar* fixrefConstSpiceChar* abcorrConstSpiceChar* obsrvr
+ConstSpiceChar* method
+ConstSpiceChar* target
+SpiceDouble et
+ConstSpiceChar* fixref
+ConstSpiceChar* abcorr
+ConstSpiceChar* obsrvr
+
 ```
 #### Outputs
 ```
-SpiceDouble spointSpiceDouble* trgepcSpiceDouble srfvec
+SpiceDouble spoint
+SpiceDouble* trgepc
+SpiceDouble srfvec
+
 ```
 ## subpt_c
 ```c
@@ -7258,11 +8965,18 @@ void
 ```
 #### Inputs
 ```
-ConstSpiceChar* methodConstSpiceChar* targetSpiceDouble etConstSpiceChar* abcorrConstSpiceChar* obsrvr
+ConstSpiceChar* method
+ConstSpiceChar* target
+SpiceDouble et
+ConstSpiceChar* abcorr
+ConstSpiceChar* obsrvr
+
 ```
 #### Outputs
 ```
-SpiceDouble spointSpiceDouble* alt
+SpiceDouble spoint
+SpiceDouble* alt
+
 ```
 ## subslr_c
 ```c
@@ -7282,11 +8996,20 @@ void
 ```
 #### Inputs
 ```
-ConstSpiceChar* methodConstSpiceChar* targetSpiceDouble etConstSpiceChar* fixrefConstSpiceChar* abcorrConstSpiceChar* obsrvr
+ConstSpiceChar* method
+ConstSpiceChar* target
+SpiceDouble et
+ConstSpiceChar* fixref
+ConstSpiceChar* abcorr
+ConstSpiceChar* obsrvr
+
 ```
 #### Outputs
 ```
-SpiceDouble spointSpiceDouble* trgepcSpiceDouble srfvec
+SpiceDouble spoint
+SpiceDouble* trgepc
+SpiceDouble srfvec
+
 ```
 ## subsol_c
 ```c
@@ -7303,11 +9026,17 @@ void
 ```
 #### Inputs
 ```
-ConstSpiceChar* methodConstSpiceChar* targetSpiceDouble etConstSpiceChar* abcorrConstSpiceChar* obsrvr
+ConstSpiceChar* method
+ConstSpiceChar* target
+SpiceDouble et
+ConstSpiceChar* abcorr
+ConstSpiceChar* obsrvr
+
 ```
 #### Outputs
 ```
 SpiceDouble* spoint[3]
+
 ```
 ## sumad_c
 ```c
@@ -7320,10 +9049,13 @@ ouble
 ```
 #### Inputs
 ```
-ConstSpiceDouble* arraySpiceInt n
+ConstSpiceDouble* array
+SpiceInt n
+
 ```
 #### Outputs
 ```
+_no output arguments._
 
 ```
 ## sumai_c
@@ -7337,10 +9069,13 @@ nt
 ```
 #### Inputs
 ```
-ConstSpiceInt* arraySpiceInt n
+ConstSpiceInt* array
+SpiceInt n
+
 ```
 #### Outputs
 ```
+_no output arguments._
 
 ```
 ## surfpt_c
@@ -7359,11 +9094,18 @@ void
 ```
 #### Inputs
 ```
-ConstSpiceDouble* positn[3]ConstSpiceDouble* u[3]SpiceDouble aSpiceDouble bSpiceDouble c
+ConstSpiceDouble* positn[3]
+ConstSpiceDouble* u[3]
+SpiceDouble a
+SpiceDouble b
+SpiceDouble c
+
 ```
 #### Outputs
 ```
-SpiceDouble* point[3]SpiceBoolean* found
+SpiceDouble* point[3]
+SpiceBoolean* found
+
 ```
 ## surfpv_c
 ```c
@@ -7381,11 +9123,18 @@ void
 ```
 #### Inputs
 ```
-ConstSpiceDouble* stvrtx[6]ConstSpiceDouble stdirSpiceDouble c
+ConstSpiceDouble* stvrtx[6]
+ConstSpiceDouble stdir
+SpiceDouble c
+
 ```
 #### Outputs
 ```
-SpiceDouble aSpiceDouble bSpiceDouble stxSpiceBoolean* found
+SpiceDouble a
+SpiceDouble b
+SpiceDouble stx
+SpiceBoolean* found
+
 ```
 ## swpool_c
 ```c
@@ -7400,11 +9149,15 @@ void
 ```
 #### Inputs
 ```
-ConstSpiceChar* agentSpiceInt nnamesSpiceInt lenvals
+ConstSpiceChar* agent
+SpiceInt nnames
+SpiceInt lenvals
+
 ```
 #### Outputs
 ```
 const void
+
 ```
 ## szpool_c
 ```c
@@ -7419,10 +9172,13 @@ void
 #### Inputs
 ```
 ConstSpiceChar* name
+
 ```
 #### Outputs
 ```
-SpiceInt* nSpiceBoolean* found
+SpiceInt* n
+SpiceBoolean* found
+
 ```
 ## s_rnge
 ```c
@@ -7438,7 +9194,11 @@ integer
 ```
 #### Outputs
 ```
-char* varnftnint offsetchar* procnftnint line
+char* varn
+ftnint offset
+char* procn
+ftnint line
+
 ```
 ## timdef_c
 ```c
@@ -7453,10 +9213,15 @@ void
 ```
 #### Inputs
 ```
-ConstSpiceChar* actionConstSpiceChar* itemSpiceInt lenoutSpiceChar* value
+ConstSpiceChar* action
+ConstSpiceChar* item
+SpiceInt lenout
+SpiceChar* value
+
 ```
 #### Outputs
 ```
+_no output arguments._
 
 ```
 ## timout_c
@@ -7472,11 +9237,15 @@ void
 ```
 #### Inputs
 ```
-SpiceDouble etConstSpiceChar* picturSpiceInt lenout
+SpiceDouble et
+ConstSpiceChar* pictur
+SpiceInt lenout
+
 ```
 #### Outputs
 ```
 SpiceChar* output
+
 ```
 ## tipbod_c
 ```c
@@ -7491,11 +9260,15 @@ void
 ```
 #### Inputs
 ```
-ConstSpiceChar* refSpiceInt bodySpiceDouble et
+ConstSpiceChar* ref
+SpiceInt body
+SpiceDouble et
+
 ```
 #### Outputs
 ```
 SpiceDouble* tipm[3]
+
 ```
 ## tkvrsn_c
 ```c
@@ -7508,9 +9281,11 @@ har
 #### Inputs
 ```
 ConstSpiceChar* item
+
 ```
 #### Outputs
 ```
+_no output arguments._
 
 ```
 ## tparse_c
@@ -7526,11 +9301,15 @@ void
 ```
 #### Inputs
 ```
-ConstSpiceChar* stringSpiceInt lenout
+ConstSpiceChar* string
+SpiceInt lenout
+
 ```
 #### Outputs
 ```
-SpiceDouble* sp2000SpiceChar* errmsg
+SpiceDouble* sp2000
+SpiceChar* errmsg
+
 ```
 ## tpictr_c
 ```c
@@ -7547,11 +9326,17 @@ void
 ```
 #### Inputs
 ```
-ConstSpiceChar* sampleSpiceInt lenoutSpiceInt lenerr
+ConstSpiceChar* sample
+SpiceInt lenout
+SpiceInt lenerr
+
 ```
 #### Outputs
 ```
-SpiceChar* picturSpiceBoolean* okSpiceChar* errmsg
+SpiceChar* pictur
+SpiceBoolean* ok
+SpiceChar* errmsg
+
 ```
 ## trace_c
 ```c
@@ -7568,6 +9353,7 @@ ouble
 #### Outputs
 ```
 ConstSpiceDouble* matrix[3]
+
 ```
 ## tsetyr_c
 ```c
@@ -7580,9 +9366,11 @@ void
 #### Inputs
 ```
 SpiceInt year
+
 ```
 #### Outputs
 ```
+_no output arguments._
 
 ```
 ## twopi_c
@@ -7599,6 +9387,7 @@ ouble
 ```
 #### Outputs
 ```
+_no output arguments._
 
 ```
 ## twovec_c
@@ -7615,11 +9404,16 @@ void
 ```
 #### Inputs
 ```
-ConstSpiceDouble axdefSpiceInt indexaConstSpiceDouble plndefSpiceInt indexp
+ConstSpiceDouble axdef
+SpiceInt indexa
+ConstSpiceDouble plndef
+SpiceInt indexp
+
 ```
 #### Outputs
 ```
 SpiceDouble mout
+
 ```
 ## tyear_c
 ```c
@@ -7635,6 +9429,7 @@ ouble
 ```
 #### Outputs
 ```
+_no output arguments._
 
 ```
 ## ucrss_c
@@ -7649,11 +9444,14 @@ void
 ```
 #### Inputs
 ```
-ConstSpiceDouble* v1[3]ConstSpiceDouble* v2[3]
+ConstSpiceDouble* v1[3]
+ConstSpiceDouble* v2[3]
+
 ```
 #### Outputs
 ```
 SpiceDouble* vout[3]
+
 ```
 ## uddc_c
 ```c
@@ -7670,6 +9468,7 @@ void
 #### Outputs
 ```
 voi d
+
 ```
 ## uddf_c
 ```c
@@ -7686,6 +9485,7 @@ void
 #### Outputs
 ```
 voi d
+
 ```
 ## union_c
 ```c
@@ -7699,11 +9499,14 @@ void
 ```
 #### Inputs
 ```
-SpiceCell* aSpiceCell* b
+SpiceCell* a
+SpiceCell* b
+
 ```
 #### Outputs
 ```
 SpiceCell* c
+
 ```
 ## unitim_c
 ```c
@@ -7717,10 +9520,14 @@ ouble
 ```
 #### Inputs
 ```
-SpiceDouble epochConstSpiceChar* insysConstSpiceChar* outsys
+SpiceDouble epoch
+ConstSpiceChar* insys
+ConstSpiceChar* outsys
+
 ```
 #### Outputs
 ```
+_no output arguments._
 
 ```
 ## unload_c
@@ -7734,9 +9541,11 @@ void
 #### Inputs
 ```
 ConstSpiceChar* file
+
 ```
 #### Outputs
 ```
+_no output arguments._
 
 ```
 ## unormg_c
@@ -7752,11 +9561,15 @@ void
 ```
 #### Inputs
 ```
-ConstSpiceDouble* v1SpiceInt ndim
+ConstSpiceDouble* v1
+SpiceInt ndim
+
 ```
 #### Outputs
 ```
-SpiceDouble* voutSpiceDouble* vmag
+SpiceDouble* vout
+SpiceDouble* vmag
+
 ```
 ## unorm_c
 ```c
@@ -7771,10 +9584,13 @@ void
 #### Inputs
 ```
 ConstSpiceDouble* v1[3]
+
 ```
 #### Outputs
 ```
-SpiceDouble* vout[3]SpiceDouble* vmag
+SpiceDouble* vout[3]
+SpiceDouble* vmag
+
 ```
 ## utc2et_c
 ```c
@@ -7788,10 +9604,12 @@ void
 #### Inputs
 ```
 ConstSpiceChar* utcstr
+
 ```
 #### Outputs
 ```
 SpiceDouble* et
+
 ```
 ## vaddg_c
 ```c
@@ -7806,11 +9624,15 @@ void
 ```
 #### Inputs
 ```
-ConstSpiceDouble* v1ConstSpiceDouble* v2SpiceInt ndim
+ConstSpiceDouble* v1
+ConstSpiceDouble* v2
+SpiceInt ndim
+
 ```
 #### Outputs
 ```
 SpiceDouble* vout
+
 ```
 ## vadd_c
 ```c
@@ -7824,11 +9646,14 @@ void
 ```
 #### Inputs
 ```
-ConstSpiceDouble* v1[3]ConstSpiceDouble* v2[3]
+ConstSpiceDouble* v1[3]
+ConstSpiceDouble* v2[3]
+
 ```
 #### Outputs
 ```
 SpiceDouble* vout[3]
+
 ```
 ## valid_c
 ```c
@@ -7842,10 +9667,14 @@ void
 ```
 #### Inputs
 ```
-SpiceInt sizeSpiceInt nSpiceCell* set
+SpiceInt size
+SpiceInt n
+SpiceCell* set
+
 ```
 #### Outputs
 ```
+_no output arguments._
 
 ```
 ## vcrss_c
@@ -7860,11 +9689,14 @@ void
 ```
 #### Inputs
 ```
-ConstSpiceDouble* v1[3]ConstSpiceDouble* v2[3]
+ConstSpiceDouble* v1[3]
+ConstSpiceDouble* v2[3]
+
 ```
 #### Outputs
 ```
 SpiceDouble* vout[3]
+
 ```
 ## vdistg_c
 ```c
@@ -7878,10 +9710,14 @@ ouble
 ```
 #### Inputs
 ```
-ConstSpiceDouble* v1ConstSpiceDouble* v2SpiceInt ndim
+ConstSpiceDouble* v1
+ConstSpiceDouble* v2
+SpiceInt ndim
+
 ```
 #### Outputs
 ```
+_no output arguments._
 
 ```
 ## vdist_c
@@ -7895,10 +9731,13 @@ ouble
 ```
 #### Inputs
 ```
-ConstSpiceDouble* v1[3]ConstSpiceDouble* v2[3]
+ConstSpiceDouble* v1[3]
+ConstSpiceDouble* v2[3]
+
 ```
 #### Outputs
 ```
+_no output arguments._
 
 ```
 ## vdotg_c
@@ -7913,11 +9752,14 @@ ouble
 ```
 #### Inputs
 ```
-ConstSpiceDouble* v1ConstSpiceDouble* v2
+ConstSpiceDouble* v1
+ConstSpiceDouble* v2
+
 ```
 #### Outputs
 ```
 SpiceInt ndim
+
 ```
 ## vequg_c
 ```c
@@ -7931,11 +9773,14 @@ void
 ```
 #### Inputs
 ```
-ConstSpiceDouble* vinSpiceInt ndim
+ConstSpiceDouble* vin
+SpiceInt ndim
+
 ```
 #### Outputs
 ```
 SpiceDouble* vout
+
 ```
 ## vequ_c
 ```c
@@ -7949,10 +9794,12 @@ void
 #### Inputs
 ```
 ConstSpiceDouble* vin[3]
+
 ```
 #### Outputs
 ```
 SpiceDouble* vout[3]
+
 ```
 ## vhatg_c
 ```c
@@ -7966,11 +9813,14 @@ void
 ```
 #### Inputs
 ```
-ConstSpiceDouble* v1SpiceInt ndim
+ConstSpiceDouble* v1
+SpiceInt ndim
+
 ```
 #### Outputs
 ```
 SpiceDouble* vout
+
 ```
 ## vlcom3_c
 ```c
@@ -7988,11 +9838,18 @@ void
 ```
 #### Inputs
 ```
-SpiceDouble aConstSpiceDouble v1SpiceDouble bConstSpiceDouble v2SpiceDouble cConstSpiceDouble v3
+SpiceDouble a
+ConstSpiceDouble v1
+SpiceDouble b
+ConstSpiceDouble v2
+SpiceDouble c
+ConstSpiceDouble v3
+
 ```
 #### Outputs
 ```
 SpiceDouble* sum[3]
+
 ```
 ## vlcomg_c
 ```c
@@ -8009,11 +9866,17 @@ void
 ```
 #### Inputs
 ```
-SpiceInt nSpiceDouble aSpiceDouble b
+SpiceInt n
+SpiceDouble a
+SpiceDouble b
+
 ```
 #### Outputs
 ```
-ConstSpiceDouble* v1ConstSpiceDouble* v2SpiceDouble* sum
+ConstSpiceDouble* v1
+ConstSpiceDouble* v2
+SpiceDouble* sum
+
 ```
 ## vminug_c
 ```c
@@ -8027,11 +9890,14 @@ void
 ```
 #### Inputs
 ```
-ConstSpiceDouble* vinSpiceInt ndim
+ConstSpiceDouble* vin
+SpiceInt ndim
+
 ```
 #### Outputs
 ```
 SpiceDouble* vout
+
 ```
 ## vminus_c
 ```c
@@ -8044,10 +9910,12 @@ void
 #### Inputs
 ```
 ConstSpiceDouble* v1[3]
+
 ```
 #### Outputs
 ```
 SpiceDouble* vout[3]
+
 ```
 ## vnormg_c
 ```c
@@ -8061,10 +9929,12 @@ ouble
 #### Inputs
 ```
 ConstSpiceDouble* v1
+
 ```
 #### Outputs
 ```
 SpiceInt ndim
+
 ```
 ## vpack_c
 ```c
@@ -8080,10 +9950,14 @@ void
 #### Inputs
 ```
 SpiceDouble z
+
 ```
 #### Outputs
 ```
-SpiceDouble xSpiceDouble ySpiceDouble* v[3]
+SpiceDouble x
+SpiceDouble y
+SpiceDouble* v[3]
+
 ```
 ## vperp_c
 ```c
@@ -8097,11 +9971,14 @@ void
 ```
 #### Inputs
 ```
-ConstSpiceDouble* a[3]ConstSpiceDouble* b[3]
+ConstSpiceDouble* a[3]
+ConstSpiceDouble* b[3]
+
 ```
 #### Outputs
 ```
 SpiceDouble* p[3]
+
 ```
 ## vprjpi_c
 ```c
@@ -8118,10 +9995,15 @@ void
 #### Inputs
 ```
 ConstSpicePlane* invpl
+
 ```
 #### Outputs
 ```
-ConstSpiceDouble vinConstSpicePlane* projplSpiceDouble voutSpiceBoolean* found
+ConstSpiceDouble vin
+ConstSpicePlane* projpl
+SpiceDouble vout
+SpiceBoolean* found
+
 ```
 ## vprjp_c
 ```c
@@ -8135,11 +10017,14 @@ void
 ```
 #### Inputs
 ```
-ConstSpiceDouble vinConstSpicePlane* plane
+ConstSpiceDouble vin
+ConstSpicePlane* plane
+
 ```
 #### Outputs
 ```
 SpiceDouble vout
+
 ```
 ## vproj_c
 ```c
@@ -8153,11 +10038,14 @@ void
 ```
 #### Inputs
 ```
-ConstSpiceDouble* a[3]ConstSpiceDouble* b[3]
+ConstSpiceDouble* a[3]
+ConstSpiceDouble* b[3]
+
 ```
 #### Outputs
 ```
 SpiceDouble* p[3]
+
 ```
 ## vrelg_c
 ```c
@@ -8172,10 +10060,13 @@ ouble
 #### Inputs
 ```
 SpiceInt ndim
+
 ```
 #### Outputs
 ```
-ConstSpiceDouble* v1ConstSpiceDouble* v2
+ConstSpiceDouble* v1
+ConstSpiceDouble* v2
+
 ```
 ## vrel_c
 ```c
@@ -8192,7 +10083,9 @@ ouble
 ```
 #### Outputs
 ```
-ConstSpiceDouble* v1[3]ConstSpiceDouble* v2[3]
+ConstSpiceDouble* v1[3]
+ConstSpiceDouble* v2[3]
+
 ```
 ## vrotv_c
 ```c
@@ -8207,11 +10100,15 @@ void
 ```
 #### Inputs
 ```
-ConstSpiceDouble vConstSpiceDouble axisSpiceDouble theta
+ConstSpiceDouble v
+ConstSpiceDouble axis
+SpiceDouble theta
+
 ```
 #### Outputs
 ```
 SpiceDouble r
+
 ```
 ## vsclg_c
 ```c
@@ -8226,11 +10123,15 @@ void
 ```
 #### Inputs
 ```
-SpiceDouble sConstSpiceDouble* v1SpiceInt ndim
+SpiceDouble s
+ConstSpiceDouble* v1
+SpiceInt ndim
+
 ```
 #### Outputs
 ```
 SpiceDouble* vout
+
 ```
 ## vsepg_c
 ```c
@@ -8244,10 +10145,14 @@ ouble
 ```
 #### Inputs
 ```
-ConstSpiceDouble* v1ConstSpiceDouble* v2SpiceInt ndim
+ConstSpiceDouble* v1
+ConstSpiceDouble* v2
+SpiceInt ndim
+
 ```
 #### Outputs
 ```
+_no output arguments._
 
 ```
 ## vsep_c
@@ -8260,10 +10165,13 @@ ouble
 ```
 #### Inputs
 ```
-ConstSpiceDouble* v1[3]ConstSpiceDouble* v2[3]
+ConstSpiceDouble* v1[3]
+ConstSpiceDouble* v2[3]
+
 ```
 #### Outputs
 ```
+_no output arguments._
 
 ```
 ## vsubg_c
@@ -8279,11 +10187,15 @@ void
 ```
 #### Inputs
 ```
-ConstSpiceDouble* v1ConstSpiceDouble* v2SpiceInt ndim
+ConstSpiceDouble* v1
+ConstSpiceDouble* v2
+SpiceInt ndim
+
 ```
 #### Outputs
 ```
 SpiceDouble* vout
+
 ```
 ## vsub_c
 ```c
@@ -8297,11 +10209,14 @@ void
 ```
 #### Inputs
 ```
-ConstSpiceDouble* v1[3]ConstSpiceDouble* v2[3]
+ConstSpiceDouble* v1[3]
+ConstSpiceDouble* v2[3]
+
 ```
 #### Outputs
 ```
 SpiceDouble* vout[3]
+
 ```
 ## vtmvg_c
 ```c
@@ -8317,11 +10232,14 @@ ouble
 ```
 #### Inputs
 ```
-SpiceInt nrowSpiceInt ncol
+SpiceInt nrow
+SpiceInt ncol
+
 ```
 #### Outputs
 ```
 const void
+
 ```
 ## vtmv_c
 ```c
@@ -8335,10 +10253,14 @@ ouble
 ```
 #### Inputs
 ```
-ConstSpiceDouble v1ConstSpiceDouble matrixConstSpiceDouble v2
+ConstSpiceDouble v1
+ConstSpiceDouble matrix
+ConstSpiceDouble v2
+
 ```
 #### Outputs
 ```
+_no output arguments._
 
 ```
 ## vupack_c
@@ -8355,10 +10277,14 @@ void
 #### Inputs
 ```
 ConstSpiceDouble* v[3]
+
 ```
 #### Outputs
 ```
-SpiceDouble* xSpiceDouble* ySpiceDouble* z
+SpiceDouble* x
+SpiceDouble* y
+SpiceDouble* z
+
 ```
 ## vzerog_c
 ```c
@@ -8370,10 +10296,13 @@ oolean
 ```
 #### Inputs
 ```
-ConstSpiceDouble* vSpiceInt ndim
+ConstSpiceDouble* v
+SpiceInt ndim
+
 ```
 #### Outputs
 ```
+_no output arguments._
 
 ```
 ## vzero_c
@@ -8387,9 +10316,11 @@ oolean
 #### Inputs
 ```
 ConstSpiceDouble* v[3]
+
 ```
 #### Outputs
 ```
+_no output arguments._
 
 ```
 ## wncard_c
@@ -8403,9 +10334,11 @@ nt
 #### Inputs
 ```
 SpiceCell* window
+
 ```
 #### Outputs
 ```
+_no output arguments._
 
 ```
 ## wncomd_c
@@ -8421,11 +10354,15 @@ void
 ```
 #### Inputs
 ```
-SpiceDouble rightSpiceCell* window
+SpiceDouble right
+SpiceCell* window
+
 ```
 #### Outputs
 ```
-SpiceDouble leftSpiceCell* result
+SpiceDouble left
+SpiceCell* result
+
 ```
 ## wncond_c
 ```c
@@ -8439,10 +10376,14 @@ void
 ```
 #### Inputs
 ```
-SpiceDouble leftSpiceDouble rightSpiceCell* window
+SpiceDouble left
+SpiceDouble right
+SpiceCell* window
+
 ```
 #### Outputs
 ```
+_no output arguments._
 
 ```
 ## wndifd_c
@@ -8458,10 +10399,13 @@ void
 #### Inputs
 ```
 SpiceCell* b
+
 ```
 #### Outputs
 ```
-SpiceCell* aSpiceCell* c
+SpiceCell* a
+SpiceCell* c
+
 ```
 ## wnelmd_c
 ```c
@@ -8474,10 +10418,13 @@ oolean
 ```
 #### Inputs
 ```
-SpiceDouble pointSpiceCell* window
+SpiceDouble point
+SpiceCell* window
+
 ```
 #### Outputs
 ```
+_no output arguments._
 
 ```
 ## wnexpd_c
@@ -8492,10 +10439,14 @@ void
 ```
 #### Inputs
 ```
-SpiceDouble leftSpiceDouble rightSpiceCell* window
+SpiceDouble left
+SpiceDouble right
+SpiceCell* window
+
 ```
 #### Outputs
 ```
+_no output arguments._
 
 ```
 ## wnextd_c
@@ -8509,10 +10460,13 @@ void
 ```
 #### Inputs
 ```
-SpiceChar sideSpiceCell* window
+SpiceChar side
+SpiceCell* window
+
 ```
 #### Outputs
 ```
+_no output arguments._
 
 ```
 ## wnfetd_c
@@ -8528,11 +10482,15 @@ void
 ```
 #### Inputs
 ```
-SpiceCell* windowSpiceInt n
+SpiceCell* window
+SpiceInt n
+
 ```
 #### Outputs
 ```
-SpiceDouble* leftSpiceDouble* right
+SpiceDouble* left
+SpiceDouble* right
+
 ```
 ## wnfild_c
 ```c
@@ -8545,10 +10503,13 @@ void
 ```
 #### Inputs
 ```
-SpiceDouble smallSpiceCell* window
+SpiceDouble small
+SpiceCell* window
+
 ```
 #### Outputs
 ```
+_no output arguments._
 
 ```
 ## wnfltd_c
@@ -8562,10 +10523,13 @@ void
 ```
 #### Inputs
 ```
-SpiceDouble smallSpiceCell* window
+SpiceDouble small
+SpiceCell* window
+
 ```
 #### Outputs
 ```
+_no output arguments._
 
 ```
 ## wnincd_c
@@ -8580,11 +10544,14 @@ oolean
 ```
 #### Inputs
 ```
-SpiceDouble rightSpiceCell* window
+SpiceDouble right
+SpiceCell* window
+
 ```
 #### Outputs
 ```
 SpiceDouble left
+
 ```
 ## wninsd_c
 ```c
@@ -8598,11 +10565,14 @@ void
 ```
 #### Inputs
 ```
-SpiceDouble rightSpiceCell* window
+SpiceDouble right
+SpiceCell* window
+
 ```
 #### Outputs
 ```
 SpiceDouble left
+
 ```
 ## wnintd_c
 ```c
@@ -8617,10 +10587,13 @@ void
 #### Inputs
 ```
 SpiceCell* b
+
 ```
 #### Outputs
 ```
-SpiceCell* aSpiceCell* c
+SpiceCell* a
+SpiceCell* c
+
 ```
 ## wnreld_c
 ```c
@@ -8634,11 +10607,14 @@ oolean
 ```
 #### Inputs
 ```
-ConstSpiceChar* opSpiceCell* b
+ConstSpiceChar* op
+SpiceCell* b
+
 ```
 #### Outputs
 ```
 SpiceCell* a
+
 ```
 ## wnsumd_c
 ```c
@@ -8656,10 +10632,16 @@ void
 #### Inputs
 ```
 SpiceCell* window
+
 ```
 #### Outputs
 ```
-SpiceDouble* measSpiceDouble* avgSpiceDouble* stddevSpiceInt* shortestSpiceInt* longest
+SpiceDouble* meas
+SpiceDouble* avg
+SpiceDouble* stddev
+SpiceInt* shortest
+SpiceInt* longest
+
 ```
 ## wnunid_c
 ```c
@@ -8674,10 +10656,13 @@ void
 #### Inputs
 ```
 SpiceCell* b
+
 ```
 #### Outputs
 ```
-SpiceCell* aSpiceCell* c
+SpiceCell* a
+SpiceCell* c
+
 ```
 ## wnvald_c
 ```c
@@ -8691,10 +10676,14 @@ void
 ```
 #### Inputs
 ```
-SpiceInt sizeSpiceInt nSpiceCell* window
+SpiceInt size
+SpiceInt n
+SpiceCell* window
+
 ```
 #### Outputs
 ```
+_no output arguments._
 
 ```
 ## xf2eul_c
@@ -8712,11 +10701,17 @@ void
 ```
 #### Inputs
 ```
-ConstSpiceDouble xformSpiceInt axisaSpiceInt axisbSpiceInt axisc
+ConstSpiceDouble xform
+SpiceInt axisa
+SpiceInt axisb
+SpiceInt axisc
+
 ```
 #### Outputs
 ```
-SpiceDouble eulangSpiceBoolean* unique
+SpiceDouble eulang
+SpiceBoolean* unique
+
 ```
 ## xf2rav_c
 ```c
@@ -8731,10 +10726,13 @@ void
 #### Inputs
 ```
 ConstSpiceDouble xform
+
 ```
 #### Outputs
 ```
-SpiceDouble rotSpiceDouble av
+SpiceDouble rot
+SpiceDouble av
+
 ```
 ## zzadbail_c
 ```c
@@ -8750,6 +10748,7 @@ logical
 ```
 #### Outputs
 ```
+_no output arguments._
 
 ```
 ## zzadfunc_c
@@ -8764,10 +10763,12 @@ int
 #### Inputs
 ```
 doublereal* et
+
 ```
 #### Outputs
 ```
 doublereal* value
+
 ```
 ## zzadqdec_c
 ```c
@@ -8782,10 +10783,13 @@ int
 #### Inputs
 ```
 doublereal* et
+
 ```
 #### Outputs
 ```
-U_fp udfunclogical* xbool
+U_fp udfunc
+logical* xbool
+
 ```
 ## zzadrefn_c
 ```c
@@ -8801,11 +10805,16 @@ int
 ```
 #### Inputs
 ```
-doublereal* t1doublereal* t2
+doublereal* t1
+doublereal* t2
+
 ```
 #### Outputs
 ```
-logical* s1logical* s2doublereal* t
+logical* s1
+logical* s2
+doublereal* t
+
 ```
 ## zzadrepf_c
 ```c
@@ -8821,6 +10830,7 @@ int
 ```
 #### Outputs
 ```
+_no output arguments._
 
 ```
 ## zzadrepu_c
@@ -8835,11 +10845,14 @@ int
 ```
 #### Inputs
 ```
-doublereal* ivenddoublereal* time
+doublereal* ivend
+doublereal* time
+
 ```
 #### Outputs
 ```
 doublereal* ivbeg
+
 ```
 ## zzadsave_c
 ```c
@@ -8860,6 +10873,7 @@ functions
 #### Outputs
 ```
 Save a
+
 ```
 ## zzadstep_c
 ```c
@@ -8873,10 +10887,12 @@ int
 #### Inputs
 ```
 doublereal* time
+
 ```
 #### Outputs
 ```
 doublereal* step
+
 ```
 ## zzerror
 ```c
@@ -8889,9 +10905,11 @@ char
 #### Inputs
 ```
 long cnt
+
 ```
 #### Outputs
 ```
+_no output arguments._
 
 ```
 ## zzgetcml_c
@@ -8906,11 +10924,14 @@ void
 ```
 #### Inputs
 ```
-SpiceInt* argcSpiceBoolean init
+SpiceInt* argc
+SpiceBoolean init
+
 ```
 #### Outputs
 ```
 SpiceCha r
+
 ```
 ## zzgfdsps_
 ```c
@@ -8927,10 +10948,17 @@ int
 ```
 #### Inputs
 ```
-integer* nleadchar* stringchar* fmtinteger* ntrailftnlen stringLenftnlen fmtLen
+integer* nlead
+char* string
+char* fmt
+integer* ntrail
+ftnlen stringLen
+ftnlen fmtLen
+
 ```
 #### Outputs
 ```
+_no output arguments._
 
 ```
 ## zzgfsavh_c
@@ -8944,9 +10972,11 @@ void
 #### Inputs
 ```
 SpiceBoolean status
+
 ```
 #### Outputs
 ```
+_no output arguments._
 
 ```
 ## zzsynccl_c
@@ -8960,9 +10990,12 @@ void
 ```
 #### Inputs
 ```
-SpiceTransDir xdirSpiceCell* cell
+SpiceTransDir xdir
+SpiceCell* cell
+
 ```
 #### Outputs
 ```
+_no output arguments._
 
 ```
