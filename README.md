@@ -27,4 +27,4 @@ node src/index.js ../cspice/src/cspice ./output/
 - [ ] Make code for determining input / output arguments from comments more robust.
 - [ ] Remove the `_c` suffix on the functions.
 - [ ] Convert arguments map output to just an array.
-- [ ] Write out list of unconverted functions.
+- [x] Write out list of unconverted functions.
