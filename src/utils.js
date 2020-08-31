@@ -61,7 +61,7 @@ function extractParameters( contents ) {
 
     for ( const key in argsMap ) {
 
-        const regex = new RegExp( `\\s{3}${ key }(\\s{3}|,\n)` );
+        const regex = new RegExp( `\\s{3}${ key }(\\s{3}|,\\s*\\n)` );
         argsMap[ key ].isInput = regex.test( inputsBody );
 
     }

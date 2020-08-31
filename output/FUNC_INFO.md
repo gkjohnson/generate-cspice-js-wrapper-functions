@@ -58,11 +58,11 @@ void
 ```
 #### Inputs
 ```
+ConstSpiceDouble axis
 SpiceDouble angle
 ```
 #### Outputs
 ```
-ConstSpiceDouble axis
 SpiceDouble r
 ```
 ## b1900_c
@@ -270,12 +270,11 @@ SpiceDouble
 #### Inputs
 ```
 SpiceDouble number
+SpiceDouble end1
 SpiceDouble end2
 ```
 #### Outputs
-```
-SpiceDouble end1
-```
+_no output arguments._
 ## brckti_c
 ```c
 SpiceInt brckti_c ( SpiceInt  number, 
@@ -289,12 +288,11 @@ SpiceInt
 #### Inputs
 ```
 SpiceInt number
+SpiceInt end1
 SpiceInt end2
 ```
 #### Outputs
-```
-SpiceInt end1
-```
+_no output arguments._
 ## bschoc_c
 ```c
 SpiceInt bschoc_c ( ConstSpiceChar  * value,
@@ -438,12 +436,12 @@ void
 ```
 #### Inputs
 ```
+ConstSpiceDouble* center[3]
+ConstSpiceDouble vec1
 ConstSpiceDouble vec2
 ```
 #### Outputs
 ```
-ConstSpiceDouble* center[3]
-ConstSpiceDouble vec1
 SpiceEllipse* ellipse
 ```
 ## chkin_c
@@ -1344,12 +1342,12 @@ void
 ```
 #### Inputs
 ```
+SpiceDouble x
+SpiceDouble y
 SpiceDouble z
 ```
 #### Outputs
 ```
-SpiceDouble x
-SpiceDouble y
 SpiceDouble* jacobi[3]
 ```
 ## deltet_c
@@ -1400,14 +1398,14 @@ void
 ```
 #### Inputs
 ```
+SpiceDouble x
+SpiceDouble y
 SpiceDouble z
 SpiceDouble re
 SpiceDouble f
 ```
 #### Outputs
 ```
-SpiceDouble x
-SpiceDouble y
 SpiceDouble* jacobi[3]
 ```
 ## diags2_c
@@ -1461,12 +1459,12 @@ void
 ```
 #### Inputs
 ```
+SpiceDouble x
+SpiceDouble y
 SpiceDouble z
 ```
 #### Outputs
 ```
-SpiceDouble x
-SpiceDouble y
 SpiceDouble* jacobi[3]
 ```
 ## dp2hx_c
@@ -1508,14 +1506,14 @@ void
 #### Inputs
 ```
 ConstSpiceChar* body
+SpiceDouble x
+SpiceDouble y
 SpiceDouble z
 SpiceDouble re
 SpiceDouble f
 ```
 #### Outputs
 ```
-SpiceDouble x
-SpiceDouble y
 SpiceDouble* jacobi[3]
 ```
 ## dpmax_
@@ -1694,12 +1692,12 @@ void
 ```
 #### Inputs
 ```
+SpiceDouble x
+SpiceDouble y
 SpiceDouble z
 ```
 #### Outputs
 ```
-SpiceDouble x
-SpiceDouble y
 SpiceDouble* jacobi[3]
 ```
 ## dtpool_c
@@ -1851,13 +1849,13 @@ void
 ```
 #### Inputs
 ```
+SpiceDouble a
+SpiceDouble b
 SpiceDouble c
 ConstSpiceDouble* viewpt[3]
 ```
 #### Outputs
 ```
-SpiceDouble a
-SpiceDouble b
 SpiceEllipse* limb
 ```
 ## ekacec_c
@@ -1909,13 +1907,12 @@ SpiceInt handle
 SpiceInt segno
 SpiceInt recno
 ConstSpiceChar* column
+SpiceInt nvals
 ConstSpiceDouble* dvals
 SpiceBoolean isnull
 ```
 #### Outputs
-```
-SpiceInt nvals
-```
+_no output arguments._
 ## ekacei_c
 ```c
 void ekacei_c  ( SpiceInt          handle,
@@ -1936,13 +1933,12 @@ SpiceInt handle
 SpiceInt segno
 SpiceInt recno
 ConstSpiceChar* column
+SpiceInt nvals
 ConstSpiceInt* ivals
 SpiceBoolean isnull
 ```
 #### Outputs
-```
-SpiceInt nvals
-```
+_no output arguments._
 ## ekaclc_c
 ```c
 void ekaclc_c ( SpiceInt                handle,
@@ -2656,13 +2652,12 @@ SpiceInt handle
 SpiceInt segno
 SpiceInt recno
 ConstSpiceChar* column
+SpiceInt nvals
 ConstSpiceDouble* dvals
 SpiceBoolean isnull
 ```
 #### Outputs
-```
-SpiceInt nvals
-```
+_no output arguments._
 ## ekucei_c
 ```c
 void ekucei_c  ( SpiceInt          handle,
@@ -2683,13 +2678,12 @@ SpiceInt handle
 SpiceInt segno
 SpiceInt recno
 ConstSpiceChar* column
+SpiceInt nvals
 ConstSpiceInt* ivals
 SpiceBoolean isnull
 ```
 #### Outputs
-```
-SpiceInt nvals
-```
+_no output arguments._
 ## ekuef_c
 ```c
 void ekuef_c ( SpiceInt handle )
@@ -3640,13 +3634,12 @@ void
 ```
 #### Inputs
 ```
+SpiceDouble ivbeg
 SpiceDouble ivend
 SpiceDouble time
 ```
 #### Outputs
-```
-SpiceDouble ivbeg
-```
+_no output arguments._
 ## gfrfov_c
 ```c
 void gfrfov_c ( ConstSpiceChar     * inst,
@@ -4096,13 +4089,13 @@ void
 ```
 #### Inputs
 ```
+SpiceDouble a
+SpiceDouble b
 SpiceDouble c
 ConstSpicePlane* plane
 ```
 #### Outputs
 ```
-SpiceDouble a
-SpiceDouble b
 SpiceEllipse* ellipse
 SpiceBoolean* found
 ```
@@ -4143,12 +4136,12 @@ void
 ```
 #### Inputs
 ```
+ConstSpiceDouble vertex
 ConstSpiceDouble dir
 ConstSpicePlane* plane
 ```
 #### Outputs
 ```
-ConstSpiceDouble vertex
 SpiceInt* nxpts
 SpiceDouble xpt
 ```
@@ -5325,14 +5318,14 @@ void
 ```
 #### Inputs
 ```
+SpiceDouble a
+SpiceDouble b
 SpiceDouble c
 ConstSpiceDouble* linept[3]
 ConstSpiceDouble* linedr[3]
 ```
 #### Outputs
 ```
-SpiceDouble a
-SpiceDouble b
 SpiceDouble* pnear[3]
 SpiceDouble* dist
 ```
@@ -5392,11 +5385,11 @@ void
 ```
 #### Inputs
 ```
+ConstSpiceDouble* normal[3]
 SpiceDouble constant
 ```
 #### Outputs
 ```
-ConstSpiceDouble* normal[3]
 SpicePlane* plane
 ```
 ## nvp2pl_c
@@ -5411,11 +5404,11 @@ void
 ```
 #### Inputs
 ```
+ConstSpiceDouble* normal[3]
 ConstSpiceDouble point
 ```
 #### Outputs
 ```
-ConstSpiceDouble* normal[3]
 SpicePlane* plane
 ```
 ## ordc_c
@@ -5719,11 +5712,11 @@ void
 ```
 #### Inputs
 ```
+ConstSpiceEllipse* elin
 ConstSpicePlane* plane
 ```
 #### Outputs
 ```
-ConstSpiceEllipse* elin
 SpiceEllipse* elout
 ```
 ## pl2nvc_c
@@ -5909,11 +5902,11 @@ void
 #### Inputs
 ```
 ConstSpiceDouble* point[3]
+ConstSpiceDouble* span1[3]
 ConstSpiceDouble* span2[3]
 ```
 #### Outputs
 ```
-ConstSpiceDouble* span1[3]
 SpicePlane* plane
 ```
 ## putcml_c
@@ -6449,12 +6442,12 @@ void
 ```
 #### Inputs
 ```
+SpiceDouble a
+SpiceDouble b
 SpiceDouble c
 ```
 #### Outputs
 ```
-SpiceDouble a
-SpiceDouble b
 SpiceDouble* root1[2]
 SpiceDouble* root2[2]
 ```
@@ -6471,11 +6464,11 @@ void
 ```
 #### Inputs
 ```
+ConstSpiceDouble vec1
 ConstSpiceDouble vec2
 ```
 #### Outputs
 ```
-ConstSpiceDouble vec1
 SpiceDouble* smajor[3]
 SpiceDouble* sminor[3]
 ```
@@ -7285,16 +7278,15 @@ void
 ```
 #### Inputs
 ```
+SpiceInt handle
+SpiceDouble* descr[5]
 ConstSpiceChar* ident
+SpiceDouble begin
 SpiceDouble end
 SpiceInt newh
 ```
 #### Outputs
-```
-SpiceInt handle
-SpiceDouble* descr[5]
-SpiceDouble begin
-```
+_no output arguments._
 ## spkuds_c
 ```c
 void spkuds_c ( ConstSpiceDouble     descr [5],
@@ -7365,6 +7357,7 @@ SpiceInt handle
 SpiceInt body
 SpiceInt center
 ConstSpiceChar* frame
+SpiceDouble first
 SpiceDouble last
 ConstSpiceChar* segid
 SpiceDouble intlen
@@ -7374,9 +7367,7 @@ ConstSpiceDouble cdata
 SpiceDouble btime
 ```
 #### Outputs
-```
-SpiceDouble first
-```
+_no output arguments._
 ## spkw03_c
 ```c
 void spkw03_c ( SpiceInt                handle,
@@ -7402,6 +7393,7 @@ SpiceInt handle
 SpiceInt body
 SpiceInt center
 ConstSpiceChar* frame
+SpiceDouble first
 SpiceDouble last
 ConstSpiceChar* segid
 SpiceDouble intlen
@@ -7411,9 +7403,7 @@ ConstSpiceDouble cdata
 SpiceDouble btime
 ```
 #### Outputs
-```
-SpiceDouble first
-```
+_no output arguments._
 ## spkw05_c
 ```c
 void spkw05_c ( SpiceInt                handle,
@@ -7473,6 +7463,7 @@ SpiceInt handle
 SpiceInt body
 SpiceInt center
 ConstSpiceChar* frame
+SpiceDouble first
 SpiceDouble last
 ConstSpiceChar* segid
 SpiceInt degree
@@ -7482,9 +7473,7 @@ SpiceDouble epoch1
 SpiceDouble step
 ```
 #### Outputs
-```
-SpiceDouble first
-```
+_no output arguments._
 ## spkw09_c
 ```c
 void spkw09_c ( SpiceInt             handle,
@@ -7509,6 +7498,7 @@ SpiceInt handle
 SpiceInt body
 SpiceInt center
 ConstSpiceChar* frame
+SpiceDouble first
 SpiceDouble last
 ConstSpiceChar* segid
 SpiceInt degree
@@ -7517,9 +7507,7 @@ ConstSpiceDouble states
 ConstSpiceDouble epochs
 ```
 #### Outputs
-```
-SpiceDouble first
-```
+_no output arguments._
 ## spkw10_c
 ```c
 void spkw10_c ( SpiceInt           handle,
@@ -7579,6 +7567,7 @@ SpiceInt handle
 SpiceInt body
 SpiceInt center
 ConstSpiceChar* frame
+SpiceDouble first
 SpiceDouble last
 ConstSpiceChar* segid
 SpiceInt degree
@@ -7588,9 +7577,7 @@ SpiceDouble epoch0
 SpiceDouble step
 ```
 #### Outputs
-```
-SpiceDouble first
-```
+_no output arguments._
 ## spkw13_c
 ```c
 void spkw13_c ( SpiceInt             handle,
@@ -7615,6 +7602,7 @@ SpiceInt handle
 SpiceInt body
 SpiceInt center
 ConstSpiceChar* frame
+SpiceDouble first
 SpiceDouble last
 ConstSpiceChar* segid
 SpiceInt degree
@@ -7623,9 +7611,7 @@ ConstSpiceDouble states
 ConstSpiceDouble epochs
 ```
 #### Outputs
-```
-SpiceDouble first
-```
+_no output arguments._
 ## spkw15_c
 ```c
 void spkw15_c ( SpiceInt           handle,
@@ -7733,6 +7719,7 @@ SpiceSPK18Subtype subtyp
 SpiceInt body
 SpiceInt center
 ConstSpiceChar* frame
+SpiceDouble first
 SpiceDouble last
 ConstSpiceChar* segid
 SpiceInt degree
@@ -7741,7 +7728,6 @@ ConstSpiceDouble epochs
 ```
 #### Outputs
 ```
-SpiceDouble first
 const void
 ```
 ## srfrec_c
@@ -8072,12 +8058,12 @@ void
 ```
 ConstSpiceDouble* stvrtx[6]
 ConstSpiceDouble stdir
+SpiceDouble a
+SpiceDouble b
 SpiceDouble c
 ```
 #### Outputs
 ```
-SpiceDouble a
-SpiceDouble b
 SpiceDouble stx
 SpiceBoolean* found
 ```
@@ -8792,12 +8778,12 @@ void
 ```
 #### Inputs
 ```
+SpiceDouble x
+SpiceDouble y
 SpiceDouble z
 ```
 #### Outputs
 ```
-SpiceDouble x
-SpiceDouble y
 SpiceDouble* v[3]
 ```
 ## vperp_c
@@ -8833,12 +8819,12 @@ void
 ```
 #### Inputs
 ```
+ConstSpiceDouble vin
+ConstSpicePlane* projpl
 ConstSpicePlane* invpl
 ```
 #### Outputs
 ```
-ConstSpiceDouble vin
-ConstSpicePlane* projpl
 SpiceDouble vout
 SpiceBoolean* found
 ```
@@ -9146,12 +9132,12 @@ void
 ```
 #### Inputs
 ```
+SpiceDouble left
 SpiceDouble right
 SpiceCell* window
 ```
 #### Outputs
 ```
-SpiceDouble left
 SpiceCell* result
 ```
 ## wncond_c
@@ -9184,11 +9170,11 @@ void
 ```
 #### Inputs
 ```
+SpiceCell* a
 SpiceCell* b
 ```
 #### Outputs
 ```
-SpiceCell* a
 SpiceCell* c
 ```
 ## wnelmd_c
@@ -9306,13 +9292,12 @@ SpiceBoolean
 ```
 #### Inputs
 ```
+SpiceDouble left
 SpiceDouble right
 SpiceCell* window
 ```
 #### Outputs
-```
-SpiceDouble left
-```
+_no output arguments._
 ## wninsd_c
 ```c
 void wninsd_c ( SpiceDouble     left,
@@ -9325,13 +9310,12 @@ void
 ```
 #### Inputs
 ```
+SpiceDouble left
 SpiceDouble right
 SpiceCell* window
 ```
 #### Outputs
-```
-SpiceDouble left
-```
+_no output arguments._
 ## wnintd_c
 ```c
 void wnintd_c ( SpiceCell  * a,
@@ -9344,11 +9328,11 @@ void
 ```
 #### Inputs
 ```
+SpiceCell* a
 SpiceCell* b
 ```
 #### Outputs
 ```
-SpiceCell* a
 SpiceCell* c
 ```
 ## wnreld_c
@@ -9363,13 +9347,12 @@ SpiceBoolean
 ```
 #### Inputs
 ```
+SpiceCell* a
 ConstSpiceChar* op
 SpiceCell* b
 ```
 #### Outputs
-```
-SpiceCell* a
-```
+_no output arguments._
 ## wnsumd_c
 ```c
 void wnsumd_c ( SpiceCell      * window,
@@ -9407,11 +9390,11 @@ void
 ```
 #### Inputs
 ```
+SpiceCell* a
 SpiceCell* b
 ```
 #### Outputs
 ```
-SpiceCell* a
 SpiceCell* c
 ```
 ## wnvald_c
@@ -9571,13 +9554,12 @@ int
 ```
 #### Inputs
 ```
+doublereal* ivbeg
 doublereal* ivend
 doublereal* time
 ```
 #### Outputs
-```
-doublereal* ivbeg
-```
+_no output arguments._
 ## zzadsave_c
 ```c
 functions
