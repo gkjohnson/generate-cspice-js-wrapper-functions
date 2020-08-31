@@ -1,10 +1,9 @@
 const path = require( 'path' );
 const fs = require( 'fs' );
-const { extractParameters } = require('./utils');
+const { extractParameters, generateFuncInfo } = require('./utils');
 const inputPath = process.argv[ 2 ];
 const outputPath = process.argv[ 3 ];
 
-let mdContents = '';
 const rootDir = path.resolve( process.cwd(), inputPath );
 const outputDir = path.resolve( process.cwd(), outputPath );
 fs.readdir( rootDir, ( err, files ) => {
@@ -16,6 +15,8 @@ fs.readdir( rootDir, ( err, files ) => {
 
     }
 
+    const processedInfo = [];
+    const skippedFunctions = [];
     files.forEach( file => {
 
         const filePath = path.resolve( rootDir, file );
@@ -27,66 +28,9 @@ fs.readdir( rootDir, ( err, files ) => {
             if ( result ) {
     
                 // TODO: generate the function for running the procedure in cspice.js
-
+                
+                processedInfo.push( result );
                 console.log( 'Processed ', result.name );
-
-                const args = Object
-                    .values( result.args )
-                    .sort( ( a, b ) => a.index - b.index );
-
-                const inputs = args.filter( arg => arg.isInput );
-                const outputs = args.filter( arg => ! arg.isInput );
-
-                mdContents +=
-                    `## ${ result.name }\n` +
-                    
-                    '```c\n' + result.signature + '\n```\n';
-
-                mdContents += '#### Return\n```\n';
-                mdContents += result.returnInfo.type + ( result.returnInfo.isPointer ? '*' : '' );
-                mdContents += '\n```\n';
-
-                mdContents += '#### Inputs\n';
-                if ( inputs.length === 0 ) {
-
-                    mdContents += '_no input arguments._\n';
-                
-                } else {
-
-                    mdContents += '```\n';
-                    inputs.forEach( arg => {
-
-                        mdContents += arg.type
-                            + ( arg.isPointer ? '* ' : ' ' )
-                            + arg.name
-                            + ( arg.isFixedArray ? `[${arg.arrayLength}]` : '' )
-                            + '\n';
-
-                    } );
-                    mdContents += '```\n';
-
-                }
-
-                mdContents += '#### Outputs\n';
-                if ( outputs.length === 0 ) {
-
-                    mdContents += '_no output arguments._\n';
-
-                } else {
-
-                    mdContents += '```\n';
-                    outputs.forEach( arg => {
-
-                        mdContents += arg.type
-                            + ( arg.isPointer ? '* ' : ' ' )
-                            + arg.name
-                            + ( arg.isFixedArray ? `[${arg.arrayLength}]` : '' )
-                            + '\n';
-
-                    } );
-                    mdContents += '```\n';
-                
-                }
 
             } else {
 
@@ -98,11 +42,35 @@ fs.readdir( rootDir, ( err, files ) => {
 
             console.error( 'Error in ', file );
             console.error( e );
+            skippedFunctions.push( file.replace( /\.c$/, '' ) );
 
         }
 
     } );
     
-    fs.writeFileSync( path.resolve( outputDir, 'FUNC_INFO.md' ), mdContents, { encoding: 'utf8' } );
+    let mdContents = '';
+    processedInfo.forEach( info => {
+        
+        mdContents += generateFuncInfo( info )
+    
+    } );
+
+    fs.writeFileSync( path.resolve( outputDir, 'FUNCTION_INFO.md' ), mdContents, { encoding: 'utf8' } );
+
+    let processedFunctions = '';
+    processedFunctions += '## Skipped Functions\n';
+    skippedFunctions.forEach( name => {
+
+        processedFunctions += '- `' + name + '`\n';
+
+    } );
+
+    processedFunctions += '## Processed Functions\n';
+    processedInfo.forEach( info => {
+
+        processedFunctions += '- `' + info.name + '`\n';
+
+    } );
+    fs.writeFileSync( path.resolve( outputDir, 'PROCESSED_FUNCTIONS.md' ), processedFunctions, { encoding: 'utf8' } );
 
 } );

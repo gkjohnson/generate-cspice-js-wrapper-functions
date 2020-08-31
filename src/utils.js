@@ -102,4 +102,68 @@ function extractParameters( contents ) {
 
 }
 
-module.exports = { extractParameters };
+function generateFuncInfo( result ) {
+
+    const args = Object
+        .values( result.args )
+        .sort( ( a, b ) => a.index - b.index );
+
+    const inputs = args.filter( arg => arg.isInput );
+    const outputs = args.filter( arg => ! arg.isInput );
+
+    let mdContents = '';
+    mdContents +=
+        `## ${ result.name }\n` +
+        
+        '```c\n' + result.signature + '\n```\n';
+
+    mdContents += '#### Return\n```\n';
+    mdContents += result.returnInfo.type + ( result.returnInfo.isPointer ? '*' : '' );
+    mdContents += '\n```\n';
+
+    mdContents += '#### Inputs\n';
+    if ( inputs.length === 0 ) {
+
+        mdContents += '_no input arguments._\n';
+    
+    } else {
+
+        mdContents += '```\n';
+        inputs.forEach( arg => {
+
+            mdContents += arg.type
+                + ( arg.isPointer ? '* ' : ' ' )
+                + arg.name
+                + ( arg.isFixedArray ? `[${arg.arrayLength}]` : '' )
+                + '\n';
+
+        } );
+        mdContents += '```\n';
+
+    }
+
+    mdContents += '#### Outputs\n';
+    if ( outputs.length === 0 ) {
+
+        mdContents += '_no output arguments._\n';
+
+    } else {
+
+        mdContents += '```\n';
+        outputs.forEach( arg => {
+
+            mdContents += arg.type
+                + ( arg.isPointer ? '* ' : ' ' )
+                + arg.name
+                + ( arg.isFixedArray ? `[${arg.arrayLength}]` : '' )
+                + '\n';
+
+        } );
+        mdContents += '```\n';
+    
+    }
+    return mdContents;
+
+}
+
+module.exports = { extractParameters, generateFuncInfo };
