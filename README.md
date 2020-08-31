@@ -24,3 +24,4 @@ node src/index.js ../cspice/src/cspice ./output/
 - [ ] Generate JSDoc comments for the functions.
 - [ ] Add tests, validate signatures.
 - [ ] Docs and comment code.
+- [ ] Make code for determining input / output arguments from comments more robust.
