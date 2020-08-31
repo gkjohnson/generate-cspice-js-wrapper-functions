@@ -912,31 +912,6 @@ SpiceInt handle
 ```
 #### Outputs
 _no output arguments._
-## dafec_c
-```c
-void dafec_c ( SpiceInt          handle,
-                  SpiceInt          bufsiz,
-                  SpiceInt          lenout,
-                  SpiceInt        * n,
-                  void            * buffer,
-                  SpiceBoolean    * done    )
-```
-#### Return
-```
-void
-```
-#### Inputs
-```
-SpiceInt handle
-SpiceInt bufsiz
-SpiceInt lenout
-```
-#### Outputs
-```
-SpiceInt* n
-void* buffer
-SpiceBoolean* done
-```
 ## daffna_c
 ```c
 void daffna_c ( SpiceBoolean  * found )
@@ -1220,31 +1195,6 @@ SpiceInt handle
 ```
 #### Outputs
 _no output arguments._
-## dasec_c
-```c
-void dasec_c ( SpiceInt         handle,
-                  SpiceInt         bufsiz,
-                  SpiceInt         buflen,
-                  SpiceInt       * n,
-                  void           * buffer,
-                  SpiceBoolean   * done   )
-```
-#### Return
-```
-void
-```
-#### Inputs
-```
-SpiceInt handle
-SpiceInt bufsiz
-SpiceInt buflen
-```
-#### Outputs
-```
-SpiceInt* n
-void* buffer
-SpiceBoolean* done
-```
 ## dasopr_c
 ```c
 void dasopr_c ( ConstSpiceChar  * fname,
@@ -2355,74 +2305,6 @@ ConstSpiceChar* fname
 ```
 SpiceInt* handle
 ```
-## ekpsel_c
-```c
-void ekpsel_c ( ConstSpiceChar        * query,
-                   SpiceInt                msglen,
-                   SpiceInt                tablen,
-                   SpiceInt                collen,
-                   SpiceInt              * n,
-                   SpiceInt              * xbegs,
-                   SpiceInt              * xends,
-                   SpiceEKDataType       * xtypes,
-                   SpiceEKExprClass      * xclass,
-                   void                  * tabs,
-                   void                  * cols,
-                   SpiceBoolean          * error,
-                   SpiceChar             * errmsg                     )
-```
-#### Return
-```
-void
-```
-#### Inputs
-```
-ConstSpiceChar* query
-SpiceInt msglen
-SpiceInt tablen
-SpiceInt collen
-```
-#### Outputs
-```
-SpiceInt* n
-SpiceInt* xbegs
-SpiceInt* xends
-SpiceEKDataType* xtypes
-SpiceEKExprClass* xclass
-void* tabs
-void* cols
-SpiceBoolean* error
-SpiceChar* errmsg
-```
-## ekrcec_c
-```c
-void ekrcec_c ( SpiceInt           handle,
-                   SpiceInt           segno,
-                   SpiceInt           recno,
-                   ConstSpiceChar   * column,
-                   SpiceInt           lenout,
-                   SpiceInt         * nvals,
-                   void             * cvals,
-                   SpiceBoolean     * isnull )
-```
-#### Return
-```
-void
-```
-#### Inputs
-```
-SpiceInt handle
-SpiceInt segno
-SpiceInt recno
-ConstSpiceChar* column
-SpiceInt lenout
-```
-#### Outputs
-```
-SpiceInt* nvals
-void* cvals
-SpiceBoolean* isnull
-```
 ## ekrced_c
 ```c
 void ekrced_c ( SpiceInt           handle,
@@ -3008,33 +2890,6 @@ ConstSpiceChar* file
 ```
 #### Outputs
 _no output arguments._
-## gcpool_c
-```c
-void gcpool_c ( ConstSpiceChar * name,
-                   SpiceInt         start,
-                   SpiceInt         room,
-                   SpiceInt         lenout,
-                   SpiceInt       * n,
-                   void           * cvals,
-                   SpiceBoolean   * found )
-```
-#### Return
-```
-void
-```
-#### Inputs
-```
-ConstSpiceChar* name
-SpiceInt start
-SpiceInt room
-SpiceInt lenout
-```
-#### Outputs
-```
-SpiceInt* n
-void* cvals
-SpiceBoolean* found
-```
 ## gdpool_c
 ```c
 void gdpool_c ( ConstSpiceChar * name,
@@ -3732,33 +3587,6 @@ SpiceInt* n
 SpiceInt* ivals
 SpiceBoolean* found
 ```
-## gnpool_c
-```c
-void gnpool_c ( ConstSpiceChar    * name,
-                   SpiceInt            start,
-                   SpiceInt            room,
-                   SpiceInt            lenout,
-                   SpiceInt          * n,
-                   void              * kvars,
-                   SpiceBoolean      * found  )
-```
-#### Return
-```
-void
-```
-#### Inputs
-```
-ConstSpiceChar* name
-SpiceInt start
-SpiceInt room
-SpiceInt lenout
-```
-#### Outputs
-```
-SpiceInt* n
-void* kvars
-SpiceBoolean* found
-```
 ## halfpi_c
 ```c
 SpiceDouble halfpi_c ( void )
@@ -4450,56 +4278,6 @@ SpiceInt n
 ```
 #### Outputs
 _no output arguments._
-## lparse_c
-```c
-void lparse_c ( ConstSpiceChar   * list,
-                   ConstSpiceChar   * delim,
-                   SpiceInt           nmax,
-                   SpiceInt           lenout,
-                   SpiceInt         * n,
-                   void             * items   )
-```
-#### Return
-```
-void
-```
-#### Inputs
-```
-ConstSpiceChar* list
-ConstSpiceChar* delim
-SpiceInt nmax
-SpiceInt lenout
-```
-#### Outputs
-```
-SpiceInt* n
-void* items
-```
-## lparsm_c
-```c
-void lparsm_c ( ConstSpiceChar   * list,
-                   ConstSpiceChar   * delims,
-                   SpiceInt           nmax,
-                   SpiceInt           lenout,
-                   SpiceInt         * n,
-                   void             * items   )
-```
-#### Return
-```
-void
-```
-#### Inputs
-```
-ConstSpiceChar* list
-ConstSpiceChar* delims
-SpiceInt nmax
-SpiceInt lenout
-```
-#### Outputs
-```
-SpiceInt* n
-void* items
-```
 ## lparss_c
 ```c
 void lparss_c ( ConstSpiceChar   * list,
@@ -4865,27 +4643,6 @@ SpiceChar wchr
 ```
 #### Outputs
 _no output arguments._
-## mequg_c
-```c
-void mequg_c ( const void   * m1,
-                  SpiceInt       nr,
-                  SpiceInt       nc,
-                  void         * mout )
-```
-#### Return
-```
-void
-```
-#### Inputs
-```
-void* m1
-SpiceInt nr
-SpiceInt nc
-```
-#### Outputs
-```
-void* mout
-```
 ## mequ_c
 ```c
 void mequ_c ( ConstSpiceDouble  m1  [3][3],
@@ -4978,29 +4735,6 @@ ConstSpiceDouble m2
 #### Outputs
 ```
 SpiceDouble* mout[3]
-```
-## mxvg_c
-```c
-void mxvg_c ( const void   * m1,
-                 const void   * v2,
-                 SpiceInt       nrow1,
-                 SpiceInt       nc1r2,
-                 void         * vout   )
-```
-#### Return
-```
-void
-```
-#### Inputs
-```
-void* m1
-void* v2
-SpiceInt nrow1
-SpiceInt nc1r2
-```
-#### Outputs
-```
-void* vout
 ```
 ## mxv_c
 ```c
@@ -7879,23 +7613,6 @@ ConstSpiceChar* name
 ```
 SpiceInt* n
 SpiceBoolean* found
-```
-## s_rnge
-```c
-integer s_rnge(char *varn, ftnint offset, char *procn, ftnint line)
-```
-#### Return
-```
-integer
-```
-#### Inputs
-_no input arguments._
-#### Outputs
-```
-char* varn
-ftnint offset
-char* procn
-ftnint line
 ```
 ## timdef_c
 ```c

@@ -66,18 +66,28 @@ function extractParameters( contents ) {
 
     }
 
-    const argIndexIsInput = Object.values( argsMap )
-        .sort( ( a, b ) => a.index - b.index )
-        .map( arg => arg.isInput );
+    const sortedArgs = Object.values( argsMap )
+        .sort( ( a, b ) => a.index - b.index );
 
-    for ( let i = 1; i < argIndexIsInput.length; i ++ ) {
+    for ( let i = 1; i < sortedArgs.length; i ++ ) {
 
-        const lastEl = argIndexIsInput[ i - 1 ];
-        const thisEl = argIndexIsInput[ i ];
+        const lastIsInput = sortedArgs[ i - 1 ].isInput;
+        const thisIsInput = sortedArgs[ i ].isInput;
 
-        if ( thisEl && ! lastEl ) {
+        if ( thisIsInput && ! lastIsInput ) {
 
             throw new Error( 'Output comes before input in function signature.' );
+
+        }
+
+    }
+
+    for ( let i = 0; i < sortedArgs.length; i ++ ) {
+
+        const info = sortedArgs[ i ];
+        if ( ! info.isInput && info.isPointer && ( info.type === 'void' || info.type === 'char' ) ) {
+
+            throw new Error( 'Output cannot be arbitrary length char or void array.' );
 
         }
 
