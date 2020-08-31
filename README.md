@@ -26,3 +26,4 @@ node src/index.js ../cspice/src/cspice ./output/
 - [ ] Docs and comment code.
 - [ ] Make code for determining input / output arguments from comments more robust.
 - [ ] Remove the `_c` suffix on the functions.
+- [ ] Convert arguments map output to just an array.
