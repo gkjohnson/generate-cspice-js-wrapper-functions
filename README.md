@@ -8,13 +8,13 @@ Built as a proof of concept for [Timecraftjs](https://github.com/NASA-AMMOS/time
 Command line arguments
 
 ```sh
-node src/index.js <cspice_src_dir> <output_file>
+node src/index.js <cspice_src_dir> <output_dir>
 ```
 
 Example
 
 ```sh
-node src/index.js ../cspice/src/cspice ./build/index.js
+node src/index.js ../cspice/src/cspice ./output/
 ```
 
 ## TODO
