@@ -1,0 +1,17 @@
+{
+  "name": "generate-cspice-js-wrapper-functions",
+  "description": "Script for generating CSpice wrapper functions based on CSpice source comments.",
+  "main": "index.js",
+  "scripts": {
+    "generate": "node src/index.js ../cspice/src/cspice/",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gkjohnson/generate-cspice-js-wrapper-functions.git"
+  },
+  "bugs": {
+    "url": "https://github.com/gkjohnson/generate-cspice-js-wrapper-functions/issues"
+  },
+  "homepage": "https://github.com/gkjohnson/generate-cspice-js-wrapper-functions#readme"
+}
