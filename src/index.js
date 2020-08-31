@@ -56,15 +56,16 @@ fs.readdir( rootDir, ( err, files ) => {
                         + '\n';
 
                 } );
-                mdContents += '\n```\n';
+                mdContents += '```\n';
 
-                mdContents += '#### Outputs\n```\n';
+                mdContents += '#### Outputs\n';
                 if ( outputs.length === 0 ) {
 
                     mdContents += '_no output arguments._\n';
 
                 } else {
 
+                    mdContents += '```\n';
                     outputs.forEach( arg => {
 
                         mdContents += arg.type
@@ -74,9 +75,9 @@ fs.readdir( rootDir, ( err, files ) => {
                             + '\n';
 
                     } );
+                    mdContents += '```\n';
                 
                 }
-                mdContents += '\n```\n';
 
             } else {
 
