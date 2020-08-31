@@ -3,6 +3,20 @@ Script for generating CSpice wrapper functions based on CSpice source comments. 
 
 Built as a proof of concept for [Timecraftjs](https://github.com/NASA-AMMOS/timecraftjs).
 
+## How to run
+
+Command line arguments
+
+```sh
+node src/index.js <cspice_src_dir> <output_file>
+```
+
+Example
+
+```sh
+node src/index.js ../cspice/src/cspice ./build/index.js
+```
+
 ## TODO
 
 - [ ] Generate wrapped js function calls based on scraped data.
