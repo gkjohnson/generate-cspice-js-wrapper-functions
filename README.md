@@ -1,5 +1,5 @@
 # generate-cspice-js-wrapper-functions
-Script for generating CSpice wrapper functions based on CSpice source comments. Scrapes the comments and code in the CSpice/src files to extract function names function arguments and types in order to generate js functions to wrap Emscripten CSpice.js output.
+Script for generating CSpice wrapper functions based on CSpice source comments. Scrapes the comments and code in the `cspice/src/cspice` directory to extract function names, arguments, and types in order to generate js functions to wrap Emscripten CSpice.js output.
 
 Built as a proof of concept for [Timecraftjs](https://github.com/NASA-AMMOS/timecraftjs).
 
