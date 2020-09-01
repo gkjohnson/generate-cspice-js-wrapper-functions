@@ -58,6 +58,24 @@ fs.readdir( rootDir, ( err, files ) => {
     fs.writeFileSync( path.resolve( outputDir, 'FUNCTION_INFO.md' ), mdContents, { encoding: 'utf8' } );
 
     let processedFunctions = '';
+    let types = new Set();
+    processedInfo.forEach( info => {
+
+        types.add( info.returnInfo.type );
+        Object.values(info.args).forEach( arg => {
+
+            types.add( arg.type );
+
+        } );
+
+    } );
+    processedFunctions += '## Types\n';
+    types.forEach( type => {
+
+        processedFunctions += '- `' + type + '`\n';
+
+    } );
+
     processedFunctions += '## Skipped Functions\n';
     skippedFunctions.forEach( name => {
 

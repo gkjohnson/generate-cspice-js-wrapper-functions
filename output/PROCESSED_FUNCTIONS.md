@@ -1,3 +1,42 @@
+## Types
+- `void`
+- `ConstSpiceChar`
+- `SpiceCell`
+- `SpiceDouble`
+- `SpiceInt`
+- `ConstSpiceDouble`
+- `SpiceBoolean`
+- `SpiceChar`
+- `ConstSpiceInt`
+- `int`
+- `char`
+- `ftnlen`
+- `SpiceEllipse`
+- `SpiceDouble      `
+- `ConstSpiceBoolean`
+- `SpiceEKAttDsc`
+- `SpiceEKSegSum`
+- `ConstSpiceEllipse`
+- `SpiceCha`
+- `valu`
+- `vle`
+- `voi`
+- `ConstSpicePlane`
+- `void `
+- `doublereal`
+- `integer`
+- `SpicePlane`
+- `SpiceChar `
+- `SpiceSPK18Subtype`
+- `ConstSpiceChar  `
+- `logical`
+- `functions
+
+     `
+- `Save`
+- `char `
+- `long`
+- `SpiceTransDir`
 ## Skipped Functions
 - `ckw05_c`
 - `dafac_c`
