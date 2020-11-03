@@ -1,5 +1,3 @@
-const { type } = require("os");
-
 function extractParameters( contents ) {
 
     contents = contents.replace( /\r/g, '' );
@@ -20,7 +18,7 @@ function extractParameters( contents ) {
     signatureRegex.lastIndex = procedureRegex.lastIndex;    
     const [ fullProcedure, returnType, args ] = signatureRegex.exec( contents );
     const returnInfo = {
-        isPointer: /\*$/.test( type ),
+        isPointer: /\*$/.test( returnType ),
         type: returnType.replace( /\*$/, '' ),
     };
 

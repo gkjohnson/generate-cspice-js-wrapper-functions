@@ -13442,7 +13442,7 @@
     }
   },
   "returnInfo": {
-    "isPointer": false,
+    "isPointer": true,
     "type": "SpiceChar "
   }
 }```
@@ -20314,7 +20314,7 @@
     }
   },
   "returnInfo": {
-    "isPointer": false,
+    "isPointer": true,
     "type": "ConstSpiceChar  "
   }
 }```
@@ -23510,7 +23510,7 @@
     }
   },
   "returnInfo": {
-    "isPointer": false,
+    "isPointer": true,
     "type": "char "
   }
 }```

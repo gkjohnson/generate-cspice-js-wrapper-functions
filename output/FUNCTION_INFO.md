@@ -5878,7 +5878,7 @@ SpiceChar * prompt_c ( ConstSpiceChar * prmptStr,
 ```
 #### Return
 ```
-SpiceChar 
+SpiceChar *
 ```
 #### Inputs
 ```
@@ -8637,7 +8637,7 @@ ConstSpiceChar  * tkvrsn_c ( ConstSpiceChar * item )
 ```
 #### Return
 ```
-ConstSpiceChar  
+ConstSpiceChar  *
 ```
 #### Inputs
 ```
@@ -10199,7 +10199,7 @@ char * zzerror( long cnt )
 ```
 #### Return
 ```
-char 
+char *
 ```
 #### Inputs
 ```
