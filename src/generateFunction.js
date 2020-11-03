@@ -128,11 +128,11 @@ function generateFunction( info ) {
     }
 
     let ccall = `\t${ includesReturn ? 'const returnValue = ' : '' }Module.ccall(
-        '${info.name}',
-        ${returnType},
-        [ ${argTypes.map( arg => `'${arg}'` ).join( ', ' )} ],
-        [ ${argValues.join( ', ' )} ],
-    );\n`;
+\t\t'${info.name}',
+\t\t${returnType},
+\t\t[ ${argTypes.map( arg => `'${arg}'` ).join( ', ' )} ],
+\t\t[ ${argValues.join( ', ' )} ],
+\t);\n`;
 
     results.push( ...outputArgs.map( arg => arg.name ) );
 

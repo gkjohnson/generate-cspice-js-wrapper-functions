@@ -5,11 +5,11 @@ function appndc( item, cell ) {
 
 	// evaluate function
 	Module.ccall(
-        'appndc_c',
-        null,
-        [  ],
-        [ item, cell ],
-    );
+		'appndc_c',
+		null,
+		[  ],
+		[ item, cell ],
+	);
 
 	return;
 
@@ -22,11 +22,11 @@ function appndd( item, cell ) {
 
 	// evaluate function
 	Module.ccall(
-        'appndd_c',
-        null,
-        [ 'number' ],
-        [ item, cell ],
-    );
+		'appndd_c',
+		null,
+		[ 'number' ],
+		[ item, cell ],
+	);
 
 	return;
 
@@ -39,11 +39,11 @@ function appndi( item, cell ) {
 
 	// evaluate function
 	Module.ccall(
-        'appndi_c',
-        null,
-        [ 'number' ],
-        [ item, cell ],
-    );
+		'appndi_c',
+		null,
+		[ 'number' ],
+		[ item, cell ],
+	);
 
 	return;
 
@@ -56,11 +56,11 @@ function axisar( axis, angle ) {
 
 	// evaluate function
 	Module.ccall(
-        'axisar_c',
-        null,
-        [ 'number', 'number' ],
-        [ axis, angle, r ],
-    );
+		'axisar_c',
+		null,
+		[ 'number', 'number' ],
+		[ axis, angle, r ],
+	);
 
 	return { r };
 
@@ -73,11 +73,11 @@ function b1900(  ) {
 
 	// evaluate function
 	const returnValue = Module.ccall(
-        'b1900_c',
-        'number',
-        [  ],
-        [  ],
-    );
+		'b1900_c',
+		'number',
+		[  ],
+		[  ],
+	);
 
 	return returnValue;
 
@@ -90,11 +90,11 @@ function b1950(  ) {
 
 	// evaluate function
 	const returnValue = Module.ccall(
-        'b1950_c',
-        'number',
-        [  ],
-        [  ],
-    );
+		'b1950_c',
+		'number',
+		[  ],
+		[  ],
+	);
 
 	return returnValue;
 
@@ -109,11 +109,11 @@ function bodc2s( code, lenout ) {
 
 	// evaluate function
 	Module.ccall(
-        'bodc2s_c',
-        null,
-        [ 'number', 'number', 'number' ],
-        [ code, lenout, name_ptr ],
-    );
+		'bodc2s_c',
+		null,
+		[ 'number', 'number', 'number' ],
+		[ code, lenout, name_ptr ],
+	);
 
 	// read and free output pointers
 	const name = Module.Pointer_stringify( name_ptr );
@@ -130,11 +130,11 @@ function boddef( name, code ) {
 
 	// evaluate function
 	Module.ccall(
-        'boddef_c',
-        null,
-        [ 'number' ],
-        [ name, code ],
-    );
+		'boddef_c',
+		null,
+		[ 'number' ],
+		[ name, code ],
+	);
 
 	return;
 
@@ -150,11 +150,11 @@ function bodvar( body, item ) {
 
 	// evaluate function
 	Module.ccall(
-        'bodvar_c',
-        null,
-        [ 'number', 'number', 'number' ],
-        [ body, item, dim_ptr, values_ptr ],
-    );
+		'bodvar_c',
+		null,
+		[ 'number', 'number', 'number' ],
+		[ body, item, dim_ptr, values_ptr ],
+	);
 
 	// read and free output pointers
 	const dim = Module.getValue( dim_ptr, 'i32' );
@@ -177,11 +177,11 @@ function bodvcd( bodyid, item, maxn ) {
 
 	// evaluate function
 	Module.ccall(
-        'bodvcd_c',
-        null,
-        [ 'number', 'number', 'number', 'number' ],
-        [ bodyid, item, maxn, dim_ptr, values_ptr ],
-    );
+		'bodvcd_c',
+		null,
+		[ 'number', 'number', 'number', 'number' ],
+		[ bodyid, item, maxn, dim_ptr, values_ptr ],
+	);
 
 	// read and free output pointers
 	const dim = Module.getValue( dim_ptr, 'i32' );
@@ -204,11 +204,11 @@ function bodvrd( bodynm, item, maxn ) {
 
 	// evaluate function
 	Module.ccall(
-        'bodvrd_c',
-        null,
-        [ 'number', 'number', 'number' ],
-        [ bodynm, item, maxn, dim_ptr, values_ptr ],
-    );
+		'bodvrd_c',
+		null,
+		[ 'number', 'number', 'number' ],
+		[ bodynm, item, maxn, dim_ptr, values_ptr ],
+	);
 
 	// read and free output pointers
 	const dim = Module.getValue( dim_ptr, 'i32' );
@@ -228,11 +228,11 @@ function brcktd( number, end1, end2 ) {
 
 	// evaluate function
 	const returnValue = Module.ccall(
-        'brcktd_c',
-        'number',
-        [ 'number', 'number', 'number' ],
-        [ number, end1, end2 ],
-    );
+		'brcktd_c',
+		'number',
+		[ 'number', 'number', 'number' ],
+		[ number, end1, end2 ],
+	);
 
 	return returnValue;
 
@@ -245,11 +245,11 @@ function brckti( number, end1, end2 ) {
 
 	// evaluate function
 	const returnValue = Module.ccall(
-        'brckti_c',
-        'number',
-        [ 'number', 'number', 'number' ],
-        [ number, end1, end2 ],
-    );
+		'brckti_c',
+		'number',
+		[ 'number', 'number', 'number' ],
+		[ number, end1, end2 ],
+	);
 
 	return returnValue;
 
@@ -262,11 +262,11 @@ function bschoc( value, ndim, lenvals, array, order ) {
 
 	// evaluate function
 	const returnValue = Module.ccall(
-        'bschoc_c',
-        'number',
-        [ 'number', 'number' ],
-        [ value, ndim, lenvals, array, order ],
-    );
+		'bschoc_c',
+		'number',
+		[ 'number', 'number' ],
+		[ value, ndim, lenvals, array, order ],
+	);
 
 	return returnValue;
 
@@ -279,11 +279,11 @@ function bschoi( value, ndim, array, order ) {
 
 	// evaluate function
 	const returnValue = Module.ccall(
-        'bschoi_c',
-        'number',
-        [ 'number', 'number' ],
-        [ value, ndim, array, order ],
-    );
+		'bschoi_c',
+		'number',
+		[ 'number', 'number' ],
+		[ value, ndim, array, order ],
+	);
 
 	return returnValue;
 
@@ -296,11 +296,11 @@ function bsrchc( value, ndim, lenvals, array ) {
 
 	// evaluate function
 	const returnValue = Module.ccall(
-        'bsrchc_c',
-        'number',
-        [ 'number', 'number' ],
-        [ value, ndim, lenvals, array ],
-    );
+		'bsrchc_c',
+		'number',
+		[ 'number', 'number' ],
+		[ value, ndim, lenvals, array ],
+	);
 
 	return returnValue;
 
@@ -313,11 +313,11 @@ function bsrchd( value, ndim, array ) {
 
 	// evaluate function
 	const returnValue = Module.ccall(
-        'bsrchd_c',
-        'number',
-        [ 'number', 'number' ],
-        [ value, ndim, array ],
-    );
+		'bsrchd_c',
+		'number',
+		[ 'number', 'number' ],
+		[ value, ndim, array ],
+	);
 
 	return returnValue;
 
@@ -330,11 +330,11 @@ function bsrchi( value, ndim, array ) {
 
 	// evaluate function
 	const returnValue = Module.ccall(
-        'bsrchi_c',
-        'number',
-        [ 'number', 'number' ],
-        [ value, ndim, array ],
-    );
+		'bsrchi_c',
+		'number',
+		[ 'number', 'number' ],
+		[ value, ndim, array ],
+	);
 
 	return returnValue;
 
@@ -347,11 +347,11 @@ function card( cell ) {
 
 	// evaluate function
 	const returnValue = Module.ccall(
-        'card_c',
-        'number',
-        [  ],
-        [ cell ],
-    );
+		'card_c',
+		'number',
+		[  ],
+		[ cell ],
+	);
 
 	return returnValue;
 
@@ -364,11 +364,11 @@ function chkin( module ) {
 
 	// evaluate function
 	Module.ccall(
-        'chkin_c',
-        null,
-        [  ],
-        [ module ],
-    );
+		'chkin_c',
+		null,
+		[  ],
+		[ module ],
+	);
 
 	return;
 
@@ -381,11 +381,11 @@ function chkout( module ) {
 
 	// evaluate function
 	Module.ccall(
-        'chkout_c',
-        null,
-        [  ],
-        [ module ],
-    );
+		'chkout_c',
+		null,
+		[  ],
+		[ module ],
+	);
 
 	return;
 
@@ -398,11 +398,11 @@ function ckcls( handle ) {
 
 	// evaluate function
 	Module.ccall(
-        'ckcls_c',
-        null,
-        [ 'number' ],
-        [ handle ],
-    );
+		'ckcls_c',
+		null,
+		[ 'number' ],
+		[ handle ],
+	);
 
 	return;
 
@@ -415,11 +415,11 @@ function ckcov( ck, idcode, needav, level, tol, timsys, cover ) {
 
 	// evaluate function
 	Module.ccall(
-        'ckcov_c',
-        null,
-        [ 'number', 'number' ],
-        [ ck, idcode, needav, level, tol, timsys, cover ],
-    );
+		'ckcov_c',
+		null,
+		[ 'number', 'number' ],
+		[ ck, idcode, needav, level, tol, timsys, cover ],
+	);
 
 	return;
 
@@ -434,11 +434,11 @@ function cklpf( filename ) {
 
 	// evaluate function
 	Module.ccall(
-        'cklpf_c',
-        null,
-        [ 'number' ],
-        [ filename, handle_ptr ],
-    );
+		'cklpf_c',
+		null,
+		[ 'number' ],
+		[ filename, handle_ptr ],
+	);
 
 	// read and free output pointers
 	const handle = Module.getValue( handle_ptr, 'i32' );
@@ -455,11 +455,11 @@ function ckobj( ck, ids ) {
 
 	// evaluate function
 	Module.ccall(
-        'ckobj_c',
-        null,
-        [  ],
-        [ ck, ids ],
-    );
+		'ckobj_c',
+		null,
+		[  ],
+		[ ck, ids ],
+	);
 
 	return;
 
@@ -474,11 +474,11 @@ function ckopn( fname, ifname, ncomch ) {
 
 	// evaluate function
 	Module.ccall(
-        'ckopn_c',
-        null,
-        [ 'number', 'number' ],
-        [ fname, ifname, ncomch, handle_ptr ],
-    );
+		'ckopn_c',
+		null,
+		[ 'number', 'number' ],
+		[ fname, ifname, ncomch, handle_ptr ],
+	);
 
 	// read and free output pointers
 	const handle = Module.getValue( handle_ptr, 'i32' );
@@ -495,11 +495,11 @@ function ckupf( handle ) {
 
 	// evaluate function
 	Module.ccall(
-        'ckupf_c',
-        null,
-        [ 'number' ],
-        [ handle ],
-    );
+		'ckupf_c',
+		null,
+		[ 'number' ],
+		[ handle ],
+	);
 
 	return;
 
@@ -512,11 +512,11 @@ function ckw01( handle, begtim, endtim, inst, ref, avflag, segid, nrec, sclkdp, 
 
 	// evaluate function
 	Module.ccall(
-        'ckw01_c',
-        null,
-        [ 'number', 'number', 'number', 'number', 'number' ],
-        [ handle, begtim, endtim, inst, ref, avflag, segid, nrec, sclkdp, quats, avvs ],
-    );
+		'ckw01_c',
+		null,
+		[ 'number', 'number', 'number', 'number', 'number' ],
+		[ handle, begtim, endtim, inst, ref, avflag, segid, nrec, sclkdp, quats, avvs ],
+	);
 
 	return;
 
@@ -529,11 +529,11 @@ function ckw02( handle, begtim, endtim, inst, ref, segid, nrec, start, stop, qua
 
 	// evaluate function
 	Module.ccall(
-        'ckw02_c',
-        null,
-        [ 'number', 'number', 'number', 'number', 'number' ],
-        [ handle, begtim, endtim, inst, ref, segid, nrec, start, stop, quats, avvs, rates ],
-    );
+		'ckw02_c',
+		null,
+		[ 'number', 'number', 'number', 'number', 'number' ],
+		[ handle, begtim, endtim, inst, ref, segid, nrec, start, stop, quats, avvs, rates ],
+	);
 
 	return { avvs, rates };
 
@@ -546,11 +546,11 @@ function ckw03( handle, begtim, endtim, inst, ref, avflag, segid, nrec, sclkdp, 
 
 	// evaluate function
 	Module.ccall(
-        'ckw03_c',
-        null,
-        [ 'number', 'number', 'number', 'number', 'number', 'number' ],
-        [ handle, begtim, endtim, inst, ref, avflag, segid, nrec, sclkdp, quats, avvs, nints, starts ],
-    );
+		'ckw03_c',
+		null,
+		[ 'number', 'number', 'number', 'number', 'number', 'number' ],
+		[ handle, begtim, endtim, inst, ref, avflag, segid, nrec, sclkdp, quats, avvs, nints, starts ],
+	);
 
 	return;
 
@@ -563,11 +563,11 @@ function ckw05( handle, subtyp, degree, begtim, endtim, inst, ref, avflag, segid
 
 	// evaluate function
 	Module.ccall(
-        'ckw05_c',
-        null,
-        [ 'number', 'number', 'number', 'number', 'number', 'number', 'number', 'number' ],
-        [ handle, subtyp, degree, begtim, endtim, inst, ref, avflag, segid, n, sclkdp, packts, rate, nints, starts ],
-    );
+		'ckw05_c',
+		null,
+		[ 'number', 'number', 'number', 'number', 'number', 'number', 'number', 'number' ],
+		[ handle, subtyp, degree, begtim, endtim, inst, ref, avflag, segid, n, sclkdp, packts, rate, nints, starts ],
+	);
 
 	return { n, sclkdp };
 
@@ -580,11 +580,11 @@ function clight(  ) {
 
 	// evaluate function
 	const returnValue = Module.ccall(
-        'clight_c',
-        'number',
-        [  ],
-        [  ],
-    );
+		'clight_c',
+		'number',
+		[  ],
+		[  ],
+	);
 
 	return returnValue;
 
@@ -597,11 +597,11 @@ function clpool(  ) {
 
 	// evaluate function
 	Module.ccall(
-        'clpool_c',
-        null,
-        [  ],
-        [  ],
-    );
+		'clpool_c',
+		null,
+		[  ],
+		[  ],
+	);
 
 	return;
 
@@ -616,11 +616,11 @@ function cmprss( delim, n, input, lenout ) {
 
 	// evaluate function
 	Module.ccall(
-        'cmprss_c',
-        null,
-        [ 'string', 'number', 'number', 'number' ],
-        [ delim, n, input, lenout, output_ptr ],
-    );
+		'cmprss_c',
+		null,
+		[ 'string', 'number', 'number', 'number' ],
+		[ delim, n, input, lenout, output_ptr ],
+	);
 
 	// read and free output pointers
 	const output = Module.Pointer_stringify( output_ptr );
@@ -639,11 +639,11 @@ function conics( elts, et ) {
 
 	// evaluate function
 	Module.ccall(
-        'conics_c',
-        null,
-        [ 'number', 'number' ],
-        [ elts, et, state_ptr ],
-    );
+		'conics_c',
+		null,
+		[ 'number', 'number' ],
+		[ elts, et, state_ptr ],
+	);
 
 	// read and free output pointers
 	const state = Module.getValue( state_ptr, 'double' );
@@ -662,11 +662,11 @@ function convrt( x, in, out ) {
 
 	// evaluate function
 	Module.ccall(
-        'convrt_c',
-        null,
-        [ 'number', 'number' ],
-        [ x, in, out, y_ptr ],
-    );
+		'convrt_c',
+		null,
+		[ 'number', 'number' ],
+		[ x, in, out, y_ptr ],
+	);
 
 	// read and free output pointers
 	const y = Module.getValue( y_ptr, 'double' );
@@ -683,11 +683,11 @@ function cposr( str, chars, start ) {
 
 	// evaluate function
 	const returnValue = Module.ccall(
-        'cposr_c',
-        'number',
-        [ 'number' ],
-        [ str, chars, start ],
-    );
+		'cposr_c',
+		'number',
+		[ 'number' ],
+		[ str, chars, start ],
+	);
 
 	return returnValue;
 
@@ -700,11 +700,11 @@ function cpos( str, chars, start ) {
 
 	// evaluate function
 	const returnValue = Module.ccall(
-        'cpos_c',
-        'number',
-        [ 'number' ],
-        [ str, chars, start ],
-    );
+		'cpos_c',
+		'number',
+		[ 'number' ],
+		[ str, chars, start ],
+	);
 
 	return returnValue;
 
@@ -721,11 +721,11 @@ function cyllat( r, lonc, z ) {
 
 	// evaluate function
 	Module.ccall(
-        'cyllat_c',
-        null,
-        [ 'number', 'number', 'number', 'number', 'number', 'number' ],
-        [ r, lonc, z, radius_ptr, lon_ptr, lat_ptr ],
-    );
+		'cyllat_c',
+		null,
+		[ 'number', 'number', 'number', 'number', 'number', 'number' ],
+		[ r, lonc, z, radius_ptr, lon_ptr, lat_ptr ],
+	);
 
 	// read and free output pointers
 	const radius = Module.getValue( radius_ptr, 'double' );
@@ -750,11 +750,11 @@ function cylrec( r, lon, z ) {
 
 	// evaluate function
 	Module.ccall(
-        'cylrec_c',
-        null,
-        [ 'number', 'number', 'number', 'number' ],
-        [ r, lon, z, rectan_ptr ],
-    );
+		'cylrec_c',
+		null,
+		[ 'number', 'number', 'number', 'number' ],
+		[ r, lon, z, rectan_ptr ],
+	);
 
 	// read and free output pointers
 	const rectan = Module.getValue( rectan_ptr, 'double' );
@@ -775,11 +775,11 @@ function cylsph( r, lonc, z ) {
 
 	// evaluate function
 	Module.ccall(
-        'cylsph_c',
-        null,
-        [ 'number', 'number', 'number', 'number', 'number', 'number' ],
-        [ r, lonc, z, radius_ptr, colat_ptr, lon_ptr ],
-    );
+		'cylsph_c',
+		null,
+		[ 'number', 'number', 'number', 'number', 'number', 'number' ],
+		[ r, lonc, z, radius_ptr, colat_ptr, lon_ptr ],
+	);
 
 	// read and free output pointers
 	const radius = Module.getValue( radius_ptr, 'double' );
@@ -802,11 +802,11 @@ function dafac( handle, n, buffer ) {
 
 	// evaluate function
 	Module.ccall(
-        'dafac_c',
-        null,
-        [ 'number', 'number', 'number' ],
-        [ handle, n, lenvals, buffer ],
-    );
+		'dafac_c',
+		null,
+		[ 'number', 'number', 'number' ],
+		[ handle, n, lenvals, buffer ],
+	);
 
 	return { lenvals };
 
@@ -819,11 +819,11 @@ function dafbbs( handle ) {
 
 	// evaluate function
 	Module.ccall(
-        'dafbbs_c',
-        null,
-        [ 'number' ],
-        [ handle ],
-    );
+		'dafbbs_c',
+		null,
+		[ 'number' ],
+		[ handle ],
+	);
 
 	return;
 
@@ -836,11 +836,11 @@ function dafbfs( handle ) {
 
 	// evaluate function
 	Module.ccall(
-        'dafbfs_c',
-        null,
-        [ 'number' ],
-        [ handle ],
-    );
+		'dafbfs_c',
+		null,
+		[ 'number' ],
+		[ handle ],
+	);
 
 	return;
 
@@ -853,11 +853,11 @@ function dafcls( handle ) {
 
 	// evaluate function
 	Module.ccall(
-        'dafcls_c',
-        null,
-        [ 'number' ],
-        [ handle ],
-    );
+		'dafcls_c',
+		null,
+		[ 'number' ],
+		[ handle ],
+	);
 
 	return;
 
@@ -870,11 +870,11 @@ function dafcs( handle ) {
 
 	// evaluate function
 	Module.ccall(
-        'dafcs_c',
-        null,
-        [ 'number' ],
-        [ handle ],
-    );
+		'dafcs_c',
+		null,
+		[ 'number' ],
+		[ handle ],
+	);
 
 	return;
 
@@ -887,11 +887,11 @@ function dafdc( handle ) {
 
 	// evaluate function
 	Module.ccall(
-        'dafdc_c',
-        null,
-        [ 'number' ],
-        [ handle ],
-    );
+		'dafdc_c',
+		null,
+		[ 'number' ],
+		[ handle ],
+	);
 
 	return;
 
@@ -906,11 +906,11 @@ function dafgda( handle, begin, end ) {
 
 	// evaluate function
 	Module.ccall(
-        'dafgda_c',
-        null,
-        [ 'number', 'number', 'number', 'number' ],
-        [ handle, begin, end, data_ptr ],
-    );
+		'dafgda_c',
+		null,
+		[ 'number', 'number', 'number', 'number' ],
+		[ handle, begin, end, data_ptr ],
+	);
 
 	// read and free output pointers
 	const data = Module.getValue( data_ptr, 'double' );
@@ -929,11 +929,11 @@ function dafgn( lenout ) {
 
 	// evaluate function
 	Module.ccall(
-        'dafgn_c',
-        null,
-        [ 'number', 'number' ],
-        [ lenout, name_ptr ],
-    );
+		'dafgn_c',
+		null,
+		[ 'number', 'number' ],
+		[ lenout, name_ptr ],
+	);
 
 	// read and free output pointers
 	const name = Module.Pointer_stringify( name_ptr );
@@ -950,11 +950,11 @@ function dafgs(  ) {
 
 	// evaluate function
 	Module.ccall(
-        'dafgs_c',
-        null,
-        [ 'number' ],
-        [ sum ],
-    );
+		'dafgs_c',
+		null,
+		[ 'number' ],
+		[ sum ],
+	);
 
 	return { sum };
 
@@ -969,11 +969,11 @@ function dafopr( fname ) {
 
 	// evaluate function
 	Module.ccall(
-        'dafopr_c',
-        null,
-        [ 'number' ],
-        [ fname, handle_ptr ],
-    );
+		'dafopr_c',
+		null,
+		[ 'number' ],
+		[ fname, handle_ptr ],
+	);
 
 	// read and free output pointers
 	const handle = Module.getValue( handle_ptr, 'i32' );
@@ -992,11 +992,11 @@ function dafopw( fname ) {
 
 	// evaluate function
 	Module.ccall(
-        'dafopw_c',
-        null,
-        [ 'number' ],
-        [ fname, handle_ptr ],
-    );
+		'dafopw_c',
+		null,
+		[ 'number' ],
+		[ fname, handle_ptr ],
+	);
 
 	// read and free output pointers
 	const handle = Module.getValue( handle_ptr, 'i32' );
@@ -1015,11 +1015,11 @@ function dafps( nd, ni, dc, ic ) {
 
 	// evaluate function
 	Module.ccall(
-        'dafps_c',
-        null,
-        [ 'number', 'number', 'number' ],
-        [ nd, ni, dc, ic, sum_ptr ],
-    );
+		'dafps_c',
+		null,
+		[ 'number', 'number', 'number' ],
+		[ nd, ni, dc, ic, sum_ptr ],
+	);
 
 	// read and free output pointers
 	const sum = Module.getValue( sum_ptr, 'double' );
@@ -1038,11 +1038,11 @@ function dafrda( handle, begin, end ) {
 
 	// evaluate function
 	Module.ccall(
-        'dafrda_c',
-        null,
-        [ 'number', 'number', 'number', 'number' ],
-        [ handle, begin, end, data_ptr ],
-    );
+		'dafrda_c',
+		null,
+		[ 'number', 'number', 'number', 'number' ],
+		[ handle, begin, end, data_ptr ],
+	);
 
 	// read and free output pointers
 	const data = Module.getValue( data_ptr, 'double' );
@@ -1066,11 +1066,11 @@ function dafrfr( handle, lenout ) {
 
 	// evaluate function
 	Module.ccall(
-        'dafrfr_c',
-        null,
-        [ 'number', 'number', 'number', 'number', 'number', 'number', 'number', 'number' ],
-        [ handle, lenout, nd_ptr, ni_ptr, ifname_ptr, fward_ptr, bward_ptr, free_ptr ],
-    );
+		'dafrfr_c',
+		null,
+		[ 'number', 'number', 'number', 'number', 'number', 'number', 'number', 'number' ],
+		[ handle, lenout, nd_ptr, ni_ptr, ifname_ptr, fward_ptr, bward_ptr, free_ptr ],
+	);
 
 	// read and free output pointers
 	const nd = Module.getValue( nd_ptr, 'i32' );
@@ -1102,11 +1102,11 @@ function dafrs( sum ) {
 
 	// evaluate function
 	Module.ccall(
-        'dafrs_c',
-        null,
-        [  ],
-        [ sum ],
-    );
+		'dafrs_c',
+		null,
+		[  ],
+		[ sum ],
+	);
 
 	return;
 
@@ -1119,11 +1119,11 @@ function dafus( sum, nd, ni ) {
 
 	// evaluate function
 	Module.ccall(
-        'dafus_c',
-        null,
-        [ 'number', 'number', 'number', 'number' ],
-        [ sum, nd, ni, dc, ic ],
-    );
+		'dafus_c',
+		null,
+		[ 'number', 'number', 'number', 'number' ],
+		[ sum, nd, ni, dc, ic ],
+	);
 
 	return { dc, ic };
 
@@ -1136,11 +1136,11 @@ function dasac( handle, n, buflen, buffer ) {
 
 	// evaluate function
 	Module.ccall(
-        'dasac_c',
-        null,
-        [ 'number', 'number', 'number' ],
-        [ handle, n, buflen, buffer ],
-    );
+		'dasac_c',
+		null,
+		[ 'number', 'number', 'number' ],
+		[ handle, n, buflen, buffer ],
+	);
 
 	return;
 
@@ -1153,11 +1153,11 @@ function dascls( handle ) {
 
 	// evaluate function
 	Module.ccall(
-        'dascls_c',
-        null,
-        [ 'number' ],
-        [ handle ],
-    );
+		'dascls_c',
+		null,
+		[ 'number' ],
+		[ handle ],
+	);
 
 	return;
 
@@ -1172,11 +1172,11 @@ function dasopr( fname ) {
 
 	// evaluate function
 	Module.ccall(
-        'dasopr_c',
-        null,
-        [ 'number' ],
-        [ fname, handle_ptr ],
-    );
+		'dasopr_c',
+		null,
+		[ 'number' ],
+		[ fname, handle_ptr ],
+	);
 
 	// read and free output pointers
 	const handle = Module.getValue( handle_ptr, 'i32' );
@@ -1195,11 +1195,11 @@ function dcyldr( x, y, z ) {
 
 	// evaluate function
 	Module.ccall(
-        'dcyldr_c',
-        null,
-        [ 'number', 'number', 'number', 'number' ],
-        [ x, y, z, jacobi_ptr ],
-    );
+		'dcyldr_c',
+		null,
+		[ 'number', 'number', 'number', 'number' ],
+		[ x, y, z, jacobi_ptr ],
+	);
 
 	// read and free output pointers
 	const jacobi = Module.getValue( jacobi_ptr, 'double' );
@@ -1218,11 +1218,11 @@ function deltet( epoch, eptype ) {
 
 	// evaluate function
 	Module.ccall(
-        'deltet_c',
-        null,
-        [ 'number', 'number' ],
-        [ epoch, eptype, delta_ptr ],
-    );
+		'deltet_c',
+		null,
+		[ 'number', 'number' ],
+		[ epoch, eptype, delta_ptr ],
+	);
 
 	// read and free output pointers
 	const delta = Module.getValue( delta_ptr, 'double' );
@@ -1239,11 +1239,11 @@ function det( m1 ) {
 
 	// evaluate function
 	const returnValue = Module.ccall(
-        'det_c',
-        'number',
-        [  ],
-        [ m1 ],
-    );
+		'det_c',
+		'number',
+		[  ],
+		[ m1 ],
+	);
 
 	return returnValue;
 
@@ -1258,11 +1258,11 @@ function dgeodr( x, y, z, re, f ) {
 
 	// evaluate function
 	Module.ccall(
-        'dgeodr_c',
-        null,
-        [ 'number', 'number', 'number', 'number', 'number', 'number' ],
-        [ x, y, z, re, f, jacobi_ptr ],
-    );
+		'dgeodr_c',
+		null,
+		[ 'number', 'number', 'number', 'number', 'number', 'number' ],
+		[ x, y, z, re, f, jacobi_ptr ],
+	);
 
 	// read and free output pointers
 	const jacobi = Module.getValue( jacobi_ptr, 'double' );
@@ -1279,11 +1279,11 @@ function diags2( symmat ) {
 
 	// evaluate function
 	Module.ccall(
-        'diags2_c',
-        null,
-        [ 'number', 'number' ],
-        [ symmat, diag, rotate ],
-    );
+		'diags2_c',
+		null,
+		[ 'number', 'number' ],
+		[ symmat, diag, rotate ],
+	);
 
 	return { diag, rotate };
 
@@ -1298,11 +1298,11 @@ function dlatdr( x, y, z ) {
 
 	// evaluate function
 	Module.ccall(
-        'dlatdr_c',
-        null,
-        [ 'number', 'number', 'number', 'number' ],
-        [ x, y, z, jacobi_ptr ],
-    );
+		'dlatdr_c',
+		null,
+		[ 'number', 'number', 'number', 'number' ],
+		[ x, y, z, jacobi_ptr ],
+	);
 
 	// read and free output pointers
 	const jacobi = Module.getValue( jacobi_ptr, 'double' );
@@ -1322,11 +1322,11 @@ function dp2hx( number, lenout ) {
 
 	// evaluate function
 	Module.ccall(
-        'dp2hx_c',
-        null,
-        [ 'number', 'number', 'number', 'number' ],
-        [ number, lenout, string_ptr, length_ptr ],
-    );
+		'dp2hx_c',
+		null,
+		[ 'number', 'number', 'number', 'number' ],
+		[ number, lenout, string_ptr, length_ptr ],
+	);
 
 	// read and free output pointers
 	const string = Module.Pointer_stringify( string_ptr );
@@ -1348,11 +1348,11 @@ function dpgrdr( body, x, y, z, re, f ) {
 
 	// evaluate function
 	Module.ccall(
-        'dpgrdr_c',
-        null,
-        [ 'number', 'number', 'number', 'number', 'number', 'number' ],
-        [ body, x, y, z, re, f, jacobi_ptr ],
-    );
+		'dpgrdr_c',
+		null,
+		[ 'number', 'number', 'number', 'number', 'number', 'number' ],
+		[ body, x, y, z, re, f, jacobi_ptr ],
+	);
 
 	// read and free output pointers
 	const jacobi = Module.getValue( jacobi_ptr, 'double' );
@@ -1369,11 +1369,11 @@ function dpmax_(  ) {
 
 	// evaluate function
 	const returnValue = Module.ccall(
-        'dpmax_',
-        'number',
-        [  ],
-        [  ],
-    );
+		'dpmax_',
+		'number',
+		[  ],
+		[  ],
+	);
 
 	return returnValue;
 
@@ -1386,11 +1386,11 @@ function dpmax(  ) {
 
 	// evaluate function
 	const returnValue = Module.ccall(
-        'dpmax_c',
-        'number',
-        [  ],
-        [  ],
-    );
+		'dpmax_c',
+		'number',
+		[  ],
+		[  ],
+	);
 
 	return returnValue;
 
@@ -1403,11 +1403,11 @@ function dpmin_(  ) {
 
 	// evaluate function
 	const returnValue = Module.ccall(
-        'dpmin_',
-        'number',
-        [  ],
-        [  ],
-    );
+		'dpmin_',
+		'number',
+		[  ],
+		[  ],
+	);
 
 	return returnValue;
 
@@ -1420,11 +1420,11 @@ function dpmin(  ) {
 
 	// evaluate function
 	const returnValue = Module.ccall(
-        'dpmin_c',
-        'number',
-        [  ],
-        [  ],
-    );
+		'dpmin_c',
+		'number',
+		[  ],
+		[  ],
+	);
 
 	return returnValue;
 
@@ -1437,11 +1437,11 @@ function dpr(  ) {
 
 	// evaluate function
 	const returnValue = Module.ccall(
-        'dpr_c',
-        'number',
-        [  ],
-        [  ],
-    );
+		'dpr_c',
+		'number',
+		[  ],
+		[  ],
+	);
 
 	return returnValue;
 
@@ -1456,11 +1456,11 @@ function drdcyl( r, lon, z ) {
 
 	// evaluate function
 	Module.ccall(
-        'drdcyl_c',
-        null,
-        [ 'number', 'number', 'number', 'number' ],
-        [ r, lon, z, jacobi_ptr ],
-    );
+		'drdcyl_c',
+		null,
+		[ 'number', 'number', 'number', 'number' ],
+		[ r, lon, z, jacobi_ptr ],
+	);
 
 	// read and free output pointers
 	const jacobi = Module.getValue( jacobi_ptr, 'double' );
@@ -1479,11 +1479,11 @@ function drdgeo( lon, lat, alt, re, f ) {
 
 	// evaluate function
 	Module.ccall(
-        'drdgeo_c',
-        null,
-        [ 'number', 'number', 'number', 'number', 'number', 'number' ],
-        [ lon, lat, alt, re, f, jacobi_ptr ],
-    );
+		'drdgeo_c',
+		null,
+		[ 'number', 'number', 'number', 'number', 'number', 'number' ],
+		[ lon, lat, alt, re, f, jacobi_ptr ],
+	);
 
 	// read and free output pointers
 	const jacobi = Module.getValue( jacobi_ptr, 'double' );
@@ -1502,11 +1502,11 @@ function drdlat( lon, lat ) {
 
 	// evaluate function
 	Module.ccall(
-        'drdlat_c',
-        null,
-        [ 'number', 'number', 'number', 'number' ],
-        [ r, lon, lat, jacobi_ptr ],
-    );
+		'drdlat_c',
+		null,
+		[ 'number', 'number', 'number', 'number' ],
+		[ r, lon, lat, jacobi_ptr ],
+	);
 
 	// read and free output pointers
 	const jacobi = Module.getValue( jacobi_ptr, 'double' );
@@ -1525,11 +1525,11 @@ function drdpgr( body, lon, lat, alt, re, f ) {
 
 	// evaluate function
 	Module.ccall(
-        'drdpgr_c',
-        null,
-        [ 'number', 'number', 'number', 'number', 'number', 'number' ],
-        [ body, lon, lat, alt, re, f, jacobi_ptr ],
-    );
+		'drdpgr_c',
+		null,
+		[ 'number', 'number', 'number', 'number', 'number', 'number' ],
+		[ body, lon, lat, alt, re, f, jacobi_ptr ],
+	);
 
 	// read and free output pointers
 	const jacobi = Module.getValue( jacobi_ptr, 'double' );
@@ -1548,11 +1548,11 @@ function drdsph( r, colat, lon ) {
 
 	// evaluate function
 	Module.ccall(
-        'drdsph_c',
-        null,
-        [ 'number', 'number', 'number', 'number' ],
-        [ r, colat, lon, jacobi_ptr ],
-    );
+		'drdsph_c',
+		null,
+		[ 'number', 'number', 'number', 'number' ],
+		[ r, colat, lon, jacobi_ptr ],
+	);
 
 	// read and free output pointers
 	const jacobi = Module.getValue( jacobi_ptr, 'double' );
@@ -1571,11 +1571,11 @@ function dsphdr( x, y, z ) {
 
 	// evaluate function
 	Module.ccall(
-        'dsphdr_c',
-        null,
-        [ 'number', 'number', 'number', 'number' ],
-        [ x, y, z, jacobi_ptr ],
-    );
+		'dsphdr_c',
+		null,
+		[ 'number', 'number', 'number', 'number' ],
+		[ x, y, z, jacobi_ptr ],
+	);
 
 	// read and free output pointers
 	const jacobi = Module.getValue( jacobi_ptr, 'double' );
@@ -1594,11 +1594,11 @@ function ducrss( s1, s2 ) {
 
 	// evaluate function
 	Module.ccall(
-        'ducrss_c',
-        null,
-        [ 'number' ],
-        [ s1, s2, sout_ptr ],
-    );
+		'ducrss_c',
+		null,
+		[ 'number' ],
+		[ s1, s2, sout_ptr ],
+	);
 
 	// read and free output pointers
 	const sout = Module.getValue( sout_ptr, 'double' );
@@ -1617,11 +1617,11 @@ function dvcrss( s1, s2 ) {
 
 	// evaluate function
 	Module.ccall(
-        'dvcrss_c',
-        null,
-        [ 'number' ],
-        [ s1, s2, sout_ptr ],
-    );
+		'dvcrss_c',
+		null,
+		[ 'number' ],
+		[ s1, s2, sout_ptr ],
+	);
 
 	// read and free output pointers
 	const sout = Module.getValue( sout_ptr, 'double' );
@@ -1638,11 +1638,11 @@ function dvdot( s1, s2 ) {
 
 	// evaluate function
 	const returnValue = Module.ccall(
-        'dvdot_c',
-        'number',
-        [  ],
-        [ s1, s2 ],
-    );
+		'dvdot_c',
+		'number',
+		[  ],
+		[ s1, s2 ],
+	);
 
 	return returnValue;
 
@@ -1657,11 +1657,11 @@ function dvhat( s1 ) {
 
 	// evaluate function
 	Module.ccall(
-        'dvhat_c',
-        null,
-        [ 'number' ],
-        [ s1, sout_ptr ],
-    );
+		'dvhat_c',
+		null,
+		[ 'number' ],
+		[ s1, sout_ptr ],
+	);
 
 	// read and free output pointers
 	const sout = Module.getValue( sout_ptr, 'double' );
@@ -1678,11 +1678,11 @@ function dvpool( name ) {
 
 	// evaluate function
 	Module.ccall(
-        'dvpool_c',
-        null,
-        [  ],
-        [ name ],
-    );
+		'dvpool_c',
+		null,
+		[  ],
+		[ name ],
+	);
 
 	return;
 
@@ -1695,11 +1695,11 @@ function dvsep( s1, s2 ) {
 
 	// evaluate function
 	const returnValue = Module.ccall(
-        'dvsep_c',
-        'number',
-        [  ],
-        [ s1, s2 ],
-    );
+		'dvsep_c',
+		'number',
+		[  ],
+		[ s1, s2 ],
+	);
 
 	return returnValue;
 
@@ -1712,11 +1712,11 @@ function ekacec( handle, segno, recno, column, nvals, vallen, cvals, isnull ) {
 
 	// evaluate function
 	Module.ccall(
-        'ekacec_c',
-        null,
-        [ 'number', 'number', 'number', 'number', 'number' ],
-        [ handle, segno, recno, column, nvals, vallen, cvals, isnull ],
-    );
+		'ekacec_c',
+		null,
+		[ 'number', 'number', 'number', 'number', 'number' ],
+		[ handle, segno, recno, column, nvals, vallen, cvals, isnull ],
+	);
 
 	return;
 
@@ -1729,11 +1729,11 @@ function ekaced( handle, segno, recno, column, nvals, dvals, isnull ) {
 
 	// evaluate function
 	Module.ccall(
-        'ekaced_c',
-        null,
-        [ 'number', 'number', 'number', 'number' ],
-        [ handle, segno, recno, column, nvals, dvals, isnull ],
-    );
+		'ekaced_c',
+		null,
+		[ 'number', 'number', 'number', 'number' ],
+		[ handle, segno, recno, column, nvals, dvals, isnull ],
+	);
 
 	return;
 
@@ -1746,11 +1746,11 @@ function ekacei( handle, segno, recno, column, nvals, ivals, isnull ) {
 
 	// evaluate function
 	Module.ccall(
-        'ekacei_c',
-        null,
-        [ 'number', 'number', 'number', 'number' ],
-        [ handle, segno, recno, column, nvals, ivals, isnull ],
-    );
+		'ekacei_c',
+		null,
+		[ 'number', 'number', 'number', 'number' ],
+		[ handle, segno, recno, column, nvals, ivals, isnull ],
+	);
 
 	return;
 
@@ -1763,11 +1763,11 @@ function ekaclc( handle, segno, column, vallen, cvals, entszs, nlflgs, rcptrs, w
 
 	// evaluate function
 	Module.ccall(
-        'ekaclc_c',
-        null,
-        [ 'number', 'number', 'number', 'number' ],
-        [ handle, segno, column, vallen, cvals, entszs, nlflgs, rcptrs, wkindx ],
-    );
+		'ekaclc_c',
+		null,
+		[ 'number', 'number', 'number', 'number' ],
+		[ handle, segno, column, vallen, cvals, entszs, nlflgs, rcptrs, wkindx ],
+	);
 
 	return;
 
@@ -1780,11 +1780,11 @@ function ekacld( handle, segno, column, dvals, entszs, nlflgs, rcptrs, wkindx ) 
 
 	// evaluate function
 	Module.ccall(
-        'ekacld_c',
-        null,
-        [ 'number', 'number', 'number' ],
-        [ handle, segno, column, dvals, entszs, nlflgs, rcptrs, wkindx ],
-    );
+		'ekacld_c',
+		null,
+		[ 'number', 'number', 'number' ],
+		[ handle, segno, column, dvals, entszs, nlflgs, rcptrs, wkindx ],
+	);
 
 	return;
 
@@ -1797,11 +1797,11 @@ function ekacli( handle, segno, column, ivals, entszs, nlflgs, rcptrs, wkindx ) 
 
 	// evaluate function
 	Module.ccall(
-        'ekacli_c',
-        null,
-        [ 'number', 'number', 'number' ],
-        [ handle, segno, column, ivals, entszs, nlflgs, rcptrs, wkindx ],
-    );
+		'ekacli_c',
+		null,
+		[ 'number', 'number', 'number' ],
+		[ handle, segno, column, ivals, entszs, nlflgs, rcptrs, wkindx ],
+	);
 
 	return;
 
@@ -1816,11 +1816,11 @@ function ekappr( handle, segno ) {
 
 	// evaluate function
 	Module.ccall(
-        'ekappr_c',
-        null,
-        [ 'number', 'number', 'number' ],
-        [ handle, segno, recno_ptr ],
-    );
+		'ekappr_c',
+		null,
+		[ 'number', 'number', 'number' ],
+		[ handle, segno, recno_ptr ],
+	);
 
 	// read and free output pointers
 	const recno = Module.getValue( recno_ptr, 'i32' );
@@ -1839,11 +1839,11 @@ function ekbseg( handle, tabnam, ncols, cnmlen, cnames, declen, decls ) {
 
 	// evaluate function
 	Module.ccall(
-        'ekbseg_c',
-        null,
-        [ 'number', 'number', 'number', 'number', 'number' ],
-        [ handle, tabnam, ncols, cnmlen, cnames, declen, decls, segno_ptr ],
-    );
+		'ekbseg_c',
+		null,
+		[ 'number', 'number', 'number', 'number', 'number' ],
+		[ handle, tabnam, ncols, cnmlen, cnames, declen, decls, segno_ptr ],
+	);
 
 	// read and free output pointers
 	const segno = Module.getValue( segno_ptr, 'i32' );
@@ -1862,11 +1862,11 @@ function ekccnt( table ) {
 
 	// evaluate function
 	Module.ccall(
-        'ekccnt_c',
-        null,
-        [ 'number' ],
-        [ table, ccount_ptr ],
-    );
+		'ekccnt_c',
+		null,
+		[ 'number' ],
+		[ table, ccount_ptr ],
+	);
 
 	// read and free output pointers
 	const ccount = Module.getValue( ccount_ptr, 'i32' );
@@ -1883,11 +1883,11 @@ function ekcls( handle ) {
 
 	// evaluate function
 	Module.ccall(
-        'ekcls_c',
-        null,
-        [ 'number' ],
-        [ handle ],
-    );
+		'ekcls_c',
+		null,
+		[ 'number' ],
+		[ handle ],
+	);
 
 	return;
 
@@ -1900,11 +1900,11 @@ function ekdelr( handle, segno, recno ) {
 
 	// evaluate function
 	Module.ccall(
-        'ekdelr_c',
-        null,
-        [ 'number', 'number', 'number' ],
-        [ handle, segno, recno ],
-    );
+		'ekdelr_c',
+		null,
+		[ 'number', 'number', 'number' ],
+		[ handle, segno, recno ],
+	);
 
 	return;
 
@@ -1917,11 +1917,11 @@ function ekffld( handle, segno, rcptrs ) {
 
 	// evaluate function
 	Module.ccall(
-        'ekffld_c',
-        null,
-        [ 'number', 'number', 'number' ],
-        [ handle, segno, rcptrs ],
-    );
+		'ekffld_c',
+		null,
+		[ 'number', 'number', 'number' ],
+		[ handle, segno, rcptrs ],
+	);
 
 	return;
 
@@ -1937,11 +1937,11 @@ function ekifld( handle, tabnam, ncols, nrows, cnmlen, cnames, declen, decls ) {
 
 	// evaluate function
 	Module.ccall(
-        'ekifld_c',
-        null,
-        [ 'number', 'number', 'number', 'number', 'number', 'number', 'number' ],
-        [ handle, tabnam, ncols, nrows, cnmlen, cnames, declen, decls, segno_ptr, rcptrs_ptr ],
-    );
+		'ekifld_c',
+		null,
+		[ 'number', 'number', 'number', 'number', 'number', 'number', 'number' ],
+		[ handle, tabnam, ncols, nrows, cnmlen, cnames, declen, decls, segno_ptr, rcptrs_ptr ],
+	);
 
 	// read and free output pointers
 	const segno = Module.getValue( segno_ptr, 'i32' );
@@ -1961,11 +1961,11 @@ function ekinsr( handle, segno, recno ) {
 
 	// evaluate function
 	Module.ccall(
-        'ekinsr_c',
-        null,
-        [ 'number', 'number', 'number' ],
-        [ handle, segno, recno ],
-    );
+		'ekinsr_c',
+		null,
+		[ 'number', 'number', 'number' ],
+		[ handle, segno, recno ],
+	);
 
 	return;
 
@@ -1980,11 +1980,11 @@ function eklef( fname ) {
 
 	// evaluate function
 	Module.ccall(
-        'eklef_c',
-        null,
-        [ 'number' ],
-        [ fname, handle_ptr ],
-    );
+		'eklef_c',
+		null,
+		[ 'number' ],
+		[ fname, handle_ptr ],
+	);
 
 	// read and free output pointers
 	const handle = Module.getValue( handle_ptr, 'i32' );
@@ -2001,11 +2001,11 @@ function eknelt( selidx, row ) {
 
 	// evaluate function
 	const returnValue = Module.ccall(
-        'eknelt_c',
-        'number',
-        [ 'number', 'number' ],
-        [ selidx, row ],
-    );
+		'eknelt_c',
+		'number',
+		[ 'number', 'number' ],
+		[ selidx, row ],
+	);
 
 	return returnValue;
 
@@ -2018,11 +2018,11 @@ function eknseg( handle ) {
 
 	// evaluate function
 	const returnValue = Module.ccall(
-        'eknseg_c',
-        'number',
-        [ 'number' ],
-        [ handle ],
-    );
+		'eknseg_c',
+		'number',
+		[ 'number' ],
+		[ handle ],
+	);
 
 	return returnValue;
 
@@ -2037,11 +2037,11 @@ function ekntab(  ) {
 
 	// evaluate function
 	Module.ccall(
-        'ekntab_c',
-        null,
-        [ 'number' ],
-        [ n_ptr ],
-    );
+		'ekntab_c',
+		null,
+		[ 'number' ],
+		[ n_ptr ],
+	);
 
 	// read and free output pointers
 	const n = Module.getValue( n_ptr, 'i32' );
@@ -2060,11 +2060,11 @@ function ekopn( fname, ifname, ncomch ) {
 
 	// evaluate function
 	Module.ccall(
-        'ekopn_c',
-        null,
-        [ 'number', 'number' ],
-        [ fname, ifname, ncomch, handle_ptr ],
-    );
+		'ekopn_c',
+		null,
+		[ 'number', 'number' ],
+		[ fname, ifname, ncomch, handle_ptr ],
+	);
 
 	// read and free output pointers
 	const handle = Module.getValue( handle_ptr, 'i32' );
@@ -2083,11 +2083,11 @@ function ekopr( fname ) {
 
 	// evaluate function
 	Module.ccall(
-        'ekopr_c',
-        null,
-        [ 'number' ],
-        [ fname, handle_ptr ],
-    );
+		'ekopr_c',
+		null,
+		[ 'number' ],
+		[ fname, handle_ptr ],
+	);
 
 	// read and free output pointers
 	const handle = Module.getValue( handle_ptr, 'i32' );
@@ -2106,11 +2106,11 @@ function ekops(  ) {
 
 	// evaluate function
 	Module.ccall(
-        'ekops_c',
-        null,
-        [ 'number' ],
-        [ handle_ptr ],
-    );
+		'ekops_c',
+		null,
+		[ 'number' ],
+		[ handle_ptr ],
+	);
 
 	// read and free output pointers
 	const handle = Module.getValue( handle_ptr, 'i32' );
@@ -2129,11 +2129,11 @@ function ekopw( fname ) {
 
 	// evaluate function
 	Module.ccall(
-        'ekopw_c',
-        null,
-        [ 'number' ],
-        [ fname, handle_ptr ],
-    );
+		'ekopw_c',
+		null,
+		[ 'number' ],
+		[ fname, handle_ptr ],
+	);
 
 	// read and free output pointers
 	const handle = Module.getValue( handle_ptr, 'i32' );
@@ -2152,11 +2152,11 @@ function ektnam( n, lenout ) {
 
 	// evaluate function
 	Module.ccall(
-        'ektnam_c',
-        null,
-        [ 'number', 'number', 'number' ],
-        [ n, lenout, table_ptr ],
-    );
+		'ektnam_c',
+		null,
+		[ 'number', 'number', 'number' ],
+		[ n, lenout, table_ptr ],
+	);
 
 	// read and free output pointers
 	const table = Module.Pointer_stringify( table_ptr );
@@ -2173,11 +2173,11 @@ function ekucec( handle, segno, recno, column, nvals, vallen, cvals, isnull ) {
 
 	// evaluate function
 	Module.ccall(
-        'ekucec_c',
-        null,
-        [ 'number', 'number', 'number', 'number', 'number' ],
-        [ handle, segno, recno, column, nvals, vallen, cvals, isnull ],
-    );
+		'ekucec_c',
+		null,
+		[ 'number', 'number', 'number', 'number', 'number' ],
+		[ handle, segno, recno, column, nvals, vallen, cvals, isnull ],
+	);
 
 	return;
 
@@ -2190,11 +2190,11 @@ function ekuced( handle, segno, recno, column, nvals, dvals, isnull ) {
 
 	// evaluate function
 	Module.ccall(
-        'ekuced_c',
-        null,
-        [ 'number', 'number', 'number', 'number' ],
-        [ handle, segno, recno, column, nvals, dvals, isnull ],
-    );
+		'ekuced_c',
+		null,
+		[ 'number', 'number', 'number', 'number' ],
+		[ handle, segno, recno, column, nvals, dvals, isnull ],
+	);
 
 	return;
 
@@ -2207,11 +2207,11 @@ function ekucei( handle, segno, recno, column, nvals, ivals, isnull ) {
 
 	// evaluate function
 	Module.ccall(
-        'ekucei_c',
-        null,
-        [ 'number', 'number', 'number', 'number' ],
-        [ handle, segno, recno, column, nvals, ivals, isnull ],
-    );
+		'ekucei_c',
+		null,
+		[ 'number', 'number', 'number', 'number' ],
+		[ handle, segno, recno, column, nvals, ivals, isnull ],
+	);
 
 	return;
 
@@ -2224,11 +2224,11 @@ function ekuef( handle ) {
 
 	// evaluate function
 	Module.ccall(
-        'ekuef_c',
-        null,
-        [ 'number' ],
-        [ handle ],
-    );
+		'ekuef_c',
+		null,
+		[ 'number' ],
+		[ handle ],
+	);
 
 	return;
 
@@ -2245,11 +2245,11 @@ function el2cgv( ellipse ) {
 
 	// evaluate function
 	Module.ccall(
-        'el2cgv_c',
-        null,
-        [ 'number', 'number', 'number' ],
-        [ ellipse, center_ptr, smajor_ptr, sminor_ptr ],
-    );
+		'el2cgv_c',
+		null,
+		[ 'number', 'number', 'number' ],
+		[ ellipse, center_ptr, smajor_ptr, sminor_ptr ],
+	);
 
 	// read and free output pointers
 	const center = Module.getValue( center_ptr, 'double' );
@@ -2272,11 +2272,11 @@ function erract( op, lenout, action ) {
 
 	// evaluate function
 	Module.ccall(
-        'erract_c',
-        null,
-        [ 'number', 'string' ],
-        [ op, lenout, action ],
-    );
+		'erract_c',
+		null,
+		[ 'number', 'string' ],
+		[ op, lenout, action ],
+	);
 
 	return;
 
@@ -2289,11 +2289,11 @@ function errch( marker, string ) {
 
 	// evaluate function
 	Module.ccall(
-        'errch_c',
-        null,
-        [  ],
-        [ marker, string ],
-    );
+		'errch_c',
+		null,
+		[  ],
+		[ marker, string ],
+	);
 
 	return;
 
@@ -2308,11 +2308,11 @@ function errdev( op ) {
 
 	// evaluate function
 	Module.ccall(
-        'errdev_c',
-        null,
-        [ 'number', 'number' ],
-        [ op, lenout, device_ptr ],
-    );
+		'errdev_c',
+		null,
+		[ 'number', 'number' ],
+		[ op, lenout, device_ptr ],
+	);
 
 	// read and free output pointers
 	const device = Module.Pointer_stringify( device_ptr );
@@ -2329,11 +2329,11 @@ function errdp( marker, number ) {
 
 	// evaluate function
 	Module.ccall(
-        'errdp_c',
-        null,
-        [ 'number' ],
-        [ marker, number ],
-    );
+		'errdp_c',
+		null,
+		[ 'number' ],
+		[ marker, number ],
+	);
 
 	return;
 
@@ -2346,11 +2346,11 @@ function errint( marker, number ) {
 
 	// evaluate function
 	Module.ccall(
-        'errint_c',
-        null,
-        [ 'number' ],
-        [ marker, number ],
-    );
+		'errint_c',
+		null,
+		[ 'number' ],
+		[ marker, number ],
+	);
 
 	return;
 
@@ -2363,11 +2363,11 @@ function errprt( op, list ) {
 
 	// evaluate function
 	Module.ccall(
-        'errprt_c',
-        null,
-        [ 'number', 'string' ],
-        [ op, lenout, list ],
-    );
+		'errprt_c',
+		null,
+		[ 'number', 'string' ],
+		[ op, lenout, list ],
+	);
 
 	return { lenout };
 
@@ -2380,11 +2380,11 @@ function esrchc( value, ndim, lenvals, array ) {
 
 	// evaluate function
 	const returnValue = Module.ccall(
-        'esrchc_c',
-        'number',
-        [ 'number', 'number' ],
-        [ value, ndim, lenvals, array ],
-    );
+		'esrchc_c',
+		'number',
+		[ 'number', 'number' ],
+		[ value, ndim, lenvals, array ],
+	);
 
 	return returnValue;
 
@@ -2403,11 +2403,11 @@ function et2lst( body, lon, type, timlen, ampmlen ) {
 
 	// evaluate function
 	Module.ccall(
-        'et2lst_c',
-        null,
-        [ 'number', 'number', 'number', 'number', 'number', 'number', 'number', 'number', 'number', 'number' ],
-        [ et, body, lon, type, timlen, ampmlen, hr_ptr, mn_ptr, sc_ptr, time_ptr, ampm_ptr ],
-    );
+		'et2lst_c',
+		null,
+		[ 'number', 'number', 'number', 'number', 'number', 'number', 'number', 'number', 'number', 'number' ],
+		[ et, body, lon, type, timlen, ampmlen, hr_ptr, mn_ptr, sc_ptr, time_ptr, ampm_ptr ],
+	);
 
 	// read and free output pointers
 	const hr = Module.getValue( hr_ptr, 'i32' );
@@ -2438,11 +2438,11 @@ function et2utc( et, format, prec, lenout ) {
 
 	// evaluate function
 	Module.ccall(
-        'et2utc_c',
-        null,
-        [ 'number', 'number', 'number', 'number' ],
-        [ et, format, prec, lenout, utcstr_ptr ],
-    );
+		'et2utc_c',
+		null,
+		[ 'number', 'number', 'number', 'number' ],
+		[ et, format, prec, lenout, utcstr_ptr ],
+	);
 
 	// read and free output pointers
 	const utcstr = Module.Pointer_stringify( utcstr_ptr );
@@ -2461,11 +2461,11 @@ function etcal( et, lenout ) {
 
 	// evaluate function
 	Module.ccall(
-        'etcal_c',
-        null,
-        [ 'number', 'number', 'number' ],
-        [ et, lenout, string_ptr ],
-    );
+		'etcal_c',
+		null,
+		[ 'number', 'number', 'number' ],
+		[ et, lenout, string_ptr ],
+	);
 
 	// read and free output pointers
 	const string = Module.Pointer_stringify( string_ptr );
@@ -2482,11 +2482,11 @@ function eul2m( angle3, angle2, angle1, axis3, axis2, axis1 ) {
 
 	// evaluate function
 	Module.ccall(
-        'eul2m_c',
-        null,
-        [ 'number', 'number', 'number', 'number', 'number', 'number', 'number' ],
-        [ angle3, angle2, angle1, axis3, axis2, axis1, r ],
-    );
+		'eul2m_c',
+		null,
+		[ 'number', 'number', 'number', 'number', 'number', 'number', 'number' ],
+		[ angle3, angle2, angle1, axis3, axis2, axis1, r ],
+	);
 
 	return { r };
 
@@ -2499,11 +2499,11 @@ function eul2xf( eulang, axisa, axisb, axisc ) {
 
 	// evaluate function
 	Module.ccall(
-        'eul2xf_c',
-        null,
-        [ 'number', 'number', 'number', 'number' ],
-        [ eulang, axisa, axisb, axisc, xform ],
-    );
+		'eul2xf_c',
+		null,
+		[ 'number', 'number', 'number', 'number' ],
+		[ eulang, axisa, axisb, axisc, xform ],
+	);
 
 	return { xform };
 
@@ -2519,11 +2519,11 @@ function frame( x ) {
 
 	// evaluate function
 	Module.ccall(
-        'frame_c',
-        null,
-        [ 'number', 'number', 'number' ],
-        [ x, y_ptr, z_ptr ],
-    );
+		'frame_c',
+		null,
+		[ 'number', 'number', 'number' ],
+		[ x, y_ptr, z_ptr ],
+	);
 
 	// read and free output pointers
 	const y = Module.getValue( y_ptr, 'double' );
@@ -2545,11 +2545,11 @@ function frmnam( frcode, lenout ) {
 
 	// evaluate function
 	Module.ccall(
-        'frmnam_c',
-        null,
-        [ 'number', 'number', 'number' ],
-        [ frcode, lenout, frname_ptr ],
-    );
+		'frmnam_c',
+		null,
+		[ 'number', 'number', 'number' ],
+		[ frcode, lenout, frname_ptr ],
+	);
 
 	// read and free output pointers
 	const frname = Module.Pointer_stringify( frname_ptr );
@@ -2566,11 +2566,11 @@ function ftncls( unit ) {
 
 	// evaluate function
 	Module.ccall(
-        'ftncls_c',
-        null,
-        [ 'number' ],
-        [ unit ],
-    );
+		'ftncls_c',
+		null,
+		[ 'number' ],
+		[ unit ],
+	);
 
 	return;
 
@@ -2583,11 +2583,11 @@ function furnsh( file ) {
 
 	// evaluate function
 	Module.ccall(
-        'furnsh_c',
-        null,
-        [  ],
-        [ file ],
-    );
+		'furnsh_c',
+		null,
+		[  ],
+		[ file ],
+	);
 
 	return;
 
@@ -2602,11 +2602,11 @@ function georec( lon, lat, alt, re, f ) {
 
 	// evaluate function
 	Module.ccall(
-        'georec_c',
-        null,
-        [ 'number', 'number', 'number', 'number', 'number', 'number' ],
-        [ lon, lat, alt, re, f, rectan_ptr ],
-    );
+		'georec_c',
+		null,
+		[ 'number', 'number', 'number', 'number', 'number', 'number' ],
+		[ lon, lat, alt, re, f, rectan_ptr ],
+	);
 
 	// read and free output pointers
 	const rectan = Module.getValue( rectan_ptr, 'double' );
@@ -2625,11 +2625,11 @@ function getcml(  ) {
 
 	// evaluate function
 	Module.ccall(
-        'getcml_c',
-        null,
-        [ 'number' ],
-        [ argc_ptr, r ],
-    );
+		'getcml_c',
+		null,
+		[ 'number' ],
+		[ argc_ptr, r ],
+	);
 
 	// read and free output pointers
 	const argc = Module.getValue( argc_ptr, 'i32' );
@@ -2649,11 +2649,11 @@ function getelm( frstyr, lines ) {
 
 	// evaluate function
 	Module.ccall(
-        'getelm_c',
-        null,
-        [ 'number', 'number', 'number', 'number' ],
-        [ frstyr, lineln, lines, epoch_ptr, elems_ptr ],
-    );
+		'getelm_c',
+		null,
+		[ 'number', 'number', 'number', 'number' ],
+		[ frstyr, lineln, lines, epoch_ptr, elems_ptr ],
+	);
 
 	// read and free output pointers
 	const epoch = Module.getValue( epoch_ptr, 'double' );
@@ -2673,11 +2673,11 @@ function getenv_(  ) {
 
 	// evaluate function
 	Module.ccall(
-        'getenv_',
-        null,
-        [  ],
-        [ e, n ],
-    );
+		'getenv_',
+		null,
+		[  ],
+		[ e, n ],
+	);
 
 	return { e, n };
 
@@ -2693,11 +2693,11 @@ function getfat( file, arclen, typlen ) {
 
 	// evaluate function
 	Module.ccall(
-        'getfat_c',
-        null,
-        [ 'number', 'number', 'number', 'number' ],
-        [ file, arclen, typlen, arch_ptr, type_ptr ],
-    );
+		'getfat_c',
+		null,
+		[ 'number', 'number', 'number', 'number' ],
+		[ file, arclen, typlen, arch_ptr, type_ptr ],
+	);
 
 	// read and free output pointers
 	const arch = Module.Pointer_stringify( arch_ptr );
@@ -2721,11 +2721,11 @@ function getfov( instid, room, shapelen, framelen ) {
 
 	// evaluate function
 	Module.ccall(
-        'getfov_c',
-        null,
-        [ 'number', 'number', 'number', 'number', 'number', 'number', 'number', 'number', 'number' ],
-        [ instid, room, shapelen, framelen, shape_ptr, frame_ptr, bsight, n_ptr, bounds ],
-    );
+		'getfov_c',
+		null,
+		[ 'number', 'number', 'number', 'number', 'number', 'number', 'number', 'number', 'number' ],
+		[ instid, room, shapelen, framelen, shape_ptr, frame_ptr, bsight, n_ptr, bounds ],
+	);
 
 	// read and free output pointers
 	const shape = Module.Pointer_stringify( shape_ptr );
@@ -2748,11 +2748,11 @@ function gfclrh(  ) {
 
 	// evaluate function
 	Module.ccall(
-        'gfclrh_c',
-        null,
-        [  ],
-        [  ],
-    );
+		'gfclrh_c',
+		null,
+		[  ],
+		[  ],
+	);
 
 	return;
 
@@ -2765,11 +2765,11 @@ function gfevnt(  ) {
 
 	// evaluate function
 	Module.ccall(
-        'gfevnt_c',
-        null,
-        [  ],
-        [ d ],
-    );
+		'gfevnt_c',
+		null,
+		[  ],
+		[ d ],
+	);
 
 	return { d };
 
@@ -2782,11 +2782,11 @@ function gffove( inst, tshape, raydir, target, tframe, abcorr, obsrvr, tol ) {
 
 	// evaluate function
 	Module.ccall(
-        'gffove_c',
-        null,
-        [ 'number' ],
-        [ inst, tshape, raydir, target, tframe, abcorr, obsrvr, tol, d ],
-    );
+		'gffove_c',
+		null,
+		[ 'number' ],
+		[ inst, tshape, raydir, target, tframe, abcorr, obsrvr, tol, d ],
+	);
 
 	return { d };
 
@@ -2799,11 +2799,11 @@ function gfinth( sigcode ) {
 
 	// evaluate function
 	Module.ccall(
-        'gfinth_c',
-        null,
-        [  ],
-        [ sigcode ],
-    );
+		'gfinth_c',
+		null,
+		[  ],
+		[ sigcode ],
+	);
 
 	return;
 
@@ -2816,11 +2816,11 @@ function gfocce( occtyp, front, fshape, fframe, back, bshape, bframe, abcorr, ob
 
 	// evaluate function
 	Module.ccall(
-        'gfocce_c',
-        null,
-        [ 'number' ],
-        [ occtyp, front, fshape, fframe, back, bshape, bframe, abcorr, obsrvr, tol, d ],
-    );
+		'gfocce_c',
+		null,
+		[ 'number' ],
+		[ occtyp, front, fshape, fframe, back, bshape, bframe, abcorr, obsrvr, tol, d ],
+	);
 
 	return { d };
 
@@ -2835,11 +2835,11 @@ function gfrefn( t1, t2, s1, s2 ) {
 
 	// evaluate function
 	Module.ccall(
-        'gfrefn_c',
-        null,
-        [ 'number', 'number', 'number' ],
-        [ t1, t2, s1, s2, t_ptr ],
-    );
+		'gfrefn_c',
+		null,
+		[ 'number', 'number', 'number' ],
+		[ t1, t2, s1, s2, t_ptr ],
+	);
 
 	// read and free output pointers
 	const t = Module.getValue( t_ptr, 'double' );
@@ -2856,11 +2856,11 @@ function gfrepf(  ) {
 
 	// evaluate function
 	Module.ccall(
-        'gfrepf_c',
-        null,
-        [  ],
-        [  ],
-    );
+		'gfrepf_c',
+		null,
+		[  ],
+		[  ],
+	);
 
 	return;
 
@@ -2873,11 +2873,11 @@ function gfrepi( window, begmss, endmss ) {
 
 	// evaluate function
 	Module.ccall(
-        'gfrepi_c',
-        null,
-        [  ],
-        [ window, begmss, endmss ],
-    );
+		'gfrepi_c',
+		null,
+		[  ],
+		[ window, begmss, endmss ],
+	);
 
 	return;
 
@@ -2890,11 +2890,11 @@ function gfrepu( ivbeg, ivend, time ) {
 
 	// evaluate function
 	Module.ccall(
-        'gfrepu_c',
-        null,
-        [ 'number', 'number', 'number' ],
-        [ ivbeg, ivend, time ],
-    );
+		'gfrepu_c',
+		null,
+		[ 'number', 'number', 'number' ],
+		[ ivbeg, ivend, time ],
+	);
 
 	return;
 
@@ -2907,11 +2907,11 @@ function gfsstp( step ) {
 
 	// evaluate function
 	Module.ccall(
-        'gfsstp_c',
-        null,
-        [ 'number' ],
-        [ step ],
-    );
+		'gfsstp_c',
+		null,
+		[ 'number' ],
+		[ step ],
+	);
 
 	return;
 
@@ -2926,11 +2926,11 @@ function gfstep( time ) {
 
 	// evaluate function
 	Module.ccall(
-        'gfstep_c',
-        null,
-        [ 'number', 'number' ],
-        [ time, step_ptr ],
-    );
+		'gfstep_c',
+		null,
+		[ 'number', 'number' ],
+		[ time, step_ptr ],
+	);
 
 	// read and free output pointers
 	const step = Module.getValue( step_ptr, 'double' );
@@ -2947,11 +2947,11 @@ function gfuds(  ) {
 
 	// evaluate function
 	Module.ccall(
-        'gfuds_c',
-        null,
-        [  ],
-        [ d ],
-    );
+		'gfuds_c',
+		null,
+		[  ],
+		[ d ],
+	);
 
 	return { d };
 
@@ -2964,11 +2964,11 @@ function halfpi(  ) {
 
 	// evaluate function
 	const returnValue = Module.ccall(
-        'halfpi_c',
-        'number',
-        [  ],
-        [  ],
-    );
+		'halfpi_c',
+		'number',
+		[  ],
+		[  ],
+	);
 
 	return returnValue;
 
@@ -2983,11 +2983,11 @@ function ident(  ) {
 
 	// evaluate function
 	Module.ccall(
-        'ident_c',
-        null,
-        [ 'number' ],
-        [ matrix_ptr ],
-    );
+		'ident_c',
+		null,
+		[ 'number' ],
+		[ matrix_ptr ],
+	);
 
 	// read and free output pointers
 	const matrix = Module.getValue( matrix_ptr, 'double' );
@@ -3008,11 +3008,11 @@ function illum( target, et, abcorr, obsrvr, spoint ) {
 
 	// evaluate function
 	Module.ccall(
-        'illum_c',
-        null,
-        [ 'number', 'number', 'number', 'number' ],
-        [ target, et, abcorr, obsrvr, spoint, phase_ptr, solar_ptr, emissn_ptr ],
-    );
+		'illum_c',
+		null,
+		[ 'number', 'number', 'number', 'number' ],
+		[ target, et, abcorr, obsrvr, spoint, phase_ptr, solar_ptr, emissn_ptr ],
+	);
 
 	// read and free output pointers
 	const phase = Module.getValue( phase_ptr, 'double' );
@@ -3040,11 +3040,11 @@ function ilumin( method, target, et, fixref, abcorr, obsrvr, spoint ) {
 
 	// evaluate function
 	Module.ccall(
-        'ilumin_c',
-        null,
-        [ 'number', 'number', 'number', 'number', 'number', 'number' ],
-        [ method, target, et, fixref, abcorr, obsrvr, spoint, trgepc_ptr, srfvec, phase_ptr, solar_ptr, emissn_ptr ],
-    );
+		'ilumin_c',
+		null,
+		[ 'number', 'number', 'number', 'number', 'number', 'number' ],
+		[ method, target, et, fixref, abcorr, obsrvr, spoint, trgepc_ptr, srfvec, phase_ptr, solar_ptr, emissn_ptr ],
+	);
 
 	// read and free output pointers
 	const trgepc = Module.getValue( trgepc_ptr, 'double' );
@@ -3074,11 +3074,11 @@ function inelpl( ellips, plane ) {
 
 	// evaluate function
 	Module.ccall(
-        'inelpl_c',
-        null,
-        [ 'number', 'number', 'number' ],
-        [ ellips, plane, nxpts_ptr, xpt1_ptr, xpt2_ptr ],
-    );
+		'inelpl_c',
+		null,
+		[ 'number', 'number', 'number' ],
+		[ ellips, plane, nxpts_ptr, xpt1_ptr, xpt2_ptr ],
+	);
 
 	// read and free output pointers
 	const nxpts = Module.getValue( nxpts_ptr, 'i32' );
@@ -3103,11 +3103,11 @@ function inrypl( vertex, dir, plane ) {
 
 	// evaluate function
 	Module.ccall(
-        'inrypl_c',
-        null,
-        [ 'number', 'number' ],
-        [ vertex, dir, plane, nxpts_ptr, xpt ],
-    );
+		'inrypl_c',
+		null,
+		[ 'number', 'number' ],
+		[ vertex, dir, plane, nxpts_ptr, xpt ],
+	);
 
 	// read and free output pointers
 	const nxpts = Module.getValue( nxpts_ptr, 'i32' );
@@ -3124,11 +3124,11 @@ function insrtc( item, set ) {
 
 	// evaluate function
 	Module.ccall(
-        'insrtc_c',
-        null,
-        [  ],
-        [ item, set ],
-    );
+		'insrtc_c',
+		null,
+		[  ],
+		[ item, set ],
+	);
 
 	return;
 
@@ -3141,11 +3141,11 @@ function insrtd( item, set ) {
 
 	// evaluate function
 	Module.ccall(
-        'insrtd_c',
-        null,
-        [ 'number' ],
-        [ item, set ],
-    );
+		'insrtd_c',
+		null,
+		[ 'number' ],
+		[ item, set ],
+	);
 
 	return;
 
@@ -3158,11 +3158,11 @@ function insrti( item, set ) {
 
 	// evaluate function
 	Module.ccall(
-        'insrti_c',
-        null,
-        [ 'number' ],
-        [ item, set ],
-    );
+		'insrti_c',
+		null,
+		[ 'number' ],
+		[ item, set ],
+	);
 
 	return;
 
@@ -3175,11 +3175,11 @@ function intmax_(  ) {
 
 	// evaluate function
 	const returnValue = Module.ccall(
-        'intmax_',
-        'number',
-        [  ],
-        [  ],
-    );
+		'intmax_',
+		'number',
+		[  ],
+		[  ],
+	);
 
 	return returnValue;
 
@@ -3192,11 +3192,11 @@ function intmax(  ) {
 
 	// evaluate function
 	const returnValue = Module.ccall(
-        'intmax_c',
-        'number',
-        [  ],
-        [  ],
-    );
+		'intmax_c',
+		'number',
+		[  ],
+		[  ],
+	);
 
 	return returnValue;
 
@@ -3209,11 +3209,11 @@ function intmin_(  ) {
 
 	// evaluate function
 	const returnValue = Module.ccall(
-        'intmin_',
-        'number',
-        [  ],
-        [  ],
-    );
+		'intmin_',
+		'number',
+		[  ],
+		[  ],
+	);
 
 	return returnValue;
 
@@ -3226,11 +3226,11 @@ function intmin(  ) {
 
 	// evaluate function
 	const returnValue = Module.ccall(
-        'intmin_c',
-        'number',
-        [  ],
-        [  ],
-    );
+		'intmin_c',
+		'number',
+		[  ],
+		[  ],
+	);
 
 	return returnValue;
 
@@ -3245,11 +3245,11 @@ function invert( m1 ) {
 
 	// evaluate function
 	Module.ccall(
-        'invert_c',
-        null,
-        [ 'number' ],
-        [ m1, mout_ptr ],
-    );
+		'invert_c',
+		null,
+		[ 'number' ],
+		[ m1, mout_ptr ],
+	);
 
 	// read and free output pointers
 	const mout = Module.getValue( mout_ptr, 'double' );
@@ -3268,11 +3268,11 @@ function invort( m ) {
 
 	// evaluate function
 	Module.ccall(
-        'invort_c',
-        null,
-        [ 'number' ],
-        [ m, mit_ptr ],
-    );
+		'invort_c',
+		null,
+		[ 'number' ],
+		[ m, mit_ptr ],
+	);
 
 	// read and free output pointers
 	const mit = Module.getValue( mit_ptr, 'double' );
@@ -3289,11 +3289,11 @@ function isrchc( value, ndim, lenvals, array ) {
 
 	// evaluate function
 	const returnValue = Module.ccall(
-        'isrchc_c',
-        'number',
-        [ 'number', 'number' ],
-        [ value, ndim, lenvals, array ],
-    );
+		'isrchc_c',
+		'number',
+		[ 'number', 'number' ],
+		[ value, ndim, lenvals, array ],
+	);
 
 	return returnValue;
 
@@ -3306,11 +3306,11 @@ function isrchd( value, ndim, array ) {
 
 	// evaluate function
 	const returnValue = Module.ccall(
-        'isrchd_c',
-        'number',
-        [ 'number', 'number' ],
-        [ value, ndim, array ],
-    );
+		'isrchd_c',
+		'number',
+		[ 'number', 'number' ],
+		[ value, ndim, array ],
+	);
 
 	return returnValue;
 
@@ -3323,11 +3323,11 @@ function isrchi( value, ndim, array ) {
 
 	// evaluate function
 	const returnValue = Module.ccall(
-        'isrchi_c',
-        'number',
-        [ 'number', 'number' ],
-        [ value, ndim, array ],
-    );
+		'isrchi_c',
+		'number',
+		[ 'number', 'number' ],
+		[ value, ndim, array ],
+	);
 
 	return returnValue;
 
@@ -3340,11 +3340,11 @@ function j1900(  ) {
 
 	// evaluate function
 	const returnValue = Module.ccall(
-        'j1900_c',
-        'number',
-        [  ],
-        [  ],
-    );
+		'j1900_c',
+		'number',
+		[  ],
+		[  ],
+	);
 
 	return returnValue;
 
@@ -3357,11 +3357,11 @@ function j1950(  ) {
 
 	// evaluate function
 	const returnValue = Module.ccall(
-        'j1950_c',
-        'number',
-        [  ],
-        [  ],
-    );
+		'j1950_c',
+		'number',
+		[  ],
+		[  ],
+	);
 
 	return returnValue;
 
@@ -3374,11 +3374,11 @@ function j2000(  ) {
 
 	// evaluate function
 	const returnValue = Module.ccall(
-        'j2000_c',
-        'number',
-        [  ],
-        [  ],
-    );
+		'j2000_c',
+		'number',
+		[  ],
+		[  ],
+	);
 
 	return returnValue;
 
@@ -3391,11 +3391,11 @@ function j2100(  ) {
 
 	// evaluate function
 	const returnValue = Module.ccall(
-        'j2100_c',
-        'number',
-        [  ],
-        [  ],
-    );
+		'j2100_c',
+		'number',
+		[  ],
+		[  ],
+	);
 
 	return returnValue;
 
@@ -3408,11 +3408,11 @@ function jyear(  ) {
 
 	// evaluate function
 	const returnValue = Module.ccall(
-        'jyear_c',
-        'number',
-        [  ],
-        [  ],
-    );
+		'jyear_c',
+		'number',
+		[  ],
+		[  ],
+	);
 
 	return returnValue;
 
@@ -3425,11 +3425,11 @@ function kclear(  ) {
 
 	// evaluate function
 	Module.ccall(
-        'kclear_c',
-        null,
-        [  ],
-        [  ],
-    );
+		'kclear_c',
+		null,
+		[  ],
+		[  ],
+	);
 
 	return;
 
@@ -3444,11 +3444,11 @@ function ktotal( kind ) {
 
 	// evaluate function
 	Module.ccall(
-        'ktotal_c',
-        null,
-        [ 'number' ],
-        [ kind, count_ptr ],
-    );
+		'ktotal_c',
+		null,
+		[ 'number' ],
+		[ kind, count_ptr ],
+	);
 
 	// read and free output pointers
 	const count = Module.getValue( count_ptr, 'i32' );
@@ -3465,11 +3465,11 @@ function lastnb( string ) {
 
 	// evaluate function
 	const returnValue = Module.ccall(
-        'lastnb_c',
-        'number',
-        [  ],
-        [ string ],
-    );
+		'lastnb_c',
+		'number',
+		[  ],
+		[ string ],
+	);
 
 	return returnValue;
 
@@ -3486,11 +3486,11 @@ function latcyl( radius, lon, lat ) {
 
 	// evaluate function
 	Module.ccall(
-        'latcyl_c',
-        null,
-        [ 'number', 'number', 'number', 'number', 'number', 'number' ],
-        [ radius, lon, lat, r_ptr, lonc_ptr, z_ptr ],
-    );
+		'latcyl_c',
+		null,
+		[ 'number', 'number', 'number', 'number', 'number', 'number' ],
+		[ radius, lon, lat, r_ptr, lonc_ptr, z_ptr ],
+	);
 
 	// read and free output pointers
 	const r = Module.getValue( r_ptr, 'double' );
@@ -3515,11 +3515,11 @@ function latrec( radius, latitude ) {
 
 	// evaluate function
 	Module.ccall(
-        'latrec_c',
-        null,
-        [ 'number', 'number', 'number', 'number' ],
-        [ radius, longitude, latitude, rectan_ptr ],
-    );
+		'latrec_c',
+		null,
+		[ 'number', 'number', 'number', 'number' ],
+		[ radius, longitude, latitude, rectan_ptr ],
+	);
 
 	// read and free output pointers
 	const rectan = Module.getValue( rectan_ptr, 'double' );
@@ -3540,11 +3540,11 @@ function latsph( radius, lon, lat ) {
 
 	// evaluate function
 	Module.ccall(
-        'latsph_c',
-        null,
-        [ 'number', 'number', 'number', 'number', 'number', 'number' ],
-        [ radius, lon, lat, rho_ptr, colat_ptr, lons_ptr ],
-    );
+		'latsph_c',
+		null,
+		[ 'number', 'number', 'number', 'number', 'number', 'number' ],
+		[ radius, lon, lat, rho_ptr, colat_ptr, lons_ptr ],
+	);
 
 	// read and free output pointers
 	const rho = Module.getValue( rho_ptr, 'double' );
@@ -3569,11 +3569,11 @@ function lcase( in, lenout ) {
 
 	// evaluate function
 	Module.ccall(
-        'lcase_c',
-        null,
-        [ 'string', 'number', 'number' ],
-        [ in, lenout, out_ptr ],
-    );
+		'lcase_c',
+		null,
+		[ 'string', 'number', 'number' ],
+		[ in, lenout, out_ptr ],
+	);
 
 	// read and free output pointers
 	const out = Module.Pointer_stringify( out_ptr );
@@ -3590,11 +3590,11 @@ function ldpool( filename ) {
 
 	// evaluate function
 	Module.ccall(
-        'ldpool_c',
-        null,
-        [  ],
-        [ filename ],
-    );
+		'ldpool_c',
+		null,
+		[  ],
+		[ filename ],
+	);
 
 	return;
 
@@ -3607,11 +3607,11 @@ function lmpool( cvals, lenvals, n ) {
 
 	// evaluate function
 	Module.ccall(
-        'lmpool_c',
-        null,
-        [ 'number', 'number' ],
-        [ cvals, lenvals, n ],
-    );
+		'lmpool_c',
+		null,
+		[ 'number', 'number' ],
+		[ cvals, lenvals, n ],
+	);
 
 	return;
 
@@ -3624,11 +3624,11 @@ function lspcn( body, et, abcorr ) {
 
 	// evaluate function
 	const returnValue = Module.ccall(
-        'lspcn_c',
-        'number',
-        [ 'number' ],
-        [ body, et, abcorr ],
-    );
+		'lspcn_c',
+		'number',
+		[ 'number' ],
+		[ body, et, abcorr ],
+	);
 
 	return returnValue;
 
@@ -3641,11 +3641,11 @@ function lstlec( string, n, lenvals, array ) {
 
 	// evaluate function
 	const returnValue = Module.ccall(
-        'lstlec_c',
-        'number',
-        [ 'number', 'number' ],
-        [ string, n, lenvals, array ],
-    );
+		'lstlec_c',
+		'number',
+		[ 'number', 'number' ],
+		[ string, n, lenvals, array ],
+	);
 
 	return returnValue;
 
@@ -3658,11 +3658,11 @@ function lstled( x, n, array ) {
 
 	// evaluate function
 	const returnValue = Module.ccall(
-        'lstled_c',
-        'number',
-        [ 'number', 'number' ],
-        [ x, n, array ],
-    );
+		'lstled_c',
+		'number',
+		[ 'number', 'number' ],
+		[ x, n, array ],
+	);
 
 	return returnValue;
 
@@ -3675,11 +3675,11 @@ function lstlei( x, n, array ) {
 
 	// evaluate function
 	const returnValue = Module.ccall(
-        'lstlei_c',
-        'number',
-        [ 'number', 'number' ],
-        [ x, n, array ],
-    );
+		'lstlei_c',
+		'number',
+		[ 'number', 'number' ],
+		[ x, n, array ],
+	);
 
 	return returnValue;
 
@@ -3692,11 +3692,11 @@ function lstltc( string, n, lenvals, array ) {
 
 	// evaluate function
 	const returnValue = Module.ccall(
-        'lstltc_c',
-        'number',
-        [ 'number', 'number' ],
-        [ string, n, lenvals, array ],
-    );
+		'lstltc_c',
+		'number',
+		[ 'number', 'number' ],
+		[ string, n, lenvals, array ],
+	);
 
 	return returnValue;
 
@@ -3709,11 +3709,11 @@ function lstltd( x, n, array ) {
 
 	// evaluate function
 	const returnValue = Module.ccall(
-        'lstltd_c',
-        'number',
-        [ 'number', 'number' ],
-        [ x, n, array ],
-    );
+		'lstltd_c',
+		'number',
+		[ 'number', 'number' ],
+		[ x, n, array ],
+	);
 
 	return returnValue;
 
@@ -3726,11 +3726,11 @@ function lstlti( x, n, array ) {
 
 	// evaluate function
 	const returnValue = Module.ccall(
-        'lstlti_c',
-        'number',
-        [ 'number', 'number' ],
-        [ x, n, array ],
-    );
+		'lstlti_c',
+		'number',
+		[ 'number', 'number' ],
+		[ x, n, array ],
+	);
 
 	return returnValue;
 
@@ -3746,11 +3746,11 @@ function ltime( etobs, obs, dir, targ ) {
 
 	// evaluate function
 	Module.ccall(
-        'ltime_c',
-        null,
-        [ 'number', 'number', 'number', 'number', 'number' ],
-        [ etobs, obs, dir, targ, ettarg_ptr, elapsd_ptr ],
-    );
+		'ltime_c',
+		null,
+		[ 'number', 'number', 'number', 'number', 'number' ],
+		[ etobs, obs, dir, targ, ettarg_ptr, elapsd_ptr ],
+	);
 
 	// read and free output pointers
 	const ettarg = Module.getValue( ettarg_ptr, 'double' );
@@ -3773,11 +3773,11 @@ function lx4dec( string, first ) {
 
 	// evaluate function
 	Module.ccall(
-        'lx4dec_c',
-        null,
-        [ 'number', 'number', 'number' ],
-        [ string, first, last_ptr, nchar_ptr ],
-    );
+		'lx4dec_c',
+		null,
+		[ 'number', 'number', 'number' ],
+		[ string, first, last_ptr, nchar_ptr ],
+	);
 
 	// read and free output pointers
 	const last = Module.getValue( last_ptr, 'i32' );
@@ -3800,11 +3800,11 @@ function lx4num( string, first ) {
 
 	// evaluate function
 	Module.ccall(
-        'lx4num_c',
-        null,
-        [ 'number', 'number', 'number' ],
-        [ string, first, last_ptr, nchar_ptr ],
-    );
+		'lx4num_c',
+		null,
+		[ 'number', 'number', 'number' ],
+		[ string, first, last_ptr, nchar_ptr ],
+	);
 
 	// read and free output pointers
 	const last = Module.getValue( last_ptr, 'i32' );
@@ -3827,11 +3827,11 @@ function lx4sgn( string, first ) {
 
 	// evaluate function
 	Module.ccall(
-        'lx4sgn_c',
-        null,
-        [ 'number', 'number', 'number' ],
-        [ string, first, last_ptr, nchar_ptr ],
-    );
+		'lx4sgn_c',
+		null,
+		[ 'number', 'number', 'number' ],
+		[ string, first, last_ptr, nchar_ptr ],
+	);
 
 	// read and free output pointers
 	const last = Module.getValue( last_ptr, 'i32' );
@@ -3854,11 +3854,11 @@ function lx4uns( string, first ) {
 
 	// evaluate function
 	Module.ccall(
-        'lx4uns_c',
-        null,
-        [ 'number', 'number', 'number' ],
-        [ string, first, last_ptr, nchar_ptr ],
-    );
+		'lx4uns_c',
+		null,
+		[ 'number', 'number', 'number' ],
+		[ string, first, last_ptr, nchar_ptr ],
+	);
 
 	// read and free output pointers
 	const last = Module.getValue( last_ptr, 'i32' );
@@ -3881,11 +3881,11 @@ function lxqstr( string, qchar, first ) {
 
 	// evaluate function
 	Module.ccall(
-        'lxqstr_c',
-        null,
-        [ 'string', 'number', 'number', 'number' ],
-        [ string, qchar, first, last_ptr, nchar_ptr ],
-    );
+		'lxqstr_c',
+		null,
+		[ 'string', 'number', 'number', 'number' ],
+		[ string, qchar, first, last_ptr, nchar_ptr ],
+	);
 
 	// read and free output pointers
 	const last = Module.getValue( last_ptr, 'i32' );
@@ -3907,11 +3907,11 @@ function m2q( r ) {
 
 	// evaluate function
 	Module.ccall(
-        'm2q_c',
-        null,
-        [ 'number' ],
-        [ r, q_ptr ],
-    );
+		'm2q_c',
+		null,
+		[ 'number' ],
+		[ r, q_ptr ],
+	);
 
 	// read and free output pointers
 	const q = Module.getValue( q_ptr, 'double' );
@@ -3930,11 +3930,11 @@ function mequ( m1 ) {
 
 	// evaluate function
 	Module.ccall(
-        'mequ_c',
-        null,
-        [ 'number' ],
-        [ m1, mout_ptr ],
-    );
+		'mequ_c',
+		null,
+		[ 'number' ],
+		[ m1, mout_ptr ],
+	);
 
 	// read and free output pointers
 	const mout = Module.getValue( mout_ptr, 'double' );
@@ -3953,11 +3953,11 @@ function mtxm( m1, m2 ) {
 
 	// evaluate function
 	Module.ccall(
-        'mtxm_c',
-        null,
-        [ 'number' ],
-        [ m1, m2, mout_ptr ],
-    );
+		'mtxm_c',
+		null,
+		[ 'number' ],
+		[ m1, m2, mout_ptr ],
+	);
 
 	// read and free output pointers
 	const mout = Module.getValue( mout_ptr, 'double' );
@@ -3976,11 +3976,11 @@ function mtxv( m1, vin ) {
 
 	// evaluate function
 	Module.ccall(
-        'mtxv_c',
-        null,
-        [ 'number' ],
-        [ m1, vin, vout_ptr ],
-    );
+		'mtxv_c',
+		null,
+		[ 'number' ],
+		[ m1, vin, vout_ptr ],
+	);
 
 	// read and free output pointers
 	const vout = Module.getValue( vout_ptr, 'double' );
@@ -3999,11 +3999,11 @@ function mxmt( m1, m2 ) {
 
 	// evaluate function
 	Module.ccall(
-        'mxmt_c',
-        null,
-        [ 'number' ],
-        [ m1, m2, mout_ptr ],
-    );
+		'mxmt_c',
+		null,
+		[ 'number' ],
+		[ m1, m2, mout_ptr ],
+	);
 
 	// read and free output pointers
 	const mout = Module.getValue( mout_ptr, 'double' );
@@ -4022,11 +4022,11 @@ function mxm( m1, m2 ) {
 
 	// evaluate function
 	Module.ccall(
-        'mxm_c',
-        null,
-        [ 'number' ],
-        [ m1, m2, mout_ptr ],
-    );
+		'mxm_c',
+		null,
+		[ 'number' ],
+		[ m1, m2, mout_ptr ],
+	);
 
 	// read and free output pointers
 	const mout = Module.getValue( mout_ptr, 'double' );
@@ -4045,11 +4045,11 @@ function mxv( m1, vin ) {
 
 	// evaluate function
 	Module.ccall(
-        'mxv_c',
-        null,
-        [ 'number' ],
-        [ m1, vin, vout_ptr ],
-    );
+		'mxv_c',
+		null,
+		[ 'number' ],
+		[ m1, vin, vout_ptr ],
+	);
 
 	// read and free output pointers
 	const vout = Module.getValue( vout_ptr, 'double' );
@@ -4068,11 +4068,11 @@ function namfrm( frname ) {
 
 	// evaluate function
 	Module.ccall(
-        'namfrm_c',
-        null,
-        [ 'number' ],
-        [ frname, frcode_ptr ],
-    );
+		'namfrm_c',
+		null,
+		[ 'number' ],
+		[ frname, frcode_ptr ],
+	);
 
 	// read and free output pointers
 	const frcode = Module.getValue( frcode_ptr, 'i32' );
@@ -4089,11 +4089,11 @@ function ncposr( str, chars, start ) {
 
 	// evaluate function
 	const returnValue = Module.ccall(
-        'ncposr_c',
-        'number',
-        [ 'number' ],
-        [ str, chars, start ],
-    );
+		'ncposr_c',
+		'number',
+		[ 'number' ],
+		[ str, chars, start ],
+	);
 
 	return returnValue;
 
@@ -4106,11 +4106,11 @@ function ncpos( str, chars, start ) {
 
 	// evaluate function
 	const returnValue = Module.ccall(
-        'ncpos_c',
-        'number',
-        [ 'number' ],
-        [ str, chars, start ],
-    );
+		'ncpos_c',
+		'number',
+		[ 'number' ],
+		[ str, chars, start ],
+	);
 
 	return returnValue;
 
@@ -4126,11 +4126,11 @@ function nearpt( positn, a, b, c ) {
 
 	// evaluate function
 	Module.ccall(
-        'nearpt_c',
-        null,
-        [ 'number', 'number', 'number', 'number', 'number' ],
-        [ positn, a, b, c, npoint_ptr, alt_ptr ],
-    );
+		'nearpt_c',
+		null,
+		[ 'number', 'number', 'number', 'number', 'number' ],
+		[ positn, a, b, c, npoint_ptr, alt_ptr ],
+	);
 
 	// read and free output pointers
 	const npoint = Module.getValue( npoint_ptr, 'double' );
@@ -4153,11 +4153,11 @@ function npedln( a, b, c, linept, linedr ) {
 
 	// evaluate function
 	Module.ccall(
-        'npedln_c',
-        null,
-        [ 'number', 'number', 'number', 'number', 'number' ],
-        [ a, b, c, linept, linedr, pnear_ptr, dist_ptr ],
-    );
+		'npedln_c',
+		null,
+		[ 'number', 'number', 'number', 'number', 'number' ],
+		[ a, b, c, linept, linedr, pnear_ptr, dist_ptr ],
+	);
 
 	// read and free output pointers
 	const pnear = Module.getValue( pnear_ptr, 'double' );
@@ -4179,11 +4179,11 @@ function npelpt( point, ellips ) {
 
 	// evaluate function
 	Module.ccall(
-        'npelpt_c',
-        null,
-        [ 'number', 'number' ],
-        [ point, ellips, pnear, dist_ptr ],
-    );
+		'npelpt_c',
+		null,
+		[ 'number', 'number' ],
+		[ point, ellips, pnear, dist_ptr ],
+	);
 
 	// read and free output pointers
 	const dist = Module.getValue( dist_ptr, 'double' );
@@ -4202,11 +4202,11 @@ function nplnpt( linpt, lindir, point ) {
 
 	// evaluate function
 	Module.ccall(
-        'nplnpt_c',
-        null,
-        [ 'number', 'number' ],
-        [ linpt, lindir, point, pnear, dist_ptr ],
-    );
+		'nplnpt_c',
+		null,
+		[ 'number', 'number' ],
+		[ linpt, lindir, point, pnear, dist_ptr ],
+	);
 
 	// read and free output pointers
 	const dist = Module.getValue( dist_ptr, 'double' );
@@ -4223,11 +4223,11 @@ function ordc( item, set ) {
 
 	// evaluate function
 	const returnValue = Module.ccall(
-        'ordc_c',
-        'number',
-        [  ],
-        [ item, set ],
-    );
+		'ordc_c',
+		'number',
+		[  ],
+		[ item, set ],
+	);
 
 	return returnValue;
 
@@ -4240,11 +4240,11 @@ function ordd( item, set ) {
 
 	// evaluate function
 	const returnValue = Module.ccall(
-        'ordd_c',
-        'number',
-        [ 'number' ],
-        [ item, set ],
-    );
+		'ordd_c',
+		'number',
+		[ 'number' ],
+		[ item, set ],
+	);
 
 	return returnValue;
 
@@ -4259,11 +4259,11 @@ function orderc( lenvals, array, ndim ) {
 
 	// evaluate function
 	Module.ccall(
-        'orderc_c',
-        null,
-        [ 'number', 'number', 'number' ],
-        [ lenvals, array, ndim, iorder_ptr ],
-    );
+		'orderc_c',
+		null,
+		[ 'number', 'number', 'number' ],
+		[ lenvals, array, ndim, iorder_ptr ],
+	);
 
 	// read and free output pointers
 	const iorder = Module.getValue( iorder_ptr, 'i32' );
@@ -4282,11 +4282,11 @@ function orderd( array, ndim ) {
 
 	// evaluate function
 	Module.ccall(
-        'orderd_c',
-        null,
-        [ 'number', 'number' ],
-        [ array, ndim, iorder_ptr ],
-    );
+		'orderd_c',
+		null,
+		[ 'number', 'number' ],
+		[ array, ndim, iorder_ptr ],
+	);
 
 	// read and free output pointers
 	const iorder = Module.getValue( iorder_ptr, 'i32' );
@@ -4305,11 +4305,11 @@ function orderi( array, ndim ) {
 
 	// evaluate function
 	Module.ccall(
-        'orderi_c',
-        null,
-        [ 'number', 'number' ],
-        [ array, ndim, iorder_ptr ],
-    );
+		'orderi_c',
+		null,
+		[ 'number', 'number' ],
+		[ array, ndim, iorder_ptr ],
+	);
 
 	// read and free output pointers
 	const iorder = Module.getValue( iorder_ptr, 'i32' );
@@ -4326,11 +4326,11 @@ function ordi( item, set ) {
 
 	// evaluate function
 	const returnValue = Module.ccall(
-        'ordi_c',
-        'number',
-        [ 'number' ],
-        [ item, set ],
-    );
+		'ordi_c',
+		'number',
+		[ 'number' ],
+		[ item, set ],
+	);
 
 	return returnValue;
 
@@ -4345,11 +4345,11 @@ function oscelt( state, et, mu ) {
 
 	// evaluate function
 	Module.ccall(
-        'oscelt_c',
-        null,
-        [ 'number', 'number', 'number' ],
-        [ state, et, mu, elts_ptr ],
-    );
+		'oscelt_c',
+		null,
+		[ 'number', 'number', 'number' ],
+		[ state, et, mu, elts_ptr ],
+	);
 
 	// read and free output pointers
 	const elts = Module.getValue( elts_ptr, 'double' );
@@ -4366,11 +4366,11 @@ function pckcov( pck, idcode, cover ) {
 
 	// evaluate function
 	Module.ccall(
-        'pckcov_c',
-        null,
-        [ 'number' ],
-        [ pck, idcode, cover ],
-    );
+		'pckcov_c',
+		null,
+		[ 'number' ],
+		[ pck, idcode, cover ],
+	);
 
 	return;
 
@@ -4383,11 +4383,11 @@ function pckfrm( pck, ids ) {
 
 	// evaluate function
 	Module.ccall(
-        'pckfrm_c',
-        null,
-        [  ],
-        [ pck, ids ],
-    );
+		'pckfrm_c',
+		null,
+		[  ],
+		[ pck, ids ],
+	);
 
 	return;
 
@@ -4402,11 +4402,11 @@ function pcklof( filename ) {
 
 	// evaluate function
 	Module.ccall(
-        'pcklof_c',
-        null,
-        [ 'number' ],
-        [ filename, handle_ptr ],
-    );
+		'pcklof_c',
+		null,
+		[ 'number' ],
+		[ filename, handle_ptr ],
+	);
 
 	// read and free output pointers
 	const handle = Module.getValue( handle_ptr, 'i32' );
@@ -4423,11 +4423,11 @@ function pckuof( handle ) {
 
 	// evaluate function
 	Module.ccall(
-        'pckuof_c',
-        null,
-        [ 'number' ],
-        [ handle ],
-    );
+		'pckuof_c',
+		null,
+		[ 'number' ],
+		[ handle ],
+	);
 
 	return;
 
@@ -4440,11 +4440,11 @@ function pcpool( name, n, lenvals, cvals ) {
 
 	// evaluate function
 	Module.ccall(
-        'pcpool_c',
-        null,
-        [ 'number', 'number' ],
-        [ name, n, lenvals, cvals ],
-    );
+		'pcpool_c',
+		null,
+		[ 'number', 'number' ],
+		[ name, n, lenvals, cvals ],
+	);
 
 	return;
 
@@ -4457,11 +4457,11 @@ function pdpool( name, n, dvals ) {
 
 	// evaluate function
 	Module.ccall(
-        'pdpool_c',
-        null,
-        [ 'number' ],
-        [ name, n, dvals ],
-    );
+		'pdpool_c',
+		null,
+		[ 'number' ],
+		[ name, n, dvals ],
+	);
 
 	return;
 
@@ -4476,11 +4476,11 @@ function pgrrec( body, lon, lat, alt, re, f ) {
 
 	// evaluate function
 	Module.ccall(
-        'pgrrec_c',
-        null,
-        [ 'number', 'number', 'number', 'number', 'number', 'number' ],
-        [ body, lon, lat, alt, re, f, rectan_ptr ],
-    );
+		'pgrrec_c',
+		null,
+		[ 'number', 'number', 'number', 'number', 'number', 'number' ],
+		[ body, lon, lat, alt, re, f, rectan_ptr ],
+	);
 
 	// read and free output pointers
 	const rectan = Module.getValue( rectan_ptr, 'double' );
@@ -4497,11 +4497,11 @@ function pipool( name, n, ivals ) {
 
 	// evaluate function
 	Module.ccall(
-        'pipool_c',
-        null,
-        [ 'number' ],
-        [ name, n, ivals ],
-    );
+		'pipool_c',
+		null,
+		[ 'number' ],
+		[ name, n, ivals ],
+	);
 
 	return;
 
@@ -4514,11 +4514,11 @@ function pi(  ) {
 
 	// evaluate function
 	const returnValue = Module.ccall(
-        'pi_c',
-        'number',
-        [  ],
-        [  ],
-    );
+		'pi_c',
+		'number',
+		[  ],
+		[  ],
+	);
 
 	return returnValue;
 
@@ -4534,11 +4534,11 @@ function pl2nvc( plane ) {
 
 	// evaluate function
 	Module.ccall(
-        'pl2nvc_c',
-        null,
-        [ 'number', 'number' ],
-        [ plane, normal_ptr, constant_ptr ],
-    );
+		'pl2nvc_c',
+		null,
+		[ 'number', 'number' ],
+		[ plane, normal_ptr, constant_ptr ],
+	);
 
 	// read and free output pointers
 	const normal = Module.getValue( normal_ptr, 'double' );
@@ -4560,11 +4560,11 @@ function pl2nvp( plane ) {
 
 	// evaluate function
 	Module.ccall(
-        'pl2nvp_c',
-        null,
-        [ 'number', 'number' ],
-        [ plane, normal_ptr, point ],
-    );
+		'pl2nvp_c',
+		null,
+		[ 'number', 'number' ],
+		[ plane, normal_ptr, point ],
+	);
 
 	// read and free output pointers
 	const normal = Module.getValue( normal_ptr, 'double' );
@@ -4585,11 +4585,11 @@ function pl2psv( plane ) {
 
 	// evaluate function
 	Module.ccall(
-        'pl2psv_c',
-        null,
-        [ 'number', 'number', 'number' ],
-        [ plane, point_ptr, span1_ptr, span2_ptr ],
-    );
+		'pl2psv_c',
+		null,
+		[ 'number', 'number', 'number' ],
+		[ plane, point_ptr, span1_ptr, span2_ptr ],
+	);
 
 	// read and free output pointers
 	const point = Module.getValue( point_ptr, 'double' );
@@ -4612,11 +4612,11 @@ function posr( str, substr, start ) {
 
 	// evaluate function
 	const returnValue = Module.ccall(
-        'posr_c',
-        'number',
-        [ 'number' ],
-        [ str, substr, start ],
-    );
+		'posr_c',
+		'number',
+		[ 'number' ],
+		[ str, substr, start ],
+	);
 
 	return returnValue;
 
@@ -4629,11 +4629,11 @@ function pos( str, substr, start ) {
 
 	// evaluate function
 	const returnValue = Module.ccall(
-        'pos_c',
-        'number',
-        [ 'number' ],
-        [ str, substr, start ],
-    );
+		'pos_c',
+		'number',
+		[ 'number' ],
+		[ str, substr, start ],
+	);
 
 	return returnValue;
 
@@ -4648,11 +4648,11 @@ function prop2b( gm, pvinit, dt ) {
 
 	// evaluate function
 	Module.ccall(
-        'prop2b_c',
-        null,
-        [ 'number', 'number', 'number' ],
-        [ gm, pvinit, dt, pvprop_ptr ],
-    );
+		'prop2b_c',
+		null,
+		[ 'number', 'number', 'number' ],
+		[ gm, pvinit, dt, pvprop_ptr ],
+	);
 
 	// read and free output pointers
 	const pvprop = Module.getValue( pvprop_ptr, 'double' );
@@ -4671,11 +4671,11 @@ function prsdp( string ) {
 
 	// evaluate function
 	Module.ccall(
-        'prsdp_c',
-        null,
-        [ 'number' ],
-        [ string, dpval_ptr ],
-    );
+		'prsdp_c',
+		null,
+		[ 'number' ],
+		[ string, dpval_ptr ],
+	);
 
 	// read and free output pointers
 	const dpval = Module.getValue( dpval_ptr, 'double' );
@@ -4694,11 +4694,11 @@ function prsint( string ) {
 
 	// evaluate function
 	Module.ccall(
-        'prsint_c',
-        null,
-        [ 'number' ],
-        [ string, intval_ptr ],
-    );
+		'prsint_c',
+		null,
+		[ 'number' ],
+		[ string, intval_ptr ],
+	);
 
 	// read and free output pointers
 	const intval = Module.getValue( intval_ptr, 'i32' );
@@ -4715,11 +4715,11 @@ function putcml( argc ) {
 
 	// evaluate function
 	Module.ccall(
-        'putcml_c',
-        null,
-        [ 'number' ],
-        [ argc, r ],
-    );
+		'putcml_c',
+		null,
+		[ 'number' ],
+		[ argc, r ],
+	);
 
 	return { r };
 
@@ -4734,11 +4734,11 @@ function pxform( from, to, et ) {
 
 	// evaluate function
 	Module.ccall(
-        'pxform_c',
-        null,
-        [ 'number', 'number' ],
-        [ from, to, et, rotate_ptr ],
-    );
+		'pxform_c',
+		null,
+		[ 'number', 'number' ],
+		[ from, to, et, rotate_ptr ],
+	);
 
 	// read and free output pointers
 	const rotate = Module.getValue( rotate_ptr, 'double' );
@@ -4757,11 +4757,11 @@ function q2m( q ) {
 
 	// evaluate function
 	Module.ccall(
-        'q2m_c',
-        null,
-        [ 'number' ],
-        [ q, r_ptr ],
-    );
+		'q2m_c',
+		null,
+		[ 'number' ],
+		[ q, r_ptr ],
+	);
 
 	// read and free output pointers
 	const r = Module.getValue( r_ptr, 'double' );
@@ -4778,11 +4778,11 @@ function qdq2av( q, dq ) {
 
 	// evaluate function
 	Module.ccall(
-        'qdq2av_c',
-        null,
-        [ 'number' ],
-        [ q, dq, av ],
-    );
+		'qdq2av_c',
+		null,
+		[ 'number' ],
+		[ q, dq, av ],
+	);
 
 	return { av };
 
@@ -4795,11 +4795,11 @@ function qxq( q1, q2 ) {
 
 	// evaluate function
 	Module.ccall(
-        'qxq_c',
-        null,
-        [ 'number' ],
-        [ q1, q2, qout ],
-    );
+		'qxq_c',
+		null,
+		[ 'number' ],
+		[ q1, q2, qout ],
+	);
 
 	return { qout };
 
@@ -4814,11 +4814,11 @@ function radrec( range, ra, dec ) {
 
 	// evaluate function
 	Module.ccall(
-        'radrec_c',
-        null,
-        [ 'number', 'number', 'number', 'number' ],
-        [ range, ra, dec, rectan_ptr ],
-    );
+		'radrec_c',
+		null,
+		[ 'number', 'number', 'number', 'number' ],
+		[ range, ra, dec, rectan_ptr ],
+	);
 
 	// read and free output pointers
 	const rectan = Module.getValue( rectan_ptr, 'double' );
@@ -4835,11 +4835,11 @@ function rav2xf( rot, av ) {
 
 	// evaluate function
 	Module.ccall(
-        'rav2xf_c',
-        null,
-        [ 'number' ],
-        [ rot, av, xform ],
-    );
+		'rav2xf_c',
+		null,
+		[ 'number' ],
+		[ rot, av, xform ],
+	);
 
 	return { xform };
 
@@ -4854,11 +4854,11 @@ function raxisa( matrix ) {
 
 	// evaluate function
 	Module.ccall(
-        'raxisa_c',
-        null,
-        [ 'number', 'number' ],
-        [ matrix, axis, angle_ptr ],
-    );
+		'raxisa_c',
+		null,
+		[ 'number', 'number' ],
+		[ matrix, axis, angle_ptr ],
+	);
 
 	// read and free output pointers
 	const angle = Module.getValue( angle_ptr, 'double' );
@@ -4879,11 +4879,11 @@ function reccyl( rectan ) {
 
 	// evaluate function
 	Module.ccall(
-        'reccyl_c',
-        null,
-        [ 'number', 'number', 'number' ],
-        [ rectan, r_ptr, lon_ptr, z_ptr ],
-    );
+		'reccyl_c',
+		null,
+		[ 'number', 'number', 'number' ],
+		[ rectan, r_ptr, lon_ptr, z_ptr ],
+	);
 
 	// read and free output pointers
 	const r = Module.getValue( r_ptr, 'double' );
@@ -4910,11 +4910,11 @@ function recgeo( rectan, re, f ) {
 
 	// evaluate function
 	Module.ccall(
-        'recgeo_c',
-        null,
-        [ 'number', 'number', 'number', 'number', 'number' ],
-        [ rectan, re, f, lon_ptr, lat_ptr, alt_ptr ],
-    );
+		'recgeo_c',
+		null,
+		[ 'number', 'number', 'number', 'number', 'number' ],
+		[ rectan, re, f, lon_ptr, lat_ptr, alt_ptr ],
+	);
 
 	// read and free output pointers
 	const lon = Module.getValue( lon_ptr, 'double' );
@@ -4941,11 +4941,11 @@ function reclat( rectan ) {
 
 	// evaluate function
 	Module.ccall(
-        'reclat_c',
-        null,
-        [ 'number', 'number', 'number' ],
-        [ rectan, radius_ptr, longitude_ptr, latitude_ptr ],
-    );
+		'reclat_c',
+		null,
+		[ 'number', 'number', 'number' ],
+		[ rectan, radius_ptr, longitude_ptr, latitude_ptr ],
+	);
 
 	// read and free output pointers
 	const radius = Module.getValue( radius_ptr, 'double' );
@@ -4972,11 +4972,11 @@ function recpgr( body, rectan, re, f ) {
 
 	// evaluate function
 	Module.ccall(
-        'recpgr_c',
-        null,
-        [ 'number', 'number', 'number', 'number', 'number', 'number' ],
-        [ body, rectan, re, f, lon_ptr, lat_ptr, alt_ptr ],
-    );
+		'recpgr_c',
+		null,
+		[ 'number', 'number', 'number', 'number', 'number', 'number' ],
+		[ body, rectan, re, f, lon_ptr, lat_ptr, alt_ptr ],
+	);
 
 	// read and free output pointers
 	const lon = Module.getValue( lon_ptr, 'double' );
@@ -5003,11 +5003,11 @@ function recrad( rectan ) {
 
 	// evaluate function
 	Module.ccall(
-        'recrad_c',
-        null,
-        [ 'number', 'number', 'number' ],
-        [ rectan, range_ptr, ra_ptr, dec_ptr ],
-    );
+		'recrad_c',
+		null,
+		[ 'number', 'number', 'number' ],
+		[ rectan, range_ptr, ra_ptr, dec_ptr ],
+	);
 
 	// read and free output pointers
 	const range = Module.getValue( range_ptr, 'double' );
@@ -5034,11 +5034,11 @@ function recsph( rectan ) {
 
 	// evaluate function
 	Module.ccall(
-        'recsph_c',
-        null,
-        [ 'number', 'number', 'number' ],
-        [ rectan, r_ptr, colat_ptr, lon_ptr ],
-    );
+		'recsph_c',
+		null,
+		[ 'number', 'number', 'number' ],
+		[ rectan, r_ptr, colat_ptr, lon_ptr ],
+	);
 
 	// read and free output pointers
 	const r = Module.getValue( r_ptr, 'double' );
@@ -5061,11 +5061,11 @@ function removc( item, set ) {
 
 	// evaluate function
 	Module.ccall(
-        'removc_c',
-        null,
-        [  ],
-        [ item, set ],
-    );
+		'removc_c',
+		null,
+		[  ],
+		[ item, set ],
+	);
 
 	return;
 
@@ -5078,11 +5078,11 @@ function removd( item, set ) {
 
 	// evaluate function
 	Module.ccall(
-        'removd_c',
-        null,
-        [ 'number' ],
-        [ item, set ],
-    );
+		'removd_c',
+		null,
+		[ 'number' ],
+		[ item, set ],
+	);
 
 	return;
 
@@ -5095,11 +5095,11 @@ function removi( item, set ) {
 
 	// evaluate function
 	Module.ccall(
-        'removi_c',
-        null,
-        [ 'number' ],
-        [ item, set ],
-    );
+		'removi_c',
+		null,
+		[ 'number' ],
+		[ item, set ],
+	);
 
 	return;
 
@@ -5112,11 +5112,11 @@ function reordc( iorder, ndim, lenvals, array ) {
 
 	// evaluate function
 	Module.ccall(
-        'reordc_c',
-        null,
-        [ 'number', 'number' ],
-        [ iorder, ndim, lenvals, array ],
-    );
+		'reordc_c',
+		null,
+		[ 'number', 'number' ],
+		[ iorder, ndim, lenvals, array ],
+	);
 
 	return;
 
@@ -5129,11 +5129,11 @@ function reordd( iorder, ndim, array ) {
 
 	// evaluate function
 	Module.ccall(
-        'reordd_c',
-        null,
-        [ 'number', 'number' ],
-        [ iorder, ndim, array ],
-    );
+		'reordd_c',
+		null,
+		[ 'number', 'number' ],
+		[ iorder, ndim, array ],
+	);
 
 	return;
 
@@ -5146,11 +5146,11 @@ function reordi( iorder, ndim, array ) {
 
 	// evaluate function
 	Module.ccall(
-        'reordi_c',
-        null,
-        [ 'number', 'number' ],
-        [ iorder, ndim, array ],
-    );
+		'reordi_c',
+		null,
+		[ 'number', 'number' ],
+		[ iorder, ndim, array ],
+	);
 
 	return;
 
@@ -5163,11 +5163,11 @@ function reordl( iorder, ndim, array ) {
 
 	// evaluate function
 	Module.ccall(
-        'reordl_c',
-        null,
-        [ 'number' ],
-        [ iorder, ndim, array ],
-    );
+		'reordl_c',
+		null,
+		[ 'number' ],
+		[ iorder, ndim, array ],
+	);
 
 	return;
 
@@ -5182,11 +5182,11 @@ function repmct( in, marker, value, repcase, lenout ) {
 
 	// evaluate function
 	Module.ccall(
-        'repmct_c',
-        null,
-        [ 'number', 'string', 'number', 'number' ],
-        [ in, marker, value, repcase, lenout, out_ptr ],
-    );
+		'repmct_c',
+		null,
+		[ 'number', 'string', 'number', 'number' ],
+		[ in, marker, value, repcase, lenout, out_ptr ],
+	);
 
 	// read and free output pointers
 	const out = Module.Pointer_stringify( out_ptr );
@@ -5205,11 +5205,11 @@ function repmc( in, marker, value, lenout ) {
 
 	// evaluate function
 	Module.ccall(
-        'repmc_c',
-        null,
-        [ 'number', 'number' ],
-        [ in, marker, value, lenout, out_ptr ],
-    );
+		'repmc_c',
+		null,
+		[ 'number', 'number' ],
+		[ in, marker, value, lenout, out_ptr ],
+	);
 
 	// read and free output pointers
 	const out = Module.Pointer_stringify( out_ptr );
@@ -5228,11 +5228,11 @@ function repmd( in, marker, value, sigdig, lenout ) {
 
 	// evaluate function
 	Module.ccall(
-        'repmd_c',
-        null,
-        [ 'number', 'number', 'number', 'number' ],
-        [ in, marker, value, sigdig, lenout, out_ptr ],
-    );
+		'repmd_c',
+		null,
+		[ 'number', 'number', 'number', 'number' ],
+		[ in, marker, value, sigdig, lenout, out_ptr ],
+	);
 
 	// read and free output pointers
 	const out = Module.Pointer_stringify( out_ptr );
@@ -5251,11 +5251,11 @@ function repmf( in, marker, value, sigdig, format, lenout ) {
 
 	// evaluate function
 	Module.ccall(
-        'repmf_c',
-        null,
-        [ 'number', 'number', 'string', 'number', 'number' ],
-        [ in, marker, value, sigdig, format, lenout, out_ptr ],
-    );
+		'repmf_c',
+		null,
+		[ 'number', 'number', 'string', 'number', 'number' ],
+		[ in, marker, value, sigdig, format, lenout, out_ptr ],
+	);
 
 	// read and free output pointers
 	const out = Module.Pointer_stringify( out_ptr );
@@ -5274,11 +5274,11 @@ function repmi( in, marker, value, lenout ) {
 
 	// evaluate function
 	Module.ccall(
-        'repmi_c',
-        null,
-        [ 'number', 'number', 'number' ],
-        [ in, marker, value, lenout, out_ptr ],
-    );
+		'repmi_c',
+		null,
+		[ 'number', 'number', 'number' ],
+		[ in, marker, value, lenout, out_ptr ],
+	);
 
 	// read and free output pointers
 	const out = Module.Pointer_stringify( out_ptr );
@@ -5297,11 +5297,11 @@ function repmot( in, marker, value, repcase, lenout ) {
 
 	// evaluate function
 	Module.ccall(
-        'repmot_c',
-        null,
-        [ 'number', 'string', 'number', 'number' ],
-        [ in, marker, value, repcase, lenout, out_ptr ],
-    );
+		'repmot_c',
+		null,
+		[ 'number', 'string', 'number', 'number' ],
+		[ in, marker, value, repcase, lenout, out_ptr ],
+	);
 
 	// read and free output pointers
 	const out = Module.Pointer_stringify( out_ptr );
@@ -5318,11 +5318,11 @@ function reset(  ) {
 
 	// evaluate function
 	Module.ccall(
-        'reset_c',
-        null,
-        [  ],
-        [  ],
-    );
+		'reset_c',
+		null,
+		[  ],
+		[  ],
+	);
 
 	return;
 
@@ -5337,11 +5337,11 @@ function rotate( angle, iaxis ) {
 
 	// evaluate function
 	Module.ccall(
-        'rotate_c',
-        null,
-        [ 'number', 'number', 'number' ],
-        [ angle, iaxis, mout_ptr ],
-    );
+		'rotate_c',
+		null,
+		[ 'number', 'number', 'number' ],
+		[ angle, iaxis, mout_ptr ],
+	);
 
 	// read and free output pointers
 	const mout = Module.getValue( mout_ptr, 'double' );
@@ -5360,11 +5360,11 @@ function rotmat( m1, angle, iaxis ) {
 
 	// evaluate function
 	Module.ccall(
-        'rotmat_c',
-        null,
-        [ 'number', 'number', 'number' ],
-        [ m1, angle, iaxis, mout_ptr ],
-    );
+		'rotmat_c',
+		null,
+		[ 'number', 'number', 'number' ],
+		[ m1, angle, iaxis, mout_ptr ],
+	);
 
 	// read and free output pointers
 	const mout = Module.getValue( mout_ptr, 'double' );
@@ -5381,11 +5381,11 @@ function rotvec( v1, angle, iaxis ) {
 
 	// evaluate function
 	Module.ccall(
-        'rotvec_c',
-        null,
-        [ 'number', 'number', 'number' ],
-        [ v1, angle, iaxis, vout ],
-    );
+		'rotvec_c',
+		null,
+		[ 'number', 'number', 'number' ],
+		[ v1, angle, iaxis, vout ],
+	);
 
 	return { vout };
 
@@ -5398,11 +5398,11 @@ function rpd(  ) {
 
 	// evaluate function
 	const returnValue = Module.ccall(
-        'rpd_c',
-        'number',
-        [  ],
-        [  ],
-    );
+		'rpd_c',
+		'number',
+		[  ],
+		[  ],
+	);
 
 	return returnValue;
 
@@ -5418,11 +5418,11 @@ function rquad( a, b, c ) {
 
 	// evaluate function
 	Module.ccall(
-        'rquad_c',
-        null,
-        [ 'number', 'number', 'number', 'number', 'number' ],
-        [ a, b, c, root1_ptr, root2_ptr ],
-    );
+		'rquad_c',
+		null,
+		[ 'number', 'number', 'number', 'number', 'number' ],
+		[ a, b, c, root1_ptr, root2_ptr ],
+	);
 
 	// read and free output pointers
 	const root1 = Module.getValue( root1_ptr, 'double' );
@@ -5445,11 +5445,11 @@ function saelgv( vec1, vec2 ) {
 
 	// evaluate function
 	Module.ccall(
-        'saelgv_c',
-        null,
-        [ 'number', 'number' ],
-        [ vec1, vec2, smajor_ptr, sminor_ptr ],
-    );
+		'saelgv_c',
+		null,
+		[ 'number', 'number' ],
+		[ vec1, vec2, smajor_ptr, sminor_ptr ],
+	);
 
 	// read and free output pointers
 	const smajor = Module.getValue( smajor_ptr, 'double' );
@@ -5471,11 +5471,11 @@ function scdecd( sc, sclkdp, lenout ) {
 
 	// evaluate function
 	Module.ccall(
-        'scdecd_c',
-        null,
-        [ 'number', 'number', 'number', 'number' ],
-        [ sc, sclkdp, lenout, sclkch_ptr ],
-    );
+		'scdecd_c',
+		null,
+		[ 'number', 'number', 'number', 'number' ],
+		[ sc, sclkdp, lenout, sclkch_ptr ],
+	);
 
 	// read and free output pointers
 	const sclkch = Module.Pointer_stringify( sclkch_ptr );
@@ -5494,11 +5494,11 @@ function sce2c( sc, et ) {
 
 	// evaluate function
 	Module.ccall(
-        'sce2c_c',
-        null,
-        [ 'number', 'number', 'number' ],
-        [ sc, et, sclkdp_ptr ],
-    );
+		'sce2c_c',
+		null,
+		[ 'number', 'number', 'number' ],
+		[ sc, et, sclkdp_ptr ],
+	);
 
 	// read and free output pointers
 	const sclkdp = Module.getValue( sclkdp_ptr, 'double' );
@@ -5517,11 +5517,11 @@ function sce2s( sc, et, lenout ) {
 
 	// evaluate function
 	Module.ccall(
-        'sce2s_c',
-        null,
-        [ 'number', 'number', 'number', 'number' ],
-        [ sc, et, lenout, sclkch_ptr ],
-    );
+		'sce2s_c',
+		null,
+		[ 'number', 'number', 'number', 'number' ],
+		[ sc, et, lenout, sclkch_ptr ],
+	);
 
 	// read and free output pointers
 	const sclkch = Module.Pointer_stringify( sclkch_ptr );
@@ -5540,11 +5540,11 @@ function sce2t( sc, et ) {
 
 	// evaluate function
 	Module.ccall(
-        'sce2t_c',
-        null,
-        [ 'number', 'number', 'number' ],
-        [ sc, et, sclkdp_ptr ],
-    );
+		'sce2t_c',
+		null,
+		[ 'number', 'number', 'number' ],
+		[ sc, et, sclkdp_ptr ],
+	);
 
 	// read and free output pointers
 	const sclkdp = Module.getValue( sclkdp_ptr, 'double' );
@@ -5563,11 +5563,11 @@ function scencd( sc, sclkch ) {
 
 	// evaluate function
 	Module.ccall(
-        'scencd_c',
-        null,
-        [ 'number', 'number' ],
-        [ sc, sclkch, sclkdp_ptr ],
-    );
+		'scencd_c',
+		null,
+		[ 'number', 'number' ],
+		[ sc, sclkch, sclkdp_ptr ],
+	);
 
 	// read and free output pointers
 	const sclkdp = Module.getValue( sclkdp_ptr, 'double' );
@@ -5586,11 +5586,11 @@ function scfmt( sc, ticks, lenout ) {
 
 	// evaluate function
 	Module.ccall(
-        'scfmt_c',
-        null,
-        [ 'number', 'number', 'number', 'number' ],
-        [ sc, ticks, lenout, clkstr_ptr ],
-    );
+		'scfmt_c',
+		null,
+		[ 'number', 'number', 'number', 'number' ],
+		[ sc, ticks, lenout, clkstr_ptr ],
+	);
 
 	// read and free output pointers
 	const clkstr = Module.Pointer_stringify( clkstr_ptr );
@@ -5611,11 +5611,11 @@ function scpart( sc ) {
 
 	// evaluate function
 	Module.ccall(
-        'scpart_c',
-        null,
-        [ 'number', 'number', 'number', 'number' ],
-        [ sc, nparts_ptr, pstart_ptr, pstop_ptr ],
-    );
+		'scpart_c',
+		null,
+		[ 'number', 'number', 'number', 'number' ],
+		[ sc, nparts_ptr, pstart_ptr, pstop_ptr ],
+	);
 
 	// read and free output pointers
 	const nparts = Module.getValue( nparts_ptr, 'i32' );
@@ -5640,11 +5640,11 @@ function scs2e( sc, sclkch ) {
 
 	// evaluate function
 	Module.ccall(
-        'scs2e_c',
-        null,
-        [ 'number', 'number' ],
-        [ sc, sclkch, et_ptr ],
-    );
+		'scs2e_c',
+		null,
+		[ 'number', 'number' ],
+		[ sc, sclkch, et_ptr ],
+	);
 
 	// read and free output pointers
 	const et = Module.getValue( et_ptr, 'double' );
@@ -5663,11 +5663,11 @@ function sct2e( sc, sclkdp ) {
 
 	// evaluate function
 	Module.ccall(
-        'sct2e_c',
-        null,
-        [ 'number', 'number', 'number' ],
-        [ sc, sclkdp, et_ptr ],
-    );
+		'sct2e_c',
+		null,
+		[ 'number', 'number', 'number' ],
+		[ sc, sclkdp, et_ptr ],
+	);
 
 	// read and free output pointers
 	const et = Module.getValue( et_ptr, 'double' );
@@ -5686,11 +5686,11 @@ function sctiks( sc, clkstr ) {
 
 	// evaluate function
 	Module.ccall(
-        'sctiks_c',
-        null,
-        [ 'number', 'number' ],
-        [ sc, clkstr, ticks_ptr ],
-    );
+		'sctiks_c',
+		null,
+		[ 'number', 'number' ],
+		[ sc, clkstr, ticks_ptr ],
+	);
 
 	// read and free output pointers
 	const ticks = Module.getValue( ticks_ptr, 'double' );
@@ -5707,11 +5707,11 @@ function setmsg( message ) {
 
 	// evaluate function
 	Module.ccall(
-        'setmsg_c',
-        null,
-        [  ],
-        [ message ],
-    );
+		'setmsg_c',
+		null,
+		[  ],
+		[ message ],
+	);
 
 	return;
 
@@ -5724,11 +5724,11 @@ function shellc( ndim, lenvals, array ) {
 
 	// evaluate function
 	Module.ccall(
-        'shellc_c',
-        null,
-        [ 'number', 'number' ],
-        [ ndim, lenvals, array ],
-    );
+		'shellc_c',
+		null,
+		[ 'number', 'number' ],
+		[ ndim, lenvals, array ],
+	);
 
 	return;
 
@@ -5741,11 +5741,11 @@ function shelld( ndim, array ) {
 
 	// evaluate function
 	Module.ccall(
-        'shelld_c',
-        null,
-        [ 'number', 'number' ],
-        [ ndim, array ],
-    );
+		'shelld_c',
+		null,
+		[ 'number', 'number' ],
+		[ ndim, array ],
+	);
 
 	return;
 
@@ -5758,11 +5758,11 @@ function shelli( ndim, array ) {
 
 	// evaluate function
 	Module.ccall(
-        'shelli_c',
-        null,
-        [ 'number', 'number' ],
-        [ ndim, array ],
-    );
+		'shelli_c',
+		null,
+		[ 'number', 'number' ],
+		[ ndim, array ],
+	);
 
 	return;
 
@@ -5775,11 +5775,11 @@ function size( cell ) {
 
 	// evaluate function
 	const returnValue = Module.ccall(
-        'size_c',
-        'number',
-        [  ],
-        [ cell ],
-    );
+		'size_c',
+		'number',
+		[  ],
+		[ cell ],
+	);
 
 	return returnValue;
 
@@ -5792,11 +5792,11 @@ function spd(  ) {
 
 	// evaluate function
 	const returnValue = Module.ccall(
-        'spd_c',
-        'number',
-        [  ],
-        [  ],
-    );
+		'spd_c',
+		'number',
+		[  ],
+		[  ],
+	);
 
 	return returnValue;
 
@@ -5813,11 +5813,11 @@ function sphcyl( radius, colat, slon ) {
 
 	// evaluate function
 	Module.ccall(
-        'sphcyl_c',
-        null,
-        [ 'number', 'number', 'number', 'number', 'number', 'number' ],
-        [ radius, colat, slon, r_ptr, lon_ptr, z_ptr ],
-    );
+		'sphcyl_c',
+		null,
+		[ 'number', 'number', 'number', 'number', 'number', 'number' ],
+		[ radius, colat, slon, r_ptr, lon_ptr, z_ptr ],
+	);
 
 	// read and free output pointers
 	const r = Module.getValue( r_ptr, 'double' );
@@ -5844,11 +5844,11 @@ function sphlat( r, colat, lons ) {
 
 	// evaluate function
 	Module.ccall(
-        'sphlat_c',
-        null,
-        [ 'number', 'number', 'number', 'number', 'number', 'number' ],
-        [ r, colat, lons, radius_ptr, lon_ptr, lat_ptr ],
-    );
+		'sphlat_c',
+		null,
+		[ 'number', 'number', 'number', 'number', 'number', 'number' ],
+		[ r, colat, lons, radius_ptr, lon_ptr, lat_ptr ],
+	);
 
 	// read and free output pointers
 	const radius = Module.getValue( radius_ptr, 'double' );
@@ -5873,11 +5873,11 @@ function sphrec( r, colat, lon ) {
 
 	// evaluate function
 	Module.ccall(
-        'sphrec_c',
-        null,
-        [ 'number', 'number', 'number', 'number' ],
-        [ r, colat, lon, rectan_ptr ],
-    );
+		'sphrec_c',
+		null,
+		[ 'number', 'number', 'number', 'number' ],
+		[ r, colat, lon, rectan_ptr ],
+	);
 
 	// read and free output pointers
 	const rectan = Module.getValue( rectan_ptr, 'double' );
@@ -5894,11 +5894,11 @@ function spk14a( handle, ncsets, coeffs, epochs ) {
 
 	// evaluate function
 	Module.ccall(
-        'spk14a_c',
-        null,
-        [ 'number', 'number' ],
-        [ handle, ncsets, coeffs, epochs ],
-    );
+		'spk14a_c',
+		null,
+		[ 'number', 'number' ],
+		[ handle, ncsets, coeffs, epochs ],
+	);
 
 	return;
 
@@ -5911,11 +5911,11 @@ function spk14b( handle, segid, body, center, frame, first, last, chbdeg ) {
 
 	// evaluate function
 	Module.ccall(
-        'spk14b_c',
-        null,
-        [ 'number', 'number', 'number', 'number', 'number', 'number' ],
-        [ handle, segid, body, center, frame, first, last, chbdeg ],
-    );
+		'spk14b_c',
+		null,
+		[ 'number', 'number', 'number', 'number', 'number', 'number' ],
+		[ handle, segid, body, center, frame, first, last, chbdeg ],
+	);
 
 	return;
 
@@ -5928,11 +5928,11 @@ function spk14e( handle ) {
 
 	// evaluate function
 	Module.ccall(
-        'spk14e_c',
-        null,
-        [ 'number' ],
-        [ handle ],
-    );
+		'spk14e_c',
+		null,
+		[ 'number' ],
+		[ handle ],
+	);
 
 	return;
 
@@ -5949,11 +5949,11 @@ function spkacs( targ, et, ref, abcorr, obs ) {
 
 	// evaluate function
 	Module.ccall(
-        'spkacs_c',
-        null,
-        [ 'number', 'number', 'number', 'number', 'number', 'number' ],
-        [ targ, et, ref, abcorr, obs, starg_ptr, lt_ptr, dlt_ptr ],
-    );
+		'spkacs_c',
+		null,
+		[ 'number', 'number', 'number', 'number', 'number', 'number' ],
+		[ targ, et, ref, abcorr, obs, starg_ptr, lt_ptr, dlt_ptr ],
+	);
 
 	// read and free output pointers
 	const starg = Module.getValue( starg_ptr, 'double' );
@@ -5979,11 +5979,11 @@ function spkapo( targ, et, ref, sobs, abcorr ) {
 
 	// evaluate function
 	Module.ccall(
-        'spkapo_c',
-        null,
-        [ 'number', 'number', 'number', 'number' ],
-        [ targ, et, ref, sobs, abcorr, ptarg_ptr, lt_ptr ],
-    );
+		'spkapo_c',
+		null,
+		[ 'number', 'number', 'number', 'number' ],
+		[ targ, et, ref, sobs, abcorr, ptarg_ptr, lt_ptr ],
+	);
 
 	// read and free output pointers
 	const ptarg = Module.getValue( ptarg_ptr, 'double' );
@@ -6005,11 +6005,11 @@ function spkapp( targ, et, ref, sobs, abcorr ) {
 
 	// evaluate function
 	Module.ccall(
-        'spkapp_c',
-        null,
-        [ 'number', 'number', 'number', 'number' ],
-        [ targ, et, ref, sobs, abcorr, starg, lt_ptr ],
-    );
+		'spkapp_c',
+		null,
+		[ 'number', 'number', 'number', 'number' ],
+		[ targ, et, ref, sobs, abcorr, starg, lt_ptr ],
+	);
 
 	// read and free output pointers
 	const lt = Module.getValue( lt_ptr, 'double' );
@@ -6029,11 +6029,11 @@ function spkaps( targ, et, ref, abcorr, stobs, accobs ) {
 
 	// evaluate function
 	Module.ccall(
-        'spkaps_c',
-        null,
-        [ 'number', 'number', 'number', 'number', 'number' ],
-        [ targ, et, ref, abcorr, stobs, accobs, starg, lt_ptr, dlt_ptr ],
-    );
+		'spkaps_c',
+		null,
+		[ 'number', 'number', 'number', 'number', 'number' ],
+		[ targ, et, ref, abcorr, stobs, accobs, starg, lt_ptr, dlt_ptr ],
+	);
 
 	// read and free output pointers
 	const lt = Module.getValue( lt_ptr, 'double' );
@@ -6053,11 +6053,11 @@ function spkcls( handle ) {
 
 	// evaluate function
 	Module.ccall(
-        'spkcls_c',
-        null,
-        [ 'number' ],
-        [ handle ],
-    );
+		'spkcls_c',
+		null,
+		[ 'number' ],
+		[ handle ],
+	);
 
 	return;
 
@@ -6070,11 +6070,11 @@ function spkcov( spk, idcode, cover ) {
 
 	// evaluate function
 	Module.ccall(
-        'spkcov_c',
-        null,
-        [ 'number' ],
-        [ spk, idcode, cover ],
-    );
+		'spkcov_c',
+		null,
+		[ 'number' ],
+		[ spk, idcode, cover ],
+	);
 
 	return;
 
@@ -6090,11 +6090,11 @@ function spkezp( targ, et, ref, abcorr, obs ) {
 
 	// evaluate function
 	Module.ccall(
-        'spkezp_c',
-        null,
-        [ 'number', 'number', 'number', 'number', 'number' ],
-        [ targ, et, ref, abcorr, obs, ptarg_ptr, lt_ptr ],
-    );
+		'spkezp_c',
+		null,
+		[ 'number', 'number', 'number', 'number', 'number' ],
+		[ targ, et, ref, abcorr, obs, ptarg_ptr, lt_ptr ],
+	);
 
 	// read and free output pointers
 	const ptarg = Module.getValue( ptarg_ptr, 'double' );
@@ -6117,11 +6117,11 @@ function spkezr( targ, et, ref, abcorr, obs ) {
 
 	// evaluate function
 	Module.ccall(
-        'spkezr_c',
-        null,
-        [ 'number', 'number', 'number' ],
-        [ targ, et, ref, abcorr, obs, starg_ptr, lt_ptr ],
-    );
+		'spkezr_c',
+		null,
+		[ 'number', 'number', 'number' ],
+		[ targ, et, ref, abcorr, obs, starg_ptr, lt_ptr ],
+	);
 
 	// read and free output pointers
 	const starg = Module.getValue( starg_ptr, 'double' );
@@ -6144,11 +6144,11 @@ function spkez( targ, et, ref, abcorr, obs ) {
 
 	// evaluate function
 	Module.ccall(
-        'spkez_c',
-        null,
-        [ 'number', 'number', 'number', 'number', 'number' ],
-        [ targ, et, ref, abcorr, obs, starg_ptr, lt_ptr ],
-    );
+		'spkez_c',
+		null,
+		[ 'number', 'number', 'number', 'number', 'number' ],
+		[ targ, et, ref, abcorr, obs, starg_ptr, lt_ptr ],
+	);
 
 	// read and free output pointers
 	const starg = Module.getValue( starg_ptr, 'double' );
@@ -6171,11 +6171,11 @@ function spkgeo( targ, et, ref, obs ) {
 
 	// evaluate function
 	Module.ccall(
-        'spkgeo_c',
-        null,
-        [ 'number', 'number', 'number', 'number', 'number' ],
-        [ targ, et, ref, obs, state_ptr, lt_ptr ],
-    );
+		'spkgeo_c',
+		null,
+		[ 'number', 'number', 'number', 'number', 'number' ],
+		[ targ, et, ref, obs, state_ptr, lt_ptr ],
+	);
 
 	// read and free output pointers
 	const state = Module.getValue( state_ptr, 'double' );
@@ -6198,11 +6198,11 @@ function spkgps( targ, et, ref, obs ) {
 
 	// evaluate function
 	Module.ccall(
-        'spkgps_c',
-        null,
-        [ 'number', 'number', 'number', 'number', 'number' ],
-        [ targ, et, ref, obs, pos_ptr, lt_ptr ],
-    );
+		'spkgps_c',
+		null,
+		[ 'number', 'number', 'number', 'number', 'number' ],
+		[ targ, et, ref, obs, pos_ptr, lt_ptr ],
+	);
 
 	// read and free output pointers
 	const pos = Module.getValue( pos_ptr, 'double' );
@@ -6226,11 +6226,11 @@ function spkltc( targ, et, ref, abcorr, stobs ) {
 
 	// evaluate function
 	Module.ccall(
-        'spkltc_c',
-        null,
-        [ 'number', 'number', 'number', 'number', 'number' ],
-        [ targ, et, ref, abcorr, stobs, starg_ptr, lt_ptr, dlt_ptr ],
-    );
+		'spkltc_c',
+		null,
+		[ 'number', 'number', 'number', 'number', 'number' ],
+		[ targ, et, ref, abcorr, stobs, starg_ptr, lt_ptr, dlt_ptr ],
+	);
 
 	// read and free output pointers
 	const starg = Module.getValue( starg_ptr, 'double' );
@@ -6253,11 +6253,11 @@ function spkobj( spk, ids ) {
 
 	// evaluate function
 	Module.ccall(
-        'spkobj_c',
-        null,
-        [  ],
-        [ spk, ids ],
-    );
+		'spkobj_c',
+		null,
+		[  ],
+		[ spk, ids ],
+	);
 
 	return;
 
@@ -6272,11 +6272,11 @@ function spkopa( file ) {
 
 	// evaluate function
 	Module.ccall(
-        'spkopa_c',
-        null,
-        [ 'number' ],
-        [ file, handle_ptr ],
-    );
+		'spkopa_c',
+		null,
+		[ 'number' ],
+		[ file, handle_ptr ],
+	);
 
 	// read and free output pointers
 	const handle = Module.getValue( handle_ptr, 'i32' );
@@ -6295,11 +6295,11 @@ function spkopn( name, ifname, ncomch ) {
 
 	// evaluate function
 	Module.ccall(
-        'spkopn_c',
-        null,
-        [ 'number', 'number' ],
-        [ name, ifname, ncomch, handle_ptr ],
-    );
+		'spkopn_c',
+		null,
+		[ 'number', 'number' ],
+		[ name, ifname, ncomch, handle_ptr ],
+	);
 
 	// read and free output pointers
 	const handle = Module.getValue( handle_ptr, 'i32' );
@@ -6318,11 +6318,11 @@ function spkpds( body, center, frame, type, first, last ) {
 
 	// evaluate function
 	Module.ccall(
-        'spkpds_c',
-        null,
-        [ 'number', 'number', 'number', 'number', 'number', 'number' ],
-        [ body, center, frame, type, first, last, descr_ptr ],
-    );
+		'spkpds_c',
+		null,
+		[ 'number', 'number', 'number', 'number', 'number', 'number' ],
+		[ body, center, frame, type, first, last, descr_ptr ],
+	);
 
 	// read and free output pointers
 	const descr = Module.getValue( descr_ptr, 'double' );
@@ -6342,11 +6342,11 @@ function spkpos( targ, et, ref, abcorr, obs ) {
 
 	// evaluate function
 	Module.ccall(
-        'spkpos_c',
-        null,
-        [ 'number', 'number', 'number' ],
-        [ targ, et, ref, abcorr, obs, ptarg_ptr, lt_ptr ],
-    );
+		'spkpos_c',
+		null,
+		[ 'number', 'number', 'number' ],
+		[ targ, et, ref, abcorr, obs, ptarg_ptr, lt_ptr ],
+	);
 
 	// read and free output pointers
 	const ptarg = Module.getValue( ptarg_ptr, 'double' );
@@ -6368,11 +6368,11 @@ function spkssb( targ, et, ref ) {
 
 	// evaluate function
 	Module.ccall(
-        'spkssb_c',
-        null,
-        [ 'number', 'number', 'number' ],
-        [ targ, et, ref, starg_ptr ],
-    );
+		'spkssb_c',
+		null,
+		[ 'number', 'number', 'number' ],
+		[ targ, et, ref, starg_ptr ],
+	);
 
 	// read and free output pointers
 	const starg = Module.getValue( starg_ptr, 'double' );
@@ -6389,11 +6389,11 @@ function spksub( handle, descr, ident, begin, end, newh ) {
 
 	// evaluate function
 	Module.ccall(
-        'spksub_c',
-        null,
-        [ 'number', 'number', 'number', 'number', 'number' ],
-        [ handle, descr, ident, begin, end, newh ],
-    );
+		'spksub_c',
+		null,
+		[ 'number', 'number', 'number', 'number', 'number' ],
+		[ handle, descr, ident, begin, end, newh ],
+	);
 
 	return;
 
@@ -6415,11 +6415,11 @@ function spkuds( descr ) {
 
 	// evaluate function
 	Module.ccall(
-        'spkuds_c',
-        null,
-        [ 'number', 'number', 'number', 'number', 'number', 'number', 'number', 'number' ],
-        [ descr, body_ptr, center_ptr, frame_ptr, type_ptr, first_ptr, last_ptr, begin_ptr, end_ptr ],
-    );
+		'spkuds_c',
+		null,
+		[ 'number', 'number', 'number', 'number', 'number', 'number', 'number', 'number' ],
+		[ descr, body_ptr, center_ptr, frame_ptr, type_ptr, first_ptr, last_ptr, begin_ptr, end_ptr ],
+	);
 
 	// read and free output pointers
 	const body = Module.getValue( body_ptr, 'i32' );
@@ -6457,11 +6457,11 @@ function spkuef( handle ) {
 
 	// evaluate function
 	Module.ccall(
-        'spkuef_c',
-        null,
-        [ 'number' ],
-        [ handle ],
-    );
+		'spkuef_c',
+		null,
+		[ 'number' ],
+		[ handle ],
+	);
 
 	return;
 
@@ -6474,11 +6474,11 @@ function spkw02( handle, body, center, frame, first, last, segid, intlen, n, pol
 
 	// evaluate function
 	Module.ccall(
-        'spkw02_c',
-        null,
-        [ 'number', 'number', 'number', 'number', 'number', 'number', 'number', 'number', 'number' ],
-        [ handle, body, center, frame, first, last, segid, intlen, n, polydg, cdata, btime ],
-    );
+		'spkw02_c',
+		null,
+		[ 'number', 'number', 'number', 'number', 'number', 'number', 'number', 'number', 'number' ],
+		[ handle, body, center, frame, first, last, segid, intlen, n, polydg, cdata, btime ],
+	);
 
 	return;
 
@@ -6491,11 +6491,11 @@ function spkw03( handle, body, center, frame, first, last, segid, intlen, n, pol
 
 	// evaluate function
 	Module.ccall(
-        'spkw03_c',
-        null,
-        [ 'number', 'number', 'number', 'number', 'number', 'number', 'number', 'number', 'number' ],
-        [ handle, body, center, frame, first, last, segid, intlen, n, polydg, cdata, btime ],
-    );
+		'spkw03_c',
+		null,
+		[ 'number', 'number', 'number', 'number', 'number', 'number', 'number', 'number', 'number' ],
+		[ handle, body, center, frame, first, last, segid, intlen, n, polydg, cdata, btime ],
+	);
 
 	return;
 
@@ -6508,11 +6508,11 @@ function spkw05( handle, body, center, frame, first, last, segid, gm, n, states,
 
 	// evaluate function
 	Module.ccall(
-        'spkw05_c',
-        null,
-        [ 'number', 'number', 'number', 'number', 'number', 'number', 'number' ],
-        [ handle, body, center, frame, first, last, segid, gm, n, states, epochs ],
-    );
+		'spkw05_c',
+		null,
+		[ 'number', 'number', 'number', 'number', 'number', 'number', 'number' ],
+		[ handle, body, center, frame, first, last, segid, gm, n, states, epochs ],
+	);
 
 	return;
 
@@ -6525,11 +6525,11 @@ function spkw08( handle, body, center, frame, first, last, segid, degree, n, sta
 
 	// evaluate function
 	Module.ccall(
-        'spkw08_c',
-        null,
-        [ 'number', 'number', 'number', 'number', 'number', 'number', 'number', 'number', 'number' ],
-        [ handle, body, center, frame, first, last, segid, degree, n, states, epoch1, step ],
-    );
+		'spkw08_c',
+		null,
+		[ 'number', 'number', 'number', 'number', 'number', 'number', 'number', 'number', 'number' ],
+		[ handle, body, center, frame, first, last, segid, degree, n, states, epoch1, step ],
+	);
 
 	return;
 
@@ -6542,11 +6542,11 @@ function spkw09( handle, body, center, frame, first, last, segid, degree, n, sta
 
 	// evaluate function
 	Module.ccall(
-        'spkw09_c',
-        null,
-        [ 'number', 'number', 'number', 'number', 'number', 'number', 'number' ],
-        [ handle, body, center, frame, first, last, segid, degree, n, states, epochs ],
-    );
+		'spkw09_c',
+		null,
+		[ 'number', 'number', 'number', 'number', 'number', 'number', 'number' ],
+		[ handle, body, center, frame, first, last, segid, degree, n, states, epochs ],
+	);
 
 	return;
 
@@ -6559,11 +6559,11 @@ function spkw10( handle, body, center, frame, first, last, segid, consts, n, ele
 
 	// evaluate function
 	Module.ccall(
-        'spkw10_c',
-        null,
-        [ 'number', 'number', 'number', 'number', 'number', 'number' ],
-        [ handle, body, center, frame, first, last, segid, consts, n, elems, epochs ],
-    );
+		'spkw10_c',
+		null,
+		[ 'number', 'number', 'number', 'number', 'number', 'number' ],
+		[ handle, body, center, frame, first, last, segid, consts, n, elems, epochs ],
+	);
 
 	return;
 
@@ -6576,11 +6576,11 @@ function spkw12( handle, body, center, frame, first, last, segid, degree, n, sta
 
 	// evaluate function
 	Module.ccall(
-        'spkw12_c',
-        null,
-        [ 'number', 'number', 'number', 'number', 'number', 'number', 'number', 'number', 'number' ],
-        [ handle, body, center, frame, first, last, segid, degree, n, states, epoch0, step ],
-    );
+		'spkw12_c',
+		null,
+		[ 'number', 'number', 'number', 'number', 'number', 'number', 'number', 'number', 'number' ],
+		[ handle, body, center, frame, first, last, segid, degree, n, states, epoch0, step ],
+	);
 
 	return;
 
@@ -6593,11 +6593,11 @@ function spkw13( handle, body, center, frame, first, last, segid, degree, n, sta
 
 	// evaluate function
 	Module.ccall(
-        'spkw13_c',
-        null,
-        [ 'number', 'number', 'number', 'number', 'number', 'number', 'number' ],
-        [ handle, body, center, frame, first, last, segid, degree, n, states, epochs ],
-    );
+		'spkw13_c',
+		null,
+		[ 'number', 'number', 'number', 'number', 'number', 'number', 'number' ],
+		[ handle, body, center, frame, first, last, segid, degree, n, states, epochs ],
+	);
 
 	return;
 
@@ -6610,11 +6610,11 @@ function spkw15( handle, body, center, frame, first, last, segid, epoch, tp, pa,
 
 	// evaluate function
 	Module.ccall(
-        'spkw15_c',
-        null,
-        [ 'number', 'number', 'number', 'number', 'number', 'number', 'number', 'number', 'number', 'number', 'number', 'number' ],
-        [ handle, body, center, frame, first, last, segid, epoch, tp, pa, p, ecc, j2flg, pv, gm, j2, radius ],
-    );
+		'spkw15_c',
+		null,
+		[ 'number', 'number', 'number', 'number', 'number', 'number', 'number', 'number', 'number', 'number', 'number', 'number' ],
+		[ handle, body, center, frame, first, last, segid, epoch, tp, pa, p, ecc, j2flg, pv, gm, j2, radius ],
+	);
 
 	return;
 
@@ -6627,11 +6627,11 @@ function spkw17( handle, body, center, frame, first, last, segid, epoch, eqel, r
 
 	// evaluate function
 	Module.ccall(
-        'spkw17_c',
-        null,
-        [ 'number', 'number', 'number', 'number', 'number', 'number', 'number', 'number' ],
-        [ handle, body, center, frame, first, last, segid, epoch, eqel, rapol, decpol ],
-    );
+		'spkw17_c',
+		null,
+		[ 'number', 'number', 'number', 'number', 'number', 'number', 'number', 'number' ],
+		[ handle, body, center, frame, first, last, segid, epoch, eqel, rapol, decpol ],
+	);
 
 	return { decpol };
 
@@ -6644,11 +6644,11 @@ function spkw18( handle, subtyp, body, center, frame, first, last, segid, degree
 
 	// evaluate function
 	Module.ccall(
-        'spkw18_c',
-        null,
-        [ 'number', 'number', 'number', 'number', 'number', 'number', 'number' ],
-        [ handle, subtyp, body, center, frame, first, last, segid, degree, n, packts, epochs ],
-    );
+		'spkw18_c',
+		null,
+		[ 'number', 'number', 'number', 'number', 'number', 'number', 'number' ],
+		[ handle, subtyp, body, center, frame, first, last, segid, degree, n, packts, epochs ],
+	);
 
 	return;
 
@@ -6663,11 +6663,11 @@ function srfrec( body, latitude ) {
 
 	// evaluate function
 	Module.ccall(
-        'srfrec_c',
-        null,
-        [ 'number', 'number', 'number', 'number' ],
-        [ body, longitude, latitude, rectan_ptr ],
-    );
+		'srfrec_c',
+		null,
+		[ 'number', 'number', 'number', 'number' ],
+		[ body, longitude, latitude, rectan_ptr ],
+	);
 
 	// read and free output pointers
 	const rectan = Module.getValue( rectan_ptr, 'double' );
@@ -6684,11 +6684,11 @@ function ssize( size, cell ) {
 
 	// evaluate function
 	Module.ccall(
-        'ssize_c',
-        null,
-        [ 'number' ],
-        [ size, cell ],
-    );
+		'ssize_c',
+		null,
+		[ 'number' ],
+		[ size, cell ],
+	);
 
 	return;
 
@@ -6703,11 +6703,11 @@ function stelab( pobj, vobs ) {
 
 	// evaluate function
 	Module.ccall(
-        'stelab_c',
-        null,
-        [ 'number' ],
-        [ pobj, vobs, appobj_ptr ],
-    );
+		'stelab_c',
+		null,
+		[ 'number' ],
+		[ pobj, vobs, appobj_ptr ],
+	);
 
 	// read and free output pointers
 	const appobj = Module.getValue( appobj_ptr, 'double' );
@@ -6726,11 +6726,11 @@ function str2et( str ) {
 
 	// evaluate function
 	Module.ccall(
-        'str2et_c',
-        null,
-        [ 'number' ],
-        [ str, et_ptr ],
-    );
+		'str2et_c',
+		null,
+		[ 'number' ],
+		[ str, et_ptr ],
+	);
 
 	// read and free output pointers
 	const et = Module.getValue( et_ptr, 'double' );
@@ -6749,11 +6749,11 @@ function subpnt( method, target, et, fixref, abcorr, obsrvr ) {
 
 	// evaluate function
 	Module.ccall(
-        'subpnt_c',
-        null,
-        [ 'number', 'number', 'number', 'number' ],
-        [ method, target, et, fixref, abcorr, obsrvr, spoint, trgepc_ptr, srfvec ],
-    );
+		'subpnt_c',
+		null,
+		[ 'number', 'number', 'number', 'number' ],
+		[ method, target, et, fixref, abcorr, obsrvr, spoint, trgepc_ptr, srfvec ],
+	);
 
 	// read and free output pointers
 	const trgepc = Module.getValue( trgepc_ptr, 'double' );
@@ -6772,11 +6772,11 @@ function subpt( method, target, et, abcorr, obsrvr ) {
 
 	// evaluate function
 	Module.ccall(
-        'subpt_c',
-        null,
-        [ 'number', 'number', 'number' ],
-        [ method, target, et, abcorr, obsrvr, spoint, alt_ptr ],
-    );
+		'subpt_c',
+		null,
+		[ 'number', 'number', 'number' ],
+		[ method, target, et, abcorr, obsrvr, spoint, alt_ptr ],
+	);
 
 	// read and free output pointers
 	const alt = Module.getValue( alt_ptr, 'double' );
@@ -6795,11 +6795,11 @@ function subslr( method, target, et, fixref, abcorr, obsrvr ) {
 
 	// evaluate function
 	Module.ccall(
-        'subslr_c',
-        null,
-        [ 'number', 'number', 'number', 'number' ],
-        [ method, target, et, fixref, abcorr, obsrvr, spoint, trgepc_ptr, srfvec ],
-    );
+		'subslr_c',
+		null,
+		[ 'number', 'number', 'number', 'number' ],
+		[ method, target, et, fixref, abcorr, obsrvr, spoint, trgepc_ptr, srfvec ],
+	);
 
 	// read and free output pointers
 	const trgepc = Module.getValue( trgepc_ptr, 'double' );
@@ -6818,11 +6818,11 @@ function subsol( method, target, et, abcorr, obsrvr ) {
 
 	// evaluate function
 	Module.ccall(
-        'subsol_c',
-        null,
-        [ 'number', 'number' ],
-        [ method, target, et, abcorr, obsrvr, spoint_ptr ],
-    );
+		'subsol_c',
+		null,
+		[ 'number', 'number' ],
+		[ method, target, et, abcorr, obsrvr, spoint_ptr ],
+	);
 
 	// read and free output pointers
 	const spoint = Module.getValue( spoint_ptr, 'double' );
@@ -6839,11 +6839,11 @@ function sumad( array, n ) {
 
 	// evaluate function
 	const returnValue = Module.ccall(
-        'sumad_c',
-        'number',
-        [ 'number' ],
-        [ array, n ],
-    );
+		'sumad_c',
+		'number',
+		[ 'number' ],
+		[ array, n ],
+	);
 
 	return returnValue;
 
@@ -6856,11 +6856,11 @@ function sumai( array, n ) {
 
 	// evaluate function
 	const returnValue = Module.ccall(
-        'sumai_c',
-        'number',
-        [ 'number' ],
-        [ array, n ],
-    );
+		'sumai_c',
+		'number',
+		[ 'number' ],
+		[ array, n ],
+	);
 
 	return returnValue;
 
@@ -6875,11 +6875,11 @@ function surfnm( a, b, c, point ) {
 
 	// evaluate function
 	Module.ccall(
-        'surfnm_c',
-        null,
-        [ 'number', 'number', 'number', 'number' ],
-        [ a, b, c, point, normal_ptr ],
-    );
+		'surfnm_c',
+		null,
+		[ 'number', 'number', 'number', 'number' ],
+		[ a, b, c, point, normal_ptr ],
+	);
 
 	// read and free output pointers
 	const normal = Module.getValue( normal_ptr, 'double' );
@@ -6896,11 +6896,11 @@ function swpool( agent, nnames, lenvals, names ) {
 
 	// evaluate function
 	Module.ccall(
-        'swpool_c',
-        null,
-        [ 'number', 'number' ],
-        [ agent, nnames, lenvals, names ],
-    );
+		'swpool_c',
+		null,
+		[ 'number', 'number' ],
+		[ agent, nnames, lenvals, names ],
+	);
 
 	return;
 
@@ -6915,11 +6915,11 @@ function sxform( from, to, et ) {
 
 	// evaluate function
 	Module.ccall(
-        'sxform_c',
-        null,
-        [ 'number', 'number' ],
-        [ from, to, et, xform_ptr ],
-    );
+		'sxform_c',
+		null,
+		[ 'number', 'number' ],
+		[ from, to, et, xform_ptr ],
+	);
 
 	// read and free output pointers
 	const xform = Module.getValue( xform_ptr, 'double' );
@@ -6936,11 +6936,11 @@ function timdef( action, item, lenout, value ) {
 
 	// evaluate function
 	Module.ccall(
-        'timdef_c',
-        null,
-        [ 'number', 'string' ],
-        [ action, item, lenout, value ],
-    );
+		'timdef_c',
+		null,
+		[ 'number', 'string' ],
+		[ action, item, lenout, value ],
+	);
 
 	return;
 
@@ -6955,11 +6955,11 @@ function timout( et, pictur, lenout ) {
 
 	// evaluate function
 	Module.ccall(
-        'timout_c',
-        null,
-        [ 'number', 'number', 'number' ],
-        [ et, pictur, lenout, output_ptr ],
-    );
+		'timout_c',
+		null,
+		[ 'number', 'number', 'number' ],
+		[ et, pictur, lenout, output_ptr ],
+	);
 
 	// read and free output pointers
 	const output = Module.Pointer_stringify( output_ptr );
@@ -6978,11 +6978,11 @@ function tipbod( ref, body, et ) {
 
 	// evaluate function
 	Module.ccall(
-        'tipbod_c',
-        null,
-        [ 'number', 'number', 'number' ],
-        [ ref, body, et, tipm_ptr ],
-    );
+		'tipbod_c',
+		null,
+		[ 'number', 'number', 'number' ],
+		[ ref, body, et, tipm_ptr ],
+	);
 
 	// read and free output pointers
 	const tipm = Module.getValue( tipm_ptr, 'double' );
@@ -7001,11 +7001,11 @@ function tisbod( ref, body, et ) {
 
 	// evaluate function
 	Module.ccall(
-        'tisbod_c',
-        null,
-        [ 'number', 'number', 'number' ],
-        [ ref, body, et, tsipm_ptr ],
-    );
+		'tisbod_c',
+		null,
+		[ 'number', 'number', 'number' ],
+		[ ref, body, et, tsipm_ptr ],
+	);
 
 	// read and free output pointers
 	const tsipm = Module.getValue( tsipm_ptr, 'double' );
@@ -7025,11 +7025,11 @@ function tparse( string, lenout ) {
 
 	// evaluate function
 	Module.ccall(
-        'tparse_c',
-        null,
-        [ 'number', 'number', 'number' ],
-        [ string, lenout, sp2000_ptr, errmsg_ptr ],
-    );
+		'tparse_c',
+		null,
+		[ 'number', 'number', 'number' ],
+		[ string, lenout, sp2000_ptr, errmsg_ptr ],
+	);
 
 	// read and free output pointers
 	const sp2000 = Module.getValue( sp2000_ptr, 'double' );
@@ -7049,11 +7049,11 @@ function trcoff(  ) {
 
 	// evaluate function
 	Module.ccall(
-        'trcoff_c',
-        null,
-        [  ],
-        [  ],
-    );
+		'trcoff_c',
+		null,
+		[  ],
+		[  ],
+	);
 
 	return;
 
@@ -7066,11 +7066,11 @@ function tsetyr( year ) {
 
 	// evaluate function
 	Module.ccall(
-        'tsetyr_c',
-        null,
-        [ 'number' ],
-        [ year ],
-    );
+		'tsetyr_c',
+		null,
+		[ 'number' ],
+		[ year ],
+	);
 
 	return;
 
@@ -7083,11 +7083,11 @@ function twopi(  ) {
 
 	// evaluate function
 	const returnValue = Module.ccall(
-        'twopi_c',
-        'number',
-        [  ],
-        [  ],
-    );
+		'twopi_c',
+		'number',
+		[  ],
+		[  ],
+	);
 
 	return returnValue;
 
@@ -7100,11 +7100,11 @@ function twovec( axdef, indexa, plndef, indexp ) {
 
 	// evaluate function
 	Module.ccall(
-        'twovec_c',
-        null,
-        [ 'number', 'number', 'number' ],
-        [ axdef, indexa, plndef, indexp, mout ],
-    );
+		'twovec_c',
+		null,
+		[ 'number', 'number', 'number' ],
+		[ axdef, indexa, plndef, indexp, mout ],
+	);
 
 	return { mout };
 
@@ -7117,11 +7117,11 @@ function tyear(  ) {
 
 	// evaluate function
 	const returnValue = Module.ccall(
-        'tyear_c',
-        'number',
-        [  ],
-        [  ],
-    );
+		'tyear_c',
+		'number',
+		[  ],
+		[  ],
+	);
 
 	return returnValue;
 
@@ -7136,11 +7136,11 @@ function ucase( in, lenout ) {
 
 	// evaluate function
 	Module.ccall(
-        'ucase_c',
-        null,
-        [ 'string', 'number', 'number' ],
-        [ in, lenout, out_ptr ],
-    );
+		'ucase_c',
+		null,
+		[ 'string', 'number', 'number' ],
+		[ in, lenout, out_ptr ],
+	);
 
 	// read and free output pointers
 	const out = Module.Pointer_stringify( out_ptr );
@@ -7159,11 +7159,11 @@ function ucrss( v1, v2 ) {
 
 	// evaluate function
 	Module.ccall(
-        'ucrss_c',
-        null,
-        [ 'number' ],
-        [ v1, v2, vout_ptr ],
-    );
+		'ucrss_c',
+		null,
+		[ 'number' ],
+		[ v1, v2, vout_ptr ],
+	);
 
 	// read and free output pointers
 	const vout = Module.getValue( vout_ptr, 'double' );
@@ -7180,11 +7180,11 @@ function uddc(  ) {
 
 	// evaluate function
 	Module.ccall(
-        'uddc_c',
-        null,
-        [  ],
-        [ d ],
-    );
+		'uddc_c',
+		null,
+		[  ],
+		[ d ],
+	);
 
 	return { d };
 
@@ -7197,11 +7197,11 @@ function uddf(  ) {
 
 	// evaluate function
 	Module.ccall(
-        'uddf_c',
-        null,
-        [  ],
-        [ d ],
-    );
+		'uddf_c',
+		null,
+		[  ],
+		[ d ],
+	);
 
 	return { d };
 
@@ -7214,11 +7214,11 @@ function unitim( epoch, insys, outsys ) {
 
 	// evaluate function
 	const returnValue = Module.ccall(
-        'unitim_c',
-        'number',
-        [ 'number' ],
-        [ epoch, insys, outsys ],
-    );
+		'unitim_c',
+		'number',
+		[ 'number' ],
+		[ epoch, insys, outsys ],
+	);
 
 	return returnValue;
 
@@ -7231,11 +7231,11 @@ function unload( file ) {
 
 	// evaluate function
 	Module.ccall(
-        'unload_c',
-        null,
-        [  ],
-        [ file ],
-    );
+		'unload_c',
+		null,
+		[  ],
+		[ file ],
+	);
 
 	return;
 
@@ -7251,11 +7251,11 @@ function unormg( v1, ndim ) {
 
 	// evaluate function
 	Module.ccall(
-        'unormg_c',
-        null,
-        [ 'number', 'number', 'number' ],
-        [ v1, ndim, vout_ptr, vmag_ptr ],
-    );
+		'unormg_c',
+		null,
+		[ 'number', 'number', 'number' ],
+		[ v1, ndim, vout_ptr, vmag_ptr ],
+	);
 
 	// read and free output pointers
 	const vout = Module.getValue( vout_ptr, 'double' );
@@ -7278,11 +7278,11 @@ function unorm( v1 ) {
 
 	// evaluate function
 	Module.ccall(
-        'unorm_c',
-        null,
-        [ 'number', 'number' ],
-        [ v1, vout_ptr, vmag_ptr ],
-    );
+		'unorm_c',
+		null,
+		[ 'number', 'number' ],
+		[ v1, vout_ptr, vmag_ptr ],
+	);
 
 	// read and free output pointers
 	const vout = Module.getValue( vout_ptr, 'double' );
@@ -7304,11 +7304,11 @@ function utc2et( utcstr ) {
 
 	// evaluate function
 	Module.ccall(
-        'utc2et_c',
-        null,
-        [ 'number' ],
-        [ utcstr, et_ptr ],
-    );
+		'utc2et_c',
+		null,
+		[ 'number' ],
+		[ utcstr, et_ptr ],
+	);
 
 	// read and free output pointers
 	const et = Module.getValue( et_ptr, 'double' );
@@ -7327,11 +7327,11 @@ function vaddg( v1, v2, ndim ) {
 
 	// evaluate function
 	Module.ccall(
-        'vaddg_c',
-        null,
-        [ 'number', 'number' ],
-        [ v1, v2, ndim, vout_ptr ],
-    );
+		'vaddg_c',
+		null,
+		[ 'number', 'number' ],
+		[ v1, v2, ndim, vout_ptr ],
+	);
 
 	// read and free output pointers
 	const vout = Module.getValue( vout_ptr, 'double' );
@@ -7350,11 +7350,11 @@ function vadd( v1, v2 ) {
 
 	// evaluate function
 	Module.ccall(
-        'vadd_c',
-        null,
-        [ 'number' ],
-        [ v1, v2, vout_ptr ],
-    );
+		'vadd_c',
+		null,
+		[ 'number' ],
+		[ v1, v2, vout_ptr ],
+	);
 
 	// read and free output pointers
 	const vout = Module.getValue( vout_ptr, 'double' );
@@ -7371,11 +7371,11 @@ function valid( size, n, set ) {
 
 	// evaluate function
 	Module.ccall(
-        'valid_c',
-        null,
-        [ 'number', 'number' ],
-        [ size, n, set ],
-    );
+		'valid_c',
+		null,
+		[ 'number', 'number' ],
+		[ size, n, set ],
+	);
 
 	return;
 
@@ -7390,11 +7390,11 @@ function vcrss( v1, v2 ) {
 
 	// evaluate function
 	Module.ccall(
-        'vcrss_c',
-        null,
-        [ 'number' ],
-        [ v1, v2, vout_ptr ],
-    );
+		'vcrss_c',
+		null,
+		[ 'number' ],
+		[ v1, v2, vout_ptr ],
+	);
 
 	// read and free output pointers
 	const vout = Module.getValue( vout_ptr, 'double' );
@@ -7411,11 +7411,11 @@ function vdistg( v1, v2, ndim ) {
 
 	// evaluate function
 	const returnValue = Module.ccall(
-        'vdistg_c',
-        'number',
-        [ 'number' ],
-        [ v1, v2, ndim ],
-    );
+		'vdistg_c',
+		'number',
+		[ 'number' ],
+		[ v1, v2, ndim ],
+	);
 
 	return returnValue;
 
@@ -7428,11 +7428,11 @@ function vdist( v1, v2 ) {
 
 	// evaluate function
 	const returnValue = Module.ccall(
-        'vdist_c',
-        'number',
-        [  ],
-        [ v1, v2 ],
-    );
+		'vdist_c',
+		'number',
+		[  ],
+		[ v1, v2 ],
+	);
 
 	return returnValue;
 
@@ -7445,11 +7445,11 @@ function vdotg( v1, v2 ) {
 
 	// evaluate function
 	const returnValue = Module.ccall(
-        'vdotg_c',
-        'number',
-        [ 'number' ],
-        [ v1, v2, ndim ],
-    );
+		'vdotg_c',
+		'number',
+		[ 'number' ],
+		[ v1, v2, ndim ],
+	);
 
 	return { ndim, returnValue };
 
@@ -7462,11 +7462,11 @@ function vdot( v1, v2 ) {
 
 	// evaluate function
 	const returnValue = Module.ccall(
-        'vdot_c',
-        'number',
-        [  ],
-        [ v1, v2 ],
-    );
+		'vdot_c',
+		'number',
+		[  ],
+		[ v1, v2 ],
+	);
 
 	return returnValue;
 
@@ -7481,11 +7481,11 @@ function vequg( vin, ndim ) {
 
 	// evaluate function
 	Module.ccall(
-        'vequg_c',
-        null,
-        [ 'number', 'number' ],
-        [ vin, ndim, vout_ptr ],
-    );
+		'vequg_c',
+		null,
+		[ 'number', 'number' ],
+		[ vin, ndim, vout_ptr ],
+	);
 
 	// read and free output pointers
 	const vout = Module.getValue( vout_ptr, 'double' );
@@ -7504,11 +7504,11 @@ function vequ( vin ) {
 
 	// evaluate function
 	Module.ccall(
-        'vequ_c',
-        null,
-        [ 'number' ],
-        [ vin, vout_ptr ],
-    );
+		'vequ_c',
+		null,
+		[ 'number' ],
+		[ vin, vout_ptr ],
+	);
 
 	// read and free output pointers
 	const vout = Module.getValue( vout_ptr, 'double' );
@@ -7527,11 +7527,11 @@ function vhatg( v1, ndim ) {
 
 	// evaluate function
 	Module.ccall(
-        'vhatg_c',
-        null,
-        [ 'number', 'number' ],
-        [ v1, ndim, vout_ptr ],
-    );
+		'vhatg_c',
+		null,
+		[ 'number', 'number' ],
+		[ v1, ndim, vout_ptr ],
+	);
 
 	// read and free output pointers
 	const vout = Module.getValue( vout_ptr, 'double' );
@@ -7550,11 +7550,11 @@ function vhat( v1 ) {
 
 	// evaluate function
 	Module.ccall(
-        'vhat_c',
-        null,
-        [ 'number' ],
-        [ v1, vout_ptr ],
-    );
+		'vhat_c',
+		null,
+		[ 'number' ],
+		[ v1, vout_ptr ],
+	);
 
 	// read and free output pointers
 	const vout = Module.getValue( vout_ptr, 'double' );
@@ -7573,11 +7573,11 @@ function vlcom3( a, v1, b, v2, c, v3 ) {
 
 	// evaluate function
 	Module.ccall(
-        'vlcom3_c',
-        null,
-        [ 'number', 'number', 'number', 'number' ],
-        [ a, v1, b, v2, c, v3, sum_ptr ],
-    );
+		'vlcom3_c',
+		null,
+		[ 'number', 'number', 'number', 'number' ],
+		[ a, v1, b, v2, c, v3, sum_ptr ],
+	);
 
 	// read and free output pointers
 	const sum = Module.getValue( sum_ptr, 'double' );
@@ -7596,11 +7596,11 @@ function vlcom( a, v1, b, v2 ) {
 
 	// evaluate function
 	Module.ccall(
-        'vlcom_c',
-        null,
-        [ 'number', 'number', 'number' ],
-        [ a, v1, b, v2, sum_ptr ],
-    );
+		'vlcom_c',
+		null,
+		[ 'number', 'number', 'number' ],
+		[ a, v1, b, v2, sum_ptr ],
+	);
 
 	// read and free output pointers
 	const sum = Module.getValue( sum_ptr, 'double' );
@@ -7619,11 +7619,11 @@ function vminug( vin, ndim ) {
 
 	// evaluate function
 	Module.ccall(
-        'vminug_c',
-        null,
-        [ 'number', 'number' ],
-        [ vin, ndim, vout_ptr ],
-    );
+		'vminug_c',
+		null,
+		[ 'number', 'number' ],
+		[ vin, ndim, vout_ptr ],
+	);
 
 	// read and free output pointers
 	const vout = Module.getValue( vout_ptr, 'double' );
@@ -7642,11 +7642,11 @@ function vminus( v1 ) {
 
 	// evaluate function
 	Module.ccall(
-        'vminus_c',
-        null,
-        [ 'number' ],
-        [ v1, vout_ptr ],
-    );
+		'vminus_c',
+		null,
+		[ 'number' ],
+		[ v1, vout_ptr ],
+	);
 
 	// read and free output pointers
 	const vout = Module.getValue( vout_ptr, 'double' );
@@ -7663,11 +7663,11 @@ function vnormg( v1 ) {
 
 	// evaluate function
 	const returnValue = Module.ccall(
-        'vnormg_c',
-        'number',
-        [ 'number' ],
-        [ v1, ndim ],
-    );
+		'vnormg_c',
+		'number',
+		[ 'number' ],
+		[ v1, ndim ],
+	);
 
 	return { ndim, returnValue };
 
@@ -7680,11 +7680,11 @@ function vnorm( v1 ) {
 
 	// evaluate function
 	const returnValue = Module.ccall(
-        'vnorm_c',
-        'number',
-        [  ],
-        [ v1 ],
-    );
+		'vnorm_c',
+		'number',
+		[  ],
+		[ v1 ],
+	);
 
 	return returnValue;
 
@@ -7699,11 +7699,11 @@ function vpack( x, y, z ) {
 
 	// evaluate function
 	Module.ccall(
-        'vpack_c',
-        null,
-        [ 'number', 'number', 'number', 'number' ],
-        [ x, y, z, v_ptr ],
-    );
+		'vpack_c',
+		null,
+		[ 'number', 'number', 'number', 'number' ],
+		[ x, y, z, v_ptr ],
+	);
 
 	// read and free output pointers
 	const v = Module.getValue( v_ptr, 'double' );
@@ -7722,11 +7722,11 @@ function vperp( a, b ) {
 
 	// evaluate function
 	Module.ccall(
-        'vperp_c',
-        null,
-        [ 'number' ],
-        [ a, b, p_ptr ],
-    );
+		'vperp_c',
+		null,
+		[ 'number' ],
+		[ a, b, p_ptr ],
+	);
 
 	// read and free output pointers
 	const p = Module.getValue( p_ptr, 'double' );
@@ -7743,11 +7743,11 @@ function vprjp( vin, plane ) {
 
 	// evaluate function
 	Module.ccall(
-        'vprjp_c',
-        null,
-        [ 'number' ],
-        [ vin, plane, vout ],
-    );
+		'vprjp_c',
+		null,
+		[ 'number' ],
+		[ vin, plane, vout ],
+	);
 
 	return { vout };
 
@@ -7762,11 +7762,11 @@ function vproj( a, b ) {
 
 	// evaluate function
 	Module.ccall(
-        'vproj_c',
-        null,
-        [ 'number' ],
-        [ a, b, p_ptr ],
-    );
+		'vproj_c',
+		null,
+		[ 'number' ],
+		[ a, b, p_ptr ],
+	);
 
 	// read and free output pointers
 	const p = Module.getValue( p_ptr, 'double' );
@@ -7783,11 +7783,11 @@ function vrotv( v, axis, theta ) {
 
 	// evaluate function
 	Module.ccall(
-        'vrotv_c',
-        null,
-        [ 'number', 'number' ],
-        [ v, axis, theta, r ],
-    );
+		'vrotv_c',
+		null,
+		[ 'number', 'number' ],
+		[ v, axis, theta, r ],
+	);
 
 	return { r };
 
@@ -7802,11 +7802,11 @@ function vsclg( s, v1, ndim ) {
 
 	// evaluate function
 	Module.ccall(
-        'vsclg_c',
-        null,
-        [ 'number', 'number', 'number' ],
-        [ s, v1, ndim, vout_ptr ],
-    );
+		'vsclg_c',
+		null,
+		[ 'number', 'number', 'number' ],
+		[ s, v1, ndim, vout_ptr ],
+	);
 
 	// read and free output pointers
 	const vout = Module.getValue( vout_ptr, 'double' );
@@ -7825,11 +7825,11 @@ function vscl( s, v1 ) {
 
 	// evaluate function
 	Module.ccall(
-        'vscl_c',
-        null,
-        [ 'number', 'number' ],
-        [ s, v1, vout_ptr ],
-    );
+		'vscl_c',
+		null,
+		[ 'number', 'number' ],
+		[ s, v1, vout_ptr ],
+	);
 
 	// read and free output pointers
 	const vout = Module.getValue( vout_ptr, 'double' );
@@ -7846,11 +7846,11 @@ function vsepg( v1, v2, ndim ) {
 
 	// evaluate function
 	const returnValue = Module.ccall(
-        'vsepg_c',
-        'number',
-        [ 'number' ],
-        [ v1, v2, ndim ],
-    );
+		'vsepg_c',
+		'number',
+		[ 'number' ],
+		[ v1, v2, ndim ],
+	);
 
 	return returnValue;
 
@@ -7863,11 +7863,11 @@ function vsep( v1, v2 ) {
 
 	// evaluate function
 	const returnValue = Module.ccall(
-        'vsep_c',
-        'number',
-        [  ],
-        [ v1, v2 ],
-    );
+		'vsep_c',
+		'number',
+		[  ],
+		[ v1, v2 ],
+	);
 
 	return returnValue;
 
@@ -7882,11 +7882,11 @@ function vsubg( v1, v2, ndim ) {
 
 	// evaluate function
 	Module.ccall(
-        'vsubg_c',
-        null,
-        [ 'number', 'number' ],
-        [ v1, v2, ndim, vout_ptr ],
-    );
+		'vsubg_c',
+		null,
+		[ 'number', 'number' ],
+		[ v1, v2, ndim, vout_ptr ],
+	);
 
 	// read and free output pointers
 	const vout = Module.getValue( vout_ptr, 'double' );
@@ -7905,11 +7905,11 @@ function vsub( v1, v2 ) {
 
 	// evaluate function
 	Module.ccall(
-        'vsub_c',
-        null,
-        [ 'number' ],
-        [ v1, v2, vout_ptr ],
-    );
+		'vsub_c',
+		null,
+		[ 'number' ],
+		[ v1, v2, vout_ptr ],
+	);
 
 	// read and free output pointers
 	const vout = Module.getValue( vout_ptr, 'double' );
@@ -7926,11 +7926,11 @@ function vtmvg( v1, matrix, v2, nrow, ncol ) {
 
 	// evaluate function
 	const returnValue = Module.ccall(
-        'vtmvg_c',
-        'number',
-        [ 'number', 'number' ],
-        [ v1, matrix, v2, nrow, ncol ],
-    );
+		'vtmvg_c',
+		'number',
+		[ 'number', 'number' ],
+		[ v1, matrix, v2, nrow, ncol ],
+	);
 
 	return returnValue;
 
@@ -7943,11 +7943,11 @@ function vtmv( v1, matrix, v2 ) {
 
 	// evaluate function
 	const returnValue = Module.ccall(
-        'vtmv_c',
-        'number',
-        [  ],
-        [ v1, matrix, v2 ],
-    );
+		'vtmv_c',
+		'number',
+		[  ],
+		[ v1, matrix, v2 ],
+	);
 
 	return returnValue;
 
@@ -7964,11 +7964,11 @@ function vupack( v ) {
 
 	// evaluate function
 	Module.ccall(
-        'vupack_c',
-        null,
-        [ 'number', 'number', 'number' ],
-        [ v, x_ptr, y_ptr, z_ptr ],
-    );
+		'vupack_c',
+		null,
+		[ 'number', 'number', 'number' ],
+		[ v, x_ptr, y_ptr, z_ptr ],
+	);
 
 	// read and free output pointers
 	const x = Module.getValue( x_ptr, 'double' );
@@ -7991,11 +7991,11 @@ function wncard( window ) {
 
 	// evaluate function
 	const returnValue = Module.ccall(
-        'wncard_c',
-        'number',
-        [  ],
-        [ window ],
-    );
+		'wncard_c',
+		'number',
+		[  ],
+		[ window ],
+	);
 
 	return returnValue;
 
@@ -8008,11 +8008,11 @@ function wncond( left, right, window ) {
 
 	// evaluate function
 	Module.ccall(
-        'wncond_c',
-        null,
-        [ 'number', 'number' ],
-        [ left, right, window ],
-    );
+		'wncond_c',
+		null,
+		[ 'number', 'number' ],
+		[ left, right, window ],
+	);
 
 	return;
 
@@ -8025,11 +8025,11 @@ function wnexpd( left, right, window ) {
 
 	// evaluate function
 	Module.ccall(
-        'wnexpd_c',
-        null,
-        [ 'number', 'number' ],
-        [ left, right, window ],
-    );
+		'wnexpd_c',
+		null,
+		[ 'number', 'number' ],
+		[ left, right, window ],
+	);
 
 	return;
 
@@ -8042,11 +8042,11 @@ function wnextd( side, window ) {
 
 	// evaluate function
 	Module.ccall(
-        'wnextd_c',
-        null,
-        [ 'string' ],
-        [ side, window ],
-    );
+		'wnextd_c',
+		null,
+		[ 'string' ],
+		[ side, window ],
+	);
 
 	return;
 
@@ -8062,11 +8062,11 @@ function wnfetd( window, n ) {
 
 	// evaluate function
 	Module.ccall(
-        'wnfetd_c',
-        null,
-        [ 'number', 'number', 'number' ],
-        [ window, n, left_ptr, right_ptr ],
-    );
+		'wnfetd_c',
+		null,
+		[ 'number', 'number', 'number' ],
+		[ window, n, left_ptr, right_ptr ],
+	);
 
 	// read and free output pointers
 	const left = Module.getValue( left_ptr, 'double' );
@@ -8086,11 +8086,11 @@ function wnfild( small, window ) {
 
 	// evaluate function
 	Module.ccall(
-        'wnfild_c',
-        null,
-        [ 'number' ],
-        [ small, window ],
-    );
+		'wnfild_c',
+		null,
+		[ 'number' ],
+		[ small, window ],
+	);
 
 	return;
 
@@ -8103,11 +8103,11 @@ function wnfltd( small, window ) {
 
 	// evaluate function
 	Module.ccall(
-        'wnfltd_c',
-        null,
-        [ 'number' ],
-        [ small, window ],
-    );
+		'wnfltd_c',
+		null,
+		[ 'number' ],
+		[ small, window ],
+	);
 
 	return;
 
@@ -8120,11 +8120,11 @@ function wninsd( left, right, window ) {
 
 	// evaluate function
 	Module.ccall(
-        'wninsd_c',
-        null,
-        [ 'number', 'number' ],
-        [ left, right, window ],
-    );
+		'wninsd_c',
+		null,
+		[ 'number', 'number' ],
+		[ left, right, window ],
+	);
 
 	return;
 
@@ -8143,11 +8143,11 @@ function wnsumd( window ) {
 
 	// evaluate function
 	Module.ccall(
-        'wnsumd_c',
-        null,
-        [ 'number', 'number', 'number', 'number', 'number' ],
-        [ window, meas_ptr, avg_ptr, stddev_ptr, shortest_ptr, longest_ptr ],
-    );
+		'wnsumd_c',
+		null,
+		[ 'number', 'number', 'number', 'number', 'number' ],
+		[ window, meas_ptr, avg_ptr, stddev_ptr, shortest_ptr, longest_ptr ],
+	);
 
 	// read and free output pointers
 	const meas = Module.getValue( meas_ptr, 'double' );
@@ -8176,11 +8176,11 @@ function wnvald( size, n, window ) {
 
 	// evaluate function
 	Module.ccall(
-        'wnvald_c',
-        null,
-        [ 'number', 'number' ],
-        [ size, n, window ],
-    );
+		'wnvald_c',
+		null,
+		[ 'number', 'number' ],
+		[ size, n, window ],
+	);
 
 	return;
 
@@ -8193,11 +8193,11 @@ function xf2rav( xform ) {
 
 	// evaluate function
 	Module.ccall(
-        'xf2rav_c',
-        null,
-        [ 'number', 'number' ],
-        [ xform, rot, av ],
-    );
+		'xf2rav_c',
+		null,
+		[ 'number', 'number' ],
+		[ xform, rot, av ],
+	);
 
 	return { rot, av };
 
@@ -8212,11 +8212,11 @@ function xpose6( m1 ) {
 
 	// evaluate function
 	Module.ccall(
-        'xpose6_c',
-        null,
-        [ 'number' ],
-        [ m1, mout_ptr ],
-    );
+		'xpose6_c',
+		null,
+		[ 'number' ],
+		[ m1, mout_ptr ],
+	);
 
 	// read and free output pointers
 	const mout = Module.getValue( mout_ptr, 'double' );
@@ -8235,11 +8235,11 @@ function xpose( m1 ) {
 
 	// evaluate function
 	Module.ccall(
-        'xpose_c',
-        null,
-        [ 'number' ],
-        [ m1, mout_ptr ],
-    );
+		'xpose_c',
+		null,
+		[ 'number' ],
+		[ m1, mout_ptr ],
+	);
 
 	// read and free output pointers
 	const mout = Module.getValue( mout_ptr, 'double' );
@@ -8256,11 +8256,11 @@ function zzerrorinit(  ) {
 
 	// evaluate function
 	Module.ccall(
-        'zzerrorinit',
-        null,
-        [  ],
-        [  ],
-    );
+		'zzerrorinit',
+		null,
+		[  ],
+		[  ],
+	);
 
 	return;
 
@@ -8273,11 +8273,11 @@ function zzgetcml( argc, init ) {
 
 	// evaluate function
 	Module.ccall(
-        'zzgetcml_c',
-        null,
-        [ 'number' ],
-        [ argc, r, init ],
-    );
+		'zzgetcml_c',
+		null,
+		[ 'number' ],
+		[ argc, r, init ],
+	);
 
 	return { r };
 
@@ -8290,11 +8290,11 @@ function zzgfsavh( status ) {
 
 	// evaluate function
 	Module.ccall(
-        'zzgfsavh_c',
-        null,
-        [  ],
-        [ status ],
-    );
+		'zzgfsavh_c',
+		null,
+		[  ],
+		[ status ],
+	);
 
 	return;
 
@@ -8307,11 +8307,11 @@ function zzsynccl( xdir, cell ) {
 
 	// evaluate function
 	Module.ccall(
-        'zzsynccl_c',
-        null,
-        [  ],
-        [ xdir, cell ],
-    );
+		'zzsynccl_c',
+		null,
+		[  ],
+		[ xdir, cell ],
+	);
 
 	return;
 
