@@ -19,12 +19,12 @@ node src/index.js ../cspice/src/cspice ./output/
 
 ## TODO
 
-- [ ] Generate wrapped js function calls based on scraped data.
+- [x] Generate wrapped js function calls based on scraped data.
 - [ ] Include comments in code scraping.
 - [ ] Generate JSDoc comments for the functions.
 - [ ] Add tests, validate signatures.
 - [ ] Docs and comment code.
 - [ ] Make code for determining input / output arguments from comments more robust.
-- [ ] Remove the `_c` suffix on the functions.
-- [ ] Convert arguments map output to just an array.
+- [x] Remove the `_c` suffix on the functions.
+- [x] Convert arguments map output to just an array.
 - [x] Write out list of unconverted functions.
