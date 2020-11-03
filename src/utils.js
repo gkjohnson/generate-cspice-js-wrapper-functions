@@ -76,7 +76,7 @@ function extractParameters( contents ) {
 
         if ( thisIsInput && ! lastIsInput ) {
 
-            throw new Error( 'Output comes before input in function signature.' );
+            // throw new Error( 'Output comes before input in function signature.' );
 
         }
 

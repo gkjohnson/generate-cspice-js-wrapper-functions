@@ -1,6 +1,7 @@
 const path = require( 'path' );
 const fs = require( 'fs' );
 const { extractParameters, generateFuncInfo } = require('./utils');
+const { generateFunction } = require('./generateFunction');
 const inputPath = process.argv[ 2 ];
 const outputPath = process.argv[ 3 ];
 
@@ -90,5 +91,35 @@ fs.readdir( rootDir, ( err, files ) => {
 
     } );
     fs.writeFileSync( path.resolve( outputDir, 'PROCESSED_FUNCTIONS.md' ), processedFunctions, { encoding: 'utf8' } );
+
+    let functionjson = '';
+    processedInfo.forEach( info => {
+
+        functionjson += '### ' + info.name + '\n';
+        functionjson += '```js\n';
+        functionjson += JSON.stringify( info, null, 2 );
+        functionjson += '```\n';
+
+    } );
+    fs.writeFileSync( path.resolve( outputDir, 'FUNCTION_JSON.md' ), functionjson, { encoding: 'utf8' } );
+
+    let generatedFunction = '';
+    processedInfo.forEach( info => {
+
+        try {
+            
+            let res = '';
+            res += '### ' + info.name + '\n';
+            res += '```js\n';
+            res += generateFunction( info );
+            res += '```\n';
+            generatedFunction += res;
+
+        } catch {
+
+        } 
+
+    } );
+    fs.writeFileSync( path.resolve( outputDir, 'GENERATED_FUNCTIONS.md' ), generatedFunction, { encoding: 'utf8' } );
 
 } );

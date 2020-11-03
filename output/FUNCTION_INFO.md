@@ -799,6 +799,49 @@ ConstSpiceDouble starts
 ```
 #### Outputs
 _no output arguments._
+## ckw05_c
+```c
+void ckw05_c ( SpiceInt            handle,
+                  SpiceCK05Subtype    subtyp,
+                  SpiceInt            degree,
+                  SpiceDouble         begtim,
+                  SpiceDouble         endtim,
+                  SpiceInt            inst,
+                  ConstSpiceChar    * ref,
+                  SpiceBoolean        avflag,
+                  ConstSpiceChar    * segid, 
+                  SpiceInt            n,
+                  ConstSpiceDouble    sclkdp [],
+                  const void        * packts,
+                  SpiceDouble         rate,
+                  SpiceInt            nints,
+                  ConstSpiceDouble    starts []    )
+```
+#### Return
+```
+void
+```
+#### Inputs
+```
+SpiceInt handle
+SpiceCK05Subtype subtyp
+SpiceInt degree
+SpiceDouble begtim
+SpiceDouble endtim
+SpiceInt inst
+ConstSpiceChar* ref
+SpiceBoolean avflag
+ConstSpiceChar* segid
+void* packts
+SpiceDouble rate
+SpiceInt nints
+ConstSpiceDouble starts
+```
+#### Outputs
+```
+SpiceInt n
+ConstSpiceDouble sclkdp
+```
 ## clight_c
 ```c
 SpiceDouble clight_c ( void )
@@ -1049,6 +1092,27 @@ SpiceDouble z
 SpiceDouble* radius
 SpiceDouble* colat
 SpiceDouble* lon
+```
+## dafac_c
+```c
+void dafac_c ( SpiceInt      handle,
+                  SpiceInt      n,
+                  SpiceInt      lenvals,
+                  const void  * buffer  )
+```
+#### Return
+```
+void
+```
+#### Inputs
+```
+SpiceInt handle
+SpiceInt n
+void* buffer
+```
+#### Outputs
+```
+SpiceInt lenvals
 ```
 ## dafbbs_c
 ```c
@@ -1711,6 +1775,27 @@ SpiceDouble f
 ```
 #### Outputs
 ```
+SpiceDouble* jacobi[3]
+```
+## drdlat_c
+```c
+void drdlat_c ( SpiceDouble   r,
+                   SpiceDouble   lon,
+                   SpiceDouble   lat,
+                   SpiceDouble   jacobi[3][3] )
+```
+#### Return
+```
+void
+```
+#### Inputs
+```
+SpiceDouble lon
+SpiceDouble lat
+```
+#### Outputs
+```
+SpiceDouble r
 SpiceDouble* jacobi[3]
 ```
 ## drdpgr_c
@@ -2880,6 +2965,25 @@ SpiceInt number
 ```
 #### Outputs
 _no output arguments._
+## errprt_c
+```c
+void errprt_c ( ConstSpiceChar * op,
+                   SpiceInt         lenout,
+                   SpiceChar      * list  )
+```
+#### Return
+```
+void
+```
+#### Inputs
+```
+ConstSpiceChar* op
+SpiceChar* list
+```
+#### Outputs
+```
+SpiceInt lenout
+```
 ## esrchc_c
 ```c
 SpiceInt esrchc_c ( ConstSpiceChar  * value,
@@ -2900,6 +3004,41 @@ void* array
 ```
 #### Outputs
 _no output arguments._
+## et2lst_c
+```c
+void et2lst_c ( SpiceDouble        et,
+                   SpiceInt           body,
+                   SpiceDouble        lon,
+                   ConstSpiceChar   * type,
+                   SpiceInt           timlen,
+                   SpiceInt           ampmlen,
+                   SpiceInt         * hr,
+                   SpiceInt         * mn,
+                   SpiceInt         * sc,
+                   SpiceChar        * time,
+                   SpiceChar        * ampm )
+```
+#### Return
+```
+void
+```
+#### Inputs
+```
+SpiceInt body
+SpiceDouble lon
+ConstSpiceChar* type
+SpiceInt timlen
+SpiceInt ampmlen
+```
+#### Outputs
+```
+SpiceDouble et
+SpiceInt* hr
+SpiceInt* mn
+SpiceInt* sc
+SpiceChar* time
+SpiceChar* ampm
+```
 ## et2utc_c
 ```c
 void et2utc_c (  SpiceDouble       et,
@@ -3190,6 +3329,29 @@ _no input arguments._
 SpiceInt* argc
 SpiceCha r
 ```
+## getelm_c
+```c
+void getelm_c ( SpiceInt         frstyr,
+                   SpiceInt         lineln,
+                   const void     * lines,
+                   SpiceDouble    * epoch,
+                   SpiceDouble    * elems   )
+```
+#### Return
+```
+void
+```
+#### Inputs
+```
+SpiceInt frstyr
+void* lines
+```
+#### Outputs
+```
+SpiceInt lineln
+SpiceDouble* epoch
+SpiceDouble* elems
+```
 ## getenv_
 ```c
 void getenv_(fname, value, flen, vlen)
@@ -3301,6 +3463,39 @@ void
 _no input arguments._
 #### Outputs
 _no output arguments._
+## gfdist_c
+```c
+void gfdist_c ( ConstSpiceChar     * target,
+                   ConstSpiceChar     * abcorr,
+                   ConstSpiceChar     * obsrvr,
+                   ConstSpiceChar     * relate,
+                   SpiceDouble          refval,
+                   SpiceDouble          adjust,
+                   SpiceDouble          step,
+                   SpiceInt             nintvls,
+                   SpiceCell          * cnfine,
+                   SpiceCell          * result     )
+```
+#### Return
+```
+void
+```
+#### Inputs
+```
+ConstSpiceChar* target
+ConstSpiceChar* abcorr
+ConstSpiceChar* obsrvr
+ConstSpiceChar* relate
+SpiceDouble adjust
+SpiceDouble step
+SpiceInt nintvls
+SpiceCell* cnfine
+```
+#### Outputs
+```
+SpiceDouble refval
+SpiceCell* result
+```
 ## gfevnt_c
 ```c
 void gfevnt_c ( void             ( * udstep )
@@ -4492,6 +4687,27 @@ SpiceDouble lat
 SpiceDouble* r
 SpiceDouble* lonc
 SpiceDouble* z
+```
+## latrec_c
+```c
+void latrec_c ( SpiceDouble    radius,
+                   SpiceDouble    longitude,
+                   SpiceDouble    latitude,
+                   SpiceDouble    rectan[3] )
+```
+#### Return
+```
+void
+```
+#### Inputs
+```
+SpiceDouble radius
+SpiceDouble latitude
+```
+#### Outputs
+```
+SpiceDouble longitude
+SpiceDouble* rectan[3]
 ```
 ## latsph_c
 ```c
@@ -7912,6 +8128,27 @@ ConstSpiceDouble epochs
 ```
 #### Outputs
 _no output arguments._
+## srfrec_c
+```c
+void srfrec_c ( SpiceInt      body,
+                   SpiceDouble   longitude,
+                   SpiceDouble   latitude,
+                   SpiceDouble   rectan[3] )
+```
+#### Return
+```
+void
+```
+#### Inputs
+```
+SpiceInt body
+SpiceDouble latitude
+```
+#### Outputs
+```
+SpiceDouble longitude
+SpiceDouble* rectan[3]
+```
 ## srfxpt_c
 ```c
 void srfxpt_c ( ConstSpiceChar      * method,
@@ -8960,6 +9197,31 @@ ConstSpiceDouble v3
 ```
 SpiceDouble* sum[3]
 ```
+## vlcomg_c
+```c
+void vlcomg_c ( SpiceInt            n,
+                   SpiceDouble         a,
+                   ConstSpiceDouble *  v1,
+                   SpiceDouble         b,
+                   ConstSpiceDouble *  v2,
+                   SpiceDouble      *  sum )
+```
+#### Return
+```
+void
+```
+#### Inputs
+```
+SpiceInt n
+SpiceDouble a
+SpiceDouble b
+```
+#### Outputs
+```
+ConstSpiceDouble* v1
+ConstSpiceDouble* v2
+SpiceDouble* sum
+```
 ## vlcom_c
 ```c
 void vlcom_c ( SpiceDouble        a, 
@@ -9149,6 +9411,25 @@ ConstSpiceDouble* b[3]
 #### Outputs
 ```
 SpiceDouble* p[3]
+```
+## vrelg_c
+```c
+SpiceDouble vrelg_c ( ConstSpiceDouble * v1,
+                         ConstSpiceDouble * v2,
+                         SpiceInt           ndim  )
+```
+#### Return
+```
+SpiceDouble
+```
+#### Inputs
+```
+SpiceInt ndim
+```
+#### Outputs
+```
+ConstSpiceDouble* v1
+ConstSpiceDouble* v2
 ```
 ## vrel_c
 ```c
@@ -9805,6 +10086,25 @@ doublereal* et
 ```
 doublereal* value
 ```
+## zzadqdec_c
+```c
+int zzadqdec_c ( U_fp           udfunc,
+                    doublereal   * et,
+                    logical      * xbool )
+```
+#### Return
+```
+int
+```
+#### Inputs
+```
+doublereal* et
+```
+#### Outputs
+```
+U_fp udfunc
+logical* xbool
+```
 ## zzadrefn_c
 ```c
 int zzadrefn_c ( doublereal  * t1, 
@@ -9919,6 +10219,25 @@ void
 _no input arguments._
 #### Outputs
 _no output arguments._
+## zzgetcml_c
+```c
+void zzgetcml_c ( SpiceInt         *  argc,
+                     SpiceChar      ***  argv,
+                     SpiceBoolean        init )
+```
+#### Return
+```
+void
+```
+#### Inputs
+```
+SpiceInt* argc
+SpiceBoolean init
+```
+#### Outputs
+```
+SpiceCha r
+```
 ## zzgfdsps_
 ```c
 int zzgfdsps_ ( integer  * nlead,

@@ -12,6 +12,7 @@
 - `char`
 - `ftnlen`
 - `SpiceEllipse`
+- `SpiceCK05Subtype`
 - `SpiceDouble      `
 - `ConstSpiceBoolean`
 - `SpiceEKAttDsc`
@@ -30,6 +31,7 @@
 - `SpiceSPK18Subtype`
 - `ConstSpiceChar  `
 - `logical`
+- `U_fp`
 - `functions
 
      `
@@ -38,20 +40,12 @@
 - `long`
 - `SpiceTransDir`
 ## Skipped Functions
-- `ckw05_c`
-- `dafac_c`
 - `dafec_c`
 - `dasec_c`
-- `drdlat_c`
 - `ekpsel_c`
 - `ekrcec_c`
-- `errprt_c`
-- `et2lst_c`
 - `gcpool_c`
-- `getelm_c`
-- `gfdist_c`
 - `gnpool_c`
-- `latrec_c`
 - `lparse_c`
 - `lparsm_c`
 - `maxd_c`
@@ -65,17 +59,12 @@
 - `mxmtg_c`
 - `mxvg_c`
 - `rsfe`
-- `srfrec_c`
 - `s_rnge`
-- `vlcomg_c`
-- `vrelg_c`
 - `xposeg_c`
-- `zzadqdec_c`
 - `zzadrepi_c`
 - `zzalloc`
 - `zzcputim`
 - `zzfcstring`
-- `zzgetcml_c`
 ## Processed Functions
 - `appndc_c`
 - `appndd_c`
@@ -117,6 +106,7 @@
 - `ckw01_c`
 - `ckw02_c`
 - `ckw03_c`
+- `ckw05_c`
 - `clight_c`
 - `clpool_c`
 - `cmprss_c`
@@ -130,6 +120,7 @@
 - `cyllat_c`
 - `cylrec_c`
 - `cylsph_c`
+- `dafac_c`
 - `dafbbs_c`
 - `dafbfs_c`
 - `dafcls_c`
@@ -167,6 +158,7 @@
 - `dpr_c`
 - `drdcyl_c`
 - `drdgeo_c`
+- `drdlat_c`
 - `drdpgr_c`
 - `drdsph_c`
 - `dsphdr_c`
@@ -224,7 +216,9 @@
 - `errdev_c`
 - `errdp_c`
 - `errint_c`
+- `errprt_c`
 - `esrchc_c`
+- `et2lst_c`
 - `et2utc_c`
 - `etcal_c`
 - `eul2m_c`
@@ -240,12 +234,14 @@
 - `gdpool_c`
 - `georec_c`
 - `getcml_c`
+- `getelm_c`
 - `getenv_`
 - `getfat_c`
 - `getfov_c`
 - `getmsg_c`
 - `gfbail_c`
 - `gfclrh_c`
+- `gfdist_c`
 - `gfevnt_c`
 - `gffove_c`
 - `gfinth_c`
@@ -302,6 +298,7 @@
 - `kxtrct_c`
 - `lastnb_c`
 - `latcyl_c`
+- `latrec_c`
 - `latsph_c`
 - `lcase_c`
 - `ldpool_c`
@@ -463,6 +460,7 @@
 - `spkw15_c`
 - `spkw17_c`
 - `spkw18_c`
+- `srfrec_c`
 - `srfxpt_c`
 - `ssize_c`
 - `stelab_c`
@@ -516,6 +514,7 @@
 - `vhatg_c`
 - `vhat_c`
 - `vlcom3_c`
+- `vlcomg_c`
 - `vlcom_c`
 - `vminug_c`
 - `vminus_c`
@@ -526,6 +525,7 @@
 - `vprjpi_c`
 - `vprjp_c`
 - `vproj_c`
+- `vrelg_c`
 - `vrel_c`
 - `vrotv_c`
 - `vsclg_c`
@@ -562,6 +562,7 @@
 - `xpose_c`
 - `zzadbail_c`
 - `zzadfunc_c`
+- `zzadqdec_c`
 - `zzadrefn_c`
 - `zzadrepf_c`
 - `zzadrepu_c`
@@ -569,6 +570,7 @@
 - `zzadstep_c`
 - `zzerror`
 - `zzerrorinit`
+- `zzgetcml_c`
 - `zzgfdsps_`
 - `zzgfsavh_c`
 - `zzsynccl_c`
