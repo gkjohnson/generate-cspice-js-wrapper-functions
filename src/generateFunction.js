@@ -91,9 +91,13 @@ function generateFunction( info ) {
                         argTypes.push( 'number' );
                         break;
                     
+                    case 'ConstSpiceChar':
                     case 'SpiceChar':
                         argTypes.push( 'string' );
                         break;
+
+                    default:
+                        throw new Error();
 
                 }
 
