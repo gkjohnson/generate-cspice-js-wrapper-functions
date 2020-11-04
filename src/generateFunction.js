@@ -161,7 +161,7 @@ function generateFunction( info ) {
         ( pointers.length ? '\t// create output pointers\n' : '' ) +
         pointers.join( '' ) +
         ( pointers.length ? '\n' : '' ) +
-        '\t' + ccall + '\n' +
+        ccall + '\n' +
 
         ( readPointers.length ? '\t// read and free output pointers\n' : '' ) +
         readPointers.join( '' ) +
