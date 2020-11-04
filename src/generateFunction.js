@@ -134,6 +134,7 @@ function generateFunction( info ) {
     let ccall = `\t${ includesReturn ? 'const returnValue = ' : '' }Module.ccall(
 \t\t'${info.name}',
 \t\t${returnType},
+\t\t/* ${args.map( arg => `${arg.type} ${arg.name}` ).join( ', ' )} */
 \t\t[ ${argTypes.map( arg => `'${arg}'` ).join( ', ' )} ],
 \t\t[ ${argValues.join( ', ' )} ],
 \t);\n`;
@@ -160,7 +161,7 @@ function generateFunction( info ) {
         ( pointers.length ? '\t// create output pointers\n' : '' ) +
         pointers.join( '' ) +
         ( pointers.length ? '\n' : '' ) +
-        '\t// evaluate function\n' + ccall + '\n' +
+        '\t' + ccall + '\n' +
 
         ( readPointers.length ? '\t// read and free output pointers\n' : '' ) +
         readPointers.join( '' ) +
