@@ -2,7 +2,6 @@
 ```js
 function b1900(  ) {
 
-
 	// evaluate function
 	const returnValue = Module.ccall(
 		'b1900_c',
@@ -18,7 +17,6 @@ function b1900(  ) {
 ### b1950_c
 ```js
 function b1950(  ) {
-
 
 	// evaluate function
 	const returnValue = Module.ccall(
@@ -59,7 +57,6 @@ function bodc2s( code, lenout ) {
 ```js
 function boddef( name, code ) {
 
-
 	// evaluate function
 	Module.ccall(
 		'boddef_c',
@@ -68,7 +65,6 @@ function boddef( name, code ) {
 		[ name, code ],
 	);
 
-	return;
 
 }
 ```
@@ -157,7 +153,6 @@ function bodvrd( bodynm, item, maxn ) {
 ```js
 function brcktd( number, end1, end2 ) {
 
-
 	// evaluate function
 	const returnValue = Module.ccall(
 		'brcktd_c',
@@ -173,7 +168,6 @@ function brcktd( number, end1, end2 ) {
 ### brckti_c
 ```js
 function brckti( number, end1, end2 ) {
-
 
 	// evaluate function
 	const returnValue = Module.ccall(
@@ -191,7 +185,6 @@ function brckti( number, end1, end2 ) {
 ```js
 function chkin( module ) {
 
-
 	// evaluate function
 	Module.ccall(
 		'chkin_c',
@@ -200,14 +193,12 @@ function chkin( module ) {
 		[ module ],
 	);
 
-	return;
 
 }
 ```
 ### chkout_c
 ```js
 function chkout( module ) {
-
 
 	// evaluate function
 	Module.ccall(
@@ -217,14 +208,12 @@ function chkout( module ) {
 		[ module ],
 	);
 
-	return;
 
 }
 ```
 ### ckcls_c
 ```js
 function ckcls( handle ) {
-
 
 	// evaluate function
 	Module.ccall(
@@ -234,7 +223,6 @@ function ckcls( handle ) {
 		[ handle ],
 	);
 
-	return;
 
 }
 ```
@@ -288,7 +276,6 @@ function ckopn( fname, ifname, ncomch ) {
 ```js
 function ckupf( handle ) {
 
-
 	// evaluate function
 	Module.ccall(
 		'ckupf_c',
@@ -297,14 +284,12 @@ function ckupf( handle ) {
 		[ handle ],
 	);
 
-	return;
 
 }
 ```
 ### clight_c
 ```js
 function clight(  ) {
-
 
 	// evaluate function
 	const returnValue = Module.ccall(
@@ -322,7 +307,6 @@ function clight(  ) {
 ```js
 function clpool(  ) {
 
-
 	// evaluate function
 	Module.ccall(
 		'clpool_c',
@@ -331,7 +315,6 @@ function clpool(  ) {
 		[  ],
 	);
 
-	return;
 
 }
 ```
@@ -385,7 +368,6 @@ function convrt( x, in, out ) {
 ```js
 function cposr( str, chars, start ) {
 
-
 	// evaluate function
 	const returnValue = Module.ccall(
 		'cposr_c',
@@ -401,7 +383,6 @@ function cposr( str, chars, start ) {
 ### cpos_c
 ```js
 function cpos( str, chars, start ) {
-
 
 	// evaluate function
 	const returnValue = Module.ccall(
@@ -504,7 +485,6 @@ function cylsph( r, lonc, z ) {
 ```js
 function dafbbs( handle ) {
 
-
 	// evaluate function
 	Module.ccall(
 		'dafbbs_c',
@@ -513,14 +493,12 @@ function dafbbs( handle ) {
 		[ handle ],
 	);
 
-	return;
 
 }
 ```
 ### dafbfs_c
 ```js
 function dafbfs( handle ) {
-
 
 	// evaluate function
 	Module.ccall(
@@ -530,14 +508,12 @@ function dafbfs( handle ) {
 		[ handle ],
 	);
 
-	return;
 
 }
 ```
 ### dafcls_c
 ```js
 function dafcls( handle ) {
-
 
 	// evaluate function
 	Module.ccall(
@@ -547,14 +523,12 @@ function dafcls( handle ) {
 		[ handle ],
 	);
 
-	return;
 
 }
 ```
 ### dafcs_c
 ```js
 function dafcs( handle ) {
-
 
 	// evaluate function
 	Module.ccall(
@@ -564,14 +538,12 @@ function dafcs( handle ) {
 		[ handle ],
 	);
 
-	return;
 
 }
 ```
 ### dafdc_c
 ```js
 function dafdc( handle ) {
-
 
 	// evaluate function
 	Module.ccall(
@@ -581,7 +553,6 @@ function dafdc( handle ) {
 		[ handle ],
 	);
 
-	return;
 
 }
 ```
@@ -634,7 +605,6 @@ function dafgn( lenout ) {
 ### dafgs_c
 ```js
 function dafgs(  ) {
-
 
 	// evaluate function
 	Module.ccall(
@@ -764,7 +734,6 @@ function dafrfr( handle, lenout ) {
 ```js
 function dascls( handle ) {
 
-
 	// evaluate function
 	Module.ccall(
 		'dascls_c',
@@ -773,7 +742,6 @@ function dascls( handle ) {
 		[ handle ],
 	);
 
-	return;
 
 }
 ```
@@ -946,7 +914,6 @@ function dpgrdr( body, x, y, z, re, f ) {
 ```js
 function dpmax_(  ) {
 
-
 	// evaluate function
 	const returnValue = Module.ccall(
 		'dpmax_',
@@ -962,7 +929,6 @@ function dpmax_(  ) {
 ### dpmax_c
 ```js
 function dpmax(  ) {
-
 
 	// evaluate function
 	const returnValue = Module.ccall(
@@ -980,7 +946,6 @@ function dpmax(  ) {
 ```js
 function dpmin_(  ) {
 
-
 	// evaluate function
 	const returnValue = Module.ccall(
 		'dpmin_',
@@ -997,7 +962,6 @@ function dpmin_(  ) {
 ```js
 function dpmin(  ) {
 
-
 	// evaluate function
 	const returnValue = Module.ccall(
 		'dpmin_c',
@@ -1013,7 +977,6 @@ function dpmin(  ) {
 ### dpr_c
 ```js
 function dpr(  ) {
-
 
 	// evaluate function
 	const returnValue = Module.ccall(
@@ -1169,7 +1132,6 @@ function dsphdr( x, y, z ) {
 ```js
 function dvpool( name ) {
 
-
 	// evaluate function
 	Module.ccall(
 		'dvpool_c',
@@ -1178,7 +1140,6 @@ function dvpool( name ) {
 		[ name ],
 	);
 
-	return;
 
 }
 ```
@@ -1232,7 +1193,6 @@ function ekccnt( table ) {
 ```js
 function ekcls( handle ) {
 
-
 	// evaluate function
 	Module.ccall(
 		'ekcls_c',
@@ -1241,14 +1201,12 @@ function ekcls( handle ) {
 		[ handle ],
 	);
 
-	return;
 
 }
 ```
 ### ekdelr_c
 ```js
 function ekdelr( handle, segno, recno ) {
-
 
 	// evaluate function
 	Module.ccall(
@@ -1258,14 +1216,12 @@ function ekdelr( handle, segno, recno ) {
 		[ handle, segno, recno ],
 	);
 
-	return;
 
 }
 ```
 ### ekffld_c
 ```js
 function ekffld( handle, segno, rcptrs ) {
-
 
 	// evaluate function
 	Module.ccall(
@@ -1275,14 +1231,12 @@ function ekffld( handle, segno, rcptrs ) {
 		[ handle, segno, rcptrs ],
 	);
 
-	return;
 
 }
 ```
 ### ekinsr_c
 ```js
 function ekinsr( handle, segno, recno ) {
-
 
 	// evaluate function
 	Module.ccall(
@@ -1292,7 +1246,6 @@ function ekinsr( handle, segno, recno ) {
 		[ handle, segno, recno ],
 	);
 
-	return;
 
 }
 ```
@@ -1323,7 +1276,6 @@ function eklef( fname ) {
 ```js
 function eknelt( selidx, row ) {
 
-
 	// evaluate function
 	const returnValue = Module.ccall(
 		'eknelt_c',
@@ -1339,7 +1291,6 @@ function eknelt( selidx, row ) {
 ### eknseg_c
 ```js
 function eknseg( handle ) {
-
 
 	// evaluate function
 	const returnValue = Module.ccall(
@@ -1495,7 +1446,6 @@ function ektnam( n, lenout ) {
 ```js
 function ekuef( handle ) {
 
-
 	// evaluate function
 	Module.ccall(
 		'ekuef_c',
@@ -1504,14 +1454,12 @@ function ekuef( handle ) {
 		[ handle ],
 	);
 
-	return;
 
 }
 ```
 ### erract_c
 ```js
 function erract( op, lenout, action ) {
-
 
 	// evaluate function
 	Module.ccall(
@@ -1521,14 +1469,12 @@ function erract( op, lenout, action ) {
 		[ op, lenout, action ],
 	);
 
-	return;
 
 }
 ```
 ### errch_c
 ```js
 function errch( marker, string ) {
-
 
 	// evaluate function
 	Module.ccall(
@@ -1538,7 +1484,6 @@ function errch( marker, string ) {
 		[ marker, string ],
 	);
 
-	return;
 
 }
 ```
@@ -1569,7 +1514,6 @@ function errdev( op ) {
 ```js
 function errdp( marker, number ) {
 
-
 	// evaluate function
 	Module.ccall(
 		'errdp_c',
@@ -1578,14 +1522,12 @@ function errdp( marker, number ) {
 		[ marker, number ],
 	);
 
-	return;
 
 }
 ```
 ### errint_c
 ```js
 function errint( marker, number ) {
-
 
 	// evaluate function
 	Module.ccall(
@@ -1595,14 +1537,12 @@ function errint( marker, number ) {
 		[ marker, number ],
 	);
 
-	return;
 
 }
 ```
 ### errprt_c
 ```js
 function errprt( op, list ) {
-
 
 	// evaluate function
 	Module.ccall(
@@ -1705,7 +1645,6 @@ function etcal( et, lenout ) {
 ```js
 function eul2m( angle3, angle2, angle1, axis3, axis2, axis1 ) {
 
-
 	// evaluate function
 	Module.ccall(
 		'eul2m_c',
@@ -1772,7 +1711,6 @@ function frmnam( frcode, lenout ) {
 ```js
 function ftncls( unit ) {
 
-
 	// evaluate function
 	Module.ccall(
 		'ftncls_c',
@@ -1781,14 +1719,12 @@ function ftncls( unit ) {
 		[ unit ],
 	);
 
-	return;
 
 }
 ```
 ### furnsh_c
 ```js
 function furnsh( file ) {
-
 
 	// evaluate function
 	Module.ccall(
@@ -1798,7 +1734,6 @@ function furnsh( file ) {
 		[ file ],
 	);
 
-	return;
 
 }
 ```
@@ -1887,7 +1822,6 @@ function getfov( instid, room, shapelen, framelen ) {
 ```js
 function gfclrh(  ) {
 
-
 	// evaluate function
 	Module.ccall(
 		'gfclrh_c',
@@ -1896,14 +1830,12 @@ function gfclrh(  ) {
 		[  ],
 	);
 
-	return;
 
 }
 ```
 ### gfrepf_c
 ```js
 function gfrepf(  ) {
-
 
 	// evaluate function
 	Module.ccall(
@@ -1913,14 +1845,12 @@ function gfrepf(  ) {
 		[  ],
 	);
 
-	return;
 
 }
 ```
 ### gfrepu_c
 ```js
 function gfrepu( ivbeg, ivend, time ) {
-
 
 	// evaluate function
 	Module.ccall(
@@ -1930,14 +1860,12 @@ function gfrepu( ivbeg, ivend, time ) {
 		[ ivbeg, ivend, time ],
 	);
 
-	return;
 
 }
 ```
 ### gfsstp_c
 ```js
 function gfsstp( step ) {
-
 
 	// evaluate function
 	Module.ccall(
@@ -1947,7 +1875,6 @@ function gfsstp( step ) {
 		[ step ],
 	);
 
-	return;
 
 }
 ```
@@ -1977,7 +1904,6 @@ function gfstep( time ) {
 ### halfpi_c
 ```js
 function halfpi(  ) {
-
 
 	// evaluate function
 	const returnValue = Module.ccall(
@@ -2018,7 +1944,6 @@ function ident(  ) {
 ```js
 function intmax_(  ) {
 
-
 	// evaluate function
 	const returnValue = Module.ccall(
 		'intmax_',
@@ -2034,7 +1959,6 @@ function intmax_(  ) {
 ### intmax_c
 ```js
 function intmax(  ) {
-
 
 	// evaluate function
 	const returnValue = Module.ccall(
@@ -2052,7 +1976,6 @@ function intmax(  ) {
 ```js
 function intmin_(  ) {
 
-
 	// evaluate function
 	const returnValue = Module.ccall(
 		'intmin_',
@@ -2068,7 +1991,6 @@ function intmin_(  ) {
 ### intmin_c
 ```js
 function intmin(  ) {
-
 
 	// evaluate function
 	const returnValue = Module.ccall(
@@ -2086,7 +2008,6 @@ function intmin(  ) {
 ```js
 function j1900(  ) {
 
-
 	// evaluate function
 	const returnValue = Module.ccall(
 		'j1900_c',
@@ -2102,7 +2023,6 @@ function j1900(  ) {
 ### j1950_c
 ```js
 function j1950(  ) {
-
 
 	// evaluate function
 	const returnValue = Module.ccall(
@@ -2120,7 +2040,6 @@ function j1950(  ) {
 ```js
 function j2000(  ) {
 
-
 	// evaluate function
 	const returnValue = Module.ccall(
 		'j2000_c',
@@ -2136,7 +2055,6 @@ function j2000(  ) {
 ### j2100_c
 ```js
 function j2100(  ) {
-
 
 	// evaluate function
 	const returnValue = Module.ccall(
@@ -2154,7 +2072,6 @@ function j2100(  ) {
 ```js
 function jyear(  ) {
 
-
 	// evaluate function
 	const returnValue = Module.ccall(
 		'jyear_c',
@@ -2171,7 +2088,6 @@ function jyear(  ) {
 ```js
 function kclear(  ) {
 
-
 	// evaluate function
 	Module.ccall(
 		'kclear_c',
@@ -2180,7 +2096,6 @@ function kclear(  ) {
 		[  ],
 	);
 
-	return;
 
 }
 ```
@@ -2210,7 +2125,6 @@ function ktotal( kind ) {
 ### lastnb_c
 ```js
 function lastnb( string ) {
-
 
 	// evaluate function
 	const returnValue = Module.ccall(
@@ -2336,7 +2250,6 @@ function lcase( in, lenout ) {
 ```js
 function ldpool( filename ) {
 
-
 	// evaluate function
 	Module.ccall(
 		'ldpool_c',
@@ -2345,14 +2258,12 @@ function ldpool( filename ) {
 		[ filename ],
 	);
 
-	return;
 
 }
 ```
 ### lspcn_c
 ```js
 function lspcn( body, et, abcorr ) {
-
 
 	// evaluate function
 	const returnValue = Module.ccall(
@@ -2555,7 +2466,6 @@ function namfrm( frname ) {
 ```js
 function ncposr( str, chars, start ) {
 
-
 	// evaluate function
 	const returnValue = Module.ccall(
 		'ncposr_c',
@@ -2571,7 +2481,6 @@ function ncposr( str, chars, start ) {
 ### ncpos_c
 ```js
 function ncpos( str, chars, start ) {
-
 
 	// evaluate function
 	const returnValue = Module.ccall(
@@ -2612,7 +2521,6 @@ function pcklof( filename ) {
 ```js
 function pckuof( handle ) {
 
-
 	// evaluate function
 	Module.ccall(
 		'pckuof_c',
@@ -2621,7 +2529,6 @@ function pckuof( handle ) {
 		[ handle ],
 	);
 
-	return;
 
 }
 ```
@@ -2652,7 +2559,6 @@ function pgrrec( body, lon, lat, alt, re, f ) {
 ```js
 function pi(  ) {
 
-
 	// evaluate function
 	const returnValue = Module.ccall(
 		'pi_c',
@@ -2669,7 +2575,6 @@ function pi(  ) {
 ```js
 function posr( str, substr, start ) {
 
-
 	// evaluate function
 	const returnValue = Module.ccall(
 		'posr_c',
@@ -2685,7 +2590,6 @@ function posr( str, substr, start ) {
 ### pos_c
 ```js
 function pos( str, substr, start ) {
-
 
 	// evaluate function
 	const returnValue = Module.ccall(
@@ -2964,7 +2868,6 @@ function repmot( in, marker, value, repcase, lenout ) {
 ```js
 function reset(  ) {
 
-
 	// evaluate function
 	Module.ccall(
 		'reset_c',
@@ -2973,7 +2876,6 @@ function reset(  ) {
 		[  ],
 	);
 
-	return;
 
 }
 ```
@@ -3003,7 +2905,6 @@ function rotate( angle, iaxis ) {
 ### rpd_c
 ```js
 function rpd(  ) {
-
 
 	// evaluate function
 	const returnValue = Module.ccall(
@@ -3286,7 +3187,6 @@ function sctiks( sc, clkstr ) {
 ```js
 function setmsg( message ) {
 
-
 	// evaluate function
 	Module.ccall(
 		'setmsg_c',
@@ -3295,14 +3195,12 @@ function setmsg( message ) {
 		[ message ],
 	);
 
-	return;
 
 }
 ```
 ### shelld_c
 ```js
 function shelld( ndim, array ) {
-
 
 	// evaluate function
 	Module.ccall(
@@ -3312,14 +3210,12 @@ function shelld( ndim, array ) {
 		[ ndim, array ],
 	);
 
-	return;
 
 }
 ```
 ### shelli_c
 ```js
 function shelli( ndim, array ) {
-
 
 	// evaluate function
 	Module.ccall(
@@ -3329,14 +3225,12 @@ function shelli( ndim, array ) {
 		[ ndim, array ],
 	);
 
-	return;
 
 }
 ```
 ### spd_c
 ```js
 function spd(  ) {
-
 
 	// evaluate function
 	const returnValue = Module.ccall(
@@ -3439,7 +3333,6 @@ function sphrec( r, colat, lon ) {
 ```js
 function spk14b( handle, segid, body, center, frame, first, last, chbdeg ) {
 
-
 	// evaluate function
 	Module.ccall(
 		'spk14b_c',
@@ -3448,14 +3341,12 @@ function spk14b( handle, segid, body, center, frame, first, last, chbdeg ) {
 		[ handle, segid, body, center, frame, first, last, chbdeg ],
 	);
 
-	return;
 
 }
 ```
 ### spk14e_c
 ```js
 function spk14e( handle ) {
-
 
 	// evaluate function
 	Module.ccall(
@@ -3465,7 +3356,6 @@ function spk14e( handle ) {
 		[ handle ],
 	);
 
-	return;
 
 }
 ```
@@ -3504,7 +3394,6 @@ function spkacs( targ, et, ref, abcorr, obs ) {
 ```js
 function spkcls( handle ) {
 
-
 	// evaluate function
 	Module.ccall(
 		'spkcls_c',
@@ -3513,7 +3402,6 @@ function spkcls( handle ) {
 		[ handle ],
 	);
 
-	return;
 
 }
 ```
@@ -3775,7 +3663,6 @@ function spkssb( targ, et, ref ) {
 ```js
 function spksub( handle, descr, ident, begin, end, newh ) {
 
-
 	// evaluate function
 	Module.ccall(
 		'spksub_c',
@@ -3784,14 +3671,12 @@ function spksub( handle, descr, ident, begin, end, newh ) {
 		[ handle, descr, ident, begin, end, newh ],
 	);
 
-	return;
 
 }
 ```
 ### spkuef_c
 ```js
 function spkuef( handle ) {
-
 
 	// evaluate function
 	Module.ccall(
@@ -3801,7 +3686,6 @@ function spkuef( handle ) {
 		[ handle ],
 	);
 
-	return;
 
 }
 ```
@@ -3970,7 +3854,6 @@ function sxform( from, to, et ) {
 ```js
 function timdef( action, item, lenout, value ) {
 
-
 	// evaluate function
 	Module.ccall(
 		'timdef_c',
@@ -3979,7 +3862,6 @@ function timdef( action, item, lenout, value ) {
 		[ action, item, lenout, value ],
 	);
 
-	return;
 
 }
 ```
@@ -4083,7 +3965,6 @@ function tparse( string, lenout ) {
 ```js
 function trcoff(  ) {
 
-
 	// evaluate function
 	Module.ccall(
 		'trcoff_c',
@@ -4092,14 +3973,12 @@ function trcoff(  ) {
 		[  ],
 	);
 
-	return;
 
 }
 ```
 ### tsetyr_c
 ```js
 function tsetyr( year ) {
-
 
 	// evaluate function
 	Module.ccall(
@@ -4109,14 +3988,12 @@ function tsetyr( year ) {
 		[ year ],
 	);
 
-	return;
 
 }
 ```
 ### twopi_c
 ```js
 function twopi(  ) {
-
 
 	// evaluate function
 	const returnValue = Module.ccall(
@@ -4133,7 +4010,6 @@ function twopi(  ) {
 ### tyear_c
 ```js
 function tyear(  ) {
-
 
 	// evaluate function
 	const returnValue = Module.ccall(
@@ -4174,7 +4050,6 @@ function ucase( in, lenout ) {
 ```js
 function unitim( epoch, insys, outsys ) {
 
-
 	// evaluate function
 	const returnValue = Module.ccall(
 		'unitim_c',
@@ -4191,7 +4066,6 @@ function unitim( epoch, insys, outsys ) {
 ```js
 function unload( file ) {
 
-
 	// evaluate function
 	Module.ccall(
 		'unload_c',
@@ -4200,7 +4074,6 @@ function unload( file ) {
 		[ file ],
 	);
 
-	return;
 
 }
 ```
@@ -4254,7 +4127,6 @@ function vpack( x, y, z ) {
 ```js
 function zzerrorinit(  ) {
 
-
 	// evaluate function
 	Module.ccall(
 		'zzerrorinit',
@@ -4263,7 +4135,6 @@ function zzerrorinit(  ) {
 		[  ],
 	);
 
-	return;
 
 }
 ```

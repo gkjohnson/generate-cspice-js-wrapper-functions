@@ -154,20 +154,19 @@ function generateFunction( info ) {
 
         returnStatement = '\treturn returnValue;';
 
-    } else {
-
-        returnStatement = '\treturn;';
-
     }
 
     return signature + '\n\n' +
         ( pointers.length ? '\t// create output pointers\n' : '' ) +
         pointers.join( '' ) +
-        '\n\t// evaluate function\n' + ccall + '\n' +
+        ( pointers.length ? '\n' : '' ) +
+        '\t// evaluate function\n' + ccall + '\n' +
 
         ( readPointers.length ? '\t// read and free output pointers\n' : '' ) +
         readPointers.join( '' ) +
-        returnStatement + '\n\n}\n';
+        returnStatement +
+        ( returnStatement ? '\n' : '' ) +
+        '\n}\n';
 
 }
 
