@@ -2,7 +2,7 @@
 ```js
 function b1900(  ) {
 
-		const returnValue = Module.ccall(
+	const returnValue = Module.ccall(
 		'b1900_c',
 		'number',
 		/*  */
@@ -18,7 +18,7 @@ function b1900(  ) {
 ```js
 function b1950(  ) {
 
-		const returnValue = Module.ccall(
+	const returnValue = Module.ccall(
 		'b1950_c',
 		'number',
 		/*  */
@@ -37,7 +37,7 @@ function bodc2s( code, lenout ) {
 	// create output pointers
 	const name_ptr = Module._malloc( STR_SIZE );
 
-		Module.ccall(
+	Module.ccall(
 		'bodc2s_c',
 		null,
 		/* SpiceInt code, SpiceInt lenout, SpiceChar name */
@@ -57,7 +57,7 @@ function bodc2s( code, lenout ) {
 ```js
 function boddef( name, code ) {
 
-		Module.ccall(
+	Module.ccall(
 		'boddef_c',
 		null,
 		/* ConstSpiceChar name, SpiceInt code */
@@ -76,7 +76,7 @@ function bodvar( body, item ) {
 	const dim_ptr = Module._malloc( INT_SIZE );
 	const values_ptr = Module._malloc( DOUBLE_SIZE );
 
-		Module.ccall(
+	Module.ccall(
 		'bodvar_c',
 		null,
 		/* SpiceInt body, ConstSpiceChar item, SpiceInt dim, SpiceDouble values */
@@ -103,7 +103,7 @@ function bodvcd( bodyid, item, maxn ) {
 	const dim_ptr = Module._malloc( INT_SIZE );
 	const values_ptr = Module._malloc( DOUBLE_SIZE );
 
-		Module.ccall(
+	Module.ccall(
 		'bodvcd_c',
 		null,
 		/* SpiceInt bodyid, ConstSpiceChar item, SpiceInt maxn, SpiceInt dim, SpiceDouble values */
@@ -130,7 +130,7 @@ function bodvrd( bodynm, item, maxn ) {
 	const dim_ptr = Module._malloc( INT_SIZE );
 	const values_ptr = Module._malloc( DOUBLE_SIZE );
 
-		Module.ccall(
+	Module.ccall(
 		'bodvrd_c',
 		null,
 		/* ConstSpiceChar bodynm, ConstSpiceChar item, SpiceInt maxn, SpiceInt dim, SpiceDouble values */
@@ -153,7 +153,7 @@ function bodvrd( bodynm, item, maxn ) {
 ```js
 function brcktd( number, end1, end2 ) {
 
-		const returnValue = Module.ccall(
+	const returnValue = Module.ccall(
 		'brcktd_c',
 		'number',
 		/* SpiceDouble number, SpiceDouble end1, SpiceDouble end2 */
@@ -169,7 +169,7 @@ function brcktd( number, end1, end2 ) {
 ```js
 function brckti( number, end1, end2 ) {
 
-		const returnValue = Module.ccall(
+	const returnValue = Module.ccall(
 		'brckti_c',
 		'number',
 		/* SpiceInt number, SpiceInt end1, SpiceInt end2 */
@@ -185,7 +185,7 @@ function brckti( number, end1, end2 ) {
 ```js
 function chkin( module ) {
 
-		Module.ccall(
+	Module.ccall(
 		'chkin_c',
 		null,
 		/* ConstSpiceChar module */
@@ -200,7 +200,7 @@ function chkin( module ) {
 ```js
 function chkout( module ) {
 
-		Module.ccall(
+	Module.ccall(
 		'chkout_c',
 		null,
 		/* ConstSpiceChar module */
@@ -215,7 +215,7 @@ function chkout( module ) {
 ```js
 function ckcls( handle ) {
 
-		Module.ccall(
+	Module.ccall(
 		'ckcls_c',
 		null,
 		/* SpiceInt handle */
@@ -233,7 +233,7 @@ function cklpf( filename ) {
 	// create output pointers
 	const handle_ptr = Module._malloc( INT_SIZE );
 
-		Module.ccall(
+	Module.ccall(
 		'cklpf_c',
 		null,
 		/* ConstSpiceChar filename, SpiceInt handle */
@@ -256,7 +256,7 @@ function ckopn( fname, ifname, ncomch ) {
 	// create output pointers
 	const handle_ptr = Module._malloc( INT_SIZE );
 
-		Module.ccall(
+	Module.ccall(
 		'ckopn_c',
 		null,
 		/* ConstSpiceChar fname, ConstSpiceChar ifname, SpiceInt ncomch, SpiceInt handle */
@@ -276,7 +276,7 @@ function ckopn( fname, ifname, ncomch ) {
 ```js
 function ckupf( handle ) {
 
-		Module.ccall(
+	Module.ccall(
 		'ckupf_c',
 		null,
 		/* SpiceInt handle */
@@ -291,7 +291,7 @@ function ckupf( handle ) {
 ```js
 function clight(  ) {
 
-		const returnValue = Module.ccall(
+	const returnValue = Module.ccall(
 		'clight_c',
 		'number',
 		/*  */
@@ -307,7 +307,7 @@ function clight(  ) {
 ```js
 function clpool(  ) {
 
-		Module.ccall(
+	Module.ccall(
 		'clpool_c',
 		null,
 		/*  */
@@ -325,7 +325,7 @@ function cmprss( delim, n, input, lenout ) {
 	// create output pointers
 	const output_ptr = Module._malloc( STR_SIZE );
 
-		Module.ccall(
+	Module.ccall(
 		'cmprss_c',
 		null,
 		/* SpiceChar delim, SpiceInt n, ConstSpiceChar input, SpiceInt lenout, SpiceChar output */
@@ -348,7 +348,7 @@ function convrt( x, in, out ) {
 	// create output pointers
 	const y_ptr = Module._malloc( DOUBLE_SIZE );
 
-		Module.ccall(
+	Module.ccall(
 		'convrt_c',
 		null,
 		/* SpiceDouble x, ConstSpiceChar in, ConstSpiceChar out, SpiceDouble y */
@@ -368,7 +368,7 @@ function convrt( x, in, out ) {
 ```js
 function cposr( str, chars, start ) {
 
-		const returnValue = Module.ccall(
+	const returnValue = Module.ccall(
 		'cposr_c',
 		'number',
 		/* ConstSpiceChar str, ConstSpiceChar chars, SpiceInt start */
@@ -384,7 +384,7 @@ function cposr( str, chars, start ) {
 ```js
 function cpos( str, chars, start ) {
 
-		const returnValue = Module.ccall(
+	const returnValue = Module.ccall(
 		'cpos_c',
 		'number',
 		/* ConstSpiceChar str, ConstSpiceChar chars, SpiceInt start */
@@ -405,7 +405,7 @@ function cyllat( r, lonc, z ) {
 	const lon_ptr = Module._malloc( DOUBLE_SIZE );
 	const lat_ptr = Module._malloc( DOUBLE_SIZE );
 
-		Module.ccall(
+	Module.ccall(
 		'cyllat_c',
 		null,
 		/* SpiceDouble r, SpiceDouble lonc, SpiceDouble z, SpiceDouble radius, SpiceDouble lon, SpiceDouble lat */
@@ -434,7 +434,7 @@ function cylrec( r, lon, z ) {
 	// create output pointers
 	const rectan_ptr = Module._malloc( DOUBLE_SIZE );
 
-		Module.ccall(
+	Module.ccall(
 		'cylrec_c',
 		null,
 		/* SpiceDouble r, SpiceDouble lon, SpiceDouble z, SpiceDouble rectan */
@@ -459,7 +459,7 @@ function cylsph( r, lonc, z ) {
 	const colat_ptr = Module._malloc( DOUBLE_SIZE );
 	const lon_ptr = Module._malloc( DOUBLE_SIZE );
 
-		Module.ccall(
+	Module.ccall(
 		'cylsph_c',
 		null,
 		/* SpiceDouble r, SpiceDouble lonc, SpiceDouble z, SpiceDouble radius, SpiceDouble colat, SpiceDouble lon */
@@ -485,7 +485,7 @@ function cylsph( r, lonc, z ) {
 ```js
 function dafbbs( handle ) {
 
-		Module.ccall(
+	Module.ccall(
 		'dafbbs_c',
 		null,
 		/* SpiceInt handle */
@@ -500,7 +500,7 @@ function dafbbs( handle ) {
 ```js
 function dafbfs( handle ) {
 
-		Module.ccall(
+	Module.ccall(
 		'dafbfs_c',
 		null,
 		/* SpiceInt handle */
@@ -515,7 +515,7 @@ function dafbfs( handle ) {
 ```js
 function dafcls( handle ) {
 
-		Module.ccall(
+	Module.ccall(
 		'dafcls_c',
 		null,
 		/* SpiceInt handle */
@@ -530,7 +530,7 @@ function dafcls( handle ) {
 ```js
 function dafcs( handle ) {
 
-		Module.ccall(
+	Module.ccall(
 		'dafcs_c',
 		null,
 		/* SpiceInt handle */
@@ -545,7 +545,7 @@ function dafcs( handle ) {
 ```js
 function dafdc( handle ) {
 
-		Module.ccall(
+	Module.ccall(
 		'dafdc_c',
 		null,
 		/* SpiceInt handle */
@@ -563,7 +563,7 @@ function dafgda( handle, begin, end ) {
 	// create output pointers
 	const data_ptr = Module._malloc( DOUBLE_SIZE );
 
-		Module.ccall(
+	Module.ccall(
 		'dafgda_c',
 		null,
 		/* SpiceInt handle, SpiceInt begin, SpiceInt end, SpiceDouble data */
@@ -586,7 +586,7 @@ function dafgn( lenout ) {
 	// create output pointers
 	const name_ptr = Module._malloc( STR_SIZE );
 
-		Module.ccall(
+	Module.ccall(
 		'dafgn_c',
 		null,
 		/* SpiceInt lenout, SpiceChar name */
@@ -606,7 +606,7 @@ function dafgn( lenout ) {
 ```js
 function dafgs(  ) {
 
-		Module.ccall(
+	Module.ccall(
 		'dafgs_c',
 		null,
 		/* SpiceDouble sum */
@@ -625,7 +625,7 @@ function dafopr( fname ) {
 	// create output pointers
 	const handle_ptr = Module._malloc( INT_SIZE );
 
-		Module.ccall(
+	Module.ccall(
 		'dafopr_c',
 		null,
 		/* ConstSpiceChar fname, SpiceInt handle */
@@ -648,7 +648,7 @@ function dafopw( fname ) {
 	// create output pointers
 	const handle_ptr = Module._malloc( INT_SIZE );
 
-		Module.ccall(
+	Module.ccall(
 		'dafopw_c',
 		null,
 		/* ConstSpiceChar fname, SpiceInt handle */
@@ -671,7 +671,7 @@ function dafrda( handle, begin, end ) {
 	// create output pointers
 	const data_ptr = Module._malloc( DOUBLE_SIZE );
 
-		Module.ccall(
+	Module.ccall(
 		'dafrda_c',
 		null,
 		/* SpiceInt handle, SpiceInt begin, SpiceInt end, SpiceDouble data */
@@ -699,7 +699,7 @@ function dafrfr( handle, lenout ) {
 	const bward_ptr = Module._malloc( INT_SIZE );
 	const free_ptr = Module._malloc( INT_SIZE );
 
-		Module.ccall(
+	Module.ccall(
 		'dafrfr_c',
 		null,
 		/* SpiceInt handle, SpiceInt lenout, SpiceInt nd, SpiceInt ni, SpiceChar ifname, SpiceInt fward, SpiceInt bward, SpiceInt free */
@@ -734,7 +734,7 @@ function dafrfr( handle, lenout ) {
 ```js
 function dascls( handle ) {
 
-		Module.ccall(
+	Module.ccall(
 		'dascls_c',
 		null,
 		/* SpiceInt handle */
@@ -752,7 +752,7 @@ function dasopr( fname ) {
 	// create output pointers
 	const handle_ptr = Module._malloc( INT_SIZE );
 
-		Module.ccall(
+	Module.ccall(
 		'dasopr_c',
 		null,
 		/* ConstSpiceChar fname, SpiceInt handle */
@@ -775,7 +775,7 @@ function dcyldr( x, y, z ) {
 	// create output pointers
 	const jacobi_ptr = Module._malloc( DOUBLE_SIZE );
 
-		Module.ccall(
+	Module.ccall(
 		'dcyldr_c',
 		null,
 		/* SpiceDouble x, SpiceDouble y, SpiceDouble z, SpiceDouble jacobi */
@@ -798,7 +798,7 @@ function deltet( epoch, eptype ) {
 	// create output pointers
 	const delta_ptr = Module._malloc( DOUBLE_SIZE );
 
-		Module.ccall(
+	Module.ccall(
 		'deltet_c',
 		null,
 		/* SpiceDouble epoch, ConstSpiceChar eptype, SpiceDouble delta */
@@ -821,7 +821,7 @@ function dgeodr( x, y, z, re, f ) {
 	// create output pointers
 	const jacobi_ptr = Module._malloc( DOUBLE_SIZE );
 
-		Module.ccall(
+	Module.ccall(
 		'dgeodr_c',
 		null,
 		/* SpiceDouble x, SpiceDouble y, SpiceDouble z, SpiceDouble re, SpiceDouble f, SpiceDouble jacobi */
@@ -844,7 +844,7 @@ function dlatdr( x, y, z ) {
 	// create output pointers
 	const jacobi_ptr = Module._malloc( DOUBLE_SIZE );
 
-		Module.ccall(
+	Module.ccall(
 		'dlatdr_c',
 		null,
 		/* SpiceDouble x, SpiceDouble y, SpiceDouble z, SpiceDouble jacobi */
@@ -868,7 +868,7 @@ function dp2hx( number, lenout ) {
 	const string_ptr = Module._malloc( STR_SIZE );
 	const length_ptr = Module._malloc( INT_SIZE );
 
-		Module.ccall(
+	Module.ccall(
 		'dp2hx_c',
 		null,
 		/* SpiceDouble number, SpiceInt lenout, SpiceChar string, SpiceInt length */
@@ -894,7 +894,7 @@ function dpgrdr( body, x, y, z, re, f ) {
 	// create output pointers
 	const jacobi_ptr = Module._malloc( DOUBLE_SIZE );
 
-		Module.ccall(
+	Module.ccall(
 		'dpgrdr_c',
 		null,
 		/* ConstSpiceChar body, SpiceDouble x, SpiceDouble y, SpiceDouble z, SpiceDouble re, SpiceDouble f, SpiceDouble jacobi */
@@ -914,7 +914,7 @@ function dpgrdr( body, x, y, z, re, f ) {
 ```js
 function dpmax_(  ) {
 
-		const returnValue = Module.ccall(
+	const returnValue = Module.ccall(
 		'dpmax_',
 		'number',
 		/*  */
@@ -930,7 +930,7 @@ function dpmax_(  ) {
 ```js
 function dpmax(  ) {
 
-		const returnValue = Module.ccall(
+	const returnValue = Module.ccall(
 		'dpmax_c',
 		'number',
 		/*  */
@@ -946,7 +946,7 @@ function dpmax(  ) {
 ```js
 function dpmin_(  ) {
 
-		const returnValue = Module.ccall(
+	const returnValue = Module.ccall(
 		'dpmin_',
 		'number',
 		/*  */
@@ -962,7 +962,7 @@ function dpmin_(  ) {
 ```js
 function dpmin(  ) {
 
-		const returnValue = Module.ccall(
+	const returnValue = Module.ccall(
 		'dpmin_c',
 		'number',
 		/*  */
@@ -978,7 +978,7 @@ function dpmin(  ) {
 ```js
 function dpr(  ) {
 
-		const returnValue = Module.ccall(
+	const returnValue = Module.ccall(
 		'dpr_c',
 		'number',
 		/*  */
@@ -997,7 +997,7 @@ function drdcyl( r, lon, z ) {
 	// create output pointers
 	const jacobi_ptr = Module._malloc( DOUBLE_SIZE );
 
-		Module.ccall(
+	Module.ccall(
 		'drdcyl_c',
 		null,
 		/* SpiceDouble r, SpiceDouble lon, SpiceDouble z, SpiceDouble jacobi */
@@ -1020,7 +1020,7 @@ function drdgeo( lon, lat, alt, re, f ) {
 	// create output pointers
 	const jacobi_ptr = Module._malloc( DOUBLE_SIZE );
 
-		Module.ccall(
+	Module.ccall(
 		'drdgeo_c',
 		null,
 		/* SpiceDouble lon, SpiceDouble lat, SpiceDouble alt, SpiceDouble re, SpiceDouble f, SpiceDouble jacobi */
@@ -1043,7 +1043,7 @@ function drdlat( lon, lat ) {
 	// create output pointers
 	const jacobi_ptr = Module._malloc( DOUBLE_SIZE );
 
-		Module.ccall(
+	Module.ccall(
 		'drdlat_c',
 		null,
 		/* SpiceDouble r, SpiceDouble lon, SpiceDouble lat, SpiceDouble jacobi */
@@ -1066,7 +1066,7 @@ function drdpgr( body, lon, lat, alt, re, f ) {
 	// create output pointers
 	const jacobi_ptr = Module._malloc( DOUBLE_SIZE );
 
-		Module.ccall(
+	Module.ccall(
 		'drdpgr_c',
 		null,
 		/* ConstSpiceChar body, SpiceDouble lon, SpiceDouble lat, SpiceDouble alt, SpiceDouble re, SpiceDouble f, SpiceDouble jacobi */
@@ -1089,7 +1089,7 @@ function drdsph( r, colat, lon ) {
 	// create output pointers
 	const jacobi_ptr = Module._malloc( DOUBLE_SIZE );
 
-		Module.ccall(
+	Module.ccall(
 		'drdsph_c',
 		null,
 		/* SpiceDouble r, SpiceDouble colat, SpiceDouble lon, SpiceDouble jacobi */
@@ -1112,7 +1112,7 @@ function dsphdr( x, y, z ) {
 	// create output pointers
 	const jacobi_ptr = Module._malloc( DOUBLE_SIZE );
 
-		Module.ccall(
+	Module.ccall(
 		'dsphdr_c',
 		null,
 		/* SpiceDouble x, SpiceDouble y, SpiceDouble z, SpiceDouble jacobi */
@@ -1132,7 +1132,7 @@ function dsphdr( x, y, z ) {
 ```js
 function dvpool( name ) {
 
-		Module.ccall(
+	Module.ccall(
 		'dvpool_c',
 		null,
 		/* ConstSpiceChar name */
@@ -1150,7 +1150,7 @@ function ekappr( handle, segno ) {
 	// create output pointers
 	const recno_ptr = Module._malloc( INT_SIZE );
 
-		Module.ccall(
+	Module.ccall(
 		'ekappr_c',
 		null,
 		/* SpiceInt handle, SpiceInt segno, SpiceInt recno */
@@ -1173,7 +1173,7 @@ function ekccnt( table ) {
 	// create output pointers
 	const ccount_ptr = Module._malloc( INT_SIZE );
 
-		Module.ccall(
+	Module.ccall(
 		'ekccnt_c',
 		null,
 		/* ConstSpiceChar table, SpiceInt ccount */
@@ -1193,7 +1193,7 @@ function ekccnt( table ) {
 ```js
 function ekcls( handle ) {
 
-		Module.ccall(
+	Module.ccall(
 		'ekcls_c',
 		null,
 		/* SpiceInt handle */
@@ -1208,7 +1208,7 @@ function ekcls( handle ) {
 ```js
 function ekdelr( handle, segno, recno ) {
 
-		Module.ccall(
+	Module.ccall(
 		'ekdelr_c',
 		null,
 		/* SpiceInt handle, SpiceInt segno, SpiceInt recno */
@@ -1223,7 +1223,7 @@ function ekdelr( handle, segno, recno ) {
 ```js
 function ekffld( handle, segno, rcptrs ) {
 
-		Module.ccall(
+	Module.ccall(
 		'ekffld_c',
 		null,
 		/* SpiceInt handle, SpiceInt segno, SpiceInt rcptrs */
@@ -1238,7 +1238,7 @@ function ekffld( handle, segno, rcptrs ) {
 ```js
 function ekinsr( handle, segno, recno ) {
 
-		Module.ccall(
+	Module.ccall(
 		'ekinsr_c',
 		null,
 		/* SpiceInt handle, SpiceInt segno, SpiceInt recno */
@@ -1256,7 +1256,7 @@ function eklef( fname ) {
 	// create output pointers
 	const handle_ptr = Module._malloc( INT_SIZE );
 
-		Module.ccall(
+	Module.ccall(
 		'eklef_c',
 		null,
 		/* ConstSpiceChar fname, SpiceInt handle */
@@ -1276,7 +1276,7 @@ function eklef( fname ) {
 ```js
 function eknelt( selidx, row ) {
 
-		const returnValue = Module.ccall(
+	const returnValue = Module.ccall(
 		'eknelt_c',
 		'number',
 		/* SpiceInt selidx, SpiceInt row */
@@ -1292,7 +1292,7 @@ function eknelt( selidx, row ) {
 ```js
 function eknseg( handle ) {
 
-		const returnValue = Module.ccall(
+	const returnValue = Module.ccall(
 		'eknseg_c',
 		'number',
 		/* SpiceInt handle */
@@ -1311,7 +1311,7 @@ function ekntab(  ) {
 	// create output pointers
 	const n_ptr = Module._malloc( INT_SIZE );
 
-		Module.ccall(
+	Module.ccall(
 		'ekntab_c',
 		null,
 		/* SpiceInt n */
@@ -1334,7 +1334,7 @@ function ekopn( fname, ifname, ncomch ) {
 	// create output pointers
 	const handle_ptr = Module._malloc( INT_SIZE );
 
-		Module.ccall(
+	Module.ccall(
 		'ekopn_c',
 		null,
 		/* ConstSpiceChar fname, ConstSpiceChar ifname, SpiceInt ncomch, SpiceInt handle */
@@ -1357,7 +1357,7 @@ function ekopr( fname ) {
 	// create output pointers
 	const handle_ptr = Module._malloc( INT_SIZE );
 
-		Module.ccall(
+	Module.ccall(
 		'ekopr_c',
 		null,
 		/* ConstSpiceChar fname, SpiceInt handle */
@@ -1380,7 +1380,7 @@ function ekops(  ) {
 	// create output pointers
 	const handle_ptr = Module._malloc( INT_SIZE );
 
-		Module.ccall(
+	Module.ccall(
 		'ekops_c',
 		null,
 		/* SpiceInt handle */
@@ -1403,7 +1403,7 @@ function ekopw( fname ) {
 	// create output pointers
 	const handle_ptr = Module._malloc( INT_SIZE );
 
-		Module.ccall(
+	Module.ccall(
 		'ekopw_c',
 		null,
 		/* ConstSpiceChar fname, SpiceInt handle */
@@ -1426,7 +1426,7 @@ function ektnam( n, lenout ) {
 	// create output pointers
 	const table_ptr = Module._malloc( STR_SIZE );
 
-		Module.ccall(
+	Module.ccall(
 		'ektnam_c',
 		null,
 		/* SpiceInt n, SpiceInt lenout, SpiceChar table */
@@ -1446,7 +1446,7 @@ function ektnam( n, lenout ) {
 ```js
 function ekuef( handle ) {
 
-		Module.ccall(
+	Module.ccall(
 		'ekuef_c',
 		null,
 		/* SpiceInt handle */
@@ -1461,7 +1461,7 @@ function ekuef( handle ) {
 ```js
 function erract( op, lenout, action ) {
 
-		Module.ccall(
+	Module.ccall(
 		'erract_c',
 		null,
 		/* ConstSpiceChar op, SpiceInt lenout, SpiceChar action */
@@ -1476,7 +1476,7 @@ function erract( op, lenout, action ) {
 ```js
 function errch( marker, string ) {
 
-		Module.ccall(
+	Module.ccall(
 		'errch_c',
 		null,
 		/* ConstSpiceChar marker, ConstSpiceChar string */
@@ -1494,7 +1494,7 @@ function errdev( op ) {
 	// create output pointers
 	const device_ptr = Module._malloc( STR_SIZE );
 
-		Module.ccall(
+	Module.ccall(
 		'errdev_c',
 		null,
 		/* ConstSpiceChar op, SpiceInt lenout, SpiceChar device */
@@ -1514,7 +1514,7 @@ function errdev( op ) {
 ```js
 function errdp( marker, number ) {
 
-		Module.ccall(
+	Module.ccall(
 		'errdp_c',
 		null,
 		/* ConstSpiceChar marker, SpiceDouble number */
@@ -1529,7 +1529,7 @@ function errdp( marker, number ) {
 ```js
 function errint( marker, number ) {
 
-		Module.ccall(
+	Module.ccall(
 		'errint_c',
 		null,
 		/* ConstSpiceChar marker, SpiceInt number */
@@ -1544,7 +1544,7 @@ function errint( marker, number ) {
 ```js
 function errprt( op, list ) {
 
-		Module.ccall(
+	Module.ccall(
 		'errprt_c',
 		null,
 		/* ConstSpiceChar op, SpiceInt lenout, SpiceChar list */
@@ -1567,7 +1567,7 @@ function et2lst( body, lon, type, timlen, ampmlen ) {
 	const time_ptr = Module._malloc( STR_SIZE );
 	const ampm_ptr = Module._malloc( STR_SIZE );
 
-		Module.ccall(
+	Module.ccall(
 		'et2lst_c',
 		null,
 		/* SpiceDouble et, SpiceInt body, SpiceDouble lon, ConstSpiceChar type, SpiceInt timlen, SpiceInt ampmlen, SpiceInt hr, SpiceInt mn, SpiceInt sc, SpiceChar time, SpiceChar ampm */
@@ -1602,7 +1602,7 @@ function et2utc( et, format, prec, lenout ) {
 	// create output pointers
 	const utcstr_ptr = Module._malloc( STR_SIZE );
 
-		Module.ccall(
+	Module.ccall(
 		'et2utc_c',
 		null,
 		/* SpiceDouble et, ConstSpiceChar format, SpiceInt prec, SpiceInt lenout, SpiceChar utcstr */
@@ -1625,7 +1625,7 @@ function etcal( et, lenout ) {
 	// create output pointers
 	const string_ptr = Module._malloc( STR_SIZE );
 
-		Module.ccall(
+	Module.ccall(
 		'etcal_c',
 		null,
 		/* SpiceDouble et, SpiceInt lenout, SpiceChar string */
@@ -1645,7 +1645,7 @@ function etcal( et, lenout ) {
 ```js
 function eul2m( angle3, angle2, angle1, axis3, axis2, axis1 ) {
 
-		Module.ccall(
+	Module.ccall(
 		'eul2m_c',
 		null,
 		/* SpiceDouble angle3, SpiceDouble angle2, SpiceDouble angle1, SpiceInt axis3, SpiceInt axis2, SpiceInt axis1, SpiceDouble r */
@@ -1665,7 +1665,7 @@ function frame( x ) {
 	const y_ptr = Module._malloc( DOUBLE_SIZE );
 	const z_ptr = Module._malloc( DOUBLE_SIZE );
 
-		Module.ccall(
+	Module.ccall(
 		'frame_c',
 		null,
 		/* SpiceDouble x, SpiceDouble y, SpiceDouble z */
@@ -1691,7 +1691,7 @@ function frmnam( frcode, lenout ) {
 	// create output pointers
 	const frname_ptr = Module._malloc( STR_SIZE );
 
-		Module.ccall(
+	Module.ccall(
 		'frmnam_c',
 		null,
 		/* SpiceInt frcode, SpiceInt lenout, SpiceChar frname */
@@ -1711,7 +1711,7 @@ function frmnam( frcode, lenout ) {
 ```js
 function ftncls( unit ) {
 
-		Module.ccall(
+	Module.ccall(
 		'ftncls_c',
 		null,
 		/* SpiceInt unit */
@@ -1726,7 +1726,7 @@ function ftncls( unit ) {
 ```js
 function furnsh( file ) {
 
-		Module.ccall(
+	Module.ccall(
 		'furnsh_c',
 		null,
 		/* ConstSpiceChar file */
@@ -1744,7 +1744,7 @@ function georec( lon, lat, alt, re, f ) {
 	// create output pointers
 	const rectan_ptr = Module._malloc( DOUBLE_SIZE );
 
-		Module.ccall(
+	Module.ccall(
 		'georec_c',
 		null,
 		/* SpiceDouble lon, SpiceDouble lat, SpiceDouble alt, SpiceDouble re, SpiceDouble f, SpiceDouble rectan */
@@ -1768,7 +1768,7 @@ function getfat( file, arclen, typlen ) {
 	const arch_ptr = Module._malloc( STR_SIZE );
 	const type_ptr = Module._malloc( STR_SIZE );
 
-		Module.ccall(
+	Module.ccall(
 		'getfat_c',
 		null,
 		/* ConstSpiceChar file, SpiceInt arclen, SpiceInt typlen, SpiceChar arch, SpiceChar type */
@@ -1796,7 +1796,7 @@ function getfov( instid, room, shapelen, framelen ) {
 	const frame_ptr = Module._malloc( STR_SIZE );
 	const n_ptr = Module._malloc( INT_SIZE );
 
-		Module.ccall(
+	Module.ccall(
 		'getfov_c',
 		null,
 		/* SpiceInt instid, SpiceInt room, SpiceInt shapelen, SpiceInt framelen, SpiceChar shape, SpiceChar frame, SpiceDouble bsight, SpiceInt n, SpiceDouble bounds */
@@ -1822,7 +1822,7 @@ function getfov( instid, room, shapelen, framelen ) {
 ```js
 function gfclrh(  ) {
 
-		Module.ccall(
+	Module.ccall(
 		'gfclrh_c',
 		null,
 		/*  */
@@ -1837,7 +1837,7 @@ function gfclrh(  ) {
 ```js
 function gfrepf(  ) {
 
-		Module.ccall(
+	Module.ccall(
 		'gfrepf_c',
 		null,
 		/*  */
@@ -1852,7 +1852,7 @@ function gfrepf(  ) {
 ```js
 function gfrepu( ivbeg, ivend, time ) {
 
-		Module.ccall(
+	Module.ccall(
 		'gfrepu_c',
 		null,
 		/* SpiceDouble ivbeg, SpiceDouble ivend, SpiceDouble time */
@@ -1867,7 +1867,7 @@ function gfrepu( ivbeg, ivend, time ) {
 ```js
 function gfsstp( step ) {
 
-		Module.ccall(
+	Module.ccall(
 		'gfsstp_c',
 		null,
 		/* SpiceDouble step */
@@ -1885,7 +1885,7 @@ function gfstep( time ) {
 	// create output pointers
 	const step_ptr = Module._malloc( DOUBLE_SIZE );
 
-		Module.ccall(
+	Module.ccall(
 		'gfstep_c',
 		null,
 		/* SpiceDouble time, SpiceDouble step */
@@ -1905,7 +1905,7 @@ function gfstep( time ) {
 ```js
 function halfpi(  ) {
 
-		const returnValue = Module.ccall(
+	const returnValue = Module.ccall(
 		'halfpi_c',
 		'number',
 		/*  */
@@ -1924,7 +1924,7 @@ function ident(  ) {
 	// create output pointers
 	const matrix_ptr = Module._malloc( DOUBLE_SIZE );
 
-		Module.ccall(
+	Module.ccall(
 		'ident_c',
 		null,
 		/* SpiceDouble matrix */
@@ -1944,7 +1944,7 @@ function ident(  ) {
 ```js
 function intmax_(  ) {
 
-		const returnValue = Module.ccall(
+	const returnValue = Module.ccall(
 		'intmax_',
 		'number',
 		/*  */
@@ -1960,7 +1960,7 @@ function intmax_(  ) {
 ```js
 function intmax(  ) {
 
-		const returnValue = Module.ccall(
+	const returnValue = Module.ccall(
 		'intmax_c',
 		'number',
 		/*  */
@@ -1976,7 +1976,7 @@ function intmax(  ) {
 ```js
 function intmin_(  ) {
 
-		const returnValue = Module.ccall(
+	const returnValue = Module.ccall(
 		'intmin_',
 		'number',
 		/*  */
@@ -1992,7 +1992,7 @@ function intmin_(  ) {
 ```js
 function intmin(  ) {
 
-		const returnValue = Module.ccall(
+	const returnValue = Module.ccall(
 		'intmin_c',
 		'number',
 		/*  */
@@ -2008,7 +2008,7 @@ function intmin(  ) {
 ```js
 function j1900(  ) {
 
-		const returnValue = Module.ccall(
+	const returnValue = Module.ccall(
 		'j1900_c',
 		'number',
 		/*  */
@@ -2024,7 +2024,7 @@ function j1900(  ) {
 ```js
 function j1950(  ) {
 
-		const returnValue = Module.ccall(
+	const returnValue = Module.ccall(
 		'j1950_c',
 		'number',
 		/*  */
@@ -2040,7 +2040,7 @@ function j1950(  ) {
 ```js
 function j2000(  ) {
 
-		const returnValue = Module.ccall(
+	const returnValue = Module.ccall(
 		'j2000_c',
 		'number',
 		/*  */
@@ -2056,7 +2056,7 @@ function j2000(  ) {
 ```js
 function j2100(  ) {
 
-		const returnValue = Module.ccall(
+	const returnValue = Module.ccall(
 		'j2100_c',
 		'number',
 		/*  */
@@ -2072,7 +2072,7 @@ function j2100(  ) {
 ```js
 function jyear(  ) {
 
-		const returnValue = Module.ccall(
+	const returnValue = Module.ccall(
 		'jyear_c',
 		'number',
 		/*  */
@@ -2088,7 +2088,7 @@ function jyear(  ) {
 ```js
 function kclear(  ) {
 
-		Module.ccall(
+	Module.ccall(
 		'kclear_c',
 		null,
 		/*  */
@@ -2106,7 +2106,7 @@ function ktotal( kind ) {
 	// create output pointers
 	const count_ptr = Module._malloc( INT_SIZE );
 
-		Module.ccall(
+	Module.ccall(
 		'ktotal_c',
 		null,
 		/* ConstSpiceChar kind, SpiceInt count */
@@ -2126,7 +2126,7 @@ function ktotal( kind ) {
 ```js
 function lastnb( string ) {
 
-		const returnValue = Module.ccall(
+	const returnValue = Module.ccall(
 		'lastnb_c',
 		'number',
 		/* ConstSpiceChar string */
@@ -2147,7 +2147,7 @@ function latcyl( radius, lon, lat ) {
 	const lonc_ptr = Module._malloc( DOUBLE_SIZE );
 	const z_ptr = Module._malloc( DOUBLE_SIZE );
 
-		Module.ccall(
+	Module.ccall(
 		'latcyl_c',
 		null,
 		/* SpiceDouble radius, SpiceDouble lon, SpiceDouble lat, SpiceDouble r, SpiceDouble lonc, SpiceDouble z */
@@ -2176,7 +2176,7 @@ function latrec( radius, latitude ) {
 	// create output pointers
 	const rectan_ptr = Module._malloc( DOUBLE_SIZE );
 
-		Module.ccall(
+	Module.ccall(
 		'latrec_c',
 		null,
 		/* SpiceDouble radius, SpiceDouble longitude, SpiceDouble latitude, SpiceDouble rectan */
@@ -2201,7 +2201,7 @@ function latsph( radius, lon, lat ) {
 	const colat_ptr = Module._malloc( DOUBLE_SIZE );
 	const lons_ptr = Module._malloc( DOUBLE_SIZE );
 
-		Module.ccall(
+	Module.ccall(
 		'latsph_c',
 		null,
 		/* SpiceDouble radius, SpiceDouble lon, SpiceDouble lat, SpiceDouble rho, SpiceDouble colat, SpiceDouble lons */
@@ -2230,7 +2230,7 @@ function lcase( in, lenout ) {
 	// create output pointers
 	const out_ptr = Module._malloc( STR_SIZE );
 
-		Module.ccall(
+	Module.ccall(
 		'lcase_c',
 		null,
 		/* SpiceChar in, SpiceInt lenout, SpiceChar out */
@@ -2250,7 +2250,7 @@ function lcase( in, lenout ) {
 ```js
 function ldpool( filename ) {
 
-		Module.ccall(
+	Module.ccall(
 		'ldpool_c',
 		null,
 		/* ConstSpiceChar filename */
@@ -2265,7 +2265,7 @@ function ldpool( filename ) {
 ```js
 function lspcn( body, et, abcorr ) {
 
-		const returnValue = Module.ccall(
+	const returnValue = Module.ccall(
 		'lspcn_c',
 		'number',
 		/* ConstSpiceChar body, SpiceDouble et, ConstSpiceChar abcorr */
@@ -2285,7 +2285,7 @@ function ltime( etobs, obs, dir, targ ) {
 	const ettarg_ptr = Module._malloc( DOUBLE_SIZE );
 	const elapsd_ptr = Module._malloc( DOUBLE_SIZE );
 
-		Module.ccall(
+	Module.ccall(
 		'ltime_c',
 		null,
 		/* SpiceDouble etobs, SpiceInt obs, ConstSpiceChar dir, SpiceInt targ, SpiceDouble ettarg, SpiceDouble elapsd */
@@ -2312,7 +2312,7 @@ function lx4dec( string, first ) {
 	const last_ptr = Module._malloc( INT_SIZE );
 	const nchar_ptr = Module._malloc( INT_SIZE );
 
-		Module.ccall(
+	Module.ccall(
 		'lx4dec_c',
 		null,
 		/* ConstSpiceChar string, SpiceInt first, SpiceInt last, SpiceInt nchar */
@@ -2339,7 +2339,7 @@ function lx4num( string, first ) {
 	const last_ptr = Module._malloc( INT_SIZE );
 	const nchar_ptr = Module._malloc( INT_SIZE );
 
-		Module.ccall(
+	Module.ccall(
 		'lx4num_c',
 		null,
 		/* ConstSpiceChar string, SpiceInt first, SpiceInt last, SpiceInt nchar */
@@ -2366,7 +2366,7 @@ function lx4sgn( string, first ) {
 	const last_ptr = Module._malloc( INT_SIZE );
 	const nchar_ptr = Module._malloc( INT_SIZE );
 
-		Module.ccall(
+	Module.ccall(
 		'lx4sgn_c',
 		null,
 		/* ConstSpiceChar string, SpiceInt first, SpiceInt last, SpiceInt nchar */
@@ -2393,7 +2393,7 @@ function lx4uns( string, first ) {
 	const last_ptr = Module._malloc( INT_SIZE );
 	const nchar_ptr = Module._malloc( INT_SIZE );
 
-		Module.ccall(
+	Module.ccall(
 		'lx4uns_c',
 		null,
 		/* ConstSpiceChar string, SpiceInt first, SpiceInt last, SpiceInt nchar */
@@ -2420,7 +2420,7 @@ function lxqstr( string, qchar, first ) {
 	const last_ptr = Module._malloc( INT_SIZE );
 	const nchar_ptr = Module._malloc( INT_SIZE );
 
-		Module.ccall(
+	Module.ccall(
 		'lxqstr_c',
 		null,
 		/* ConstSpiceChar string, SpiceChar qchar, SpiceInt first, SpiceInt last, SpiceInt nchar */
@@ -2446,7 +2446,7 @@ function namfrm( frname ) {
 	// create output pointers
 	const frcode_ptr = Module._malloc( INT_SIZE );
 
-		Module.ccall(
+	Module.ccall(
 		'namfrm_c',
 		null,
 		/* ConstSpiceChar frname, SpiceInt frcode */
@@ -2466,7 +2466,7 @@ function namfrm( frname ) {
 ```js
 function ncposr( str, chars, start ) {
 
-		const returnValue = Module.ccall(
+	const returnValue = Module.ccall(
 		'ncposr_c',
 		'number',
 		/* ConstSpiceChar str, ConstSpiceChar chars, SpiceInt start */
@@ -2482,7 +2482,7 @@ function ncposr( str, chars, start ) {
 ```js
 function ncpos( str, chars, start ) {
 
-		const returnValue = Module.ccall(
+	const returnValue = Module.ccall(
 		'ncpos_c',
 		'number',
 		/* ConstSpiceChar str, ConstSpiceChar chars, SpiceInt start */
@@ -2501,7 +2501,7 @@ function pcklof( filename ) {
 	// create output pointers
 	const handle_ptr = Module._malloc( INT_SIZE );
 
-		Module.ccall(
+	Module.ccall(
 		'pcklof_c',
 		null,
 		/* ConstSpiceChar filename, SpiceInt handle */
@@ -2521,7 +2521,7 @@ function pcklof( filename ) {
 ```js
 function pckuof( handle ) {
 
-		Module.ccall(
+	Module.ccall(
 		'pckuof_c',
 		null,
 		/* SpiceInt handle */
@@ -2539,7 +2539,7 @@ function pgrrec( body, lon, lat, alt, re, f ) {
 	// create output pointers
 	const rectan_ptr = Module._malloc( DOUBLE_SIZE );
 
-		Module.ccall(
+	Module.ccall(
 		'pgrrec_c',
 		null,
 		/* ConstSpiceChar body, SpiceDouble lon, SpiceDouble lat, SpiceDouble alt, SpiceDouble re, SpiceDouble f, SpiceDouble rectan */
@@ -2559,7 +2559,7 @@ function pgrrec( body, lon, lat, alt, re, f ) {
 ```js
 function pi(  ) {
 
-		const returnValue = Module.ccall(
+	const returnValue = Module.ccall(
 		'pi_c',
 		'number',
 		/*  */
@@ -2575,7 +2575,7 @@ function pi(  ) {
 ```js
 function posr( str, substr, start ) {
 
-		const returnValue = Module.ccall(
+	const returnValue = Module.ccall(
 		'posr_c',
 		'number',
 		/* ConstSpiceChar str, ConstSpiceChar substr, SpiceInt start */
@@ -2591,7 +2591,7 @@ function posr( str, substr, start ) {
 ```js
 function pos( str, substr, start ) {
 
-		const returnValue = Module.ccall(
+	const returnValue = Module.ccall(
 		'pos_c',
 		'number',
 		/* ConstSpiceChar str, ConstSpiceChar substr, SpiceInt start */
@@ -2610,7 +2610,7 @@ function prsdp( string ) {
 	// create output pointers
 	const dpval_ptr = Module._malloc( DOUBLE_SIZE );
 
-		Module.ccall(
+	Module.ccall(
 		'prsdp_c',
 		null,
 		/* ConstSpiceChar string, SpiceDouble dpval */
@@ -2633,7 +2633,7 @@ function prsint( string ) {
 	// create output pointers
 	const intval_ptr = Module._malloc( INT_SIZE );
 
-		Module.ccall(
+	Module.ccall(
 		'prsint_c',
 		null,
 		/* ConstSpiceChar string, SpiceInt intval */
@@ -2656,7 +2656,7 @@ function pxform( from, to, et ) {
 	// create output pointers
 	const rotate_ptr = Module._malloc( DOUBLE_SIZE );
 
-		Module.ccall(
+	Module.ccall(
 		'pxform_c',
 		null,
 		/* ConstSpiceChar from, ConstSpiceChar to, SpiceDouble et, SpiceDouble rotate */
@@ -2679,7 +2679,7 @@ function radrec( range, ra, dec ) {
 	// create output pointers
 	const rectan_ptr = Module._malloc( DOUBLE_SIZE );
 
-		Module.ccall(
+	Module.ccall(
 		'radrec_c',
 		null,
 		/* SpiceDouble range, SpiceDouble ra, SpiceDouble dec, SpiceDouble rectan */
@@ -2704,7 +2704,7 @@ function recpgr( body, rectan, re, f ) {
 	const lat_ptr = Module._malloc( DOUBLE_SIZE );
 	const alt_ptr = Module._malloc( DOUBLE_SIZE );
 
-		Module.ccall(
+	Module.ccall(
 		'recpgr_c',
 		null,
 		/* ConstSpiceChar body, SpiceDouble rectan, SpiceDouble re, SpiceDouble f, SpiceDouble lon, SpiceDouble lat, SpiceDouble alt */
@@ -2733,7 +2733,7 @@ function repmct( in, marker, value, repcase, lenout ) {
 	// create output pointers
 	const out_ptr = Module._malloc( STR_SIZE );
 
-		Module.ccall(
+	Module.ccall(
 		'repmct_c',
 		null,
 		/* ConstSpiceChar in, ConstSpiceChar marker, SpiceInt value, SpiceChar repcase, SpiceInt lenout, SpiceChar out */
@@ -2756,7 +2756,7 @@ function repmc( in, marker, value, lenout ) {
 	// create output pointers
 	const out_ptr = Module._malloc( STR_SIZE );
 
-		Module.ccall(
+	Module.ccall(
 		'repmc_c',
 		null,
 		/* ConstSpiceChar in, ConstSpiceChar marker, ConstSpiceChar value, SpiceInt lenout, SpiceChar out */
@@ -2779,7 +2779,7 @@ function repmd( in, marker, value, sigdig, lenout ) {
 	// create output pointers
 	const out_ptr = Module._malloc( STR_SIZE );
 
-		Module.ccall(
+	Module.ccall(
 		'repmd_c',
 		null,
 		/* ConstSpiceChar in, ConstSpiceChar marker, SpiceDouble value, SpiceInt sigdig, SpiceInt lenout, SpiceChar out */
@@ -2802,7 +2802,7 @@ function repmf( in, marker, value, sigdig, format, lenout ) {
 	// create output pointers
 	const out_ptr = Module._malloc( STR_SIZE );
 
-		Module.ccall(
+	Module.ccall(
 		'repmf_c',
 		null,
 		/* ConstSpiceChar in, ConstSpiceChar marker, SpiceDouble value, SpiceInt sigdig, SpiceChar format, SpiceInt lenout, SpiceChar out */
@@ -2825,7 +2825,7 @@ function repmi( in, marker, value, lenout ) {
 	// create output pointers
 	const out_ptr = Module._malloc( STR_SIZE );
 
-		Module.ccall(
+	Module.ccall(
 		'repmi_c',
 		null,
 		/* ConstSpiceChar in, ConstSpiceChar marker, SpiceInt value, SpiceInt lenout, SpiceChar out */
@@ -2848,7 +2848,7 @@ function repmot( in, marker, value, repcase, lenout ) {
 	// create output pointers
 	const out_ptr = Module._malloc( STR_SIZE );
 
-		Module.ccall(
+	Module.ccall(
 		'repmot_c',
 		null,
 		/* ConstSpiceChar in, ConstSpiceChar marker, SpiceInt value, SpiceChar repcase, SpiceInt lenout, SpiceChar out */
@@ -2868,7 +2868,7 @@ function repmot( in, marker, value, repcase, lenout ) {
 ```js
 function reset(  ) {
 
-		Module.ccall(
+	Module.ccall(
 		'reset_c',
 		null,
 		/*  */
@@ -2886,7 +2886,7 @@ function rotate( angle, iaxis ) {
 	// create output pointers
 	const mout_ptr = Module._malloc( DOUBLE_SIZE );
 
-		Module.ccall(
+	Module.ccall(
 		'rotate_c',
 		null,
 		/* SpiceDouble angle, SpiceInt iaxis, SpiceDouble mout */
@@ -2906,7 +2906,7 @@ function rotate( angle, iaxis ) {
 ```js
 function rpd(  ) {
 
-		const returnValue = Module.ccall(
+	const returnValue = Module.ccall(
 		'rpd_c',
 		'number',
 		/*  */
@@ -2926,7 +2926,7 @@ function rquad( a, b, c ) {
 	const root1_ptr = Module._malloc( DOUBLE_SIZE );
 	const root2_ptr = Module._malloc( DOUBLE_SIZE );
 
-		Module.ccall(
+	Module.ccall(
 		'rquad_c',
 		null,
 		/* SpiceDouble a, SpiceDouble b, SpiceDouble c, SpiceDouble root1, SpiceDouble root2 */
@@ -2952,7 +2952,7 @@ function scdecd( sc, sclkdp, lenout ) {
 	// create output pointers
 	const sclkch_ptr = Module._malloc( STR_SIZE );
 
-		Module.ccall(
+	Module.ccall(
 		'scdecd_c',
 		null,
 		/* SpiceInt sc, SpiceDouble sclkdp, SpiceInt lenout, SpiceChar sclkch */
@@ -2975,7 +2975,7 @@ function sce2c( sc, et ) {
 	// create output pointers
 	const sclkdp_ptr = Module._malloc( DOUBLE_SIZE );
 
-		Module.ccall(
+	Module.ccall(
 		'sce2c_c',
 		null,
 		/* SpiceInt sc, SpiceDouble et, SpiceDouble sclkdp */
@@ -2998,7 +2998,7 @@ function sce2s( sc, et, lenout ) {
 	// create output pointers
 	const sclkch_ptr = Module._malloc( STR_SIZE );
 
-		Module.ccall(
+	Module.ccall(
 		'sce2s_c',
 		null,
 		/* SpiceInt sc, SpiceDouble et, SpiceInt lenout, SpiceChar sclkch */
@@ -3021,7 +3021,7 @@ function sce2t( sc, et ) {
 	// create output pointers
 	const sclkdp_ptr = Module._malloc( DOUBLE_SIZE );
 
-		Module.ccall(
+	Module.ccall(
 		'sce2t_c',
 		null,
 		/* SpiceInt sc, SpiceDouble et, SpiceDouble sclkdp */
@@ -3044,7 +3044,7 @@ function scencd( sc, sclkch ) {
 	// create output pointers
 	const sclkdp_ptr = Module._malloc( DOUBLE_SIZE );
 
-		Module.ccall(
+	Module.ccall(
 		'scencd_c',
 		null,
 		/* SpiceInt sc, ConstSpiceChar sclkch, SpiceDouble sclkdp */
@@ -3067,7 +3067,7 @@ function scfmt( sc, ticks, lenout ) {
 	// create output pointers
 	const clkstr_ptr = Module._malloc( STR_SIZE );
 
-		Module.ccall(
+	Module.ccall(
 		'scfmt_c',
 		null,
 		/* SpiceInt sc, SpiceDouble ticks, SpiceInt lenout, SpiceChar clkstr */
@@ -3092,7 +3092,7 @@ function scpart( sc ) {
 	const pstart_ptr = Module._malloc( DOUBLE_SIZE );
 	const pstop_ptr = Module._malloc( DOUBLE_SIZE );
 
-		Module.ccall(
+	Module.ccall(
 		'scpart_c',
 		null,
 		/* SpiceInt sc, SpiceInt nparts, SpiceDouble pstart, SpiceDouble pstop */
@@ -3121,7 +3121,7 @@ function scs2e( sc, sclkch ) {
 	// create output pointers
 	const et_ptr = Module._malloc( DOUBLE_SIZE );
 
-		Module.ccall(
+	Module.ccall(
 		'scs2e_c',
 		null,
 		/* SpiceInt sc, ConstSpiceChar sclkch, SpiceDouble et */
@@ -3144,7 +3144,7 @@ function sct2e( sc, sclkdp ) {
 	// create output pointers
 	const et_ptr = Module._malloc( DOUBLE_SIZE );
 
-		Module.ccall(
+	Module.ccall(
 		'sct2e_c',
 		null,
 		/* SpiceInt sc, SpiceDouble sclkdp, SpiceDouble et */
@@ -3167,7 +3167,7 @@ function sctiks( sc, clkstr ) {
 	// create output pointers
 	const ticks_ptr = Module._malloc( DOUBLE_SIZE );
 
-		Module.ccall(
+	Module.ccall(
 		'sctiks_c',
 		null,
 		/* SpiceInt sc, ConstSpiceChar clkstr, SpiceDouble ticks */
@@ -3187,7 +3187,7 @@ function sctiks( sc, clkstr ) {
 ```js
 function setmsg( message ) {
 
-		Module.ccall(
+	Module.ccall(
 		'setmsg_c',
 		null,
 		/* ConstSpiceChar message */
@@ -3202,7 +3202,7 @@ function setmsg( message ) {
 ```js
 function shelld( ndim, array ) {
 
-		Module.ccall(
+	Module.ccall(
 		'shelld_c',
 		null,
 		/* SpiceInt ndim, SpiceDouble array */
@@ -3217,7 +3217,7 @@ function shelld( ndim, array ) {
 ```js
 function shelli( ndim, array ) {
 
-		Module.ccall(
+	Module.ccall(
 		'shelli_c',
 		null,
 		/* SpiceInt ndim, SpiceInt array */
@@ -3232,7 +3232,7 @@ function shelli( ndim, array ) {
 ```js
 function spd(  ) {
 
-		const returnValue = Module.ccall(
+	const returnValue = Module.ccall(
 		'spd_c',
 		'number',
 		/*  */
@@ -3253,7 +3253,7 @@ function sphcyl( radius, colat, slon ) {
 	const lon_ptr = Module._malloc( DOUBLE_SIZE );
 	const z_ptr = Module._malloc( DOUBLE_SIZE );
 
-		Module.ccall(
+	Module.ccall(
 		'sphcyl_c',
 		null,
 		/* SpiceDouble radius, SpiceDouble colat, SpiceDouble slon, SpiceDouble r, SpiceDouble lon, SpiceDouble z */
@@ -3284,7 +3284,7 @@ function sphlat( r, colat, lons ) {
 	const lon_ptr = Module._malloc( DOUBLE_SIZE );
 	const lat_ptr = Module._malloc( DOUBLE_SIZE );
 
-		Module.ccall(
+	Module.ccall(
 		'sphlat_c',
 		null,
 		/* SpiceDouble r, SpiceDouble colat, SpiceDouble lons, SpiceDouble radius, SpiceDouble lon, SpiceDouble lat */
@@ -3313,7 +3313,7 @@ function sphrec( r, colat, lon ) {
 	// create output pointers
 	const rectan_ptr = Module._malloc( DOUBLE_SIZE );
 
-		Module.ccall(
+	Module.ccall(
 		'sphrec_c',
 		null,
 		/* SpiceDouble r, SpiceDouble colat, SpiceDouble lon, SpiceDouble rectan */
@@ -3333,7 +3333,7 @@ function sphrec( r, colat, lon ) {
 ```js
 function spk14b( handle, segid, body, center, frame, first, last, chbdeg ) {
 
-		Module.ccall(
+	Module.ccall(
 		'spk14b_c',
 		null,
 		/* SpiceInt handle, ConstSpiceChar segid, SpiceInt body, SpiceInt center, ConstSpiceChar frame, SpiceDouble first, SpiceDouble last, SpiceInt chbdeg */
@@ -3348,7 +3348,7 @@ function spk14b( handle, segid, body, center, frame, first, last, chbdeg ) {
 ```js
 function spk14e( handle ) {
 
-		Module.ccall(
+	Module.ccall(
 		'spk14e_c',
 		null,
 		/* SpiceInt handle */
@@ -3368,7 +3368,7 @@ function spkacs( targ, et, ref, abcorr, obs ) {
 	const lt_ptr = Module._malloc( DOUBLE_SIZE );
 	const dlt_ptr = Module._malloc( DOUBLE_SIZE );
 
-		Module.ccall(
+	Module.ccall(
 		'spkacs_c',
 		null,
 		/* SpiceInt targ, SpiceDouble et, ConstSpiceChar ref, ConstSpiceChar abcorr, SpiceInt obs, SpiceDouble starg, SpiceDouble lt, SpiceDouble dlt */
@@ -3394,7 +3394,7 @@ function spkacs( targ, et, ref, abcorr, obs ) {
 ```js
 function spkcls( handle ) {
 
-		Module.ccall(
+	Module.ccall(
 		'spkcls_c',
 		null,
 		/* SpiceInt handle */
@@ -3413,7 +3413,7 @@ function spkezp( targ, et, ref, abcorr, obs ) {
 	const ptarg_ptr = Module._malloc( DOUBLE_SIZE );
 	const lt_ptr = Module._malloc( DOUBLE_SIZE );
 
-		Module.ccall(
+	Module.ccall(
 		'spkezp_c',
 		null,
 		/* SpiceInt targ, SpiceDouble et, ConstSpiceChar ref, ConstSpiceChar abcorr, SpiceInt obs, SpiceDouble ptarg, SpiceDouble lt */
@@ -3440,7 +3440,7 @@ function spkezr( targ, et, ref, abcorr, obs ) {
 	const starg_ptr = Module._malloc( DOUBLE_SIZE );
 	const lt_ptr = Module._malloc( DOUBLE_SIZE );
 
-		Module.ccall(
+	Module.ccall(
 		'spkezr_c',
 		null,
 		/* ConstSpiceChar targ, SpiceDouble et, ConstSpiceChar ref, ConstSpiceChar abcorr, ConstSpiceChar obs, SpiceDouble starg, SpiceDouble lt */
@@ -3467,7 +3467,7 @@ function spkez( targ, et, ref, abcorr, obs ) {
 	const starg_ptr = Module._malloc( DOUBLE_SIZE );
 	const lt_ptr = Module._malloc( DOUBLE_SIZE );
 
-		Module.ccall(
+	Module.ccall(
 		'spkez_c',
 		null,
 		/* SpiceInt targ, SpiceDouble et, ConstSpiceChar ref, ConstSpiceChar abcorr, SpiceInt obs, SpiceDouble starg, SpiceDouble lt */
@@ -3494,7 +3494,7 @@ function spkgeo( targ, et, ref, obs ) {
 	const state_ptr = Module._malloc( DOUBLE_SIZE );
 	const lt_ptr = Module._malloc( DOUBLE_SIZE );
 
-		Module.ccall(
+	Module.ccall(
 		'spkgeo_c',
 		null,
 		/* SpiceInt targ, SpiceDouble et, ConstSpiceChar ref, SpiceInt obs, SpiceDouble state, SpiceDouble lt */
@@ -3521,7 +3521,7 @@ function spkgps( targ, et, ref, obs ) {
 	const pos_ptr = Module._malloc( DOUBLE_SIZE );
 	const lt_ptr = Module._malloc( DOUBLE_SIZE );
 
-		Module.ccall(
+	Module.ccall(
 		'spkgps_c',
 		null,
 		/* SpiceInt targ, SpiceDouble et, ConstSpiceChar ref, SpiceInt obs, SpiceDouble pos, SpiceDouble lt */
@@ -3547,7 +3547,7 @@ function spkopa( file ) {
 	// create output pointers
 	const handle_ptr = Module._malloc( INT_SIZE );
 
-		Module.ccall(
+	Module.ccall(
 		'spkopa_c',
 		null,
 		/* ConstSpiceChar file, SpiceInt handle */
@@ -3570,7 +3570,7 @@ function spkopn( name, ifname, ncomch ) {
 	// create output pointers
 	const handle_ptr = Module._malloc( INT_SIZE );
 
-		Module.ccall(
+	Module.ccall(
 		'spkopn_c',
 		null,
 		/* ConstSpiceChar name, ConstSpiceChar ifname, SpiceInt ncomch, SpiceInt handle */
@@ -3593,7 +3593,7 @@ function spkpds( body, center, frame, type, first, last ) {
 	// create output pointers
 	const descr_ptr = Module._malloc( DOUBLE_SIZE );
 
-		Module.ccall(
+	Module.ccall(
 		'spkpds_c',
 		null,
 		/* SpiceInt body, SpiceInt center, ConstSpiceChar frame, SpiceInt type, SpiceDouble first, SpiceDouble last, SpiceDouble descr */
@@ -3617,7 +3617,7 @@ function spkpos( targ, et, ref, abcorr, obs ) {
 	const ptarg_ptr = Module._malloc( DOUBLE_SIZE );
 	const lt_ptr = Module._malloc( DOUBLE_SIZE );
 
-		Module.ccall(
+	Module.ccall(
 		'spkpos_c',
 		null,
 		/* ConstSpiceChar targ, SpiceDouble et, ConstSpiceChar ref, ConstSpiceChar abcorr, ConstSpiceChar obs, SpiceDouble ptarg, SpiceDouble lt */
@@ -3643,7 +3643,7 @@ function spkssb( targ, et, ref ) {
 	// create output pointers
 	const starg_ptr = Module._malloc( DOUBLE_SIZE );
 
-		Module.ccall(
+	Module.ccall(
 		'spkssb_c',
 		null,
 		/* SpiceInt targ, SpiceDouble et, ConstSpiceChar ref, SpiceDouble starg */
@@ -3663,7 +3663,7 @@ function spkssb( targ, et, ref ) {
 ```js
 function spksub( handle, descr, ident, begin, end, newh ) {
 
-		Module.ccall(
+	Module.ccall(
 		'spksub_c',
 		null,
 		/* SpiceInt handle, SpiceDouble descr, ConstSpiceChar ident, SpiceDouble begin, SpiceDouble end, SpiceInt newh */
@@ -3678,7 +3678,7 @@ function spksub( handle, descr, ident, begin, end, newh ) {
 ```js
 function spkuef( handle ) {
 
-		Module.ccall(
+	Module.ccall(
 		'spkuef_c',
 		null,
 		/* SpiceInt handle */
@@ -3696,7 +3696,7 @@ function srfrec( body, latitude ) {
 	// create output pointers
 	const rectan_ptr = Module._malloc( DOUBLE_SIZE );
 
-		Module.ccall(
+	Module.ccall(
 		'srfrec_c',
 		null,
 		/* SpiceInt body, SpiceDouble longitude, SpiceDouble latitude, SpiceDouble rectan */
@@ -3719,7 +3719,7 @@ function str2et( str ) {
 	// create output pointers
 	const et_ptr = Module._malloc( DOUBLE_SIZE );
 
-		Module.ccall(
+	Module.ccall(
 		'str2et_c',
 		null,
 		/* ConstSpiceChar str, SpiceDouble et */
@@ -3742,7 +3742,7 @@ function subpnt( method, target, et, fixref, abcorr, obsrvr ) {
 	// create output pointers
 	const trgepc_ptr = Module._malloc( DOUBLE_SIZE );
 
-		Module.ccall(
+	Module.ccall(
 		'subpnt_c',
 		null,
 		/* ConstSpiceChar method, ConstSpiceChar target, SpiceDouble et, ConstSpiceChar fixref, ConstSpiceChar abcorr, ConstSpiceChar obsrvr, SpiceDouble spoint, SpiceDouble trgepc, SpiceDouble srfvec */
@@ -3765,7 +3765,7 @@ function subpt( method, target, et, abcorr, obsrvr ) {
 	// create output pointers
 	const alt_ptr = Module._malloc( DOUBLE_SIZE );
 
-		Module.ccall(
+	Module.ccall(
 		'subpt_c',
 		null,
 		/* ConstSpiceChar method, ConstSpiceChar target, SpiceDouble et, ConstSpiceChar abcorr, ConstSpiceChar obsrvr, SpiceDouble spoint, SpiceDouble alt */
@@ -3788,7 +3788,7 @@ function subslr( method, target, et, fixref, abcorr, obsrvr ) {
 	// create output pointers
 	const trgepc_ptr = Module._malloc( DOUBLE_SIZE );
 
-		Module.ccall(
+	Module.ccall(
 		'subslr_c',
 		null,
 		/* ConstSpiceChar method, ConstSpiceChar target, SpiceDouble et, ConstSpiceChar fixref, ConstSpiceChar abcorr, ConstSpiceChar obsrvr, SpiceDouble spoint, SpiceDouble trgepc, SpiceDouble srfvec */
@@ -3811,7 +3811,7 @@ function subsol( method, target, et, abcorr, obsrvr ) {
 	// create output pointers
 	const spoint_ptr = Module._malloc( DOUBLE_SIZE );
 
-		Module.ccall(
+	Module.ccall(
 		'subsol_c',
 		null,
 		/* ConstSpiceChar method, ConstSpiceChar target, SpiceDouble et, ConstSpiceChar abcorr, ConstSpiceChar obsrvr, SpiceDouble spoint */
@@ -3834,7 +3834,7 @@ function sxform( from, to, et ) {
 	// create output pointers
 	const xform_ptr = Module._malloc( DOUBLE_SIZE );
 
-		Module.ccall(
+	Module.ccall(
 		'sxform_c',
 		null,
 		/* ConstSpiceChar from, ConstSpiceChar to, SpiceDouble et, SpiceDouble xform */
@@ -3854,7 +3854,7 @@ function sxform( from, to, et ) {
 ```js
 function timdef( action, item, lenout, value ) {
 
-		Module.ccall(
+	Module.ccall(
 		'timdef_c',
 		null,
 		/* ConstSpiceChar action, ConstSpiceChar item, SpiceInt lenout, SpiceChar value */
@@ -3872,7 +3872,7 @@ function timout( et, pictur, lenout ) {
 	// create output pointers
 	const output_ptr = Module._malloc( STR_SIZE );
 
-		Module.ccall(
+	Module.ccall(
 		'timout_c',
 		null,
 		/* SpiceDouble et, ConstSpiceChar pictur, SpiceInt lenout, SpiceChar output */
@@ -3895,7 +3895,7 @@ function tipbod( ref, body, et ) {
 	// create output pointers
 	const tipm_ptr = Module._malloc( DOUBLE_SIZE );
 
-		Module.ccall(
+	Module.ccall(
 		'tipbod_c',
 		null,
 		/* ConstSpiceChar ref, SpiceInt body, SpiceDouble et, SpiceDouble tipm */
@@ -3918,7 +3918,7 @@ function tisbod( ref, body, et ) {
 	// create output pointers
 	const tsipm_ptr = Module._malloc( DOUBLE_SIZE );
 
-		Module.ccall(
+	Module.ccall(
 		'tisbod_c',
 		null,
 		/* ConstSpiceChar ref, SpiceInt body, SpiceDouble et, SpiceDouble tsipm */
@@ -3942,7 +3942,7 @@ function tparse( string, lenout ) {
 	const sp2000_ptr = Module._malloc( DOUBLE_SIZE );
 	const errmsg_ptr = Module._malloc( STR_SIZE );
 
-		Module.ccall(
+	Module.ccall(
 		'tparse_c',
 		null,
 		/* ConstSpiceChar string, SpiceInt lenout, SpiceDouble sp2000, SpiceChar errmsg */
@@ -3965,7 +3965,7 @@ function tparse( string, lenout ) {
 ```js
 function trcoff(  ) {
 
-		Module.ccall(
+	Module.ccall(
 		'trcoff_c',
 		null,
 		/*  */
@@ -3980,7 +3980,7 @@ function trcoff(  ) {
 ```js
 function tsetyr( year ) {
 
-		Module.ccall(
+	Module.ccall(
 		'tsetyr_c',
 		null,
 		/* SpiceInt year */
@@ -3995,7 +3995,7 @@ function tsetyr( year ) {
 ```js
 function twopi(  ) {
 
-		const returnValue = Module.ccall(
+	const returnValue = Module.ccall(
 		'twopi_c',
 		'number',
 		/*  */
@@ -4011,7 +4011,7 @@ function twopi(  ) {
 ```js
 function tyear(  ) {
 
-		const returnValue = Module.ccall(
+	const returnValue = Module.ccall(
 		'tyear_c',
 		'number',
 		/*  */
@@ -4030,7 +4030,7 @@ function ucase( in, lenout ) {
 	// create output pointers
 	const out_ptr = Module._malloc( STR_SIZE );
 
-		Module.ccall(
+	Module.ccall(
 		'ucase_c',
 		null,
 		/* SpiceChar in, SpiceInt lenout, SpiceChar out */
@@ -4050,7 +4050,7 @@ function ucase( in, lenout ) {
 ```js
 function unitim( epoch, insys, outsys ) {
 
-		const returnValue = Module.ccall(
+	const returnValue = Module.ccall(
 		'unitim_c',
 		'number',
 		/* SpiceDouble epoch, ConstSpiceChar insys, ConstSpiceChar outsys */
@@ -4066,7 +4066,7 @@ function unitim( epoch, insys, outsys ) {
 ```js
 function unload( file ) {
 
-		Module.ccall(
+	Module.ccall(
 		'unload_c',
 		null,
 		/* ConstSpiceChar file */
@@ -4084,7 +4084,7 @@ function utc2et( utcstr ) {
 	// create output pointers
 	const et_ptr = Module._malloc( DOUBLE_SIZE );
 
-		Module.ccall(
+	Module.ccall(
 		'utc2et_c',
 		null,
 		/* ConstSpiceChar utcstr, SpiceDouble et */
@@ -4107,7 +4107,7 @@ function vpack( x, y, z ) {
 	// create output pointers
 	const v_ptr = Module._malloc( DOUBLE_SIZE );
 
-		Module.ccall(
+	Module.ccall(
 		'vpack_c',
 		null,
 		/* SpiceDouble x, SpiceDouble y, SpiceDouble z, SpiceDouble v */
@@ -4127,7 +4127,7 @@ function vpack( x, y, z ) {
 ```js
 function zzerrorinit(  ) {
 
-		Module.ccall(
+	Module.ccall(
 		'zzerrorinit',
 		null,
 		/*  */
