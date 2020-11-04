@@ -20,7 +20,7 @@ node src/index.js ../cspice/src/cspice ./output/
 ## TODO
 
 - [x] Generate wrapped js function calls based on scraped data.
-- [ ] Add comment next to ccall arguments listing parameter names
+- [x] Add comment next to ccall arguments listing parameter names
 - [ ] Include comments in code scraping.
 - [ ] Generate JSDoc comments for the functions.
 - [ ] Add tests, validate signatures.
